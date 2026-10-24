@@ -32,6 +32,8 @@ window.LUMI = {
   libros: [
     { grado: "k", area: "ciencias", es: "libro-kinder-ciencias.html", en: "book-kindergarten-science.html" },
     { grado: "k", area: "sociales", es: "libro-kinder-sociales.html", en: "book-kindergarten-social-studies.html" },
+    { grado: "1", area: "ciencias", es: "libro-1ro-ciencias.html",   en: "book-grade1-science.html" },
+    { grado: "1", area: "sociales", es: "libro-1ro-sociales.html",   en: "book-grade1-social-studies.html" },
     { grado: "2", area: "ciencias", es: "libro-2do-ciencias.html",   en: "book-grade2-science.html" },
     { grado: "2", area: "sociales", es: "libro-2do-sociales.html",   en: "book-grade2-social-studies.html" }
   ],
@@ -105,6 +107,56 @@ window.LUMI = {
         { es: "Palabras de tres sonidos", en: "Three-sound words",     url: P + "kindergarten/k-reading-04-three-sound-words.html" },
         { es: "Palabras de vista",        en: "Sight words",           url: P + "kindergarten/k-reading-05-sight-words.html" },
         { es: "Mis primeras oraciones",   en: "My first sentences",    url: P + "kindergarten/k-reading-06-first-sentences.html" }
+      ]
+    },
+
+    /* ---------------- PRIMER GRADO ---------------- */
+    {
+      grado: "1", materia: "matematicas", tipo: "interactivo",
+      es: { titulo: "Matemáticas de 1.er grado", url: P + "1er_grado/?lang=es" },
+      en: { titulo: "Grade 1 math",              url: P + "1er_grado/" },
+      lecciones: [
+        { es: "Contar hasta 120",            en: "Counting to 120",              archivo: "1er_grado/g1-01-counting-120.html" },
+        { es: "Decenas y unidades",          en: "Tens and ones",                archivo: "1er_grado/g1-02-tens-and-ones.html" },
+        { es: "Sumar y restar hasta 20",     en: "Adding and subtracting to 20", archivo: "1er_grado/g1-03-facts-to-20.html" },
+        { es: "Problemas de sumar y restar", en: "Word problems",                archivo: "1er_grado/g1-04-word-problems.html" },
+        { es: "El signo igual",              en: "The equal sign",               archivo: "1er_grado/g1-05-equal-sign.html" },
+        { es: "Sumar hasta 100",             en: "Adding within 100",            archivo: "1er_grado/g1-06-add-within-100.html" },
+        { es: "Medir y decir la hora",       en: "Length and time",              archivo: "1er_grado/g1-07-length-and-time.html" },
+        { es: "Datos y gráficas",            en: "Data and graphs",              archivo: "1er_grado/g1-08-data.html" },
+        { es: "Figuras, mitades y cuartos",  en: "Shapes, halves and fourths",   archivo: "1er_grado/g1-09-shapes-and-halves.html" }
+      ]
+    },
+    {
+      grado: "1", materia: "lectura", tipo: "interactivo", solo: "es",
+      es: { titulo: "Lectura en español", url: P + "1er_grado/lectura.html" },
+      en: { titulo: "Reading in Spanish",  url: P + "1er_grado/lectura.html" },
+      lecciones: [
+        { es: "Sílabas con todas las letras", en: "Syllables with every letter (in Spanish)", url: P + "1er_grado/g1-lectura-01-todas-las-letras.html" },
+        { es: "Sílabas trabadas",             en: "Consonant blends (in Spanish)",            url: P + "1er_grado/g1-lectura-02-silabas-trabadas.html" },
+        { es: "Sílabas inversas y mixtas",    en: "Closed syllables (in Spanish)",            url: P + "1er_grado/g1-lectura-03-inversas-y-mixtas.html" },
+        { es: "Letras con truco",             en: "Tricky spellings (in Spanish)",            url: P + "1er_grado/g1-lectura-04-letras-con-truco.html" },
+        { es: "Acento y palabras largas",     en: "Stress and long words (in Spanish)",       url: P + "1er_grado/g1-lectura-05-acento-y-palabras-largas.html" },
+        { es: "Oraciones y cuentitos",        en: "Sentences and little stories (in Spanish)", url: P + "1er_grado/g1-lectura-06-oraciones-y-cuentitos.html" }
+      ]
+    },
+    {
+      grado: "1", materia: "lectura", tipo: "interactivo", solo: "en",
+      es: { titulo: "Lectura en inglés", url: P + "1er_grado/reading.html?lang=es" },
+      en: { titulo: "Grade 1 reading",   url: P + "1er_grado/reading.html" },
+      lecciones: [
+        { es: "Oraciones",                             en: "Sentences",
+          es_url: P + "1er_grado/g1-reading-01-sentences.html?lang=es",           en_url: P + "1er_grado/g1-reading-01-sentences.html" },
+        { es: "Vocales y grupos de consonantes",       en: "Vowels and blends",
+          es_url: P + "1er_grado/g1-reading-02-vowels-and-blends.html?lang=es",   en_url: P + "1er_grado/g1-reading-02-vowels-and-blends.html" },
+        { es: "Dígrafos",                              en: "Digraphs",
+          es_url: P + "1er_grado/g1-reading-03-digraphs.html?lang=es",            en_url: P + "1er_grado/g1-reading-03-digraphs.html" },
+        { es: "La e mágica",                           en: "Magic e",
+          es_url: P + "1er_grado/g1-reading-04-magic-e.html?lang=es",             en_url: P + "1er_grado/g1-reading-04-magic-e.html" },
+        { es: "Parejas de vocales y terminaciones",    en: "Vowel teams and endings",
+          es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
+        { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
+          es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
       ]
     },
 

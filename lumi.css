@@ -1,0 +1,121 @@
+/* ==================================================================
+   Lumi · Estilos comunes del portal
+   Colores y tipografías según el Manual de identidad v1.2.
+   Texto y controles: siempre azul petróleo (#194F5A), 9.1:1 sobre
+   blanco. Turquesa, coral y amarillo: solo decoración.
+   ================================================================== */
+:root{
+  --pet:#194F5A; --tur:#45A6AD; --men:#6DCEC5; --ama:#F8C85F;
+  --cor:#EF9275; --cie:#E8F5F6; --bla:#FFFFFF; --borde:#A9D3D6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bla);color:var(--pet);
+  font:18px/1.55 Arial,"Helvetica Neue",system-ui,sans-serif}
+h1,h2,h3,h4{font-family:"Trebuchet MS",system-ui,sans-serif;font-weight:700;line-height:1.25;margin:0}
+a{color:var(--pet);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid var(--pet);outline-offset:2px;border-radius:6px}
+img{max-width:100%;height:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.saltar{position:absolute;left:-999px;top:0;z-index:20;background:var(--pet);color:#fff;padding:.7rem 1rem}
+.saltar:focus{left:1rem}
+.saltar:focus-visible{outline-color:var(--ama)}
+.envoltura{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* ---------- encabezado ---------- */
+.cabecera{border-bottom:3px solid var(--men);background:#fff}
+.cabecera .envoltura{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px;flex-wrap:wrap}
+.marca{display:inline-flex;align-items:center;padding:.3rem 0}
+.marca img{width:150px;display:block}
+.menu{display:flex;gap:.3rem;flex-wrap:wrap;align-items:center}
+.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;border-radius:999px;
+  font-weight:700;text-decoration:none}
+.menu a:hover{background:var(--cie)}
+.menu a[aria-current="page"]{background:var(--cie);text-decoration:underline}
+.idioma{display:inline-flex;align-items:center;gap:.15rem;border:2px solid var(--pet);border-radius:999px;padding:2px}
+.idioma a,.idioma span{display:inline-flex;align-items:center;min-height:40px;padding:0 .8rem;border-radius:999px;font-weight:700;text-decoration:none}
+.idioma span[aria-current]{background:var(--pet);color:#fff}
+
+/* ---------- portada ---------- */
+.portada{background:var(--cie)}
+.portada .envoltura{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:2rem;align-items:center;padding-top:2rem;padding-bottom:2rem}
+.portada h1{font-size:clamp(1.9rem,4.5vw,2.8rem)}
+.portada .lema{font-size:1.2rem;margin:.6rem 0 0}
+.portada .figura{background:#fff;border-radius:50%;aspect-ratio:1;display:grid;place-items:center;overflow:hidden;border:4px solid #fff;box-shadow:0 0 0 3px var(--men)}
+.portada .figura img{width:82%}
+.cifras{display:flex;gap:1.2rem;flex-wrap:wrap;margin:1.2rem 0 0;padding:0;list-style:none}
+.cifras li{background:#fff;border-radius:12px;padding:.5rem .9rem}
+.cifras b{font-size:1.4rem;font-family:"Trebuchet MS",sans-serif}
+
+main{display:block;padding:1.5rem 0 3rem}
+.bloque{margin:2rem 0}
+.bloque > h2{font-size:1.6rem;margin-bottom:1rem}
+
+/* chips de grados */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
+.chips a,.chips span{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;
+  min-width:110px;min-height:64px;padding:.5rem .9rem;border-radius:16px;border:2px solid var(--pet);
+  background:#fff;font-weight:700;text-decoration:none;text-align:center;line-height:1.2}
+.chips a:hover{background:var(--cie)}
+.chips small{font-weight:400;font-size:.85rem;margin-top:.15rem}
+.chips span{border-style:dashed;border-color:#7FA9AE;font-weight:400}
+
+/* tarjetas de materias */
+.materias{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;list-style:none;margin:0;padding:0}
+.materias a{display:flex;align-items:center;gap:.9rem;padding:1rem;min-height:88px;border-radius:16px;
+  background:var(--cie);border:2px solid transparent;text-decoration:none;font-weight:700;font-size:1.1rem}
+.materias a:hover{border-color:var(--pet)}
+.materias small{display:block;font-weight:400;font-size:.9rem}
+.icono{flex:0 0 52px;width:52px;height:52px}
+
+/* ---------- navegación interna (anclas) ---------- */
+.anclas{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:.8rem;margin:0 0 1rem;background:var(--cie);border-radius:14px}
+.anclas a{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;border-radius:999px;background:#fff;font-weight:700;text-decoration:none;border:2px solid var(--pet)}
+.anclas a:hover{background:var(--pet);color:#fff}
+
+/* ---------- secciones por grado / materia ---------- */
+.seccion{scroll-margin-top:1rem;margin:2.2rem 0;padding-top:.4rem}
+.seccion > h2{display:flex;align-items:center;gap:.7rem;font-size:1.7rem;padding-bottom:.4rem;border-bottom:3px solid var(--men)}
+.seccion > h2 .icono{flex-basis:44px;width:44px;height:44px}
+.sub{margin:1.3rem 0}
+.sub > h3{font-size:1.25rem;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.sub > h3 .icono{flex-basis:32px;width:32px;height:32px}
+.vacio{background:var(--cie);border-radius:14px;padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center}
+.vacio img{width:70px;border-radius:50%;background:#fff}
+.arriba{font-size:.95rem;margin:.8rem 0 0}
+
+.series{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.serie{border:2px solid var(--borde);border-radius:16px;padding:1rem 1.1rem;background:#fff;display:flex;flex-direction:column;gap:.5rem}
+.serie .tipo{align-self:flex-start;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.15rem .7rem}
+.serie h4{font-size:1.15rem}
+.serie h4 a{display:inline-block;padding:.2rem 0}
+.aviso{margin:0;font-size:.95rem;display:flex;gap:.4rem}
+.aviso::before{content:"ⓘ";font-weight:700}
+details{border-top:1px solid var(--borde);padding-top:.4rem}
+summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:.4rem;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";font-size:1.1em}
+details[open] > summary::before{content:"▾"}
+details ol{margin:.3rem 0 .4rem;padding-left:1.6rem}
+details li{margin:.25rem 0}
+
+/* ---------- pie ---------- */
+.pie{background:var(--pet);color:#fff;padding:1.5rem 0;text-align:center}
+.pie a{color:#fff}
+.pie a:focus-visible{outline-color:var(--ama)}
+.pie p{margin:.3rem 0}
+.pie img{width:110px}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .portada .envoltura{grid-template-columns:minmax(0,1fr)}
+  .portada .figura{width:190px;margin:0 auto;order:-1}
+  .marca img{width:120px}
+  .cabecera .envoltura{padding-top:.5rem;padding-bottom:.5rem}
+}
+@media print{
+  .cabecera,.anclas,.arriba,.pie,.saltar{display:none}
+  details{border:0} details:not([open]) ol{display:block}
+}

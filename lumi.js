@@ -249,14 +249,29 @@
     cont.innerHTML = html;
   }
 
-  /* El cambio de idioma conserva la sección en la que está el niño */
+  /* El cambio de idioma conserva la sección en la que está el niño,
+     tanto si llegó por un enlace (#ancla) como si bajó con la rueda */
+  function seccionVisible() {
+    var cab = document.querySelector(".cabecera");
+    var limite = (cab ? cab.getBoundingClientRect().bottom : 0) + 40;
+    var actual = "";
+    document.querySelectorAll(".seccion").forEach(function (s) {
+      if (s.getBoundingClientRect().top <= limite) actual = s.id;
+    });
+    return actual;
+  }
   function enlaceIdioma() {
     var a = document.querySelector(".idioma a");
     if (!a) return;
     var base = a.getAttribute("href").split("#")[0];
-    function poner() { a.setAttribute("href", base + location.hash); }
+    function poner() {
+      var id = seccionVisible();
+      a.setAttribute("href", base + (id ? "#" + id : location.hash));
+    }
     poner();
     window.addEventListener("hashchange", poner);
+    window.addEventListener("scroll", poner, { passive: true });
+    a.addEventListener("focus", poner);
   }
 
   function armar() {

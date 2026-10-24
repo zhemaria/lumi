@@ -25,7 +25,7 @@ img{max-width:100%;height:auto}
 .envoltura{max-width:1100px;margin:0 auto;padding:0 16px}
 
 /* ---------- encabezado ---------- */
-.cabecera{border-bottom:3px solid var(--men);background:#fff}
+.cabecera{border-bottom:3px solid var(--men);background:#fff;position:sticky;top:0;z-index:10}
 .cabecera .envoltura{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px;flex-wrap:wrap}
 .marca{display:inline-flex;align-items:center;padding:.3rem 0}
 .marca img{width:150px;display:block}
@@ -76,7 +76,8 @@ main{display:block;padding:1.5rem 0 3rem}
 .anclas a:hover{background:var(--pet);color:#fff}
 
 /* ---------- secciones por grado / materia ---------- */
-.seccion{scroll-margin-top:1rem;margin:2.2rem 0;padding-top:.4rem}
+.seccion,.sub,#contenido{scroll-margin-top:96px}
+.seccion{margin:2.2rem 0;padding-top:.4rem}
 .seccion > h2{display:flex;align-items:center;gap:.7rem;font-size:1.7rem;padding-bottom:.4rem;border-bottom:3px solid var(--men)}
 .seccion > h2 .icono{flex-basis:44px;width:44px;height:44px}
 .sub{margin:1.3rem 0}
@@ -113,7 +114,11 @@ details li{margin:.25rem 0}
   .portada .envoltura{grid-template-columns:minmax(0,1fr)}
   .portada .figura{width:190px;margin:0 auto;order:-1}
   .marca img{width:120px}
-  .cabecera .envoltura{padding-top:.5rem;padding-bottom:.5rem}
+  .cabecera .envoltura{padding-top:.4rem;padding-bottom:.3rem;gap:.2rem .5rem;min-height:0}
+  .cabecera .menu{order:3;width:100%;justify-content:space-between;gap:0}
+  .menu a{padding:0 .5rem;font-size:.95rem}
+  .idioma a,.idioma span{min-height:36px;padding:0 .6rem;font-size:.95rem}
+  .seccion,.sub,#contenido{scroll-margin-top:130px}
 }
 @media print{
   .cabecera,.anclas,.arriba,.pie,.saltar{display:none}

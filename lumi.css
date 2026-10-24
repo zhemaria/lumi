@@ -67,6 +67,8 @@ main{display:block;padding:1.5rem 0 3rem}
 .materias a{display:flex;align-items:center;gap:.9rem;padding:1rem;min-height:88px;border-radius:16px;
   background:var(--cie);border:2px solid transparent;text-decoration:none;font-weight:700;font-size:1.1rem}
 .materias a:hover{border-color:var(--pet)}
+.materias li{display:flex}
+.materias li>a{flex:1}  /* todas las tarjetas de materia con la misma altura */
 .materias small{display:block;font-weight:400;font-size:.9rem}
 .icono{flex:0 0 52px;width:52px;height:52px}
 

@@ -35,7 +35,9 @@ window.LUMI = {
     { grado: "1", area: "ciencias", es: "libro-1ro-ciencias.html",   en: "book-grade1-science.html" },
     { grado: "1", area: "sociales", es: "libro-1ro-sociales.html",   en: "book-grade1-social-studies.html" },
     { grado: "2", area: "ciencias", es: "libro-2do-ciencias.html",   en: "book-grade2-science.html" },
-    { grado: "2", area: "sociales", es: "libro-2do-sociales.html",   en: "book-grade2-social-studies.html" }
+    { grado: "2", area: "sociales", es: "libro-2do-sociales.html",   en: "book-grade2-social-studies.html" },
+    { grado: "3", area: "ciencias", es: "libro-3ro-ciencias.html",   en: "book-grade3-science.html" },
+    { grado: "3", area: "sociales", es: "libro-3ro-sociales.html",   en: "book-grade3-social-studies.html" }
   ],
 
   series: [
@@ -157,6 +159,51 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- TERCER GRADO ---------------- */
+    {
+      grado: "3", materia: "matematicas", tipo: "interactivo",
+      es: { titulo: "Matemáticas de 3.er grado", url: P + "3er_grado/?lang=es" },
+      en: { titulo: "Grade 3 math",              url: P + "3er_grado/" },
+      lecciones: [
+        { es: "Multiplicar: grupos iguales y arreglos", en: "Multiplication: equal groups and arrays", es_url: P + "3er_grado/g3-01-multiplication.html?lang=es", en_url: P + "3er_grado/g3-01-multiplication.html" },
+        { es: "Dividir y repartir", en: "Division", es_url: P + "3er_grado/g3-02-division.html?lang=es", en_url: P + "3er_grado/g3-02-division.html" },
+        { es: "Las tablas de multiplicar", en: "Multiplication facts", es_url: P + "3er_grado/g3-03-facts.html?lang=es", en_url: P + "3er_grado/g3-03-facts.html" },
+        { es: "Problemas de dos pasos", en: "Two-step problems", es_url: P + "3er_grado/g3-04-two-step.html?lang=es", en_url: P + "3er_grado/g3-04-two-step.html" },
+        { es: "Valor posicional hasta 1000", en: "Place value to 1,000", es_url: P + "3er_grado/g3-05-place-value-1000.html?lang=es", en_url: P + "3er_grado/g3-05-place-value-1000.html" },
+        { es: "Fracciones", en: "Fractions", es_url: P + "3er_grado/g3-06-fractions.html?lang=es", en_url: P + "3er_grado/g3-06-fractions.html" },
+        { es: "La hora, el volumen y la masa", en: "Time, volume and mass", es_url: P + "3er_grado/g3-07-time-volume-mass.html?lang=es", en_url: P + "3er_grado/g3-07-time-volume-mass.html" },
+        { es: "Gráficas y diagramas de puntos", en: "Graphs and line plots", es_url: P + "3er_grado/g3-08-data.html?lang=es", en_url: P + "3er_grado/g3-08-data.html" },
+        { es: "Área y perímetro", en: "Area and perimeter", es_url: P + "3er_grado/g3-09-area-perimeter.html?lang=es", en_url: P + "3er_grado/g3-09-area-perimeter.html" },
+        { es: "Cuadriláteros y partes iguales", en: "Quadrilaterals and equal parts", es_url: P + "3er_grado/g3-10-shapes.html?lang=es", en_url: P + "3er_grado/g3-10-shapes.html" }
+      ]
+    },
+    {
+      grado: "3", materia: "lectura", tipo: "interactivo", solo: "es",
+      es: { titulo: "Lectura en español", url: P + "3er_grado/lectura.html" },
+      en: { titulo: "Reading in Spanish",  url: P + "3er_grado/lectura.html" },
+      lecciones: [
+        { es: "Acento y tilde", en: "Accents (in Spanish)", url: P + "3er_grado/g3-lectura-01-acento-y-tilde.html" },
+        { es: "Ortografía con truco", en: "Tricky spelling (in Spanish)", url: P + "3er_grado/g3-lectura-02-ortografia.html" },
+        { es: "Las partes de las palabras", en: "Word parts (in Spanish)", url: P + "3er_grado/g3-lectura-03-partes-de-palabras.html" },
+        { es: "Gramática", en: "Grammar (in Spanish)", url: P + "3er_grado/g3-lectura-04-gramatica.html" },
+        { es: "El significado de las palabras", en: "Word meanings (in Spanish)", url: P + "3er_grado/g3-lectura-05-significados.html" },
+        { es: "Leer y comprender", en: "Reading comprehension (in Spanish)", url: P + "3er_grado/g3-lectura-06-leer-y-comprender.html" }
+      ]
+    },
+    {
+      grado: "3", materia: "lectura", tipo: "interactivo", solo: "en",
+      es: { titulo: "Lectura en inglés", url: P + "3er_grado/reading.html?lang=es" },
+      en: { titulo: "Grade 3 reading",   url: P + "3er_grado/reading.html" },
+      lecciones: [
+        { es: "Prefijos y sufijos", en: "Prefixes and suffixes", es_url: P + "3er_grado/g3-reading-01-prefixes-suffixes.html?lang=es", en_url: P + "3er_grado/g3-reading-01-prefixes-suffixes.html" },
+        { es: "Palabras largas y con truco", en: "Long and tricky words", es_url: P + "3er_grado/g3-reading-02-multisyllable-words.html?lang=es", en_url: P + "3er_grado/g3-reading-02-multisyllable-words.html" },
+        { es: "El significado de las palabras", en: "Word meanings", es_url: P + "3er_grado/g3-reading-03-word-meanings.html?lang=es", en_url: P + "3er_grado/g3-reading-03-word-meanings.html" },
+        { es: "Gramática en acción", en: "Grammar at work", es_url: P + "3er_grado/g3-reading-04-grammar.html?lang=es", en_url: P + "3er_grado/g3-reading-04-grammar.html" },
+        { es: "Cuentos con Israel", en: "Stories with Israel", es_url: P + "3er_grado/g3-reading-05-stories.html?lang=es", en_url: P + "3er_grado/g3-reading-05-stories.html" },
+        { es: "Leer para aprender", en: "Reading to learn", es_url: P + "3er_grado/g3-reading-06-informational-texts.html?lang=es", en_url: P + "3er_grado/g3-reading-06-informational-texts.html" }
       ]
     },
 

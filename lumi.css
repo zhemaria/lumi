@@ -84,7 +84,7 @@ main{display:block;padding:1.5rem 0 3rem}
 .sub > h3{font-size:1.25rem;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
 .sub > h3 .icono{flex-basis:32px;width:32px;height:32px}
 .vacio{background:var(--cie);border-radius:14px;padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center}
-.vacio img{width:70px;border-radius:50%;background:#fff}
+.vacio img{width:72px;height:86px;object-fit:contain;border-radius:14px;background:#fff;flex:0 0 auto}
 .arriba{font-size:.95rem;margin:.8rem 0 0}
 
 .series{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}

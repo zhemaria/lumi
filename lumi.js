@@ -216,7 +216,9 @@
               '<h2 id="t-' + g.ancla + '">' + esc(nombre(g)) +
               (g[L + "2"] ? ' <small style="font-weight:400;font-size:1rem">· ' + esc(g[L + "2"]) + "</small>" : "") + "</h2>";
       if (!delGrado.length) {
-        html += '<p class="vacio"><img src="lumi-saluda.jpg" alt="">' + esc(T.vacio) + "</p>";
+        /* Lumi crece con el niño: lápiz hasta 2.º, libreta de 3.º a 6.º */
+        var foto = /^[3-6]$/.test(g.id) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
+        html += '<p class="vacio"><img src="' + foto + '" alt="">' + esc(T.vacio) + "</p>";
       } else {
         MATERIAS.forEach(function (m) {
           var s = delGrado.filter(function (x) { return x.materia === m.id; });

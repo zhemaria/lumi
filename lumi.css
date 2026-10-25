@@ -87,6 +87,9 @@ main{display:block;padding:1.5rem 0 3rem}
 .sub > h3 .icono{flex-basis:32px;width:32px;height:32px}
 .vacio{background:var(--cie);border-radius:14px;padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center}
 .vacio img{width:72px;height:86px;object-fit:contain;border-radius:14px;background:#fff;flex:0 0 auto}
+/* Encabezado de «Por grado» y «Por materia»: Lumi en un círculo, como en la portada */
+.vacio.banner .circulo{flex:0 0 auto;width:104px;aspect-ratio:1;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;border:3px solid #fff;box-shadow:0 0 0 3px var(--men)}
+.vacio.banner .circulo img{width:80%;height:auto;border-radius:0;background:none}
 .arriba{font-size:.95rem;margin:.8rem 0 0}
 
 .series{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}

@@ -1,7 +1,7 @@
 # Lumi · Pequeñas luces, grandes ideas
 
 Portal educativo gratuito, de prekínder a 6.º grado, en español y en inglés.
-Se publica en **zhemaria.github.io/lumi**.
+Se publica en **www.lumi-educa.com** (también responde lumi-educa.com y la dirección anterior, zhemaria.github.io/lumi, que redirige).
 
 Este repositorio contiene solo el "cascarón" del portal. Las actividades
 viven en sus propios repositorios:

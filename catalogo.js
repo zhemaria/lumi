@@ -37,7 +37,9 @@ window.LUMI = {
     { grado: "2", area: "ciencias", es: "libro-2do-ciencias.html",   en: "book-grade2-science.html" },
     { grado: "2", area: "sociales", es: "libro-2do-sociales.html",   en: "book-grade2-social-studies.html" },
     { grado: "3", area: "ciencias", es: "libro-3ro-ciencias.html",   en: "book-grade3-science.html" },
-    { grado: "3", area: "sociales", es: "libro-3ro-sociales.html",   en: "book-grade3-social-studies.html" }
+    { grado: "3", area: "sociales", es: "libro-3ro-sociales.html",   en: "book-grade3-social-studies.html" },
+    { grado: "4", area: "ciencias", es: "libro-4to-ciencias.html",   en: "book-grade4-science.html" },
+    { grado: "4", area: "sociales", es: "libro-4to-sociales.html",   en: "book-grade4-social-studies.html" }
   ],
 
   series: [
@@ -159,6 +161,53 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- CUARTO GRADO ---------------- */
+    {
+      grado: "4", materia: "matematicas", tipo: "interactivo",
+      es: { titulo: "Matemáticas de 4.º grado", url: P + "4to_grado/?lang=es" },
+      en: { titulo: "Grade 4 math",            url: P + "4to_grado/" },
+      lecciones: [
+        { es: "Valor posicional hasta un millón", en: "Place value to one million", es_url: P + "4to_grado/g4-01-place-value-million.html?lang=es", en_url: P + "4to_grado/g4-01-place-value-million.html" },
+        { es: "Sumar y restar números grandes", en: "Adding and subtracting large numbers", es_url: P + "4to_grado/g4-02-add-subtract.html?lang=es", en_url: P + "4to_grado/g4-02-add-subtract.html" },
+        { es: "Multiplicar números de varios dígitos", en: "Multi-digit multiplication", es_url: P + "4to_grado/g4-03-multiplication.html?lang=es", en_url: P + "4to_grado/g4-03-multiplication.html" },
+        { es: "Dividir con residuo", en: "Division with remainders", es_url: P + "4to_grado/g4-04-division.html?lang=es", en_url: P + "4to_grado/g4-04-division.html" },
+        { es: "Problemas de varios pasos", en: "Multi-step word problems", es_url: P + "4to_grado/g4-05-word-problems.html?lang=es", en_url: P + "4to_grado/g4-05-word-problems.html" },
+        { es: "Factores, múltiplos y patrones", en: "Factors, multiples and patterns", es_url: P + "4to_grado/g4-06-factors-patterns.html?lang=es", en_url: P + "4to_grado/g4-06-factors-patterns.html" },
+        { es: "Fracciones equivalentes y comparar", en: "Equivalent fractions and comparing", es_url: P + "4to_grado/g4-07-equivalent-fractions.html?lang=es", en_url: P + "4to_grado/g4-07-equivalent-fractions.html" },
+        { es: "Sumar, restar y multiplicar fracciones", en: "Adding, subtracting and multiplying fractions", es_url: P + "4to_grado/g4-08-fraction-operations.html?lang=es", en_url: P + "4to_grado/g4-08-fraction-operations.html" },
+        { es: "Décimos, centésimos y decimales", en: "Tenths, hundredths and decimals", es_url: P + "4to_grado/g4-09-decimals.html?lang=es", en_url: P + "4to_grado/g4-09-decimals.html" },
+        { es: "Medidas, área y perímetro", en: "Measurement, area and perimeter", es_url: P + "4to_grado/g4-10-measurement.html?lang=es", en_url: P + "4to_grado/g4-10-measurement.html" },
+        { es: "Ángulos", en: "Angles", es_url: P + "4to_grado/g4-11-angles.html?lang=es", en_url: P + "4to_grado/g4-11-angles.html" },
+        { es: "Rectas, figuras y simetría", en: "Lines, shapes and symmetry", es_url: P + "4to_grado/g4-12-geometry.html?lang=es", en_url: P + "4to_grado/g4-12-geometry.html" }
+      ]
+    },
+    {
+      grado: "4", materia: "lectura", tipo: "interactivo", solo: "en",
+      es: { titulo: "Lectura en inglés", url: P + "4to_grado/reading.html?lang=es" },
+      en: { titulo: "Grade 4 reading",   url: P + "4to_grado/reading.html" },
+      lecciones: [
+        { es: "Raíces griegas y latinas", en: "Greek and Latin roots", es_url: P + "4to_grado/g4-reading-01-roots-affixes.html?lang=es", en_url: P + "4to_grado/g4-reading-01-roots-affixes.html" },
+        { es: "Palabras largas y fluidez", en: "Long words and fluency", es_url: P + "4to_grado/g4-reading-02-multisyllable-words.html?lang=es", en_url: P + "4to_grado/g4-reading-02-multisyllable-words.html" },
+        { es: "Significados y lenguaje figurado", en: "Word meanings and figurative language", es_url: P + "4to_grado/g4-reading-03-word-meanings.html?lang=es", en_url: P + "4to_grado/g4-reading-03-word-meanings.html" },
+        { es: "Gramática y puntuación", en: "Grammar and punctuation", es_url: P + "4to_grado/g4-reading-04-grammar.html?lang=es", en_url: P + "4to_grado/g4-reading-04-grammar.html" },
+        { es: "Cuentos: tema, personajes y punto de vista", en: "Stories: theme, characters and point of view", es_url: P + "4to_grado/g4-reading-05-stories.html?lang=es", en_url: P + "4to_grado/g4-reading-05-stories.html" },
+        { es: "Textos informativos", en: "Informational texts", es_url: P + "4to_grado/g4-reading-06-informational-texts.html?lang=es", en_url: P + "4to_grado/g4-reading-06-informational-texts.html" }
+      ]
+    },
+    {
+      grado: "4", materia: "lectura", tipo: "interactivo", solo: "es",
+      es: { titulo: "Lectura en español", url: P + "4to_grado/lectura.html" },
+      en: { titulo: "Reading in Spanish",  url: P + "4to_grado/lectura.html" },
+      lecciones: [
+        { es: "Acentuación: diptongos, hiatos y tildes", en: "Accents: diphthongs, hiatus and accent marks (in Spanish)", url: P + "4to_grado/g4-lectura-01-acentuacion.html" },
+        { es: "Ortografía y puntuación", en: "Spelling and punctuation (in Spanish)", url: P + "4to_grado/g4-lectura-02-ortografia.html" },
+        { es: "Raíces, prefijos y sufijos", en: "Roots, prefixes and suffixes (in Spanish)", url: P + "4to_grado/g4-lectura-03-partes-de-palabras.html" },
+        { es: "Gramática: verbos, pronombres y oraciones", en: "Grammar (in Spanish)", url: P + "4to_grado/g4-lectura-04-gramatica.html" },
+        { es: "Significados, refranes y lenguaje figurado", en: "Word meanings and sayings (in Spanish)", url: P + "4to_grado/g4-lectura-05-significados.html" },
+        { es: "Leer y comprender", en: "Reading comprehension (in Spanish)", url: P + "4to_grado/g4-lectura-06-leer-y-comprender.html" }
       ]
     },
 

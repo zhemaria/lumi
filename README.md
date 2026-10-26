@@ -13,7 +13,7 @@ viven en sus propios repositorios:
 
 | Español | English | Qué muestra |
 |---|---|---|
-| index.html | index-en.html | Bienvenida, grados y materias |
+| index-es.html | index.html (portada por defecto) | Bienvenida, grados y materias |
 | grados.html | grados-en.html | Todo, ordenado por grado (anclas `#prek`, `#k`, `#g1` … `#g6`) |
 | materias.html | materias-en.html | Todo, ordenado por materia (anclas `#matematicas`, `#lectura`, `#ciencias`, `#sociales`) |
 

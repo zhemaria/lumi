@@ -3,7 +3,7 @@
    ------------------------------------------------------------------
    Lee catalogo.js (series de interactivos y juegos) y el catálogo
    de cuentos del repositorio cuentos-educativos, y arma:
-     - inicio  (index.html / index-en.html)
+     - inicio  (index-es.html / index.html, que es la portada en inglés)
      - grados  (grados.html / grados-en.html)   → una sección por grado
      - materias(materias.html / materias-en.html) → una sección por materia
    El idioma se toma del atributo lang de la página.

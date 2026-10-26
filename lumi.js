@@ -4,8 +4,8 @@
    Lee catalogo.js (series de interactivos y juegos) y el catálogo
    de cuentos del repositorio cuentos-educativos, y arma:
      - inicio  (index-es.html / index.html, que es la portada en inglés)
-     - grados  (grados.html / grados-en.html)   → una sección por grado
-     - materias(materias.html / materias-en.html) → una sección por materia
+     - grados  (grados-es.html / grados.html, en inglés por defecto) → una sección por grado
+     - materias(materias-es.html / materias.html, en inglés por defecto) → una sección por materia
    El idioma se toma del atributo lang de la página.
    No guarda nada ni usa cookies.
    ================================================================== */
@@ -19,7 +19,7 @@
   /* ---------------- textos ---------------- */
   var T = {
     es: {
-      grados: "grados.html", materias: "materias.html",
+      grados: "grados-es.html", materias: "materias-es.html",
       lecciones: function (n) { return n === 1 ? "1 actividad" : n + " actividades"; },
       cuentos: function (n) { return n === 1 ? "1 cuento" : n + " cuentos"; },
       verTodo: "Ver todo",
@@ -38,7 +38,7 @@
       cifras: ["actividades", "grados con material", "materias"]
     },
     en: {
-      grados: "grados-en.html", materias: "materias-en.html",
+      grados: "grados.html", materias: "materias.html",
       lecciones: function (n) { return n === 1 ? "1 activity" : n + " activities"; },
       cuentos: function (n) { return n === 1 ? "1 story" : n + " stories"; },
       verTodo: "See all",

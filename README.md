@@ -14,8 +14,8 @@ viven en sus propios repositorios:
 | Español | English | Qué muestra |
 |---|---|---|
 | index-es.html | index.html (portada por defecto) | Bienvenida, grados y materias |
-| grados.html | grados-en.html | Todo, ordenado por grado (anclas `#prek`, `#k`, `#g1` … `#g6`) |
-| materias.html | materias-en.html | Todo, ordenado por materia (anclas `#matematicas`, `#lectura`, `#ciencias`, `#sociales`) |
+| grados-es.html | grados.html | Todo, ordenado por grado (anclas `#prek`, `#k`, `#g1` … `#g6`) |
+| materias-es.html | materias.html | Todo, ordenado por materia (anclas `#matematicas`, `#lectura`, `#ciencias`, `#sociales`) |
 
 Las anclas son iguales en los dos idiomas, así que al cambiar de idioma
 el estudiante se queda en la misma sección.

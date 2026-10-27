@@ -137,6 +137,7 @@
       if (!v) { v = s[OTRO]; lang = OTRO; aviso = T.soloOtro; }
       if (s.solo === "es" && L === "en") aviso = T.soloEsEnEn;
       if (s.solo === "en" && L === "es") aviso = T.soloEnEnEs;
+      if (s.aviso && s.aviso[L] !== undefined) aviso = s.aviso[L];   // aviso propio de la serie
       return {
         grado: s.grado, materia: s.materia, tipo: s.tipo,
         titulo: v.titulo, url: v.url, lang: lang, aviso: aviso,

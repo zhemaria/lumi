@@ -16,6 +16,8 @@
    del catálogo del repositorio cuentos-educativos, así que cada
    cuento nuevo aparece solo. Aquí solo se anotan sus LIBROS.
 
+   Una serie puede traer su propio aviso por idioma: aviso: { es: "...", en: "" }.
+
    Licencia CC BY-NC-SA 4.0 · José M. Fernández
    ================================================================== */
 
@@ -39,7 +41,9 @@ window.LUMI = {
     { grado: "3", area: "ciencias", es: "libro-3ro-ciencias.html",   en: "book-grade3-science.html" },
     { grado: "3", area: "sociales", es: "libro-3ro-sociales.html",   en: "book-grade3-social-studies.html" },
     { grado: "4", area: "ciencias", es: "libro-4to-ciencias.html",   en: "book-grade4-science.html" },
-    { grado: "4", area: "sociales", es: "libro-4to-sociales.html",   en: "book-grade4-social-studies.html" }
+    { grado: "4", area: "sociales", es: "libro-4to-sociales.html",   en: "book-grade4-social-studies.html" },
+    { grado: "5", area: "ciencias", es: "book-grade5-science.html",  en: "book-grade5-science.html" },
+    { grado: "5", area: "sociales", es: "book-grade5-social-studies.html", en: "book-grade5-social-studies.html" }
   ],
 
   series: [
@@ -161,6 +165,44 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- QUINTO GRADO ----------------
+       Desde 5.º todo va en inglés, con el botón opcional «Ayuda en español».
+       La versión «es» abre la misma página con la ayuda ya activada (?ayuda=es). */
+    {
+      grado: "5", materia: "matematicas", tipo: "interactivo", solo: "en",
+      aviso: { es: "En inglés, con ayuda en español: ya viene activada desde aquí.", en: "" },
+      es: { titulo: "Matemáticas de 5.º grado", url: P + "5to_grado/?ayuda=es" },
+      en: { titulo: "Grade 5 math",            url: P + "5to_grado/" },
+      lecciones: [
+        { es: "Valor posicional y potencias de diez", en: "Place value and powers of ten", es_url: P + "5to_grado/g5-01-place-value-powers-of-ten.html?ayuda=es", en_url: P + "5to_grado/g5-01-place-value-powers-of-ten.html" },
+        { es: "Leer, comparar y redondear decimales", en: "Read, compare and round decimals", es_url: P + "5to_grado/g5-02-decimals.html?ayuda=es", en_url: P + "5to_grado/g5-02-decimals.html" },
+        { es: "Multiplicar números de varias cifras", en: "Multi-digit multiplication", es_url: P + "5to_grado/g5-03-multiplication.html?ayuda=es", en_url: P + "5to_grado/g5-03-multiplication.html" },
+        { es: "Dividir entre números de dos cifras", en: "Division with two-digit divisors", es_url: P + "5to_grado/g5-04-division.html?ayuda=es", en_url: P + "5to_grado/g5-04-division.html" },
+        { es: "Operaciones con decimales", en: "Operations with decimals", es_url: P + "5to_grado/g5-05-decimal-operations.html?ayuda=es", en_url: P + "5to_grado/g5-05-decimal-operations.html" },
+        { es: "Expresiones y patrones", en: "Expressions and patterns", es_url: P + "5to_grado/g5-06-expressions-patterns.html?ayuda=es", en_url: P + "5to_grado/g5-06-expressions-patterns.html" },
+        { es: "Sumar y restar fracciones", en: "Adding and subtracting fractions", es_url: P + "5to_grado/g5-07-adding-fractions.html?ayuda=es", en_url: P + "5to_grado/g5-07-adding-fractions.html" },
+        { es: "La fracción como división", en: "Fractions as division", es_url: P + "5to_grado/g5-08-fractions-division.html?ayuda=es", en_url: P + "5to_grado/g5-08-fractions-division.html" },
+        { es: "Multiplicar fracciones", en: "Multiplying fractions", es_url: P + "5to_grado/g5-09-multiplying-fractions.html?ayuda=es", en_url: P + "5to_grado/g5-09-multiplying-fractions.html" },
+        { es: "Dividir con fracciones unitarias", en: "Dividing with unit fractions", es_url: P + "5to_grado/g5-10-dividing-fractions.html?ayuda=es", en_url: P + "5to_grado/g5-10-dividing-fractions.html" },
+        { es: "Medidas y volumen", en: "Measurement and volume", es_url: P + "5to_grado/g5-11-measurement-volume.html?ayuda=es", en_url: P + "5to_grado/g5-11-measurement-volume.html" },
+        { es: "El plano de coordenadas y las figuras", en: "The coordinate plane and shapes", es_url: P + "5to_grado/g5-12-coordinate-plane-shapes.html?ayuda=es", en_url: P + "5to_grado/g5-12-coordinate-plane-shapes.html" }
+      ]
+    },
+    {
+      grado: "5", materia: "lectura", tipo: "interactivo", solo: "en",
+      aviso: { es: "Esta serie enseña a leer en inglés. La ayuda en español traduce solo las instrucciones y las preguntas.", en: "" },
+      es: { titulo: "Lectura en inglés", url: P + "5to_grado/reading.html?ayuda=es" },
+      en: { titulo: "Grade 5 reading",   url: P + "5to_grado/reading.html" },
+      lecciones: [
+        { es: "Raíces griegas y latinas", en: "Greek and Latin roots", es_url: P + "5to_grado/g5-reading-01-greek-latin-roots.html?ayuda=es", en_url: P + "5to_grado/g5-reading-01-greek-latin-roots.html" },
+        { es: "Significados y lenguaje figurado", en: "Word meanings and figurative language", es_url: P + "5to_grado/g5-reading-02-word-meanings.html?ayuda=es", en_url: P + "5to_grado/g5-reading-02-word-meanings.html" },
+        { es: "Gramática y puntuación", en: "Grammar and punctuation", es_url: P + "5to_grado/g5-reading-03-grammar.html?ayuda=es", en_url: P + "5to_grado/g5-reading-03-grammar.html" },
+        { es: "Cuentos, poemas y obras de teatro", en: "Stories, poems and plays", es_url: P + "5to_grado/g5-reading-04-stories.html?ayuda=es", en_url: P + "5to_grado/g5-reading-04-stories.html" },
+        { es: "Textos informativos", en: "Informational texts", es_url: P + "5to_grado/g5-reading-05-informational-texts.html?ayuda=es", en_url: P + "5to_grado/g5-reading-05-informational-texts.html" },
+        { es: "Puntos de vista y comparar textos", en: "Points of view and comparing texts", es_url: P + "5to_grado/g5-reading-06-comparing-texts.html?ayuda=es", en_url: P + "5to_grado/g5-reading-06-comparing-texts.html" }
       ]
     },
 

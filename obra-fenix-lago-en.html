@@ -1,0 +1,388 @@
+<!doctype html>
+<!-- The Phoenix on the Lake · José M. Fernández · CC BY-NC-SA 4.0 · generado con gen_fenix.py -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Phoenix on the Lake · Lumi</title>
+<meta name="description" content="A play for the whole school, from Pre-K to 6th grade. The older students carry the dialogue and narration; the youngest are the animals, the fire, the wind and the river.">
+<link rel="alternate" hreflang="es" href="obra-fenix-lago-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{background:var(--cie);padding:1.4rem 0}
+.obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.obra-cab .sub{font-size:1.2rem;margin:.3rem 0 0}
+.obra-cab .autor{margin:.3rem 0 0;font-weight:700}
+.barra{position:sticky;top:76px;z-index:5;background:#fff;border:2px solid var(--borde);border-radius:14px;padding:.6rem .8rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.barra label{font-weight:700}
+.barra select,.barra button{min-height:44px;font:inherit;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);padding:0 .9rem;font-weight:700;cursor:pointer}
+.barra button[aria-pressed="true"]{background:var(--pet);color:#fff}
+.barra .chk{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.barra .chk input{width:22px;height:22px}
+.linea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:start;padding:.6rem .8rem;margin:.35rem 0;border-left:8px solid var(--c);border-radius:10px;background:#fff}
+.linea .quien{display:inline-block;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:.05rem .65rem;font-size:.9rem;margin-right:.4rem}
+.linea .grado{font-size:.85rem;margin-right:.4rem}
+.linea p{margin:.25rem 0 0}
+.acot{font-style:italic;margin:.6rem 0;padding:.4rem .8rem;border-left:4px dashed var(--borde);color:#2d5f69}
+.oir{min-width:44px;min-height:44px;border-radius:50%;border:2px solid var(--pet);background:#fff;cursor:pointer;font-size:1.1rem}
+.oir:hover{background:var(--cie)}
+body.filtrando .linea{opacity:.35}
+body.filtrando .linea.mia{opacity:1;box-shadow:0 0 0 3px var(--c)}
+body.solo .linea:not(.mia){display:none}
+body.solo .acot{display:none}
+.linea.hablando{outline:3px solid var(--ama)}
+details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;border:0}
+details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+details.acord[open] > summary::before{content:"▾"}
+details.acord > summary h2{display:inline;font-size:1.35rem}
+details.acord > summary:hover{background:var(--cie);border-radius:14px}
+details.acord .cuerpo{padding:0 1rem 1rem}
+.acto-h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.acto-h button{min-height:44px;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;padding:0 .9rem;cursor:pointer}
+.tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+.tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.tabla th{background:var(--cie)}
+.punto{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:.4rem;vertical-align:-2px}
+.envoltura-tabla{overflow-x:auto}
+.canto{font-size:1.25rem;line-height:1.7;background:var(--cie);border-radius:14px;padding:1rem 1.4rem}
+body.grande{font-size:21px}
+body.muygrande{font-size:24px}
+main .seccion{scroll-margin-top:170px}
+.barra select{max-width:100%}
+@media (max-width:760px){.barra{position:static}.barra select{width:100%}main .seccion{scroll-margin-top:130px}}
+@media print{.barra,.oir,.acto-h button,.cabecera,.anclas{display:none!important}.linea{break-inside:avoid;border-left-width:6px}body.filtrando .linea{opacity:1}}
+</style>
+</head>
+<body data-voz="en-US">
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-fenix-lago-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro.html">← Lumi Theater</a></p>
+  <h1 id="titulo">The Phoenix on the Lake</h1>
+  <p class="sub">The Story of the Great Chicago Fire</p>
+  <p class="autor">A play by José M. Fernández</p>
+  <p>A play for the whole school, from Pre-K to 6th grade. The older students carry the dialogue and narration; the youngest are the animals, the fire, the wind and the river.</p>
+  <p><a href="obra-fenix-lago-produccion-es.html" lang="es" hreflang="es">🎬 Production guide (in Spanish for now): cast, music, costumes, sets and family letter</a></p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Go to"><ul class="anclas"><li><a href="#reparto">Cast</a></li><li><a href="#acto-1">Act I</a></li><li><a href="#acto-2">Act II</a></li><li><a href="#acto-3">Act III</a></li><li><a href="#acto-4">Act IV</a></li><li><a href="#canto">Phoenix Chant</a></li></ul></nav>
+ <div class="barra" role="group" aria-label="My part:">
+  <label for="mi-papel">My part:</label>
+  <select id="mi-papel"><option value="">All parts</option><option value="NAR1">Narrator 1 · 6th</option><option value="NAR2">Narrator 2 · 6th</option><option value="OLEARY">Mrs. Catherine O'Leary · 6th</option><option value="JEFE">Fire Chief · 6th</option><option value="ARQ">Architect · 6th</option><option value="V1">Resident 1 · 4th–5th</option><option value="V2">Resident 2 · 4th–5th</option><option value="V3">Resident 3 · 4th–5th</option><option value="V4">Resident 4 · 4th–5th</option><option value="AGENTE">Real estate agent · 4th–5th</option><option value="E4">4th grader · 4th</option><option value="E5">5th grader · 5th</option><option value="VIENTOS">Winds and embers (chorus) · 2nd–3rd</option><option value="RIO">Chicago River (chorus) · 1st</option><option value="LLAMAS">Little Flames (chorus) · K</option><option value="ANIMALES">Barnyard animals (chorus) · Pre-K</option><option value="TODOS">All grades · All</option></select>
+  <label class="chk"><input type="checkbox" id="solo"> Show only my lines</label>
+  <button type="button" id="menor" aria-label="Smaller text">A−</button>
+  <button type="button" id="mayor" aria-label="Bigger text">A+</button>
+  <button type="button" id="imprimir">🖨️ Print</button>
+ </div>
+ <p>Stage directions (in italics) tell what happens on stage: they are not read aloud.</p>
+ <details class="seccion acord" id="reparto">
+  <summary><h2 id="t-reparto">Cast</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla"><table class="tabla">
+   <thead><tr><th scope="col">Part</th><th scope="col">Grade</th><th scope="col">What they are like</th><th scope="col">Lines</th></tr></thead>
+   <tbody>
+<tr><td><span class="punto" style="background:#6B4FA0" aria-hidden="true"></span>Narrator 1</td><td>6th</td><td>Tells the story in a clear, calm voice.</td><td>6</td></tr>
+<tr><td><span class="punto" style="background:#8A63C9" aria-hidden="true"></span>Narrator 2</td><td>6th</td><td>Tells the story in a clear, calm voice.</td><td>6</td></tr>
+<tr><td><span class="punto" style="background:#A0522D" aria-hidden="true"></span>Mrs. Catherine O'Leary</td><td>6th</td><td>A DeKoven Street neighbor who sold milk. At the end, she tells the truth about the legend.</td><td>4</td></tr>
+<tr><td><span class="punto" style="background:#B22222" aria-hidden="true"></span>Fire Chief</td><td>6th</td><td>Speaks to the audience with calm authority and gives the safety rules.</td><td>3</td></tr>
+<tr><td><span class="punto" style="background:#1F5F8B" aria-hidden="true"></span>Architect</td><td>6th</td><td>Leads the rebuilding with energy and hope.</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#2E7D4F" aria-hidden="true"></span>Resident 1</td><td>4th–5th</td><td>A neighbor who guides people to the lake.</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#3C8D5A" aria-hidden="true"></span>Resident 2</td><td>4th–5th</td><td>Wants to go back for her things, but is convinced to keep going.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#4A9C67" aria-hidden="true"></span>Resident 3</td><td>4th–5th</td><td>Calm and wise: reminds others that lives matter more than things.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#58AB74" aria-hidden="true"></span>Resident 4</td><td>4th–5th</td><td>Gives hope when she sees the Water Tower still standing.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#7A5C1E" aria-hidden="true"></span>Real estate agent</td><td>4th–5th</td><td>Based on William D. Kerfoot, who put up his famous sign among the ruins.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#2F6F73" aria-hidden="true"></span>4th grader</td><td>4th</td><td>Starts the final line.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#3D8A8F" aria-hidden="true"></span>5th grader</td><td>5th</td><td>Finishes the final line.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#5D7B99" aria-hidden="true"></span>Winds and embers (chorus)</td><td>2nd–3rd</td><td>Dance with ribbons: the wind that pushes the fire.</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#1E6FB8" aria-hidden="true"></span>Chicago River (chorus)</td><td>1st</td><td>Move the long blue river cloth.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#D35400" aria-hidden="true"></span>Little Flames (chorus)</td><td>K</td><td>In red and orange felt capes, they are the fire.</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#8D6E63" aria-hidden="true"></span>Barnyard animals (chorus)</td><td>Pre-K</td><td>Daisy the cow, chicks, lambs and calves.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#194F5A" aria-hidden="true"></span>All grades</td><td>All</td><td>The whole cast, together.</td><td>2</td></tr>
+   </tbody>
+  </table></div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+  </div>
+ </details>
+<details class="seccion acord" id="acto-1">
+ <summary><h2 id="t-acto-1">Act I · The Spark on DeKoven Street (October 8, 1871)</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-acto">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>A lively fiddle or banjo tune plays. Upstage right, 4th and 5th graders stroll along a wooden plank sidewalk. Stage left is the barn: the Pre-K students rest like barnyard animals around Daisy the cow.</p>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Chicago. October 8, 1871. It was one of the fastest-growing cities in the world. But it had a big danger: almost everything was made of wood! Houses, bridges, sidewalks, and even many streets.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">It had hardly rained for weeks. The wood was as dry as kindling, and a strong wind was blowing from the southwest. One spark was all it would take.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The 2nd and 3rd grade winds cross upstage once, waving their ribbons, and exit.</p>
+  <div class="linea" data-papel="VIENTOS" style="--c:#5D7B99">
+   <div><span class="quien">Winds and embers (chorus)</span><span class="grado">2nd–3rd</span><p class="txt">Whoosh, whoosh! We are the southwest wind!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Winds and embers (chorus)">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">That night, in a small barn on DeKoven Street, the fire began. No one knows for sure how. But there is a very famous legend... and this is how people tell it.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>Mrs. O'Leary enters with a tin pail and a prop lantern with a safe LED light.</p>
+  <div class="linea" data-papel="OLEARY" style="--c:#A0522D">
+   <div><span class="quien">Mrs. Catherine O'Leary</span><span class="grado">6th</span><p class="txt">(Patting Daisy) Hello, sweet girl. Time for your milking. The wind is so strong out there... I'll leave my lantern here in the corner, next to the hay, so I can see.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Mrs. Catherine O'Leary">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The Fire Chief steps forward and freezes the scene with a raised hand.</p>
+  <div class="linea" data-papel="JEFE" style="--c:#B22222">
+   <div><span class="quien">Fire Chief</span><span class="grado">6th</span><p class="txt">(To the audience) Stop! Safety rule number one: never put a flame or anything hot near things that burn easily, like hay, paper or cloth. Safety rules exist for a reason.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fire Chief">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The scene unfreezes in comic slow motion.</p>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">According to the legend, Daisy kicked her leg...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>Daisy gently kicks a hind leg and knocks over the lantern.</p>
+  <div class="linea" data-papel="ANIMALES" style="--c:#8D6E63">
+   <div><span class="quien">Barnyard animals (chorus)</span><span class="grado">Pre-K</span><p class="txt">Moo! Peep, peep! Watch out for the fire!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Barnyard animals (chorus)">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>Red lights flicker. The kindergarten flames dance in, moving their arms to the beat.</p>
+  <div class="linea" data-papel="LLAMAS" style="--c:#D35400">
+   <div><span class="quien">Little Flames (chorus)</span><span class="grado">K</span><p class="txt">Crackle, crackle, crack! We are the little flames!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Little Flames (chorus)">🔊</button>
+  </div>
+  <div class="linea" data-papel="OLEARY" style="--c:#A0522D">
+   <div><span class="quien">Mrs. Catherine O'Leary</span><span class="grado">6th</span><p class="txt">(Frightened) Fire! Fire in the barn! Help!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Mrs. Catherine O'Leary">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-2">
+ <summary><h2 id="t-acto-2">Act II · The Orderly Escape (October 8–10)</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-acto">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>The 2nd and 3rd grade winds cross upstage in a wavy line with their ribbons, without running. Downstage, the 1st graders hold the long blue cloth of the Chicago River and move it in waves. The Pre-K animals, with their buddies, sit at stage right, on the lake shore.</p>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">The wind pushed the flames from block to block, leaping from roof to roof.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papel="VIENTOS" style="--c:#5D7B99">
+   <div><span class="quien">Winds and embers (chorus)</span><span class="grado">2nd–3rd</span><p class="txt">Whoosh! Stronger, stronger!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Winds and embers (chorus)">🔊</button>
+  </div>
+  <div class="linea" data-papel="RIO" style="--c:#1E6FB8">
+   <div><span class="quien">Chicago River (chorus)</span><span class="grado">1st</span><p class="txt">We are the Chicago River! The fire can't cross us!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Chicago River (chorus)">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">But the wind carried burning pieces of wood through the air. The fire jumped the South Branch of the river... and then the main river, all the way to the North Side.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The flames move around the river cloth, guided by their teachers, and crouch down on the other side.</p>
+  <div class="linea" data-papel="LLAMAS" style="--c:#D35400">
+   <div><span class="quien">Little Flames (chorus)</span><span class="grado">K</span><p class="txt">We jumped the river!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Little Flames (chorus)">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The 4th and 5th graders cross diagonally at a quick but orderly pace, carrying wheelbarrows, suitcases, blankets and books.</p>
+  <div class="linea" data-papel="V1" style="--c:#2E7D4F">
+   <div><span class="quien">Resident 1</span><span class="grado">4th–5th</span><p class="txt">The fire has reached the North Side! Everyone to the shore of Lake Michigan!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Resident 1">🔊</button>
+  </div>
+  <div class="linea" data-papel="V2" style="--c:#3C8D5A">
+   <div><span class="quien">Resident 2</span><span class="grado">4th–5th</span><p class="txt">(Stopping with a suitcase) I want to go back for my furniture and my letters!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Resident 2">🔊</button>
+  </div>
+  <div class="linea" data-papel="V3" style="--c:#4A9C67">
+   <div><span class="quien">Resident 3</span><span class="grado">4th–5th</span><p class="txt">(Gently taking her arm) Don't go back! Things can be replaced; lives cannot. Follow the route to the lake!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Resident 3">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>A 6th grader raises a cutout of the limestone Water Tower upstage.</p>
+  <div class="linea" data-papel="JEFE" style="--c:#B22222">
+   <div><span class="quien">Fire Chief</span><span class="grado">6th</span><p class="txt">(Clearly, raising his lantern) Evacuation rule: walk, don't run; follow the route and keep the exits clear! Big kids, hold the little ones' hands!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fire Chief">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>5th graders take the Pre-K students by the hand and bring them to the group.</p>
+  <div class="linea" data-papel="V4" style="--c:#58AB74">
+   <div><span class="quien">Resident 4</span><span class="grado">4th–5th</span><p class="txt">(Pointing) Look at the Water Tower! Its stone walls are still standing! If we stay together and stay calm, we'll get through this!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Resident 4">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">The fire burned for more than a day. At last, on the night of October 9, it began to rain, and on October 10 the last flames went out.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Hundreds of people died, and about one hundred thousand were left without a home. More than seventeen thousand buildings burned.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The red light slowly fades to dark blue. The flames sit down, put out. Everyone is safe on the lake shore.</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-3">
+ <summary><h2 id="t-acto-3">Act III · Rising from the Ashes</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-acto">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>The backdrop panels turn to show the new Chicago of stone and brick. Shopkeepers and builders enter with wooden mallets, blueprints and wheelbarrows.</p>
+  <div class="linea" data-papel="ARQ" style="--c:#1F5F8B">
+   <div><span class="quien">Architect</span><span class="grado">6th</span><p class="txt">Give up? Never! A city isn't made only of wood and bricks. A city is made of the courage and the heart of its people.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Architect">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>The real estate agent nails a sign next to a little wooden shack.</p>
+  <div class="linea" data-papel="AGENTE" style="--c:#7A5C1E">
+   <div><span class="quien">Real estate agent</span><span class="grado">4th–5th</span><p class="txt">My office burned down, but my sign tells the truth: “All gone but wife, children and energy.” Tomorrow I start again!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Real estate agent">🔊</button>
+  </div>
+  <div class="linea" data-papel="V1" style="--c:#2E7D4F">
+   <div><span class="quien">Resident 1</span><span class="grado">4th–5th</span><p class="txt">People across the country and around the world are sending us food, clothes and blankets. And from England, thousands of books are arriving for Chicago's first free public library!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Resident 1">🔊</button>
+  </div>
+  <div class="linea" data-papel="ARQ" style="--c:#1F5F8B">
+   <div><span class="quien">Architect</span><span class="grado">6th</span><p class="txt">This time we will build better. In the center of the city, no more wooden houses: only stone, brick and iron! And more firefighters, better prepared!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Architect">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Chicago rebuilt so fast that the world was amazed. Years later, in 1885, one of the first skyscrapers with a metal skeleton was built here.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">And in 1893, just twenty-two years after the fire, Chicago welcomed the world to the World's Fair, with its white palaces: the famous “White City.”</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>Two 6th graders unfold a Chicago flag made in class.</p>
+  <div class="linea" data-papel="NAR1" style="--c:#6B4FA0">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">That's why the Chicago flag has four red stars. The second one remembers the Great Fire of 1871, and the third one, the World's Fair of 1893.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-4">
+ <summary><h2 id="t-acto-4">Act IV · Closing Reflection</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-acto">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>All grades gather in order: the youngest in front, sitting; the oldest in back, standing.</p>
+  <div class="linea" data-papel="JEFE" style="--c:#B22222">
+   <div><span class="quien">Fire Chief</span><span class="grado">6th</span><p class="txt">The fire left us lessons for a lifetime. First: respect safety rules, at home and at school. Second: be prepared: know the exits, keep the hallways clear and take fire drills seriously.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fire Chief">🔊</button>
+  </div>
+  <div class="linea" data-papel="OLEARY" style="--c:#A0522D">
+   <div><span class="quien">Mrs. Catherine O'Leary</span><span class="grado">6th</span><p class="txt">And now let me tell you the truth about me. For many years, people blamed me and my cow. But in 1893, the reporter who made up the cow story admitted it wasn't true. And in 1997, the City of Chicago declared me innocent. No one knows for sure how the fire started.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Mrs. Catherine O'Leary">🔊</button>
+  </div>
+  <div class="linea" data-papel="NAR2" style="--c:#8A63C9">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">So, before you believe a story, look for the evidence.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papel="OLEARY" style="--c:#A0522D">
+   <div><span class="quien">Mrs. Catherine O'Leary</span><span class="grado">6th</span><p class="txt">And the greatest lesson our city learned: no fall lasts forever if we stand together.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Mrs. Catherine O'Leary">🔊</button>
+  </div>
+  <div class="linea" data-papel="E4" style="--c:#2F6F73">
+   <div><span class="quien">4th grader</span><span class="grado">4th</span><p class="txt">From the fire...</p></div>
+   <button type="button" class="oir" aria-label="Listen: 4th grader">🔊</button>
+  </div>
+  <div class="linea" data-papel="E5" style="--c:#3D8A8F">
+   <div><span class="quien">5th grader</span><span class="grado">5th</span><p class="txt">...rose a Chicago that was stronger, safer and more beautiful.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 5th grader">🔊</button>
+  </div>
+  <div class="linea" data-papel="TODOS" style="--c:#194F5A">
+   <div><span class="quien">All grades</span><span class="grado">All</span><p class="txt">(Stepping forward) Always alert, always prepared! Together we can overcome anything!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All grades">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>Everyone sings the “Phoenix Chant” and bows by grade, from the youngest to the oldest.</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="canto">
+ <summary><h2 id="t-canto">Phoenix Chant</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-acto">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+ <div class="linea" data-papel="TODOS" style="--c:#194F5A">
+  <div><span class="quien">All grades</span><p class="txt canto">If there's smoke, don't run,<br>walk and tell a grown-up;<br>help the little ones,<br>and line up, line up!<br>Chicago fell,<br>Chicago rose:<br>like the Phoenix,<br>up it goes!</p></div>
+  <button type="button" class="oir" aria-label="Listen: Phoenix Chant">🔊</button>
+ </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“The Phoenix on the Lake” · A play by José M. Fernández · License CC BY-NC-SA 4.0</p></div></footer>
+<script>
+(function(){
+  "use strict";
+  var LANG = document.documentElement.lang, VOZ = document.body.getAttribute("data-voz");
+  var sel = document.getElementById("mi-papel"), solo = document.getElementById("solo");
+  function aplicar(){
+    var p = sel.value;
+    document.querySelectorAll(".linea").forEach(function(l){ l.classList.toggle("mia", !!p && l.getAttribute("data-papel") === p); });
+    document.body.classList.toggle("filtrando", !!p);
+    document.body.classList.toggle("solo", !!p && solo.checked);
+    if(p && solo.checked) document.querySelectorAll("details.acord").forEach(function(d){ if(d.querySelector(".linea.mia")) d.open = true; });
+    try{ localStorage.setItem("fenix-papel", p); }catch(e){}
+  }
+  try{ var g = localStorage.getItem("fenix-papel"); if(g && sel.querySelector('option[value="'+g+'"]')) sel.value = g; }catch(e){}
+  sel.addEventListener("change", aplicar); solo.addEventListener("change", aplicar); aplicar();
+
+  var hay = "speechSynthesis" in window, cola = [];
+  function vozIdioma(){
+    var vs = hay ? speechSynthesis.getVoices() : [];
+    return vs.filter(function(v){ return v.lang === VOZ; })[0] || vs.filter(function(v){ return v.lang.slice(0,2) === LANG; })[0] || null;
+  }
+  function limpiar(){ document.querySelectorAll(".hablando").forEach(function(x){ x.classList.remove("hablando"); }); }
+  function decir(lineas){
+    if(!hay) return;
+    speechSynthesis.cancel(); limpiar(); cola = lineas.slice();
+    (function sig(){
+      var l = cola.shift(); limpiar(); if(!l) return;
+      var txt = l.querySelector(".txt").textContent.replace(/\([^)]*\)/g, " ");
+      var u = new SpeechSynthesisUtterance(txt); u.lang = VOZ; var v = vozIdioma(); if(v) u.voice = v; u.rate = .95;
+      l.classList.add("hablando"); u.onend = sig; u.onerror = function(){ limpiar(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  document.querySelectorAll(".oir").forEach(function(b){ b.addEventListener("click", function(){ decir([b.closest(".linea")]); }); });
+  document.querySelectorAll(".oir-acto").forEach(function(b){ b.addEventListener("click", function(){
+    var ls = [].slice.call(b.closest("details").querySelectorAll(".linea")).filter(function(l){ return getComputedStyle(l).display !== "none"; });
+    decir(ls);
+  }); });
+  document.querySelectorAll(".parar").forEach(function(b){ b.addEventListener("click", function(){ cola = []; if(hay) speechSynthesis.cancel(); limpiar(); }); });
+  if(!hay) document.querySelectorAll(".oir,.oir-acto,.parar").forEach(function(b){ b.hidden = true; });
+
+  var tam = 0, clases = ["", "grande", "muygrande"];
+  function poner(){ document.body.classList.remove("grande","muygrande"); if(clases[tam]) document.body.classList.add(clases[tam]); }
+  document.getElementById("menor").addEventListener("click", function(){ tam = Math.max(0, tam-1); poner(); });
+  document.getElementById("mayor").addEventListener("click", function(){ tam = Math.min(2, tam+1); poner(); });
+  document.getElementById("imprimir").addEventListener("click", function(){ window.print(); });
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      var id=a.getAttribute("href").slice(1); if(abrir(id)){ ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint", function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba", d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint", function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open = d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

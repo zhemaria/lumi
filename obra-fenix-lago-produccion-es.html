@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Fénix sobre el Lago · Producción · Lumi</title>
+<meta name="description" content="Guía de producción de «El Fénix sobre el Lago», de José M. Fernández: reparto con cantidades, trabajos para no actores, música libre, hoja de entradas, vestuario, escenografía, ensayos y carta a las familias.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+  .obra-cab{background:var(--cie);padding:1.4rem 0}
+  .obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.5rem)}
+  .herr{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 0}
+  .herr button,.herr a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+  .tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+  .tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+  .tabla thead th{background:var(--cie)}
+  .tabla tbody th{background:#F6FBFB;font-weight:700}
+  .envoltura-tabla{overflow-x:auto}
+  .nota{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+  .tarjetas li{border:2px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+  .tarjetas h3{font-size:1.1rem;margin-bottom:.3rem}
+  .tarjetas p{margin:.3rem 0}
+  .chip{display:inline-block;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.05rem .6rem}
+  .plano{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:.6rem 0 .3rem;font-size:.92rem}
+  .plano div{background:#F6FBFB;border:1px solid var(--borde);border-radius:8px;padding:.45rem .55rem;min-height:70px}
+  .plano b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em;color:#2d5f69}
+  .publico{text-align:center;font-weight:700;border-top:3px solid var(--pet);padding-top:.2rem;margin-bottom:1rem}
+  .carta{border:2px dashed var(--pet);border-radius:14px;padding:1.2rem 1.4rem;background:#fff;margin:1rem 0}
+  .hueco{display:inline-block;min-width:9em;border-bottom:2px solid var(--pet)}
+  .talon{border-top:2px dashed var(--pet);margin-top:1rem;padding-top:.8rem}
+  .casilla{display:inline-block;width:1em;height:1em;border:2px solid var(--pet);vertical-align:-2px;margin-right:.3rem}
+
+  details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+  details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none}
+  details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+  details.acord[open] > summary::before{content:"▾"}
+  details.acord > summary h2{display:inline;font-size:1.35rem}
+  details.acord > summary:hover{background:var(--cie);border-radius:14px}
+  details.acord .cuerpo{padding:0 1rem 1rem}
+  @media print{#cotejo{break-before:page}.cabecera,.anclas,.herr,.solo-pantalla{display:none!important}.carta{break-before:page;border-style:solid}.tarjetas li,.tabla tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index-es.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — página de inicio" width="560" height="240"></a>
+  <nav aria-label="Menú principal" class="menu">
+   <a href="index-es.html">Inicio</a>
+   <a href="grados-es.html">Por grado</a>
+   <a href="materias-es.html">Por materia</a>
+   <a href="teatro-es.html" aria-current="page">Teatro</a>
+  </nav>
+ </div>
+</header>
+
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="obra-fenix-lago-es.html">← El guion</a></p>
+  <h1 id="titulo">El Fénix sobre el Lago · Producción</h1>
+  <p style="margin:.3rem 0 0">Obra de José M. Fernández. Todo lo que hace falta para montarla con la escuela: quién sale, cuántos, qué se necesita y cuándo.</p>
+  <div class="herr solo-pantalla"><button type="button" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button><a href="#carta">✉️ Carta a las familias</a></div>
+ </div>
+</section>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Partes de la guía"><ul class="anclas">
+  <li><a href="#resumen">En breve</a></li>
+  <li><a href="#imagenes">La obra en imágenes</a></li>
+  <li><a href="#reparto">Reparto y cantidades</a></li>
+  <li><a href="#trabajos">Trabajos para no actores</a></li>
+  <li><a href="#musica">Música</a></li>
+  <li><a href="#entradas">Hoja de entradas</a></li>
+  <li><a href="#vestuario">Vestuario</a></li>
+  <li><a href="#cotejo">Lista de cotejo</a></li>
+  <li><a href="#escenografia">Escenografía y utilería</a></li>
+  <li><a href="#plano">Plano del escenario</a></li>
+  <li><a href="#ensayos">Ensayos</a></li>
+  <li><a href="#carta">Carta a las familias</a></li>
+ </ul></nav>
+
+ <!-- ================= EN BREVE ================= -->
+ <details class="seccion acord" id="resumen" name="partes">
+  <summary><h2 id="t-resumen">En breve</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>Duración:</strong> entre 18 y 25 minutos. Unos 7 minutos son texto hablado; el resto es música, bailes, entradas y salidas, el canto y la reverencia.</li>
+   <li><strong>Elenco:</strong> desde unos 45 niños (un grupo pequeño por grado) hasta toda la escuela. Casi todos los grupos crecen o se encogen sin cambiar el guion.</li>
+   <li><strong>Idiomas:</strong> el guion está en <a href="obra-fenix-lago-es.html">español</a> y en <a href="obra-fenix-lago-en.html" lang="en">inglés</a>, con las mismas líneas y el mismo orden: se puede hacer en un idioma o mezclar actos.</li>
+   <li><strong>Seguridad:</strong> nunca se usan llamas reales ni velas. Todo el fuego es de tela, fieltro y luz LED.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= IMÁGENES ================= -->
+ <details class="seccion acord" id="imagenes" name="partes">
+  <summary><h2 id="t-imagenes">La obra en imágenes</h2></summary>
+  <div class="cuerpo">
+  <p>Cinco infografías para presentar la obra al equipo docente, a los niños y a las familias.</p>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-reparto.jpg" alt="Infografía «¿Quién hace qué?»: un fénix de fuego y agua sobre el lago y, alrededor, los papeles por grado: prekínder, animalitos del establo; 1.º, el río Chicago con una tela azul; 2.º y 3.º, vientos y chispas con cintas; 4.º y 5.º, vecinos de 1871 con maletas; kínder, llamitas con capas de fuego; 6.º, narradores, Sra. O'Leary, Bombero Jefe y Arquitecto." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">¿Quién hace qué?</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto1.jpg" alt="Infografía del Acto I, de noche: el establo con un niño disfrazado de vaca y una linterna (la leyenda de la vaca), la Sra. O'Leary con dos cubos, el Bombero Jefe que da la regla 1 (nada caliente cerca de lo que se quema) y las llamitas con capas de tela junto a casas de madera." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Acto I: la chispa en la calle DeKoven.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto2.jpg" alt="Infografía del Acto II: niños con cintas como viento fuerte del sudoeste; las llamitas cruzan la tela azul del río; los vecinos caminan en fila con maletas y los grandes llevan de la mano a los pequeños, guiados por el Bombero con su linterna; la Torre de Agua sigue en pie y empieza la lluvia el 9 de octubre en la orilla del lago." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Acto II: la huida organizada.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto3.jpg" alt="Infografía del Acto III: un hombre junto a una caseta con el letrero «Todo perdido, menos la esposa, los hijos y la energía»; vecinos reconstruyen con piedra y ladrillo y reciben donaciones y libros de Inglaterra; un rascacielos de 1885 en construcción y los palacios blancos de la Exposición de 1893." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Acto III: Chicago se levanta.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto4.jpg" alt="Infografía del Acto IV: todo el elenco en tres filas en el escenario, bajo la bandera de Chicago con cuatro estrellas; una flecha indica que la segunda estrella recuerda el incendio y otra nota dice que en 1997 la ciudad declaró inocente a la Sra. O'Leary. Abajo: «¡Siempre alerta, siempre preparados!»." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Acto IV: lo que aprendimos.</figcaption></figure>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= REPARTO ================= -->
+ <details class="seccion acord" id="reparto" name="partes">
+  <summary><h2 id="t-reparto">Reparto y cantidades</h2></summary>
+  <div class="cuerpo">
+  <p>Las cantidades son orientativas. La columna «Mínimo» sirve para una escuela pequeña o un solo salón por grado; «Máximo», para grados con varios salones. Los papeles con texto propio son fijos; lo que crece son los grupos.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Cantidad de niños por papel</caption>
+   <thead><tr><th scope="col">Grado</th><th scope="col">Papel</th><th scope="col">Mínimo</th><th scope="col">Recomendado</th><th scope="col">Máximo</th><th scope="col">Cómo crece</th></tr></thead>
+   <tbody>
+    <tr><th scope="row" rowspan="5">6.º</th><td>Narradores 1 y 2</td><td>2</td><td>2</td><td>4</td><td>Cada narración se puede repartir entre dos voces.</td></tr>
+    <tr><td>Sra. O'Leary, Bombero Jefe, Arquitecto</td><td>3</td><td>3</td><td>6</td><td>Se pueden hacer dos repartos (uno por función o uno por idioma).</td></tr>
+    <tr><td>Torre de Agua y bandera (sin texto)</td><td>1</td><td>3</td><td>3</td><td>Uno sostiene la torre; dos despliegan la bandera.</td></tr>
+    <tr><td>Equipo técnico (ver <a href="#trabajos">trabajos</a>)</td><td>4</td><td>8</td><td>15</td><td>Sonido, luces, telón, utilería, paneles.</td></tr>
+    <tr><td>Apuntadores</td><td>0</td><td>1</td><td>2</td><td>Siguen el guion entre bastidores.</td></tr>
+    <tr><th scope="row" rowspan="3">4.º y 5.º</th><td>Vecinos 1 a 4, Agente de bienes raíces</td><td>5</td><td>5</td><td>10</td><td>Papeles con texto; pueden duplicarse para dos funciones.</td></tr>
+    <tr><td>Estudiante de 4.º y de 5.º (frase final)</td><td>2</td><td>2</td><td>4</td><td>La frase final puede decirla un pequeño grupo de cada grado.</td></tr>
+    <tr><td>Evacuados y constructores (sin texto propio)</td><td>6</td><td>16</td><td>40</td><td>Cruzan con maletas en el Acto II y construyen en el Acto III.</td></tr>
+    <tr><th scope="row">5.º</th><td>Guías de prekínder</td><td>1 por cada 3 niños de prekínder</td><td>1 por cada 2</td><td>1 por niño</td><td>Llevan de la mano a los pequeños en la evacuación.</td></tr>
+    <tr><th scope="row">2.º y 3.º</th><td>Vientos y chispas (coro)</td><td>6</td><td>16</td><td>40</td><td>La fila ondulante puede ser una sola o varias, una detrás de otra.</td></tr>
+    <tr><th scope="row">1.º</th><td>Río Chicago (coro)</td><td>8</td><td>12</td><td>16</td><td>Depende del largo de la tela: un niño por cada metro, en dos filas. El resto puede agitar cintas azules sueltas.</td></tr>
+    <tr><th scope="row">Kínder</th><td>Llamitas (coro)</td><td>6</td><td>12</td><td>30</td><td>Entran en grupos de 6, para que no se amontonen.</td></tr>
+    <tr><th scope="row">Prekínder</th><td>Vaca Daisy y animalitos (coro)</td><td>4</td><td>10</td><td>20</td><td>La vaca Daisy puede ser un niño acompañado por un adulto, o dos niños bajo un disfraz grande.</td></tr>
+    <tr><th scope="row">Total</th><td></td><td><strong>≈ 50</strong></td><td><strong>≈ 115</strong></td><td><strong>200 o más</strong></td><td></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Escenario pequeño o salón de clases:</strong> use el «Mínimo», haga entrar a los grupos grandes por turnos y deje el río de 6 metros con 6 niños. <strong>Gimnasio o escenario grande:</strong> los coros pueden ser grandes, pero ensaye las entradas y salidas para que nunca haya más de dos grupos moviéndose a la vez.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= TRABAJOS ================= -->
+ <details class="seccion acord" id="trabajos" name="partes">
+  <summary><h2 id="t-trabajos">Trabajos para no actores</h2></summary>
+  <div class="cuerpo">
+  <p>No todos quieren o pueden hablar en escena, y la obra no sale sin estos trabajos. Son papeles de verdad: aparecen en el programa con su nombre.</p>
+  <ul class="tarjetas">
+   <li><h3>🔊 Sonido</h3><span class="chip">4.º a 6.º · 2 niños</span><p>Ponen cada pista en el momento justo, siguiendo la <a href="#entradas">hoja de entradas</a>.</p></li>
+   <li><h3>💡 Luces</h3><span class="chip">5.º y 6.º · 2 niños</span><p>Cambian las luces LED: cálidas, rojas parpadeantes, azul de noche.</p></li>
+   <li><h3>🎭 Telón y paneles</h3><span class="chip">5.º y 6.º · 2 a 4 niños</span><p>Abren y cierran el telón y giran los paneles del fondo entre el Acto II y el III.</p></li>
+   <li><h3>🧺 Utilería</h3><span class="chip">4.º a 6.º · 2 a 4 niños</span><p>Preparan en una mesa, por actos, la linterna, el cubo, las maletas, los planos y el letrero, y los recogen después.</p></li>
+   <li><h3>📖 Apuntador</h3><span class="chip">5.º o 6.º · 1 o 2 niños</span><p>Siguen el guion entre bastidores y, si alguien olvida su línea, se la susurran.</p></li>
+   <li><h3>🤝 Guías de bambalinas</h3><span class="chip">5.º · 1 por cada 2 o 3 pequeños</span><p>Acompañan a prekínder y kínder: los llevan a su lugar, entran con ellos y los traen de vuelta.</p></li>
+   <li><h3>🎨 Escenografía</h3><span class="chip">Cualquier grado</span><p>Pintan los paneles, el establo, la Torre de Agua y la bandera de Chicago en las semanas antes de la función.</p></li>
+   <li><h3>👒 Vestuario y maquillaje</h3><span class="chip">4.º a 6.º, con un adulto</span><p>Ayudan a vestir a los pequeños, ponen diademas y capas, y revisan que nada se suelte.</p></li>
+   <li><h3>📰 Carteles y programa</h3><span class="chip">3.º a 6.º · 2 a 4 niños</span><p>Diseñan el cartel y el programa de mano, con los nombres de todo el elenco.</p></li>
+   <li><h3>🎤 Presentadores</h3><span class="chip">5.º o 6.º · 1 o 2 niños</span><p>Dan la bienvenida al público antes de empezar y recuerdan apagar los teléfonos.</p></li>
+   <li><h3>🎟️ Recepción</h3><span class="chip">4.º a 6.º · 2 a 4 niños</span><p>Reciben a las familias, reparten programas y ayudan a encontrar asiento.</p></li>
+   <li><h3>📸 Fotografía</h3><span class="chip">6.º, con un adulto</span><p>Toman fotos solo de los niños cuyas familias dieron permiso (ver la <a href="#carta">carta</a>).</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= MÚSICA ================= -->
+ <details class="seccion acord" id="musica" name="partes">
+  <summary><h2 id="t-musica">Música libre</h2></summary>
+  <div class="cuerpo">
+  <p>Toda la música propuesta es de compositores que murieron hace más de cien años (las obras son de dominio público), en grabaciones que se pueden usar libremente: las de <strong>Musopen</strong>, que se publican sin derechos, y las de la <strong>Banda de los Marines de Estados Unidos</strong>, que, como obras del gobierno federal, son de dominio público. Varias piezas, además, son de la época de la obra.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Lista de música</caption>
+   <thead><tr><th scope="col">Pista</th><th scope="col">Pieza</th><th scope="col">Por qué esta</th><th scope="col">Dónde conseguirla</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td><em>The Irish Washerwoman</em>, giga tradicional irlandesa, en violín</td><td>Música de baile irlandesa, como la de los inmigrantes que vivían en la calle DeKoven, entre ellos la familia O'Leary.</td><td>Mejor en vivo, por un alumno o un docente que toque violín, flauta o teclado. También hay una grabación de 1939 en la <a href="https://www.loc.gov/item/2017702102">Biblioteca del Congreso</a>, para uso educativo.</td></tr>
+    <tr><td>2</td><td>Edvard Grieg, <em>En la gruta del rey de la montaña</em> (1875)</td><td>Empieza muy suave y crece cada vez más rápido y fuerte, como el fuego empujado por el viento.</td><td><a href="https://commons.wikimedia.org/wiki/File:Musopen_-_In_the_Hall_Of_The_Mountain_King.ogg">Wikimedia Commons (Musopen)</a></td></tr>
+    <tr><td>3</td><td>Frédéric Chopin, Preludio op. 28 n.º 15, <em>«La gota de lluvia»</em></td><td>Una nota que se repite como gotas: es la lluvia que ayudó a apagar el fuego.</td><td><a href="https://musopen.org/">Musopen</a> (buscar «Chopin Prelude 15»)</td></tr>
+    <tr><td>4</td><td>Antonín Dvořák, Sinfonía n.º 9 «Del Nuevo Mundo», 3.<sup>er</sup> movimiento (1893)</td><td>Música enérgica, estrenada en Estados Unidos en 1893, el año de la Exposición de Chicago.</td><td><a href="https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_iii._molto_vivace.ogg">Wikimedia Commons (Musopen)</a></td></tr>
+    <tr><td>5</td><td>John Philip Sousa, <em>The Liberty Bell</em> (1893)</td><td>Sousa le puso este nombre en Chicago, durante la Exposición Mundial de 1893.</td><td><a href="https://www.marineband.marines.mil/Audio-Resources/The-Complete-Marches-of-John-Philip-Sousa/The-Liberty-Bell-March/">Banda de los Marines de EE. UU.</a></td></tr>
+    <tr><td>6</td><td>John Philip Sousa, <em>The Stars and Stripes Forever</em> (1896)</td><td>Una marcha alegre para la reverencia final.</td><td><a href="https://commons.wikimedia.org/wiki/File:March,_%22The_Stars_and_Stripes_Forever%22_%C2%B7_Colonel_John_R._Bourgeois,_Director_%C2%B7_John_Philip_Sousa_%C2%B7_United_States_Marine_Band.ogg">Wikimedia Commons (Banda de los Marines)</a></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>El «Canto del Fénix»</strong> no lleva música grabada: se dice con ritmo, marcando el pulso con palmas o con un tambor. Cada verso, dos palmadas. Si la escuela tiene profesor de música, puede ponerle una melodía sencilla.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= ENTRADAS ================= -->
+ <details class="seccion acord" id="entradas" name="partes">
+  <summary><h2 id="t-entradas">Hoja de entradas (sonido y luces)</h2></summary>
+  <div class="cuerpo">
+  <p>Para el equipo técnico. Cada «entrada» es un cambio: se hace cuando ocurre lo que dice la columna «Señal».</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Entradas de sonido y luces</caption>
+   <thead><tr><th scope="col">N.º</th><th scope="col">Acto</th><th scope="col">Señal</th><th scope="col">Sonido</th><th scope="col">Luces</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td>I</td><td>Se abre el telón</td><td>Pista 1, alegre</td><td>Luz cálida, de día</td></tr>
+    <tr><td>2</td><td>I</td><td>Empieza a hablar el Narrador 1</td><td>Pista 1 baja hasta apagarse</td><td>—</td></tr>
+    <tr><td>3</td><td>I</td><td>El Narrador 1 dice «Esa noche…»</td><td>—</td><td>Baja a luz de noche (azul suave) con una luz amarilla sobre el establo</td></tr>
+    <tr><td>4</td><td>I</td><td>El Bombero Jefe dice «¡Alto!»</td><td>Silencio</td><td>Luz blanca solo sobre el Bombero</td></tr>
+    <tr><td>5</td><td>I</td><td>Daisy tumba la linterna</td><td>Pista 2, desde el principio</td><td>Rojo y ámbar parpadeando</td></tr>
+    <tr><td>6</td><td>II</td><td>Entran los vientos en fila</td><td>Pista 2 sigue, más fuerte</td><td>Rojo parpadeando</td></tr>
+    <tr><td>7</td><td>II</td><td>Habla el Vecino 1</td><td>Pista 2 baja, pero no se apaga</td><td>—</td></tr>
+    <tr><td>8</td><td>II</td><td>El Narrador 2 dice «…empezó a llover»</td><td>Pista 3</td><td>El rojo baja poco a poco hasta azul oscuro</td></tr>
+    <tr><td>9</td><td>II → III</td><td>Fin del Narrador 1 en el Acto II</td><td>Pista 3 baja hasta apagarse</td><td>Oscuro breve: se giran los paneles</td></tr>
+    <tr><td>10</td><td>III</td><td>Paneles girados</td><td>Pista 4 mientras entran los constructores</td><td>Luz clara de mañana</td></tr>
+    <tr><td>11</td><td>III</td><td>Habla el Arquitecto</td><td>Pista 4 baja hasta apagarse</td><td>—</td></tr>
+    <tr><td>12</td><td>III</td><td>El Narrador 2 dice «…en 1893»</td><td>Pista 5, suave de fondo</td><td>Luz blanca brillante</td></tr>
+    <tr><td>13</td><td>IV</td><td>Todos se reúnen</td><td>Pista 5 se apaga</td><td>Luz general, toda la escena</td></tr>
+    <tr><td>14</td><td>IV</td><td>Canto del Fénix</td><td>Sin pista: palmas o tambor</td><td>—</td></tr>
+    <tr><td>15</td><td>IV</td><td>Reverencia por grados</td><td>Pista 6</td><td>Luz general; al final, se cierra el telón</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= VESTUARIO ================= -->
+ <details class="seccion acord" id="vestuario" name="partes">
+  <summary><h2 id="t-vestuario">Vestuario</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Vestuario por papel</caption>
+   <thead><tr><th scope="col">Papel</th><th scope="col">Vestuario</th><th scope="col">Lo hace la escuela</th></tr></thead>
+   <tbody>
+    <tr><td>Animalitos (prekínder)</td><td>Ropa cómoda; diadema con orejitas del animal. Daisy: ropa blanca con manchas negras de fieltro.</td><td>Diademas de cartulina o fieltro.</td></tr>
+    <tr><td>Llamitas (kínder)</td><td>Camiseta negra o roja.</td><td>Capa o poncho de fieltro rojo, naranja y amarillo, cortado en picos.</td></tr>
+    <tr><td>Río (1.º)</td><td>Camiseta azul o gris.</td><td>La tela azul del río y cintas azules.</td></tr>
+    <tr><td>Vientos y chispas (2.º y 3.º)</td><td>Camiseta gris, azul claro o blanca.</td><td>Cintas en las muñecas: grises y blancas para el viento, rojas y naranjas para las chispas.</td></tr>
+    <tr><td>Vecinos de 1871 (4.º a 6.º)</td><td>Niños: camisa de manga larga, pantalón oscuro, tirantes, gorra. Niñas: falda larga o vestido, delantal blanco, cabello recogido con cinta.</td><td>Tirantes de cinta, delantales de tela o de bolsa blanca, gorras de cartulina.</td></tr>
+    <tr><td>Sra. O'Leary</td><td>Falda larga, blusa, delantal blanco y pañoleta.</td><td>Cubo y linterna LED de utilería.</td></tr>
+    <tr><td>Bombero Jefe</td><td>Chaqueta oscura; en 1871 los bomberos llevaban casco de cuero y abrigo largo, sin cintas reflectantes.</td><td>Casco de plástico rojo o negro.</td></tr>
+    <tr><td>Arquitecto</td><td>Chaleco, camisa, corbata de lazo.</td><td>Planos enrollados y una regla.</td></tr>
+    <tr><td>Narradores</td><td>Ropa de época sencilla o ropa escolar arreglada.</td><td>—</td></tr>
+    <tr><td>Equipo técnico</td><td>Ropa negra o oscura, para no llamar la atención.</td><td>—</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+
+ <!-- ================= COTEJO ================= -->
+ <details class="seccion acord" id="cotejo" name="partes">
+  <summary><h2 id="t-cotejo">Lista de cotejo de vestuario y utilería</h2></summary>
+  <div class="cuerpo">
+  <p>Para el docente de cada grupo: marque cada casilla cuando el niño tenga todo listo. Se imprime una por salón.</p>
+  <p>Salón: <span class="hueco">&nbsp;</span> Docente: <span class="hueco">&nbsp;</span> Papel del grupo: <span class="hueco">&nbsp;</span></p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Lista de cotejo por niño</caption>
+   <thead><tr><th scope="col">Nombre</th><th scope="col">Ropa de casa</th><th scope="col">Pieza hecha en clase (capa, diadema, cintas…)</th><th scope="col">Utilería</th><th scope="col">Marcado con su nombre</th><th scope="col">Listo para el ensayo general</th></tr></thead>
+   <tbody>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <h3>Utilería por responsable</h3>
+  <ul style="list-style:none;padding-left:0">
+   <li><span class="casilla"></span>Cubo y linterna LED (Sra. O'Leary) · pilas nuevas</li>
+   <li><span class="casilla"></span>Linterna del Bombero Jefe · pilas nuevas</li>
+   <li><span class="casilla"></span>Diadema y disfraz de Daisy</li>
+   <li><span class="casilla"></span>Tela azul del río, doblada sin nudos</li>
+   <li><span class="casilla"></span>Varillas con telas de fuego</li>
+   <li><span class="casilla"></span>Maletas, mantas, libros y carretillas (Acto II)</li>
+   <li><span class="casilla"></span>Recorte de la Torre de Agua</li>
+   <li><span class="casilla"></span>Planos, regla, martillos y cajas de donaciones (Acto III)</li>
+   <li><span class="casilla"></span>Caseta y letrero del agente de bienes raíces</li>
+   <li><span class="casilla"></span>Bandera de Chicago</li>
+   <li><span class="casilla"></span>Pistas de música ordenadas y probadas en el equipo de sonido</li>
+   <li><span class="casilla"></span>Luces LED probadas · cinta de colores en el suelo</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+ <!-- ================= ESCENOGRAFÍA ================= -->
+ <details class="seccion acord" id="escenografia" name="partes">
+  <summary><h2 id="t-escenografia">Escenografía y utilería</h2></summary>
+  <div class="cuerpo">
+  <h3>Escenografía</h3>
+  <ul>
+   <li><strong>Paneles reversibles del fondo</strong> (cartón pluma o cartón grueso):
+    <ul><li><strong>Lado A, actos I y II:</strong> el Chicago de madera de 1871: casas de tablas, aceras de tablones, faroles de gas.</li>
+        <li><strong>Lado B, actos III y IV:</strong> el Chicago reconstruido: edificios de piedra y ladrillo, calles ordenadas y, si se quiere, un rascacielos en construcción.</li></ul></li>
+   <li><strong>El establo</strong> (a la izquierda): un marco de cartón con forma de granero y heno de papel o rafia.</li>
+   <li><strong>La Torre de Agua:</strong> un recorte grande de cartón pintado de color piedra, con su torre almenada. Es real: fue construida en 1869 y sigue en pie en la avenida Michigan.</li>
+   <li><strong>El río Chicago:</strong> una tela azul larga (6 a 10 metros), satén o tul, que dos filas de niños mueven en ondas.</li>
+   <li><strong>La bandera de Chicago:</strong> hecha en clase: fondo blanco, dos franjas azul claro y cuatro estrellas rojas de seis puntas.</li>
+  </ul>
+  <h3>Utilería por acto</h3>
+  <ul>
+   <li><strong>Acto I:</strong> cubo de hojalata o de plástico gris; linterna de utilería con luz LED.</li>
+   <li><strong>Acto II:</strong> maletas de cartón, mantas enrolladas, libros, carretillas de juguete; linterna del Bombero.</li>
+   <li><strong>Acto III:</strong> martillos de madera o espuma, planos enrollados, cajas de donaciones; caseta de tablas pequeña y el letrero del agente de bienes raíces, que en la versión en español dice «Todo perdido, menos la esposa, los hijos y la energía» y en inglés, como el original, «All gone but wife, children and energy».</li>
+  </ul>
+  <h3>Efectos seguros</h3>
+  <ul>
+   <li>Luces LED rojas y ámbar, que parpadean, para el fuego; azul oscuro para la noche y el final del incendio.</li>
+   <li>Varillas con tiras de tela ligera, agitadas a mano o con un ventilador fuera de escena, para las llamas.</li>
+   <li>Nunca velas, cerillos ni humo artificial: algunos niños tienen asma, y la máquina de humo puede activar las alarmas.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= PLANO ================= -->
+ <details class="seccion acord" id="plano" name="partes">
+  <summary><h2 id="t-plano">Plano del escenario</h2></summary>
+  <div class="cuerpo">
+  <p>Visto desde el público. «Fondo» es lo más lejano al público; «Frente», lo más cercano.</p>
+  <h3>Acto I</h3>
+  <div class="plano" role="img" aria-label="Acto I: al fondo a la izquierda el establo con prekínder, la Sra. O'Leary y Daisy; al fondo a la derecha la acera con los vecinos de 4.º y 5.º; al frente en el centro narradores y Bombero Jefe; por el frente izquierdo entran las llamitas.">
+   <div><b>Fondo izquierda</b>Establo: prekínder, Daisy, Sra. O'Leary</div><div><b>Fondo centro</b>Paneles, lado A</div><div><b>Fondo derecha</b>Acera: vecinos de 4.º y 5.º</div>
+   <div><b>Frente izquierda</b>Entrada de las llamitas</div><div><b>Frente centro</b>Narradores · Bombero Jefe</div><div><b>Frente derecha</b>—</div>
+  </div><p class="publico">Público</p>
+  <h3>Acto II</h3>
+  <div class="plano" role="img" aria-label="Acto II: los vecinos entran por el fondo izquierdo y cruzan en diagonal; los vientos pasan por el fondo centro; la Torre de Agua al fondo derecha; el río a lo ancho del frente; la orilla del lago con prekínder al frente derecha.">
+   <div><b>Fondo izquierda</b>Entrada de los vecinos</div><div><b>Fondo centro</b>Vientos en fila ondulante</div><div><b>Fondo derecha</b>Torre de Agua</div>
+   <div><b>Frente izquierda</b>Las llamitas cruzan el río</div><div><b>Frente centro</b>Río: tela azul de lado a lado</div><div><b>Frente derecha</b>Orilla del lago: prekínder y guías</div>
+  </div><p class="publico">Público</p>
+  <h3>Actos III y IV</h3>
+  <div class="plano" role="img" aria-label="Actos III y IV: paneles en el lado B; arquitecto y planos al centro; agente y caseta a la izquierda; constructores a la derecha. En el Acto IV todos en tres filas: los pequeños sentados adelante, de 1.º a 3.º en medio, de 4.º a 6.º atrás.">
+   <div><b>Fondo izquierda</b>Caseta y letrero del agente · Acto IV: 4.º a 6.º de pie</div><div><b>Fondo centro</b>Paneles, lado B · Acto IV: 4.º a 6.º de pie</div><div><b>Fondo derecha</b>Constructores · Acto IV: 4.º a 6.º de pie</div>
+   <div><b>Frente izquierda</b>Acto IV: prekínder y kínder sentados; 1.º a 3.º detrás</div><div><b>Frente centro</b>Arquitecto · Acto IV: O'Leary, Bombero, Narradores</div><div><b>Frente derecha</b>Donaciones · Acto IV: prekínder y kínder sentados</div>
+  </div><p class="publico">Público</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= ENSAYOS ================= -->
+ <details class="seccion acord" id="ensayos" name="partes">
+  <summary><h2 id="t-ensayos">Ensayos</h2></summary>
+  <div class="cuerpo">
+  <h3>Semanas 1 a 3: cada grupo en su salón</h3>
+  <ul>
+   <li><strong>6.º:</strong> lectura en voz alta, primero sentados y después de pie; el Bombero Jefe ensaya la pausa al congelar la escena: un paso al frente, mirada al público, voz calmada y firme.</li>
+   <li><strong>4.º y 5.º:</strong> las líneas de los vecinos y la marcha de evacuación: rápida pero en orden, sin correr.</li>
+   <li><strong>2.º y 3.º:</strong> la fila ondulante con cintas, al ritmo de la pista 2.</li>
+   <li><strong>Prekínder a 1.º:</strong> sesiones de 15 minutos: los sonidos de los animales, el baile de las llamitas y las ondas del río.</li>
+   <li><strong>Todos:</strong> el Canto del Fénix con palmas.</li>
+  </ul>
+  <h3>Semanas 4 y 5: por bloques</h3>
+  <ul>
+   <li><strong>Bloque A (Acto I):</strong> 6.º con prekínder y kínder.</li>
+   <li><strong>Bloque B (Acto II):</strong> 4.º y 5.º con 1.º a 3.º y los guías.</li>
+   <li><strong>Bloque C (actos III y IV):</strong> 4.º a 6.º, y la reunión final de todos los grados.</li>
+   <li><strong>Equipo técnico:</strong> ensaya con la hoja de entradas mientras los bloques ensayan.</li>
+  </ul>
+  <h3>Última semana: ensayos generales</h3>
+  <ol>
+   <li>Marcar con cinta de colores en el suelo dónde va cada grupo; entradas y salidas con música.</li>
+   <li>Obra completa con vestuario, luces y utilería, y la reverencia por grados.</li>
+  </ol>
+  <div class="nota">Nadie tiene que memorizar si no puede. Los narradores pueden leer en escena, con su guion en una carpeta negra. Los pequeños dicen sus frases en coro, y un guía puede decírselas en voz baja justo antes.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+
+ <!-- ================= CARTA ================= -->
+ <details class="seccion acord" id="carta" name="partes">
+  <summary><h2 id="t-carta">Carta a las familias</h2></summary>
+  <div class="cuerpo">
+  <p class="solo-pantalla">Lista para imprimir. Complete los espacios a mano. Al final hay un talón para devolver firmado.</p>
+  <div class="carta">
+   <p><strong>Obra de teatro de la escuela: <em>El Fénix sobre el Lago</em></strong></p>
+   <p>Fecha: <span class="hueco">&nbsp;</span></p>
+   <p>Estimada familia:</p>
+   <p>Este año, toda la escuela, de prekínder a 6.º grado, presentará <em>El Fénix sobre el Lago</em>, una obra sobre el Gran Incendio de Chicago de 1871 y sobre cómo la ciudad se levantó de nuevo, unida. Mientras ensayan, los niños aprenderán historia de nuestra ciudad y reglas de seguridad contra incendios que sirven en casa y en la escuela.</p>
+   <p><strong>Su hijo o hija</strong> <span class="hueco">&nbsp;</span> <strong>será:</strong> <span class="hueco">&nbsp;</span></p>
+   <p><strong>Ropa que le pedimos, si la tiene en casa</strong> (no hace falta comprar nada):</p>
+   <p><span class="hueco" style="min-width:100%">&nbsp;</span></p>
+   <p>La escuela hará en clase las capas, las diademas, las cintas, las gorras y los delantales. Si no tiene alguna prenda, avísenos: tendremos ropa de préstamo.</p>
+   <p><strong>Fechas importantes</strong></p>
+   <ul>
+    <li>Entregar la ropa, en una bolsa con el nombre y el grado: <span class="hueco">&nbsp;</span></li>
+    <li>Ensayo general: <span class="hueco">&nbsp;</span></li>
+    <li>Función: día <span class="hueco">&nbsp;</span>, hora <span class="hueco">&nbsp;</span>, lugar <span class="hueco">&nbsp;</span></li>
+   </ul>
+   <p><strong>Cómo puede ayudar en casa:</strong> si su hijo o hija tiene líneas, ensáyenlas juntos. El guion está en Lumi, con un botón para escuchar cada línea y otro para ver solo las de su personaje: <span class="hueco">&nbsp;</span>. Y aprovechen para repasar en familia la salida de emergencia de su casa.</p>
+   <p>¡Gracias por acompañarnos!</p>
+   <p>Atentamente,<br><span class="hueco">&nbsp;</span></p>
+   <div class="talon">
+    <p><strong>Devuelva este talón firmado antes del</strong> <span class="hueco">&nbsp;</span></p>
+    <p>Nombre del niño o la niña: <span class="hueco">&nbsp;</span> Grado: <span class="hueco">&nbsp;</span></p>
+    <p><span class="casilla"></span>Doy permiso para que mi hijo o hija participe en la obra.</p>
+    <p><span class="casilla"></span>Doy permiso para que la escuela publique fotos o videos de la obra en los que aparezca mi hijo o hija.</p>
+    <p><span class="casilla"></span><strong>No</strong> doy permiso para publicar fotos ni videos en los que aparezca mi hijo o hija.</p>
+    <p><span class="casilla"></span>Puedo ayudar con: <span class="casilla" style="margin-left:.4rem"></span>vestuario <span class="casilla" style="margin-left:.4rem"></span>escenografía <span class="casilla" style="margin-left:.4rem"></span>el día de la función</p>
+    <p>Firma: <span class="hueco" style="min-width:14em">&nbsp;</span> Teléfono: <span class="hueco">&nbsp;</span></p>
+   </div>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+ </details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>«El Fénix sobre el Lago» · Obra de José M. Fernández · Licencia CC BY-NC-SA 4.0</p></div></footer>
+<script>
+(function(){
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(ev){
+      var id=a.getAttribute("href").slice(1);
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      if(abrir(id)) { ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint",function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba",d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint",function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open=d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

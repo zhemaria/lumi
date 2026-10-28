@@ -1,0 +1,299 @@
+<!doctype html>
+<!-- «El Fénix sobre el Lago» · Guía histórica para el docente · José M. Fernández · Licencia CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/) -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Fénix sobre el Lago · Guía histórica · Lumi</title>
+<meta name="description" content="Guía histórica para el docente de «El Fénix sobre el Lago», de José M. Fernández: qué pasó en el Gran Incendio de Chicago de 1871, por qué se extendió, mitos y hechos, la reconstrucción, vocabulario y actividades por grado.">
+<meta name="author" content="José M. Fernández">
+<meta name="dcterms.license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+  .obra-cab{background:var(--cie);padding:1.4rem 0}
+  .obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.5rem)}
+  .herr{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 0}
+  .herr button,.herr a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+  .tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+  .tabla caption{text-align:left;font-weight:700;padding:.3rem 0}
+  .tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+  .tabla thead th{background:var(--cie)}
+  .tabla tbody th{background:#F6FBFB;font-weight:700}
+  .envoltura-tabla{overflow-x:auto}
+  .nota{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+  .tarjetas li{border:2px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+  .tarjetas h3{font-size:1.1rem;margin-bottom:.3rem}
+  .tarjetas p{margin:.3rem 0}
+  .chip{display:inline-block;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.05rem .6rem}
+  .linea{list-style:none;padding:0;margin:.5rem 0;border-left:4px solid var(--pet)}
+  .linea li{position:relative;padding:.35rem 0 .7rem 1.2rem}
+  .linea li::before{content:"";position:absolute;left:-10px;top:.7rem;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--pet)}
+  .linea b{display:block}
+  .mito{margin:.2rem 0;font-weight:700}
+  .hecho{margin:.2rem 0 1rem}
+  details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+  details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;cursor:pointer}
+  details.acord > summary::-webkit-details-marker{display:none}
+  details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+  details.acord[open] > summary::before{content:"▾"}
+  details.acord > summary h2{display:inline;font-size:1.35rem}
+  details.acord > summary:hover{background:var(--cie);border-radius:14px}
+  details.acord .cuerpo{padding:0 1rem 1rem}
+  @media print{.cabecera,.anclas,.herr,.solo-pantalla,.arriba{display:none!important}.tarjetas li,.tabla tr,.linea li{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index-es.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — página de inicio" width="560" height="240"></a>
+  <nav aria-label="Menú principal" class="menu">
+   <a href="index-es.html">Inicio</a>
+   <a href="grados-es.html">Por grado</a>
+   <a href="materias-es.html">Por materia</a>
+   <a href="teatro-es.html" aria-current="page">Teatro</a>
+  </nav>
+ </div>
+</header>
+
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="obra-fenix-lago-es.html">← El guion</a> · <a href="obra-fenix-lago-produccion-es.html">Guía de producción</a></p>
+  <h1 id="titulo">El Fénix sobre el Lago · Guía histórica</h1>
+  <p style="margin:.3rem 0 0">Obra de José M. Fernández. Lo que el docente necesita saber sobre el Gran Incendio de Chicago de 1871 para preparar a los niños antes de los ensayos y conversar con ellos después de la función.</p>
+  <div class="herr solo-pantalla"><button type="button" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button><a href="#actividades">🧑‍🏫 Actividades por grado</a></div>
+ </div>
+</section>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Partes de la guía"><ul class="anclas">
+  <li><a href="#breve">En breve</a></li>
+  <li><a href="#linea">Línea de tiempo</a></li>
+  <li><a href="#causas">Por qué se extendió</a></li>
+  <li><a href="#obra-historia">La obra y la historia</a></li>
+  <li><a href="#mitos">Mitos y hechos</a></li>
+  <li><a href="#personas">Las personas</a></li>
+  <li><a href="#reconstruccion">La reconstrucción</a></li>
+  <li><a href="#vocabulario">Vocabulario</a></li>
+  <li><a href="#actividades">Actividades por grado</a></li>
+  <li><a href="#fuentes">Para saber más</a></li>
+ </ul></nav>
+
+ <!-- ================= EN BREVE ================= -->
+ <details class="seccion acord" id="breve" name="partes">
+  <summary><h2 id="t-breve">En breve</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>Qué pasó:</strong> del 8 al 10 de octubre de 1871, un incendio destruyó el centro de Chicago y gran parte de los lados sur y norte de la ciudad.</li>
+   <li><strong>Cuánto:</strong> ardieron unos 8,5 km² (3,3 millas cuadradas) y unos 17 500 edificios. Murieron cerca de 300 personas, y entre 90 000 y 100 000 se quedaron sin casa, casi un tercio de una ciudad de unos 300 000 habitantes.</li>
+   <li><strong>Cómo empezó:</strong> en el establo de la familia O'Leary, en la calle DeKoven. La causa nunca se determinó.</li>
+   <li><strong>Por qué importa:</strong> Chicago se reconstruyó con rapidez, cambió sus reglas de construcción y, veintidós años después, recibió al mundo en la Exposición de 1893. El fénix, el ave que renace de sus cenizas, se volvió símbolo de la ciudad.</li>
+  </ul>
+  <div class="nota"><strong>Cómo usar esta guía.</strong> Los niños no necesitan aprender todas estas cifras. La guía es para que el docente responda con seguridad las preguntas que salgan en los ensayos. Las actividades están separadas por grados, y la sección «La obra y la historia» explica dónde el guion simplifica.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= LÍNEA DE TIEMPO ================= -->
+ <details class="seccion acord" id="linea" name="partes">
+  <summary><h2 id="t-linea">Línea de tiempo</h2></summary>
+  <div class="cuerpo">
+  <ol class="linea">
+   <li><b>Verano de 1871</b>Sequía: entre julio y principios de octubre cae apenas una pulgada de lluvia. Hay muchos incendios pequeños en la ciudad.</li>
+   <li><b>Sábado 7 de octubre</b>Un incendio grande en el lado oeste quema varias cuadras. Los bomberos terminan agotados y con equipo dañado.</li>
+   <li><b>Domingo 8 de octubre, hacia las 8:30 de la noche</b>Empieza el fuego en el establo de los O'Leary, en la calle DeKoven. Un error al ubicar las llamas manda a los primeros bomberos al lugar equivocado.</li>
+   <li><b>Pasada la medianoche</b>El viento del sudoeste lleva pedazos de madera encendida por encima del brazo sur del río Chicago. El fuego entra en el centro.</li>
+   <li><b>Madrugada del lunes 9</b>Arde el edificio del ayuntamiento y tribunal; su campana cae hacia las 2:30. El fuego cruza el río principal hacia el lado norte. Se quema el techo de la estación de bombeo y la ciudad se queda sin agua en las tuberías.</li>
+   <li><b>Lunes 9, todo el día</b>Miles de personas huyen hacia la orilla del lago Michigan y hacia las praderas del norte y el oeste.</li>
+   <li><b>Noche del 9 al martes 10</b>Empieza a llover. Para entonces el fuego ya había consumido casi todo lo que encontró a su paso; la lluvia ayuda a apagar las últimas llamas.</li>
+   <li><b>Las semanas siguientes</b>Llegan donaciones de todo el país y del extranjero. Se organizan refugios, comida y la limpieza.</li>
+   <li><b>1872</b>Nuevas reglas: en el centro se exige construir con ladrillo, piedra y otros materiales resistentes al fuego. Se funda la Biblioteca Pública de Chicago, con libros donados desde Inglaterra.</li>
+   <li><b>1885</b>Se termina el Home Insurance Building, considerado uno de los primeros rascacielos con esqueleto de metal.</li>
+   <li><b>1893</b>Exposición Mundial Colombina: más de 21 millones de visitas. El periodista que inventó la historia de la vaca admite que no era cierta.</li>
+   <li><b>1917</b>Chicago adopta su bandera; una de sus estrellas rojas recuerda el incendio.</li>
+   <li><b>1961</b>Se inaugura la Academia de Bomberos de Chicago en el terreno donde estaba la casa de los O'Leary, con la escultura «Columna de fuego» (Pillar of Fire) que marca el lugar.</li>
+   <li><b>1997</b>El Concejo Municipal de Chicago declara inocentes a Catherine O'Leary y a su vaca.</li>
+  </ol>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= CAUSAS ================= -->
+ <details class="seccion acord" id="causas" name="partes">
+  <summary><h2 id="t-causas">Por qué se extendió tan rápido</h2></summary>
+  <div class="cuerpo">
+  <p>No hubo una sola causa. Varias condiciones se juntaron, y es una buena oportunidad para que los mayores distingan entre la chispa que inicia algo y las condiciones que lo hacen crecer.</p>
+  <ul class="tarjetas">
+   <li><h3>🪵 Una ciudad de madera</h3><p>Más de dos tercios de los edificios eran de madera, con techos de brea o tejas de madera. También eran de madera las aceras, muchas calles y los puentes.</p></li>
+   <li><h3>☀️ La sequía</h3><p>Apenas había llovido desde julio. La madera, la paja y el heno estaban secos.</p></li>
+   <li><h3>🌬️ El viento</h3><p>Un viento fuerte del sudoeste empujaba las llamas y llevaba brasas por el aire. Se formaron remolinos de fuego que lanzaban material encendido a cuadras de distancia y por encima del río.</p></li>
+   <li><h3>🚒 Bomberos cansados</h3><p>Chicago tenía un cuerpo de bomberos moderno para su época (185 bomberos y 17 bombas de vapor tiradas por caballos), pero venían de una semana de incendios y del gran incendio del sábado.</p></li>
+   <li><h3>📍 Un error y un retraso</h3><p>La primera alarma ubicó mal el fuego, y los equipos tardaron en llegar al lugar correcto.</p></li>
+   <li><h3>💧 Sin agua</h3><p>Cuando se quemó el techo de la estación de bombeo, las tuberías dejaron de llevar agua a los hidrantes.</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= OBRA E HISTORIA ================= -->
+ <details class="seccion acord" id="obra-historia" name="partes">
+  <summary><h2 id="t-obra-historia">La obra y la historia</h2></summary>
+  <div class="cuerpo">
+  <p>Una obra para niños tiene que simplificar. Esta tabla muestra, acto por acto, qué se apoya en hechos comprobados y qué conviene aclarar en clase.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption>Comparación entre el guion y los hechos históricos</caption>
+   <thead><tr><th scope="col">Acto</th><th scope="col">Lo que dice la obra</th><th scope="col">Lo que dice la historia</th></tr></thead>
+   <tbody>
+    <tr><th scope="row">I</th><td>La ciudad era casi toda de madera; hacía semanas que no llovía; soplaba viento del sudoeste.</td><td>Correcto. Son las tres condiciones que más se citan.</td></tr>
+    <tr><th scope="row">I</th><td>La vaca Daisy tumba la lámpara.</td><td>La obra lo presenta como <strong>leyenda</strong>, y así hay que explicarlo: el periodista que la inventó lo admitió en 1893. El nombre «Daisy» es un recurso de la obra: no hay registro del nombre de la vaca.</td></tr>
+    <tr><th scope="row">II</th><td>El fuego cruzó el brazo sur del río y después el río principal.</td><td>Correcto. Las brasas cruzaron por el aire, empujadas por el viento y los remolinos de fuego.</td></tr>
+    <tr><th scope="row">II</th><td>La Torre de Agua sigue en pie.</td><td>Correcto. Es de piedra caliza y sobrevivió. No fue la única: también resistieron la estación de bombeo de enfrente (aunque se le quemó el techo), la iglesia de San Miguel en Old Town y el campanario de la catedral de San Jaime.</td></tr>
+    <tr><th scope="row">II</th><td>La lluvia llegó la noche del 9 y el 10 se apagaron las últimas llamas.</td><td>Correcto. Conviene añadir que la lluvia no «apagó el incendio» sola: para entonces el fuego ya había quemado casi todo lo que podía alcanzar.</td></tr>
+    <tr><th scope="row">II</th><td>Cientos de muertos, unas cien mil personas sin casa, más de diecisiete mil edificios.</td><td>Correcto. Se calcula que murieron unas 300 personas, aunque solo se recuperaron unos 120 cuerpos.</td></tr>
+    <tr><th scope="row">III</th><td>El letrero «Todo perdido, menos la esposa, los hijos y la energía».</td><td>Basado en un hecho: el agente de bienes raíces William D. Kerfoot levantó una caseta en el centro, entre las cenizas, con un letrero de ese tipo.</td></tr>
+    <tr><th scope="row">III</th><td>Miles de libros llegaron desde Inglaterra para la primera biblioteca pública gratuita.</td><td>Correcto. La donación británica dio origen a la Biblioteca Pública de Chicago.</td></tr>
+    <tr><th scope="row">III</th><td>En el centro, solo piedra, ladrillo y hierro.</td><td>En 1872 se exigieron materiales resistentes al fuego dentro de un área de la ciudad. Fuera de ella se siguió construyendo con madera durante años.</td></tr>
+    <tr><th scope="row">III</th><td>En 1885, uno de los primeros rascacielos con esqueleto de metal.</td><td>El Home Insurance Building. Los historiadores discuten cuál fue «el primero»; la obra dice «uno de los primeros», que es lo prudente.</td></tr>
+    <tr><th scope="row">III</th><td>La bandera tiene cuatro estrellas; la segunda recuerda el incendio y la tercera, la Exposición de 1893.</td><td>Correcto. La primera recuerda el fuerte Dearborn y la cuarta, la Exposición de 1933-1934.</td></tr>
+    <tr><th scope="row">IV</th><td>En 1893 el periodista confesó, y en 1997 la ciudad declaró inocente a la Sra. O'Leary.</td><td>Correcto. Nadie sabe con certeza cómo empezó el fuego.</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= MITOS ================= -->
+ <details class="seccion acord" id="mitos" name="partes">
+  <summary><h2 id="t-mitos">Mitos y hechos</h2></summary>
+  <div class="cuerpo">
+  <p>Los niños suelen llegar con alguna de estas ideas. Son una buena ocasión para practicar la lección del Acto IV: antes de creer una historia, hay que buscar las pruebas.</p>
+  <p class="mito">Mito: la vaca de la señora O'Leary empezó el incendio.</p>
+  <p class="hecho">Hecho: la historia apareció en los periódicos antes de que se apagaran las llamas. El reportero Michael Ahern admitió en 1893 que la había inventado. La investigación oficial de 1871 no logró establecer la causa. Un historiador moderno propuso que un vecino, Daniel «Peg Leg» Sullivan, pudo haber provocado el fuego, pero tampoco hay consenso sobre eso.</p>
+  <p class="mito">Mito: Chicago no tenía bomberos preparados.</p>
+  <p class="hecho">Hecho: tenía uno de los cuerpos de bomberos más modernos del país. El problema fue la suma de sequía, viento, madera, cansancio y errores.</p>
+  <p class="mito">Mito: la lluvia apagó el incendio.</p>
+  <p class="hecho">Hecho: la lluvia ayudó a apagar las últimas llamas, pero el fuego ya había consumido casi todo lo que tenía a su alcance.</p>
+  <p class="mito">Mito: la Torre de Agua fue el único edificio que quedó en pie.</p>
+  <p class="hecho">Hecho: es el más famoso, pero también sobrevivieron otros, como la estación de bombeo de enfrente y la iglesia de San Miguel.</p>
+  <p class="mito">Mito: fue el incendio más mortífero de la historia de Estados Unidos.</p>
+  <p class="hecho">Hecho: esa misma noche ardió el pueblo de Peshtigo, en Wisconsin, donde murieron entre 1200 y 2500 personas. Es el incendio más mortífero del país. Hubo otros incendios grandes alrededor del lago Michigan esos mismos días.</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= PERSONAS ================= -->
+ <details class="seccion acord" id="personas" name="partes">
+  <summary><h2 id="t-personas">Las personas</h2></summary>
+  <div class="cuerpo">
+  <ul class="tarjetas">
+   <li><h3>Catherine O'Leary</h3><p>Inmigrante irlandesa que vendía leche de sus vacas en el barrio. Los periódicos la culparon sin pruebas, y algunas caricaturas usaron la historia para burlarse de los inmigrantes irlandeses. Vivió el resto de su vida con esa fama.</p><p><span class="chip">Para conversar</span> ¿Por qué es injusto culpar a alguien sin pruebas? ¿Por qué a veces se culpa a quien es «diferente»?</p></li>
+   <li><h3>William D. Kerfoot</h3><p>Agente de bienes raíces que, días después del incendio, abrió una pequeña oficina de tablas entre las ruinas del centro. Su letrero se volvió símbolo del ánimo de la ciudad.</p></li>
+   <li><h3>Las familias trabajadoras</h3><p>La reconstrucción no fue igual para todos. Muchas familias pobres no podían pagar casas de ladrillo y tuvieron que mudarse más lejos del centro. Con los mayores se puede hablar de que una ciudad «renace», pero no todos sus habitantes renacen igual de rápido.</p></li>
+   <li><h3>Los bomberos</h3><p>Trabajaron casi sin descanso desde el sábado. Su experiencia ayudó a que Chicago creara después uno de los cuerpos de bomberos más respetados del país, con una academia en el mismo lugar donde empezó el fuego.</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= RECONSTRUCCIÓN ================= -->
+ <details class="seccion acord" id="reconstruccion" name="partes">
+  <summary><h2 id="t-reconstruccion">La reconstrucción</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>Ayuda de todas partes.</strong> Llegaron comida, ropa, mantas y dinero de muchas ciudades del país y de otros países. Nueva York y San Luis enviaron grandes sumas.</li>
+   <li><strong>Libros.</strong> Desde Gran Bretaña se donaron más de 8000 libros, con los que se fundó la Biblioteca Pública de Chicago, gratuita para todos.</li>
+   <li><strong>Reglas nuevas.</strong> En 1872, la ciudad exigió materiales resistentes al fuego en el centro. Más adelante mejoró su cuerpo de bomberos.</li>
+   <li><strong>Arquitectura.</strong> Con tanto por construir, llegaron arquitectos e ingenieros de todo el país. En las décadas siguientes, Chicago se convirtió en la cuna del rascacielos moderno.</li>
+   <li><strong>1893.</strong> La Exposición Mundial Colombina, con su «Ciudad Blanca», mostró al mundo una ciudad que veintidós años antes estaba en cenizas.</li>
+   <li><strong>El fénix.</strong> En la mitología, el fénix es un ave que arde y renace de sus cenizas. Desde los días mismos del incendio, periódicos e ilustraciones compararon a Chicago con un fénix que se levanta de las cenizas.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= VOCABULARIO ================= -->
+ <details class="seccion acord" id="vocabulario" name="partes">
+  <summary><h2 id="t-vocabulario">Vocabulario</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption>Palabras de la obra que conviene explicar antes de los ensayos</caption>
+   <thead><tr><th scope="col">Palabra</th><th scope="col">Qué significa</th><th scope="col">Grados</th></tr></thead>
+   <tbody>
+    <tr><th scope="row">establo</th><td>Lugar donde se guardan las vacas, los caballos y otros animales.</td><td>Prekínder–2.º</td></tr>
+    <tr><th scope="row">sequía</th><td>Un tiempo largo sin lluvia.</td><td>1.º–6.º</td></tr>
+    <tr><th scope="row">yesca</th><td>Material muy seco que se enciende con una chispa.</td><td>3.º–6.º</td></tr>
+    <tr><th scope="row">evacuación</th><td>Salir de un lugar peligroso de forma ordenada.</td><td>Kínder–6.º</td></tr>
+    <tr><th scope="row">simulacro</th><td>Práctica de lo que haríamos en una emergencia.</td><td>Kínder–6.º</td></tr>
+    <tr><th scope="row">leyenda</th><td>Una historia que la gente cuenta mucho, aunque no esté probada.</td><td>2.º–6.º</td></tr>
+    <tr><th scope="row">prueba (evidencia)</th><td>Lo que muestra si algo es verdad.</td><td>2.º–6.º</td></tr>
+    <tr><th scope="row">reconstruir</th><td>Volver a construir lo que se destruyó.</td><td>1.º–6.º</td></tr>
+    <tr><th scope="row">rascacielos</th><td>Edificio muy alto, de muchos pisos.</td><td>1.º–6.º</td></tr>
+    <tr><th scope="row">fénix</th><td>Ave de los mitos que renace de sus cenizas; símbolo de volver a empezar.</td><td>Kínder–6.º</td></tr>
+    <tr><th scope="row">chivo expiatorio</th><td>Persona a quien se culpa injustamente de un problema.</td><td>5.º–6.º</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= ACTIVIDADES ================= -->
+ <details class="seccion acord" id="actividades" name="partes">
+  <summary><h2 id="t-actividades">Actividades por grado</h2></summary>
+  <div class="cuerpo">
+  <p>Todas son opcionales. Las de «antes» preparan a los niños para entender su papel; las de «después» ayudan a cerrar la experiencia.</p>
+  <ul class="tarjetas">
+   <li><h3>Prekínder y kínder</h3><p><span class="chip">Antes</span> Mostrar fotos de casas de madera y de ladrillo: ¿cuál se quema más fácil? Ensayar el canto con palmas.</p><p><span class="chip">Después</span> Practicar un simulacro de la escuela: caminar, no correr, y seguir al adulto. Dibujar el fénix que vuela.</p></li>
+   <li><h3>1.º y 2.º grado</h3><p><span class="chip">Antes</span> Leer en voz alta un relato sencillo del incendio y ubicar en un mapa de Chicago el río y el lago.</p><p><span class="chip">Después</span> Hacer en clase la lista «Lo que hacemos si hay humo» y llevarla a casa para hablar del plan de escape familiar.</p></li>
+   <li><h3>3.º y 4.º grado</h3><p><span class="chip">Antes</span> Leer el cuento de 3.º sobre el Gran Incendio en <a href="https://zhemaria.github.io/cuentos-educativos/3ro-sociales-10-incendio.html" target="_blank" rel="noopener noreferrer">español</a> o en <a href="https://zhemaria.github.io/cuentos-educativos/grade3-social-studies-10-great-fire.html" target="_blank" rel="noopener noreferrer" lang="en">inglés</a>.</p><p><span class="chip">Después</span> Ordenar en una línea de tiempo cinco momentos de la obra. Explicar con dibujos las tres condiciones: madera, sequía y viento.</p></li>
+   <li><h3>5.º y 6.º grado</h3><p><span class="chip">Antes</span> Separar «leyenda» y «hecho»: leer la historia de la vaca y buscar qué pruebas hay. Distinguir la chispa (cómo empezó) de las condiciones (por qué creció).</p><p><span class="chip">Después</span> Debate breve: ¿por qué culparon a Catherine O'Leary? ¿Quién se benefició más con la reconstrucción y quién menos? Comparar la bandera de Chicago con los hechos de la obra.</p></li>
+  </ul>
+  <div class="nota"><strong>Seguridad antes que nada.</strong> Algunos niños pueden haber vivido un incendio o tener miedo al fuego. Conviene presentar la obra como una historia de cómo la ciudad aprendió a protegerse y volvió a levantarse, y dejar siempre a la vista las reglas de seguridad del Bombero Jefe.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+
+ <!-- ================= FUENTES ================= -->
+ <details class="seccion acord" id="fuentes" name="partes">
+  <summary><h2 id="t-fuentes">Para saber más</h2></summary>
+  <div class="cuerpo">
+  <p>Fuentes confiables, en inglés, para el docente:</p>
+  <ul>
+   <li><a href="https://www.greatchicagofire.org/" target="_blank" rel="noopener noreferrer" lang="en">The Great Chicago Fire &amp; The Web of Memory</a>: sitio del Chicago History Museum y la Universidad Northwestern, con mapas, relatos de testigos e imágenes de la época.</li>
+   <li><a href="https://www.chipublib.org/blogs/post/whodunit-the-mystery-of-mrs-olearys-cow" target="_blank" rel="noopener noreferrer" lang="en">Whodunit? The Mystery of Mrs. O'Leary's Cow</a>: la Biblioteca Pública de Chicago sobre la leyenda de la vaca.</li>
+   <li><a href="https://www.smithsonianmag.com/smart-news/chicagos-great-fire-150-years-later-180978861/" target="_blank" rel="noopener noreferrer" lang="en">Chicago's Great Fire, 150 Years Later</a>: artículo de la revista Smithsonian sobre mitos y la reconstrucción.</li>
+   <li><a href="https://www.census.gov/about/history/stories/monthly/2021/october-2021.html" target="_blank" rel="noopener noreferrer" lang="en">History and the Census: 1871 Great Chicago Fire</a>: la población de Chicago antes y después del incendio.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>«El Fénix sobre el Lago» · Guía histórica · Obra de José M. Fernández · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">Licencia CC BY-NC-SA 4.0</a></p></div></footer>
+<script>
+(function(){
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(ev){
+      var id=a.getAttribute("href").slice(1);
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      if(abrir(id)) { ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint",function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba",d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint",function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open=d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

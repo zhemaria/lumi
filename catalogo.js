@@ -56,7 +56,7 @@ window.LUMI = {
       es: { titulo: "El bosque mágico", desc: "Una obra escrita en español, con su traducción al inglés." },
       en: { titulo: "The Magic Forest", desc: "A play written in Spanish, with an English translation." } },
     { id: "fenix-lago", estado: "lista",
-      es_url: "obra-fenix-lago-es.html", en_url: "obra-fenix-lago-en.html", guia: "obra-fenix-lago-produccion-es.html",
+      es_url: "obra-fenix-lago-es.html", en_url: "obra-fenix-lago-en.html", guia: "obra-fenix-lago-produccion-es.html", historia: "obra-fenix-lago-historia-es.html",
       es: { titulo: "El Fénix sobre el Lago", desc: "Obra de José M. Fernández. El Gran Incendio de Chicago de 1871 y cómo la ciudad volvió a levantarse, con papeles para todos los grados, de prekínder a 6.º." },
       en: { titulo: "The Phoenix on the Lake", desc: "A play by José M. Fernández. The Great Chicago Fire of 1871 and how the city rose again, with parts for every grade, Pre-K to 6th." } }
   ],

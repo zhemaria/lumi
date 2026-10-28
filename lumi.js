@@ -37,7 +37,7 @@
       errorCuentos: "No se pudieron cargar los cuentos en este momento.",
       cifras: ["actividades", "grados con material", "materias"],
       teatro: { pronto: "En preparación", listo: "Lista", idiomas: "En español y en inglés",
-                guionEs: "Guion en español", guionEn: "Guion en inglés", guia: "Guía de producción", historia: "Guía histórica para el docente",
+                guionEs: "Guion en español", guionEn: "Guion en inglés", guia: "Guía de producción", historia: "Guía histórica para el docente", soloEs: "",
                 traera: "Lo que traerá: guion, tarjetas de personajes, vestuario, escenarios y guía para el docente." }
     },
     en: {
@@ -59,7 +59,7 @@
       errorCuentos: "The stories could not be loaded right now.",
       cifras: ["activities", "grades with materials", "subjects"],
       teatro: { pronto: "In preparation", listo: "Ready", idiomas: "In English and Spanish",
-                guionEs: "Script in Spanish", guionEn: "Script in English", guia: "Production guide (in Spanish)", historia: "Historical guide for teachers (in Spanish)",
+                guionEs: "Script in Spanish", guionEn: "Script in English", guia: "Production guide", historia: "Historical guide for teachers", soloEs: " (in Spanish)",
                 traera: "Coming: script, character cards, costumes, sets and a teacher guide." }
     }
   }[L];
@@ -273,8 +273,13 @@
         var enl = [];
         if (o.es_url) enl.push('<li><a href="' + esc(o.es_url) + '" lang="es">' + esc(t.guionEs) + "</a></li>");
         if (o.en_url) enl.push('<li><a href="' + esc(o.en_url) + '" lang="en">' + esc(t.guionEn) + "</a></li>");
-        if (o.guia) enl.push('<li><a href="' + esc(o.guia) + '"' + (L === "en" ? ' lang="es"' : "") + ">" + esc(t.guia) + "</a></li>");
-        if (o.historia) enl.push('<li><a href="' + esc(o.historia) + '"' + (L === "en" ? ' lang="es"' : "") + ">" + esc(t.historia) + "</a></li>");
+        [["guia", "guia_en"], ["historia", "historia_en"]].forEach(function (k) {
+          if (!o[k[0]]) return;
+          var enIngles = L === "en" && o[k[1]];
+          var url = enIngles ? o[k[1]] : o[k[0]];
+          var soloEs = L === "en" && !o[k[1]];
+          enl.push('<li><a href="' + esc(url) + '"' + (soloEs ? ' lang="es"' : "") + ">" + esc(t[k[0]] + (soloEs ? t.soloEs : "")) + "</a></li>");
+        });
         html += "<ul>" + enl.join("") + "</ul>";
       } else {
         html += '<p class="nota-obra">' + esc(t.traera) + "</p>";

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Phoenix on the Lake · Production · Lumi</title>
+<meta name="description" content="Production guide for “The Phoenix on the Lake,” a play by José M. Fernández: cast and numbers, jobs for non-actors, free music, cue sheet, costumes, sets, rehearsals and a letter to families.">
+<!-- “The Phoenix on the Lake” · José M. Fernández · CC BY-NC-SA 4.0 -->
+<meta name="author" content="José M. Fernández">
+<meta name="dcterms.license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+  .obra-cab{background:var(--cie);padding:1.4rem 0}
+  .obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.5rem)}
+  .herr{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 0}
+  .herr button,.herr a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+  .tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+  .tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+  .tabla thead th{background:var(--cie)}
+  .tabla tbody th{background:#F6FBFB;font-weight:700}
+  .envoltura-tabla{overflow-x:auto}
+  .nota{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+  .tarjetas li{border:2px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+  .tarjetas h3{font-size:1.1rem;margin-bottom:.3rem}
+  .tarjetas p{margin:.3rem 0}
+  .chip{display:inline-block;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.05rem .6rem}
+  .plano{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:.6rem 0 .3rem;font-size:.92rem}
+  .plano div{background:#F6FBFB;border:1px solid var(--borde);border-radius:8px;padding:.45rem .55rem;min-height:70px}
+  .plano b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em;color:#2d5f69}
+  .publico{text-align:center;font-weight:700;border-top:3px solid var(--pet);padding-top:.2rem;margin-bottom:1rem}
+  .carta{border:2px dashed var(--pet);border-radius:14px;padding:1.2rem 1.4rem;background:#fff;margin:1rem 0}
+  .hueco{display:inline-block;min-width:9em;border-bottom:2px solid var(--pet)}
+  .talon{border-top:2px dashed var(--pet);margin-top:1rem;padding-top:.8rem}
+  .casilla{display:inline-block;width:1em;height:1em;border:2px solid var(--pet);vertical-align:-2px;margin-right:.3rem}
+
+  details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+  details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none}
+  details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+  details.acord[open] > summary::before{content:"▾"}
+  details.acord > summary h2{display:inline;font-size:1.35rem}
+  details.acord > summary:hover{background:var(--cie);border-radius:14px}
+  details.acord .cuerpo{padding:0 1rem 1rem}
+  @media print{#cotejo{break-before:page}.cabecera,.anclas,.herr,.solo-pantalla{display:none!important}.carta{break-before:page;border-style:solid}.tarjetas li,.tabla tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-fenix-lago-produccion-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="obra-fenix-lago-en.html">← The script</a> · <a href="obra-fenix-lago-historia-en.html">Historical guide</a></p>
+  <h1 id="titulo">The Phoenix on the Lake · Production</h1>
+  <p style="margin:.3rem 0 0">A play by José M. Fernández. Everything you need to stage it with your school: who is on stage, how many, what you need and when.</p>
+  <div class="herr solo-pantalla"><button type="button" onclick="window.print()">🖨️ Print or save as PDF</button><a href="#carta">✉️ Letter to families</a></div>
+ </div>
+</section>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Parts of the guide"><ul class="anclas">
+  <li><a href="#resumen">At a glance</a></li>
+  <li><a href="#imagenes">The play in pictures</a></li>
+  <li><a href="#reparto">Cast and numbers</a></li>
+  <li><a href="#trabajos">Jobs for non-actors</a></li>
+  <li><a href="#musica">Music</a></li>
+  <li><a href="#entradas">Cue sheet</a></li>
+  <li><a href="#vestuario">Costumes</a></li>
+  <li><a href="#cotejo">Checklist</a></li>
+  <li><a href="#escenografia">Sets and props</a></li>
+  <li><a href="#plano">Stage plan</a></li>
+  <li><a href="#ensayos">Rehearsals</a></li>
+  <li><a href="#carta">Letter to families</a></li>
+ </ul></nav>
+
+ <!-- ================= AT A GLANCE ================= -->
+ <details class="seccion acord" id="resumen" name="partes">
+  <summary><h2 id="t-resumen">At a glance</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>Running time:</strong> 18 to 25 minutes. About 7 minutes are spoken text; the rest is music, dances, entrances and exits, the chant and the bows.</li>
+   <li><strong>Cast:</strong> from about 45 children (a small group per grade) up to the whole school. Almost every group can grow or shrink without changing the script.</li>
+   <li><strong>Languages:</strong> the script is in <a href="obra-fenix-lago-en.html">English</a> and <a href="obra-fenix-lago-es.html" lang="es">Spanish</a>, with the same lines in the same order: you can perform it in one language or mix acts.</li>
+   <li><strong>Safety:</strong> never use real flames or candles. All the fire is made of fabric, felt and LED light.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= PICTURES ================= -->
+ <details class="seccion acord" id="imagenes" name="partes">
+  <summary><h2 id="t-imagenes">The play in pictures</h2></summary>
+  <div class="cuerpo">
+  <p>Five infographics to introduce the play to teachers, children and families. Their labels are in Spanish.</p>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-reparto.jpg" alt="“Who does what?” infographic: a phoenix of fire and water over the lake and, around it, the parts by grade: Pre-K, barnyard animals; 1st grade, the Chicago River with a blue cloth; 2nd and 3rd, winds and embers with ribbons; 4th and 5th, residents of 1871 with suitcases; kindergarten, little flames with fire capes; 6th grade, narrators, Mrs. O'Leary, Fire Chief and Architect." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Who does what?</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto1.jpg" alt="Act I infographic, at night: the barn with a child dressed as a cow and a lantern (the cow legend), Mrs. O'Leary with two buckets, the Fire Chief giving rule 1 (nothing hot near things that burn) and the little flames in fabric capes next to wooden houses." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Act I: the spark on DeKoven Street.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto2.jpg" alt="Act II infographic: children with ribbons as the strong southwest wind; the little flames cross the blue river cloth; the residents walk in line with suitcases and the older children hold the little ones' hands, led by the Fire Chief with his lantern; the Water Tower still stands and rain begins on October 9 on the lakeshore." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Act II: the orderly escape.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto3.jpg" alt="Act III infographic: a man beside a shanty with the sign “All gone but wife, children and energy”; neighbors rebuild with stone and brick and receive donations and books from England; an 1885 skyscraper under construction and the white palaces of the 1893 Exposition." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Act III: Chicago rises.</figcaption></figure>
+  <figure style="margin:1rem 0 1.6rem"><img src="fenix-acto4.jpg" alt="Act IV infographic: the whole cast in three rows on stage, under the Chicago flag with four stars; an arrow shows that the second star stands for the fire, and another note says that in 1997 the city declared Mrs. O'Leary innocent. Below: “Always alert, always prepared!”." loading="lazy" width="1376" height="768" style="display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde)"><figcaption style="font-size:.95rem;margin-top:.4rem">Act IV: what we learned.</figcaption></figure>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= CAST ================= -->
+ <details class="seccion acord" id="reparto" name="partes">
+  <summary><h2 id="t-reparto">Cast and numbers</h2></summary>
+  <div class="cuerpo">
+  <p>The numbers are a guide. The “Minimum” column works for a small school or one classroom per grade; “Maximum” is for grades with several classrooms. The speaking parts are fixed; what grows is the groups.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Number of children per part</caption>
+   <thead><tr><th scope="col">Grade</th><th scope="col">Part</th><th scope="col">Minimum</th><th scope="col">Recommended</th><th scope="col">Maximum</th><th scope="col">How it grows</th></tr></thead>
+   <tbody>
+    <tr><th scope="row" rowspan="5">6th</th><td>Narrators 1 and 2</td><td>2</td><td>2</td><td>4</td><td>Each narration can be split between two voices.</td></tr>
+    <tr><td>Mrs. O'Leary, Fire Chief, Architect</td><td>3</td><td>3</td><td>6</td><td>You can have two casts (one per performance or one per language).</td></tr>
+    <tr><td>Water Tower and flag (no lines)</td><td>1</td><td>3</td><td>3</td><td>One holds the tower; two unfold the flag.</td></tr>
+    <tr><td>Crew (see <a href="#trabajos">jobs</a>)</td><td>4</td><td>8</td><td>15</td><td>Sound, lights, curtain, props, panels.</td></tr>
+    <tr><td>Prompters</td><td>0</td><td>1</td><td>2</td><td>Follow the script backstage.</td></tr>
+    <tr><th scope="row" rowspan="3">4th and 5th</th><td>Residents 1 to 4, Real estate agent</td><td>5</td><td>5</td><td>10</td><td>Speaking parts; can be doubled for two performances.</td></tr>
+    <tr><td>4th grader and 5th grader (final line)</td><td>2</td><td>2</td><td>4</td><td>A small group from each grade can say the final line.</td></tr>
+    <tr><td>Evacuees and builders (no lines of their own)</td><td>6</td><td>16</td><td>40</td><td>Cross with suitcases in Act II and build in Act III.</td></tr>
+    <tr><th scope="row">5th</th><td>Pre-K guides</td><td>1 for every 3 Pre-K children</td><td>1 for every 2</td><td>1 per child</td><td>Hold the little ones' hands during the evacuation.</td></tr>
+    <tr><th scope="row">2nd and 3rd</th><td>Winds and embers (chorus)</td><td>6</td><td>16</td><td>40</td><td>The wavy line can be a single line or several, one behind the other.</td></tr>
+    <tr><th scope="row">1st</th><td>Chicago River (chorus)</td><td>8</td><td>12</td><td>16</td><td>Depends on the length of the cloth: one child per meter (about 3 feet), in two rows. The rest can wave loose blue ribbons.</td></tr>
+    <tr><th scope="row">Kindergarten</th><td>Little Flames (chorus)</td><td>6</td><td>12</td><td>30</td><td>They enter in groups of 6, so they don't bunch up.</td></tr>
+    <tr><th scope="row">Pre-K</th><td>Daisy the cow and barnyard animals (chorus)</td><td>4</td><td>10</td><td>20</td><td>Daisy can be one child with an adult, or two children under a big costume.</td></tr>
+    <tr><th scope="row">Total</th><td></td><td><strong>≈ 50</strong></td><td><strong>≈ 115</strong></td><td><strong>200 or more</strong></td><td></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Small stage or classroom:</strong> use the “Minimum,” bring the big groups in by turns and keep a 6-meter (20-foot) river with 6 children. <strong>Gym or large stage:</strong> the choruses can be large, but rehearse the entrances and exits so that no more than two groups are ever moving at once.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= JOBS ================= -->
+ <details class="seccion acord" id="trabajos" name="partes">
+  <summary><h2 id="t-trabajos">Jobs for non-actors</h2></summary>
+  <div class="cuerpo">
+  <p>Not everyone wants to or can speak on stage, and the play doesn't happen without these jobs. They are real roles: they appear in the program with the child's name.</p>
+  <ul class="tarjetas">
+   <li><h3>🔊 Sound</h3><span class="chip">4th to 6th · 2 children</span><p>Play each track at the right moment, following the <a href="#entradas">cue sheet</a>.</p></li>
+   <li><h3>💡 Lights</h3><span class="chip">5th and 6th · 2 children</span><p>Change the LED lights: warm, flashing red, night blue.</p></li>
+   <li><h3>🎭 Curtain and panels</h3><span class="chip">5th and 6th · 2 to 4 children</span><p>Open and close the curtain and turn the back panels between Act II and Act III.</p></li>
+   <li><h3>🧺 Props</h3><span class="chip">4th to 6th · 2 to 4 children</span><p>Set out the lantern, bucket, suitcases, blueprints and sign on a table, act by act, and put them away afterward.</p></li>
+   <li><h3>📖 Prompter</h3><span class="chip">5th or 6th · 1 or 2 children</span><p>Follow the script backstage and whisper a line to anyone who forgets it.</p></li>
+   <li><h3>🤝 Backstage guides</h3><span class="chip">5th · 1 for every 2 or 3 little ones</span><p>Go with Pre-K and kindergarten: take them to their places, go on stage with them and bring them back.</p></li>
+   <li><h3>🎨 Sets</h3><span class="chip">Any grade</span><p>Paint the panels, the barn, the Water Tower and the Chicago flag in the weeks before the show.</p></li>
+   <li><h3>👒 Costumes and makeup</h3><span class="chip">4th to 6th, with an adult</span><p>Help dress the little ones, put on headbands and capes, and check that nothing comes loose.</p></li>
+   <li><h3>📰 Posters and program</h3><span class="chip">3rd to 6th · 2 to 4 children</span><p>Design the poster and the printed program, with the names of the whole cast.</p></li>
+   <li><h3>🎤 Hosts</h3><span class="chip">5th or 6th · 1 or 2 children</span><p>Welcome the audience before the show and remind everyone to turn off their phones.</p></li>
+   <li><h3>🎟️ Front of house</h3><span class="chip">4th to 6th · 2 to 4 children</span><p>Greet families, hand out programs and help people find seats.</p></li>
+   <li><h3>📸 Photography</h3><span class="chip">6th, with an adult</span><p>Take photos only of children whose families gave permission (see the <a href="#carta">letter</a>).</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= MUSIC ================= -->
+ <details class="seccion acord" id="musica" name="partes">
+  <summary><h2 id="t-musica">Free music</h2></summary>
+  <div class="cuerpo">
+  <p>Tracks 1 to 6 are by composers who died more than a hundred years ago (the works are in the public domain), in recordings that can be used freely: those from <strong>Musopen</strong>, which are released without copyright, and those from the <strong>United States Marine Band</strong>, which, as works of the federal government, are in the public domain. Several pieces also come from the time of the play.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Music list</caption>
+   <thead><tr><th scope="col">Track</th><th scope="col">Piece</th><th scope="col">Why this one</th><th scope="col">Where to get it</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td><em>The Irish Washerwoman</em>, traditional Irish jig, on fiddle</td><td>Irish dance music, like that of the immigrants who lived on DeKoven Street, among them the O'Leary family.</td><td>Best played live, by a student or teacher who plays fiddle, flute or keyboard. There is also a 1939 recording at the <a href="https://www.loc.gov/item/2017702102">Library of Congress</a>, for educational use.</td></tr>
+    <tr><td>2</td><td>Edvard Grieg, <em>In the Hall of the Mountain King</em> (1875)</td><td>It starts very softly and grows faster and louder, like fire pushed by the wind.</td><td><a href="https://commons.wikimedia.org/wiki/File:Musopen_-_In_the_Hall_Of_The_Mountain_King.ogg">Wikimedia Commons (Musopen)</a></td></tr>
+    <tr><td>3</td><td>Frédéric Chopin, Prelude Op. 28 No. 15, <em>“Raindrop”</em></td><td>A repeating note like drops: the rain that helped put out the last of the fire.</td><td><a href="https://musopen.org/">Musopen</a> (search “Chopin Prelude 15”)</td></tr>
+    <tr><td>4</td><td>Antonín Dvořák, Symphony No. 9 “From the New World,” 3rd movement (1893)</td><td>Energetic music, premiered in the United States in 1893, the year of the Chicago Exposition.</td><td><a href="https://commons.wikimedia.org/wiki/File:Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27,_op._95_-_iii._molto_vivace.ogg">Wikimedia Commons (Musopen)</a></td></tr>
+    <tr><td>5</td><td>John Philip Sousa, <em>The Liberty Bell</em> (1893)</td><td>Sousa gave it this name in Chicago, during the 1893 World's Fair.</td><td><a href="https://www.marineband.marines.mil/Audio-Resources/The-Complete-Marches-of-John-Philip-Sousa/The-Liberty-Bell-March/">U.S. Marine Band</a></td></tr>
+    <tr><td>6</td><td>John Philip Sousa, <em>The Stars and Stripes Forever</em> (1896)</td><td>A cheerful march for the final bows.</td><td><a href="https://commons.wikimedia.org/wiki/File:March,_%22The_Stars_and_Stripes_Forever%22_%C2%B7_Colonel_John_R._Bourgeois,_Director_%C2%B7_John_Philip_Sousa_%C2%B7_United_States_Marine_Band.ogg">Wikimedia Commons (Marine Band)</a></td></tr>
+    <tr><td>7</td><td>“Phoenix Chant,” original melody</td><td>Written for this play: simple, in a range comfortable for every grade, with the same melody in English and Spanish.</td><td>In the script, <a href="obra-fenix-lago-en.html#canto">Phoenix Chant</a> section: melody, accompaniment and sheet music. Free to use.</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>The “Phoenix Chant” has an original melody</strong> (track 7), the same in English and Spanish. The claps keep the beat: one per measure, two per line. If no one can play it, the children can sing over the accompaniment recording. It can also still be spoken in rhythm, with just claps or a drum.</div>
+  <figure style="margin:1rem 0"><img src="fenix-canto-partitura-en.svg" alt="Sheet music for the Phoenix Chant with the English lyrics, in 6/8 time and C major." width="2100" height="560" loading="lazy" style="display:block;width:100%;height:auto;background:#fff;border:1px solid var(--borde);border-radius:10px"><figcaption style="font-size:.95rem;margin-top:.4rem">Sheet music in English · <a href="fenix-canto-partitura-es.svg" target="_blank" rel="noopener noreferrer">sheet music in Spanish</a></figcaption></figure>
+  <p>Listen: <a href="fenix-canto-en.mp3">melody in English</a> · <a href="fenix-canto-es.mp3">melody in Spanish</a> · <a href="fenix-canto-acompanamiento.mp3">accompaniment only</a>. Chords: C · C · F · G · Dm · G · Am · G · F · Am · C · F · G · F–G · C (C major, 6/8, dotted quarter = 72).</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= CUES ================= -->
+ <details class="seccion acord" id="entradas" name="partes">
+  <summary><h2 id="t-entradas">Cue sheet (sound and lights)</h2></summary>
+  <div class="cuerpo">
+  <p>For the crew. Each cue is a change: it happens when the event in the “Signal” column takes place.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Sound and light cues</caption>
+   <thead><tr><th scope="col">No.</th><th scope="col">Act</th><th scope="col">Signal</th><th scope="col">Sound</th><th scope="col">Lights</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td>I</td><td>The curtain opens</td><td>Track 1, cheerful</td><td>Warm daylight</td></tr>
+    <tr><td>2</td><td>I</td><td>Narrator 1 starts speaking</td><td>Track 1 fades out</td><td>—</td></tr>
+    <tr><td>3</td><td>I</td><td>Narrator 1 says “That night…”</td><td>—</td><td>Down to night light (soft blue) with a yellow light on the barn</td></tr>
+    <tr><td>4</td><td>I</td><td>The Fire Chief says “Stop!”</td><td>Silence</td><td>White light on the Fire Chief only</td></tr>
+    <tr><td>5</td><td>I</td><td>Daisy knocks over the lantern</td><td>Track 2, from the beginning</td><td>Flashing red and amber</td></tr>
+    <tr><td>6</td><td>II</td><td>The winds enter in line</td><td>Track 2 continues, louder</td><td>Flashing red</td></tr>
+    <tr><td>7</td><td>II</td><td>Resident 1 speaks</td><td>Track 2 lower, but not off</td><td>—</td></tr>
+    <tr><td>8</td><td>II</td><td>Narrator 2 says “…it began to rain”</td><td>Track 3</td><td>Red slowly fades to dark blue</td></tr>
+    <tr><td>9</td><td>II → III</td><td>End of Narrator 1 in Act II</td><td>Track 3 fades out</td><td>Brief blackout: the panels are turned</td></tr>
+    <tr><td>10</td><td>III</td><td>Panels turned</td><td>Track 4 while the builders enter</td><td>Bright morning light</td></tr>
+    <tr><td>11</td><td>III</td><td>The Architect speaks</td><td>Track 4 fades out</td><td>—</td></tr>
+    <tr><td>12</td><td>III</td><td>Narrator 2 says “…in 1893”</td><td>Track 5, soft in the background</td><td>Bright white light</td></tr>
+    <tr><td>13</td><td>IV</td><td>Everyone gathers</td><td>Track 5 fades out</td><td>Full stage light</td></tr>
+    <tr><td>14</td><td>IV</td><td>Phoenix Chant</td><td>Track 7 (melody or accompaniment only), with claps</td><td>—</td></tr>
+    <tr><td>15</td><td>IV</td><td>Bows by grade</td><td>Track 6</td><td>Full light; at the end, the curtain closes</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= COSTUMES ================= -->
+ <details class="seccion acord" id="vestuario" name="partes">
+  <summary><h2 id="t-vestuario">Costumes</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Costumes by part</caption>
+   <thead><tr><th scope="col">Part</th><th scope="col">Costume</th><th scope="col">Made by the school</th></tr></thead>
+   <tbody>
+    <tr><td>Barnyard animals (Pre-K)</td><td>Comfortable clothes; a headband with the animal's ears. Daisy: white clothes with black felt spots.</td><td>Poster board or felt headbands.</td></tr>
+    <tr><td>Little flames (kindergarten)</td><td>Black or red T-shirt.</td><td>Cape or poncho of red, orange and yellow felt, cut into points.</td></tr>
+    <tr><td>River (1st)</td><td>Blue or gray T-shirt.</td><td>The blue river cloth and blue ribbons.</td></tr>
+    <tr><td>Winds and embers (2nd and 3rd)</td><td>Gray, light blue or white T-shirt.</td><td>Wrist ribbons: gray and white for the wind, red and orange for the embers.</td></tr>
+    <tr><td>Residents of 1871 (4th to 6th)</td><td>Boys: long-sleeved shirt, dark pants, suspenders, cap. Girls: long skirt or dress, white apron, hair tied back with a ribbon.</td><td>Ribbon suspenders, aprons made of fabric or white bags, poster board caps.</td></tr>
+    <tr><td>Mrs. O'Leary</td><td>Long skirt, blouse, white apron and headscarf.</td><td>Prop bucket and LED lantern.</td></tr>
+    <tr><td>Fire Chief</td><td>Dark jacket; in 1871 firefighters wore leather helmets and long coats, with no reflective stripes.</td><td>Red or black plastic helmet.</td></tr>
+    <tr><td>Architect</td><td>Vest, shirt, bow tie.</td><td>Rolled-up blueprints and a ruler.</td></tr>
+    <tr><td>Narrators</td><td>Simple period clothes or nice school clothes.</td><td>—</td></tr>
+    <tr><td>Crew</td><td>Black or dark clothes, so they don't draw attention.</td><td>—</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= CHECKLIST ================= -->
+ <details class="seccion acord" id="cotejo" name="partes">
+  <summary><h2 id="t-cotejo">Costume and prop checklist</h2></summary>
+  <div class="cuerpo">
+  <p>For each group's teacher: check each box when the child has everything ready. Print one per classroom.</p>
+  <p>Classroom: <span class="hueco">&nbsp;</span> Teacher: <span class="hueco">&nbsp;</span> Group's part: <span class="hueco">&nbsp;</span></p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Checklist by child</caption>
+   <thead><tr><th scope="col">Name</th><th scope="col">Clothes from home</th><th scope="col">Piece made in class (cape, headband, ribbons…)</th><th scope="col">Props</th><th scope="col">Labeled with name</th><th scope="col">Ready for dress rehearsal</th></tr></thead>
+   <tbody>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <h3>Props by person in charge</h3>
+  <ul style="list-style:none;padding-left:0">
+   <li><span class="casilla"></span>Bucket and LED lantern (Mrs. O'Leary) · new batteries</li>
+   <li><span class="casilla"></span>Fire Chief's lantern · new batteries</li>
+   <li><span class="casilla"></span>Daisy's headband and costume</li>
+   <li><span class="casilla"></span>Blue river cloth, folded with no knots</li>
+   <li><span class="casilla"></span>Sticks with fire streamers</li>
+   <li><span class="casilla"></span>Suitcases, blankets, books and wheelbarrows (Act II)</li>
+   <li><span class="casilla"></span>Water Tower cutout</li>
+   <li><span class="casilla"></span>Blueprints, ruler, hammers and donation boxes (Act III)</li>
+   <li><span class="casilla"></span>Real estate agent's shanty and sign</li>
+   <li><span class="casilla"></span>Chicago flag</li>
+   <li><span class="casilla"></span>Music tracks in order and tested on the sound system</li>
+   <li><span class="casilla"></span>LED lights tested · colored tape on the floor</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= SETS ================= -->
+ <details class="seccion acord" id="escenografia" name="partes">
+  <summary><h2 id="t-escenografia">Sets and props</h2></summary>
+  <div class="cuerpo">
+  <h3>Sets</h3>
+  <ul>
+   <li><strong>Reversible back panels</strong> (foam board or heavy cardboard):
+    <ul><li><strong>Side A, Acts I and II:</strong> the wooden Chicago of 1871: board houses, plank sidewalks, gas lamps.</li>
+        <li><strong>Side B, Acts III and IV:</strong> the rebuilt Chicago: stone and brick buildings, orderly streets and, if you like, a skyscraper under construction.</li></ul></li>
+   <li><strong>The barn</strong> (on the left): a cardboard frame shaped like a barn, with paper or raffia hay.</li>
+   <li><strong>The Water Tower:</strong> a large cardboard cutout painted the color of stone, with its castle-like tower. It is real: it was built in 1869 and still stands on Michigan Avenue.</li>
+   <li><strong>The Chicago River:</strong> a long blue cloth (6 to 10 meters, about 20 to 33 feet), satin or tulle, that two rows of children move in waves.</li>
+   <li><strong>The Chicago flag:</strong> made in class: white background, two light blue stripes and four red six-pointed stars.</li>
+  </ul>
+  <h3>Props by act</h3>
+  <ul>
+   <li><strong>Act I:</strong> tin or gray plastic bucket; prop lantern with an LED light.</li>
+   <li><strong>Act II:</strong> cardboard suitcases, rolled-up blankets, books, toy wheelbarrows; the Fire Chief's lantern.</li>
+   <li><strong>Act III:</strong> wooden or foam hammers, rolled-up blueprints, donation boxes; a small board shanty and the real estate agent's sign, which in English reads, like the original, “All gone but wife, children and energy,” and in the Spanish version, «Todo perdido, menos la esposa, los hijos y la energía».</li>
+  </ul>
+  <h3>Safe effects</h3>
+  <ul>
+   <li>Flashing red and amber LED lights for the fire; dark blue for the night and the end of the fire.</li>
+   <li>Sticks with light fabric strips, waved by hand or with a fan offstage, for the flames.</li>
+   <li>Never candles, matches or artificial smoke: some children have asthma, and a fog machine can set off the alarms.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= STAGE PLAN ================= -->
+ <details class="seccion acord" id="plano" name="partes">
+  <summary><h2 id="t-plano">Stage plan</h2></summary>
+  <div class="cuerpo">
+  <p>Seen from the audience. “Back” is farthest from the audience; “Front” is closest.</p>
+  <h3>Act I</h3>
+  <div class="plano" role="img" aria-label="Act I: back left, the barn with Pre-K, Mrs. O'Leary and Daisy; back right, the sidewalk with the 4th and 5th grade residents; front center, narrators and Fire Chief; the little flames enter from the front left.">
+   <div><b>Back left</b>Barn: Pre-K, Daisy, Mrs. O'Leary</div><div><b>Back center</b>Panels, side A</div><div><b>Back right</b>Sidewalk: 4th and 5th grade residents</div>
+   <div><b>Front left</b>Little flames' entrance</div><div><b>Front center</b>Narrators · Fire Chief</div><div><b>Front right</b>—</div>
+  </div><p class="publico">Audience</p>
+  <h3>Act II</h3>
+  <div class="plano" role="img" aria-label="Act II: the residents enter back left and cross diagonally; the winds pass along the back center; the Water Tower at back right; the river across the whole front; the lakeshore with Pre-K at front right.">
+   <div><b>Back left</b>Residents' entrance</div><div><b>Back center</b>Winds in a wavy line</div><div><b>Back right</b>Water Tower</div>
+   <div><b>Front left</b>The little flames cross the river</div><div><b>Front center</b>River: blue cloth from side to side</div><div><b>Front right</b>Lakeshore: Pre-K and guides</div>
+  </div><p class="publico">Audience</p>
+  <h3>Acts III and IV</h3>
+  <div class="plano" role="img" aria-label="Acts III and IV: panels on side B; architect and blueprints in the center; agent and shanty on the left; builders on the right. In Act IV everyone in three rows: the little ones seated in front, 1st to 3rd in the middle, 4th to 6th in the back.">
+   <div><b>Back left</b>Agent's shanty and sign · Act IV: 4th to 6th standing</div><div><b>Back center</b>Panels, side B · Act IV: 4th to 6th standing</div><div><b>Back right</b>Builders · Act IV: 4th to 6th standing</div>
+   <div><b>Front left</b>Act IV: Pre-K and kindergarten seated; 1st to 3rd behind</div><div><b>Front center</b>Architect · Act IV: O'Leary, Fire Chief, Narrators</div><div><b>Front right</b>Donations · Act IV: Pre-K and kindergarten seated</div>
+  </div><p class="publico">Audience</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= REHEARSALS ================= -->
+ <details class="seccion acord" id="ensayos" name="partes">
+  <summary><h2 id="t-ensayos">Rehearsals</h2></summary>
+  <div class="cuerpo">
+  <h3>Weeks 1 to 3: each group in its classroom</h3>
+  <ul>
+   <li><strong>6th:</strong> read aloud, first sitting and then standing; the Fire Chief rehearses the freeze: one step forward, eyes on the audience, a calm and firm voice.</li>
+   <li><strong>4th and 5th:</strong> the residents' lines and the evacuation march: quick but orderly, no running.</li>
+   <li><strong>2nd and 3rd:</strong> the wavy line with ribbons, to the rhythm of track 2.</li>
+   <li><strong>Pre-K to 1st:</strong> 15-minute sessions: the animal sounds, the little flames' dance and the river's waves.</li>
+   <li><strong>Everyone:</strong> the Phoenix Chant with track 7 and claps.</li>
+  </ul>
+  <h3>Weeks 4 and 5: by blocks</h3>
+  <ul>
+   <li><strong>Block A (Act I):</strong> 6th with Pre-K and kindergarten.</li>
+   <li><strong>Block B (Act II):</strong> 4th and 5th with 1st to 3rd and the guides.</li>
+   <li><strong>Block C (Acts III and IV):</strong> 4th to 6th, and the final gathering of all grades.</li>
+   <li><strong>Crew:</strong> rehearses with the cue sheet while the blocks rehearse.</li>
+  </ul>
+  <h3>Last week: dress rehearsals</h3>
+  <ol>
+   <li>Mark with colored tape on the floor where each group goes; entrances and exits with music.</li>
+   <li>The whole play with costumes, lights and props, and the bows by grade.</li>
+  </ol>
+  <div class="nota">No one has to memorize if they can't. The narrators can read on stage, with their script in a black folder. The little ones say their lines as a chorus, and a guide can whisper the line to them just before.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+
+ <!-- ================= LETTER ================= -->
+ <details class="seccion acord" id="carta" name="partes">
+  <summary><h2 id="t-carta">Letter to families</h2></summary>
+  <div class="cuerpo">
+  <p class="solo-pantalla">Ready to print. Fill in the blanks by hand. At the end there is a slip to return signed.</p>
+  <div class="carta">
+   <p><strong>School play: <em>The Phoenix on the Lake</em></strong></p>
+   <p>Date: <span class="hueco">&nbsp;</span></p>
+   <p>Dear family,</p>
+   <p>This year, the whole school, from Pre-K to 6th grade, will present <em>The Phoenix on the Lake</em>, a play about the Great Chicago Fire of 1871 and about how the city rose again, together. While they rehearse, the children will learn the history of our city and fire safety rules that work at home and at school.</p>
+   <p><strong>Your child</strong> <span class="hueco">&nbsp;</span> <strong>will be:</strong> <span class="hueco">&nbsp;</span></p>
+   <p><strong>Clothes we ask for, if you have them at home</strong> (there is no need to buy anything):</p>
+   <p><span class="hueco" style="min-width:100%">&nbsp;</span></p>
+   <p>The school will make the capes, headbands, ribbons, caps and aprons in class. If you don't have an item, let us know: we will have clothes to lend.</p>
+   <p><strong>Important dates</strong></p>
+   <ul>
+    <li>Bring the clothes, in a bag labeled with name and grade: <span class="hueco">&nbsp;</span></li>
+    <li>Dress rehearsal: <span class="hueco">&nbsp;</span></li>
+    <li>Performance: day <span class="hueco">&nbsp;</span>, time <span class="hueco">&nbsp;</span>, place <span class="hueco">&nbsp;</span></li>
+   </ul>
+   <p><strong>How you can help at home:</strong> if your child has lines, practice them together. The script is on Lumi, with a button to listen to each line and another to show only your child's character's lines: <span class="hueco">&nbsp;</span>. It's also a good time to go over your home's emergency exit as a family.</p>
+   <p>Thank you for joining us!</p>
+   <p>Sincerely,<br><span class="hueco">&nbsp;</span></p>
+   <div class="talon">
+    <p><strong>Return this slip signed by</strong> <span class="hueco">&nbsp;</span></p>
+    <p>Child's name: <span class="hueco">&nbsp;</span> Grade: <span class="hueco">&nbsp;</span></p>
+    <p><span class="casilla"></span>I give permission for my child to take part in the play.</p>
+    <p><span class="casilla"></span>I give permission for the school to share photos or videos of the play in which my child appears.</p>
+    <p><span class="casilla"></span>I do <strong>not</strong> give permission to share photos or videos in which my child appears.</p>
+    <p><span class="casilla"></span>I can help with: <span class="casilla" style="margin-left:.4rem"></span>costumes <span class="casilla" style="margin-left:.4rem"></span>sets <span class="casilla" style="margin-left:.4rem"></span>the day of the show</p>
+    <p>Signature: <span class="hueco" style="min-width:14em">&nbsp;</span> Phone: <span class="hueco">&nbsp;</span></p>
+   </div>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“The Phoenix on the Lake” · A play by José M. Fernández · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0 License</a></p></div></footer>
+<script>
+(function(){
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(ev){
+      var id=a.getAttribute("href").slice(1);
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      if(abrir(id)) { ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint",function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba",d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint",function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open=d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

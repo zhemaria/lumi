@@ -35,7 +35,10 @@
       libroTit: { ciencias: "Cuentos de ciencias", sociales: "Cuentos de estudios sociales" },
       cuentosIndice: "index.html",
       errorCuentos: "No se pudieron cargar los cuentos en este momento.",
-      cifras: ["actividades", "grados con material", "materias"]
+      cifras: ["actividades", "grados con material", "materias"],
+      teatro: { pronto: "En preparación", listo: "Lista", idiomas: "En español y en inglés",
+                guionEs: "Guion en español", guionEn: "Guion en inglés", guia: "Guía para el docente",
+                traera: "Lo que traerá: guion, tarjetas de personajes, vestuario, escenarios y guía para el docente." }
     },
     en: {
       grados: "grados.html", materias: "materias.html",
@@ -54,7 +57,10 @@
       libroTit: { ciencias: "Science stories", sociales: "Social studies stories" },
       cuentosIndice: "index-en.html",
       errorCuentos: "The stories could not be loaded right now.",
-      cifras: ["activities", "grades with materials", "subjects"]
+      cifras: ["activities", "grades with materials", "subjects"],
+      teatro: { pronto: "In preparation", listo: "Ready", idiomas: "In English and Spanish",
+                guionEs: "Script in Spanish", guionEn: "Script in English", guia: "Teacher guide",
+                traera: "Coming: script, character cards, costumes, sets and a teacher guide." }
     }
   }[L];
 
@@ -252,6 +258,30 @@
     cont.innerHTML = html;
   }
 
+  /* Teatro: tarjetas de las obras (catalogo.js → obras) */
+  function paginaTeatro(cont) {
+    var t = T.teatro;
+    cont.innerHTML = (DATOS.obras || []).map(function (o) {
+      var v = o[L] || o[OTRO], lista = o.estado !== "pronto";
+      var html = '<article class="serie obra" id="obra-' + esc(o.id) + '">' +
+        '<span class="tipo">' + esc(lista ? t.listo : t.pronto) + "</span>" +
+        "<h3" + (o[L] ? "" : ' lang="' + OTRO + '"') + ">" + esc(v.titulo) + "</h3>" +
+        '<p class="otro-titulo" lang="' + OTRO + '">' + esc(o[OTRO].titulo) + "</p>" +
+        "<p>" + esc(v.desc) + "</p>" +
+        '<p class="aviso">' + esc(t.idiomas) + "</p>";
+      if (lista) {
+        var enl = [];
+        if (o.es_url) enl.push('<li><a href="' + esc(o.es_url) + '" lang="es">' + esc(t.guionEs) + "</a></li>");
+        if (o.en_url) enl.push('<li><a href="' + esc(o.en_url) + '" lang="en">' + esc(t.guionEn) + "</a></li>");
+        if (o.guia) enl.push('<li><a href="' + esc(o.guia) + '">' + esc(t.guia) + "</a></li>");
+        html += "<ul>" + enl.join("") + "</ul>";
+      } else {
+        html += '<p class="nota-obra">' + esc(t.traera) + "</p>";
+      }
+      return html + "</article>";
+    }).join("");
+  }
+
   /* El cambio de idioma conserva la sección en la que está el niño,
      tanto si llegó por un enlace (#ancla) como si bajó con la rueda */
   function seccionVisible() {
@@ -281,6 +311,7 @@
     var todas = normalizar();
     var pag = document.body.getAttribute("data-pagina");
     var cont = document.getElementById("catalogo");
+    if (pag === "teatro") paginaTeatro(document.getElementById("lista-obras"));
     if (pag === "inicio") paginaInicio(todas);
     if (pag === "grados") paginaGrados(todas, cont);
     if (pag === "materias") paginaMaterias(todas, cont);

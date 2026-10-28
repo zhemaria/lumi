@@ -48,6 +48,18 @@ window.LUMI = {
     { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" }
   ],
 
+  /* Obras de teatro (página teatro.html / teatro-es.html).
+     estado: "pronto" mientras se preparan; al publicarlas se agregan es_url / en_url
+     (el guion en cada idioma) y guia (la guía para el docente). */
+  obras: [
+    { id: "bosque-magico", estado: "pronto",
+      es: { titulo: "El bosque mágico", desc: "Una obra escrita en español, con su traducción al inglés." },
+      en: { titulo: "The Magic Forest", desc: "A play written in Spanish, with an English translation." } },
+    { id: "fenix-lago", estado: "pronto",
+      es: { titulo: "El Fénix sobre el lago", desc: "El Gran Incendio de Chicago de 1871 y cómo la ciudad volvió a levantarse." },
+      en: { titulo: "The Phoenix over the Lake", desc: "The Great Chicago Fire of 1871 and how the city rose again." } }
+  ],
+
   series: [
 
     /* ---------------- PREKÍNDER ---------------- */

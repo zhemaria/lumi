@@ -43,7 +43,9 @@ window.LUMI = {
     { grado: "4", area: "ciencias", es: "libro-4to-ciencias.html",   en: "book-grade4-science.html" },
     { grado: "4", area: "sociales", es: "libro-4to-sociales.html",   en: "book-grade4-social-studies.html" },
     { grado: "5", area: "ciencias", es: "book-grade5-science.html",  en: "book-grade5-science.html" },
-    { grado: "5", area: "sociales", es: "book-grade5-social-studies.html", en: "book-grade5-social-studies.html" }
+    { grado: "5", area: "sociales", es: "book-grade5-social-studies.html", en: "book-grade5-social-studies.html" },
+    { grado: "6", area: "ciencias", es: "book-grade6-science.html",  en: "book-grade6-science.html" },
+    { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" }
   ],
 
   series: [
@@ -165,6 +167,43 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- SEXTO GRADO ----------------
+       Como en 5.º: todo en inglés, con el botón opcional «Ayuda en español» (?ayuda=es). */
+    {
+      grado: "6", materia: "matematicas", tipo: "interactivo", solo: "en",
+      aviso: { es: "En inglés, con ayuda en español: ya viene activada desde aquí.", en: "" },
+      es: { titulo: "Matemáticas de 6.º grado", url: P + "6to_grado/?ayuda=es" },
+      en: { titulo: "Grade 6 math",            url: P + "6to_grado/" },
+      lecciones: [
+        { es: "Razones y tasas", en: "Ratios and rates", es_url: P + "6to_grado/g6-01-ratios-rates.html?ayuda=es", en_url: P + "6to_grado/g6-01-ratios-rates.html" },
+        { es: "Dividir fracciones", en: "Dividing fractions", es_url: P + "6to_grado/g6-02-dividing-fractions.html?ayuda=es", en_url: P + "6to_grado/g6-02-dividing-fractions.html" },
+        { es: "División y decimales", en: "Division and decimals", es_url: P + "6to_grado/g6-03-division-decimals.html?ayuda=es", en_url: P + "6to_grado/g6-03-division-decimals.html" },
+        { es: "Factores y múltiplos", en: "Factors and multiples", es_url: P + "6to_grado/g6-04-factors-multiples.html?ayuda=es", en_url: P + "6to_grado/g6-04-factors-multiples.html" },
+        { es: "Números negativos", en: "Negative numbers", es_url: P + "6to_grado/g6-05-negative-numbers.html?ayuda=es", en_url: P + "6to_grado/g6-05-negative-numbers.html" },
+        { es: "El plano de coordenadas", en: "The coordinate plane", es_url: P + "6to_grado/g6-06-coordinate-plane.html?ayuda=es", en_url: P + "6to_grado/g6-06-coordinate-plane.html" },
+        { es: "Expresiones y exponentes", en: "Expressions and exponents", es_url: P + "6to_grado/g6-07-expressions.html?ayuda=es", en_url: P + "6to_grado/g6-07-expressions.html" },
+        { es: "Ecuaciones y desigualdades", en: "Equations and inequalities", es_url: P + "6to_grado/g6-08-equations-inequalities.html?ayuda=es", en_url: P + "6to_grado/g6-08-equations-inequalities.html" },
+        { es: "Variables dependientes e independientes", en: "Dependent and independent variables", es_url: P + "6to_grado/g6-09-variables.html?ayuda=es", en_url: P + "6to_grado/g6-09-variables.html" },
+        { es: "Área, área superficial y volumen", en: "Area, surface area and volume", es_url: P + "6to_grado/g6-10-area-volume.html?ayuda=es", en_url: P + "6to_grado/g6-10-area-volume.html" },
+        { es: "Preguntas estadísticas", en: "Statistical questions", es_url: P + "6to_grado/g6-11-statistical-questions.html?ayuda=es", en_url: P + "6to_grado/g6-11-statistical-questions.html" },
+        { es: "Representar y resumir datos", en: "Displaying and summarizing data", es_url: P + "6to_grado/g6-12-displaying-data.html?ayuda=es", en_url: P + "6to_grado/g6-12-displaying-data.html" }
+      ]
+    },
+    {
+      grado: "6", materia: "lectura", tipo: "interactivo", solo: "en",
+      aviso: { es: "Esta serie enseña a leer en inglés. La ayuda en español traduce solo las instrucciones y las preguntas.", en: "" },
+      es: { titulo: "Lectura en inglés", url: P + "6to_grado/reading.html?ayuda=es" },
+      en: { titulo: "Grade 6 reading",   url: P + "6to_grado/reading.html" },
+      lecciones: [
+        { es: "Raíces, afijos y el diccionario", en: "Roots, affixes and the dictionary", es_url: P + "6to_grado/g6-reading-01-roots-dictionary.html?ayuda=es", en_url: P + "6to_grado/g6-reading-01-roots-dictionary.html" },
+        { es: "Lenguaje figurado y connotación", en: "Figurative language and connotation", es_url: P + "6to_grado/g6-reading-02-figurative-language.html?ayuda=es", en_url: P + "6to_grado/g6-reading-02-figurative-language.html" },
+        { es: "Pronombres y puntuación", en: "Pronouns and punctuation", es_url: P + "6to_grado/g6-reading-03-pronouns-punctuation.html?ayuda=es", en_url: P + "6to_grado/g6-reading-03-pronouns-punctuation.html" },
+        { es: "Cuentos, mitos y poemas", en: "Stories, myths and poems", es_url: P + "6to_grado/g6-reading-04-stories.html?ayuda=es", en_url: P + "6to_grado/g6-reading-04-stories.html" },
+        { es: "Idea central y resumen", en: "Central idea and summary", es_url: P + "6to_grado/g6-reading-05-central-idea.html?ayuda=es", en_url: P + "6to_grado/g6-reading-05-central-idea.html" },
+        { es: "Afirmaciones y evidencia", en: "Claims and evidence", es_url: P + "6to_grado/g6-reading-06-claims-evidence.html?ayuda=es", en_url: P + "6to_grado/g6-reading-06-claims-evidence.html" }
       ]
     },
 

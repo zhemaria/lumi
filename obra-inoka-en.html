@@ -1,0 +1,384 @@
+<!doctype html>
+<!-- Inoka: The Breath of the Prairie and the People of Illinois · José M. Fernández · CC BY-NC-SA 4.0 · generado con herramientas/gen_inoka.py -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inoka: The Breath of the Prairie and the People of Illinois · Lumi</title>
+<meta name="description" content="Before the highways and the brick cities, the Inoka people lived on the prairies and rivers of Illinois. A play for the whole school, from Pre-K to 6th grade, about the land, working together, the council and a people who are still here today: the Peoria Tribe of Oklahoma.">
+<meta name="author" content="José M. Fernández">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="alternate" hreflang="es" href="obra-inoka-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{background:var(--cie);padding:1.4rem 0}
+.obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.obra-cab .sub{font-size:1.2rem;margin:.3rem 0 0}
+.obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+.obra-cab .permiso{font-size:.95rem}
+.enlaces-obra{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0;padding:0;list-style:none}
+.enlaces-obra a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font-weight:700;text-decoration:none}
+.enlaces-obra a:hover{background:var(--cie)}
+.barra{position:sticky;top:76px;z-index:5;background:#fff;border:2px solid var(--borde);border-radius:14px;padding:.6rem .8rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.barra label{font-weight:700}
+.barra select,.barra button{min-height:44px;font:inherit;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);padding:0 .9rem;font-weight:700;cursor:pointer}
+.barra .chk{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.barra .chk input{width:22px;height:22px}
+.linea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:start;padding:.6rem .8rem;margin:.35rem 0;border-left:8px solid var(--c);border-radius:10px;background:#fff}
+.linea .quien{display:inline-block;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:.05rem .65rem;font-size:.9rem;margin-right:.4rem}
+.linea .grado{font-size:.85rem;margin-right:.4rem}
+.linea p{margin:.25rem 0 0}
+.acot{font-style:italic;margin:.6rem 0;padding:.4rem .8rem;border-left:4px dashed var(--borde);color:#2d5f69}
+.mus{margin:.6rem 0;padding:.45rem .8rem;border-radius:10px;background:#F3EEFA;color:#3d2a63;font-weight:700}
+.mus small{font-weight:400}
+.lugar{margin:1rem 0 .4rem;text-align:center;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2d5f69}
+.oir{min-width:44px;min-height:44px;border-radius:50%;border:2px solid var(--pet);background:#fff;cursor:pointer;font-size:1.1rem}
+.oir:hover{background:var(--cie)}
+body.filtrando .linea{opacity:.35}
+body.filtrando .linea.mia{opacity:1;box-shadow:0 0 0 3px var(--c)}
+body.solo .linea:not(.mia){display:none}
+body.solo .acot,body.solo .mus,body.solo .lugar{display:none}
+.linea.hablando{outline:3px solid var(--ama)}
+.cancion .letra{font-size:1.1rem;line-height:1.75;margin:.3rem 0 0}
+.cancion .sentido{font-size:.95rem;font-style:italic;margin:.5rem 0 0;color:#2d5f69}
+.cancion video{display:block;width:100%;max-width:420px;border-radius:12px;margin:.6rem 0 0;background:#000}
+details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;border:0;cursor:pointer}
+details.acord > summary::-webkit-details-marker{display:none}
+details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+details.acord[open] > summary::before{content:"▾"}
+details.acord > summary h2{display:inline;font-size:1.35rem}
+details.acord > summary:hover{background:var(--cie);border-radius:14px}
+details.acord .cuerpo{padding:0 1rem 1rem}
+.acto-h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.acto-h button{min-height:44px;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;padding:0 .9rem;cursor:pointer}
+.tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+.tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.tabla th{background:var(--cie)}
+.punto{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:.4rem;vertical-align:-2px}
+.envoltura-tabla{overflow-x:auto}
+body.grande{font-size:21px}
+body.muygrande{font-size:24px}
+main .seccion{scroll-margin-top:170px}
+.barra select{max-width:100%}
+@media (max-width:760px){.barra{position:static}.barra select{width:100%}main .seccion{scroll-margin-top:130px}}
+@media print{.barra,.oir,.acto-h button,.cabecera,.anclas,.enlaces-obra{display:none!important}.linea{break-inside:avoid;border-left-width:6px}body.filtrando .linea{opacity:1}}
+</style>
+</head>
+<body data-voz="en-US">
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-inoka-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro.html">← Lumi Theater</a></p>
+  <h1 id="titulo">Inoka</h1>
+  <p class="sub">The Breath of the Prairie and the People of Illinois</p>
+  <p class="autor">A play by José M. Fernández</p>
+  <p>Before the highways and the brick cities, the Inoka people lived on the prairies and rivers of Illinois. A play for the whole school, from Pre-K to 6th grade, about the land, working together, the council and a people who are still here today: the Peoria Tribe of Oklahoma.</p>
+  <p><a href="obra-inoka-produccion-en.html">🎬 Production guide: cast, songs, respectful costumes, sets and family letter</a></p>
+  <p><a href="obra-inoka-historia-en.html">📜 Historical guide for teachers: who the Inoka were, myths and facts, and activities by grade</a></p>
+  <p><a href="obra-inoka-programa-en.html">📄 Program</a> · <a href="obra-inoka-cartel-en.html">🖼️ Show poster</a></p>
+  <p class="permiso">This play is about a people who are still here today. Children do not dress up as Native people or use ceremonial objects: each character is recognized by what they do. More details in the production guide.</p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Go to"><ul class="anclas"><li><a href="#reparto">Cast</a></li><li><a href="#acto-1">Act I</a></li><li><a href="#acto-2">Act II</a></li><li><a href="#acto-3">Act III</a></li><li><a href="#acto-4">Act IV</a></li><li><a href="#acto-5">Act V</a></li></ul></nav>
+ <div class="barra" role="group" aria-label="My part:">
+  <label for="mi-papel">My part:</label>
+  <select id="mi-papel"><option value="">All parts</option><option value="NAR1">Narrator 1 · 6th</option><option value="NAR2">Narrator 2 · 6th</option><option value="MAIZ">Corn · 1st</option><option value="FRIJOL">Bean · 1st</option><option value="CALAB">Squash · 2nd</option><option value="AGRI">Farmer · 2nd</option><option value="TEJ">Weaver · 2nd</option><option value="CORO12">Chorus · 1st &amp; 2nd</option><option value="MENS">Village Messenger · 3rd</option><option value="NAVEG">Peoria Paddler · 4th</option><option value="COMER">Kaskaskia Trader · 4th</option><option value="LKAS">Kaskaskia Council Leader · 5th</option><option value="GUARD">Keeper of Memory · 6th</option><option value="LPEO">Peoria Council Leader · 6th</option><option value="E1">1st grader · 1st</option><option value="E3">3rd grader · 3rd</option><option value="E4">4th grader · 4th</option><option value="E5">5th grader · 5th</option><option value="E6">6th grader · 6th</option><option value="TODOS">All grades · All</option></select>
+  <label class="chk"><input type="checkbox" id="solo"> Show only my lines</label>
+  <button type="button" id="menor" aria-label="Smaller text">A−</button>
+  <button type="button" id="mayor" aria-label="Bigger text">A+</button>
+  <button type="button" id="imprimir">🖨️ Print</button>
+ </div>
+ <p>Stage directions (in italics) tell what happens on stage: they are not read aloud. The songs are sung in Spanish, with the recordings in the production guide.</p>
+ <details class="seccion acord" id="reparto">
+  <summary><h2 id="t-reparto">Cast</h2></summary>
+  <div class="cuerpo">
+  <p>Every group can grow or shrink without changing the text. When a part has one child (Corn, Farmer...), the line can also be said by a small group.</p>
+  <div class="envoltura-tabla"><table class="tabla">
+   <caption class="sr">Cast</caption>
+   <thead><tr><th scope="col">Part</th><th scope="col">Grade</th><th scope="col">What they are like</th><th scope="col">Lines</th></tr></thead>
+   <tbody>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>Narrator 1</td><td>6th</td><td>Tells the story in a clear, calm voice.</td><td>5</td></tr>
+<tr><td><span class="punto" style="background:#6A3F86" aria-hidden="true"></span>Narrator 2</td><td>6th</td><td>Tells the story in a clear, calm voice.</td><td>5</td></tr>
+<tr><td><span class="punto" style="background:#4D6B12" aria-hidden="true"></span>Nature (no lines)</td><td>Pre-K &amp; K</td><td>The wind, the prairie flowers, the birds and the bison: they express themselves through movement.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#5A5A1E" aria-hidden="true"></span>Musicians (no lines)</td><td>1st &amp; 2nd</td><td>Rain sticks and seed rattles in Act I.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#2F6B2F" aria-hidden="true"></span>Corn</td><td>1st</td><td>Tall and strong: the support for its sisters.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#3C6E1E" aria-hidden="true"></span>Bean</td><td>1st</td><td>Winds around the corn and gives strength back to the soil.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#A0461A" aria-hidden="true"></span>Squash</td><td>2nd</td><td>Covers the ground with its wide leaves.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#7A4E12" aria-hidden="true"></span>Farmer</td><td>2nd</td><td>Among the Inoka, women tended the gardens.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#8A3B5C" aria-hidden="true"></span>Weaver</td><td>2nd</td><td>Weaves the rush mats that cover the houses.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1F5F6B" aria-hidden="true"></span>Chorus</td><td>1st &amp; 2nd</td><td>Sings “Raíz con raíz”.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1E5AA0" aria-hidden="true"></span>The rivers (no lines)</td><td>3rd &amp; 4th</td><td>Move the blue cloths of the Illinois and Mississippi rivers.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#6B5212" aria-hidden="true"></span>Village Messenger</td><td>3rd</td><td>Announces the seasonal assembly.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1A5276" aria-hidden="true"></span>Peoria Paddler</td><td>4th</td><td>Arrives by canoe with bison meat and pelts.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#8A4B00" aria-hidden="true"></span>Kaskaskia Trader</td><td>4th</td><td>Welcomes the visitors and trades tools and pottery.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#3F5560" aria-hidden="true"></span>Kaskaskia Council Leader</td><td>5th</td><td>Speaks about the true strength of a community.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#7A2E2E" aria-hidden="true"></span>Keeper of Memory</td><td>6th</td><td>Explains how the villages governed themselves and where the name “Illinois” comes from.</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#2E4D6B" aria-hidden="true"></span>Peoria Council Leader</td><td>6th</td><td>Tells what offering the calumet meant.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#2F6F73" aria-hidden="true"></span>1st grader</td><td>1st</td><td>One line in the closing scene.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#2B6680" aria-hidden="true"></span>3rd grader</td><td>3rd</td><td>Speaks about the language coming back.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#355E8C" aria-hidden="true"></span>4th grader</td><td>4th</td><td>One line in the closing scene.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#4A4E8F" aria-hidden="true"></span>5th grader</td><td>5th</td><td>Introduces today's Peoria Tribe.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>6th grader</td><td>6th</td><td>Says the last line before the final chorus.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#194F5A" aria-hidden="true"></span>All grades</td><td>All</td><td>The whole cast, together.</td><td>2</td></tr>
+   </tbody>
+  </table></div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+  </div>
+ </details>
+<details class="seccion acord" id="acto-1">
+ <summary><h2 id="t-acto-1">Act I · The Heartbeat of the Prairie and the River</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(Pre-K and K take part: the natural world of Illinois.)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The stage begins in dim light. We hear the slow, steady beat of a hand drum. At the sides of the stage, 1st and 2nd graders play rain sticks and seed rattles. The Pre-K and K students slowly come in: they are the wind, the prairie flowers, the birds and the bison.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Long before asphalt highways and great brick cities, this wide land of rivers belonged to the open sky, to the tall prairie grasses and to the generous waters of the great Mississippi River.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">Here, life flowed in balance. The trees sheltered the birds, the grasses fed the bison, and the river brought fresh water to the forests and the valleys. Every living thing was part of a web of respect and reciprocity.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">In the heart of this land lived families gathered in many villages. French missionaries wrote down that they called themselves “Inoka.”</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">The meaning of the word Inoka was lost in time, but in the stories of the prairie it remains as the memory of a people who lived in harmony with the land and with one another.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-2">
+ <summary><h2 id="t-acto-2">Act II · The Three Sisters and the Home of Mats</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(1st and 2nd grades take part: farming, houses and working together.)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The 1st and 2nd graders come in with baskets and with the stalks of the corn, the beans and the squash. Upstage, a longhouse of bent poles covered with rush mats.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">In spring and summer, the women of the Inoka villages tended rich gardens in the valleys. Their main food came from three plants that grew together, helping one another, which many peoples today call the Three Sisters.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="MAIZ" style="--c:#2F6B2F">
+   <div><span class="quien">Corn</span><span class="grado">1st</span><p class="txt">I am Corn. I grow tall, straight and strong toward the summer sun. With my strong body, I am the pillar and the support for my sisters.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Corn">🔊</button>
+  </div>
+  <div class="linea" data-papeles="FRIJOL" style="--c:#3C6E1E">
+   <div><span class="quien">Bean</span><span class="grado">1st</span><p class="txt">I am Bean. Alone on the ground, I cannot reach up high; but I gently wind around Corn's stalk, climb toward the light and give strength back to the soil.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Bean">🔊</button>
+  </div>
+  <div class="linea" data-papeles="CALAB" style="--c:#A0461A">
+   <div><span class="quien">Squash</span><span class="grado">2nd</span><p class="txt">I am Squash. I spread my wide leaves over the ground. I keep the soil cool and moist so the drought does not wither my sisters.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Squash">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AGRI" style="--c:#7A4E12">
+   <div><span class="quien">Farmer</span><span class="grado">2nd</span><p class="txt">Our grandmothers understood that the land gives plenty not through force, but through working together. If we plant together, the harvest feeds the whole village.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Farmer">🔊</button>
+  </div>
+  <div class="linea" data-papeles="TEJ" style="--c:#8A3B5C">
+   <div><span class="quien">Weaver</span><span class="grado">2nd</span><p class="txt">And with the rushes from the marshes we weave the mats that cover our houses. One reed alone breaks when you bend it, but woven all together they protect our families from the wind and the rain.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Weaver">🔊</button>
+  </div>
+  <div class="linea cancion" data-papeles="CORO12" style="--c:#1F5F6B">
+   <div><span class="quien">Chorus</span><span class="grado">1st &amp; 2nd</span>
+   <p class="txt"><strong>🎵 Song: “Raíz con raíz”</strong></p>
+   <p class="letra" lang="es" aria-label="Lyrics (sung in Spanish)">Raíz con raíz, hojita con hoja,<br>la tierra florece cuando el pueblo trabaja.<br>Maíz, calabaza y tierno frijol<br>protegen el hogar bajo el mismo sol.</p><p class="sentido"><strong>What it means:</strong> Root by root, little leaf by leaf, / the land blooms when the people work together. / Corn, squash and tender beans / protect the home under the same sun.</p>
+   <p style="margin:.4rem 0 0"><a href="obra-inoka-produccion-en.html#inoka-raiz-con-raiz">▶ Watch the song with its lyrics</a></p></div>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-3">
+ <summary><h2 id="t-acto-3">Act III · The River Routes and Trade Between Villages</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(3rd and 4th grades take part: river travel, trade and alliances between villages.)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(Four students wave the blue cloths like the waters of the Illinois River. Two paddlers move forward inside the cutouts of the dugout canoes, with light wooden paddles.)</p>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">The rivers of Illinois were not borders, but wide roads for trade. Along them, the villages of the Confederation stayed in touch: the Kaskaskia, the Peoria, the Tamaroa, the Cahokia and, later, allies such as the Michigamea.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAVEG" style="--c:#1A5276">
+   <div><span class="quien">Peoria Paddler</span><span class="grado">4th</span><p class="txt">Greetings, friends from the neighboring village! We travel the river in our canoe, carved from a single tree trunk. We bring dried bison meat and valuable beaver pelts.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Peoria Paddler">🔊</button>
+  </div>
+  <div class="linea" data-papeles="COMER" style="--c:#8A4B00">
+   <div><span class="quien">Kaskaskia Trader</span><span class="grado">4th</span><p class="txt">Welcome to our riverbank! Along the rivers and the old trails we trade flint tools, river shells and clay bowls. Trade brings our families together and makes peace stronger.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Kaskaskia Trader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Near these rivers, centuries earlier, the great city of mounds at Cahokia, of the Mississippian culture, had flourished. By the time the Inoka traveled these rivers, that city was already empty. Archaeologists are still studying how that city was related to the peoples who came after.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="MENS" style="--c:#6B5212">
+   <div><span class="quien">Village Messenger</span><span class="grado">3rd</span><p class="txt">(Enters with firm steps, holding a staff of woven reeds.) News from the assembly! The chiefs and the elders of each village are calling us to the meeting of the season. It is time to share what the summer gave us and to listen to the stories of our elders.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Village Messenger">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-4">
+ <summary><h2 id="t-acto-4">Act IV · The Village Assembly and the Wisdom of the Council</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(5th and 6th grades take part: decisions by consensus, oral tradition and the arrival of the French.)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The 5th and 6th graders form a council circle around a symbolic fire. The groups from the other grades sit in an outer half circle: this is the great assembly of the community.)</p>
+  <div class="linea" data-papeles="GUARD" style="--c:#7A2E2E">
+   <div><span class="quien">Keeper of Memory</span><span class="grado">6th</span><p class="txt">In our villages there was no king and no central government. Each village had its own chiefs: one for peace and one for war, and no one inherited the position. But when big decisions had to be made, we listened to one another until we reached an agreement.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Keeper of Memory">🔊</button>
+  </div>
+  <div class="linea" data-papeles="LKAS" style="--c:#3F5560">
+   <div><span class="quien">Kaskaskia Council Leader</span><span class="grado">5th</span><p class="txt">The true strength of a community is not measured by its weapons, but by how well it protects its children, cares for its elders and thinks of those who will come after us.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Kaskaskia Council Leader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="LPEO" style="--c:#2E4D6B">
+   <div><span class="quien">Peoria Council Leader</span><span class="grado">6th</span><p class="txt">When visitors came in peace, we offered them the calumet, a ceremonial pipe decorated with feathers. It was our most solemn way of saying: here there is peace, dialogue and hospitality.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Peoria Council Leader">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The calumet is mentioned, but it does not appear on stage.)</p>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">In 1673, the French explorers Jacques Marquette and Louis Jolliet arrived by river. They had already heard about this people from neighboring nations, who called them by a word that sounded like “ilinwe.” That is where the name “Illinois” comes from. And in a Peoria village, they were welcomed with the peace calumet.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GUARD" style="--c:#7A2E2E">
+   <div><span class="quien">Keeper of Memory</span><span class="grado">6th</span><p class="txt">Marquette believed that “Illinois” meant “the men.” Today, scholars think the word meant “those who speak in the ordinary way.” But the name they gave themselves was a different one: Inoka. And being part of this land calls for maturity, courage to protect the peace and wisdom to share the fire.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Keeper of Memory">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-5">
+ <summary><h2 id="t-acto-5">Act V · Final Scene: The Living Legacy of the Inoka</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the act</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The whole school takes part: from the past to the present of the Peoria Tribe of Oklahoma.)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The whole cast gradually joins in and takes one step forward, all together.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator 1</span><span class="grado">6th</span><p class="txt">Centuries went by. The prairies changed their cloak, bridges rose over the rivers, and the villages of mats gave way to the maps of the modern state of Illinois.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrator 2</span><span class="grado">6th</span><p class="txt">But the story of the Inoka did not end in the past. They had to leave Illinois: first for Missouri, then for Kansas and, in 1867, for what is now Oklahoma. And there, they carried on.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E5" style="--c:#4A4E8F">
+   <div><span class="quien">5th grader</span><span class="grado">5th</span><p class="txt">Today their descendants form the Peoria Tribe of Indians of Oklahoma, a nation recognized by the United States government, which proudly keeps its history and its identity.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 5th grader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E3" style="--c:#2B6680">
+   <div><span class="quien">3rd grader</span><span class="grado">3rd</span><p class="txt">Their language, Miami-Illinois, no longer has any native speakers. But children and young people of the Peoria and Miami nations are learning it again, and so the words of their grandparents are heard once more.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 3rd grader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E1" style="--c:#2F6F73">
+   <div><span class="quien">1st grader</span><span class="grado">1st</span><p class="txt">They teach us to care for the rivers, the plants and the forests.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 1st grader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E4" style="--c:#355E8C">
+   <div><span class="quien">4th grader</span><span class="grado">4th</span><p class="txt">They teach us that roads are for reaching out a hand and trading in peace.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 4th grader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E6" style="--c:#5B3F8F">
+   <div><span class="quien">6th grader</span><span class="grado">6th</span><p class="txt">And they remind us that, to be worthy of the name Illinois, we must govern ourselves by listening, with fairness and with respect for nature.</p></div>
+   <button type="button" class="oir" aria-label="Listen: 6th grader">🔊</button>
+  </div>
+  <div class="linea" data-papeles="TODOS" style="--c:#194F5A">
+   <div><span class="quien">All grades</span><span class="grado">All</span><p class="txt">We are the memory of the prairie!<br>We are the breath of the great river!<br>We are the present and the legacy of the people of Illinois!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All grades">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The hand drums play and the final song begins. The whole cast sings and dances, holding hands.)</p>
+  <div class="linea cancion" data-papeles="TODOS" style="--c:#194F5A">
+   <div><span class="quien">All grades</span><span class="grado">All</span>
+   <p class="txt"><strong>🎵 Song: “Legado de la pradera”</strong></p>
+   <p class="letra" lang="es" aria-label="Lyrics (sung in Spanish)">Bajo el cielo abierto creció la hierba alta,<br>el bisonte, el viento y el agua que no falta.<br>Maíz, frijol, calabaza, juntitos bajo el sol:<br>la tierra da sus frutos cuando hay unión.<br><br>Pradera dorada, río sin final,<br>la gente de Illinois vuelve a cantar.<br>Lo que fue sembrado no se perderá:<br>¡el aliento sigue, sigue y seguirá!<br><br>Por el río bajan canoas de un tronco,<br>llevan pieles, conchas y un saludo hondo.<br>En el consejo escuchan, palabra por palabra,<br>y así nace un acuerdo que a todos ampara.<br><br>(Estribillo)<br><br>Pasaron los años, el camino fue largo;<br>dejaron su tierra, pero no su legado.<br>Hoy en Oklahoma su nación sigue en pie,<br>y vuelve su lengua: los niños la aprenden también.<br><br>(Estribillo, dos veces)<br><br>¡Somos el presente y el legado de la gente de Illinois!</p><p class="sentido"><strong>What it means:</strong> Under the open sky the tall grass grew, the bison, the wind and the water that never runs out. Corn, beans and squash, close together under the sun: the land gives its fruit when there is unity. Chorus: Golden prairie, endless river, the people of Illinois sing again. What was planted will not be lost: the breath goes on and on! Canoes carved from a single trunk come down the river, carrying pelts, shells and a heartfelt greeting. In the council they listen, word by word, and so an agreement is born that protects everyone. The years went by, the road was long; they left their land, but not their legacy. Today their nation still stands in Oklahoma, and their language is coming back: the children are learning it too. We are the present and the legacy of the people of Illinois!</p>
+   <p style="margin:.4rem 0 0"><a href="obra-inoka-produccion-en.html#inoka-legado-de-la-pradera">▶ Watch the song with its lyrics</a></p></div>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The whole cast takes a bow, holding hands, as the curtain closes.)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“Inoka: The Breath of the Prairie and the People of Illinois” · A play by José M. Fernández · License CC BY-NC-SA 4.0</p></div></footer>
+<script>
+(function(){
+  "use strict";
+  var LANG = document.documentElement.lang, VOZ = document.body.getAttribute("data-voz");
+  var sel = document.getElementById("mi-papel"), solo = document.getElementById("solo");
+  function aplicar(){
+    var p = sel.value;
+    document.querySelectorAll(".linea").forEach(function(l){
+      var ms = (l.getAttribute("data-papeles") || "").split(" ");
+      l.classList.toggle("mia", !!p && ms.indexOf(p) >= 0);
+    });
+    document.body.classList.toggle("filtrando", !!p);
+    document.body.classList.toggle("solo", !!p && solo.checked);
+    if(p && solo.checked) document.querySelectorAll("details.acord").forEach(function(d){ if(d.querySelector(".linea.mia")) d.open = true; });
+    try{ localStorage.setItem("inoka-papel", p); }catch(e){}
+  }
+  try{ var g = localStorage.getItem("inoka-papel"); if(g && sel.querySelector('option[value="'+g+'"]')) sel.value = g; }catch(e){}
+  sel.addEventListener("change", aplicar); solo.addEventListener("change", aplicar); aplicar();
+
+  var hay = "speechSynthesis" in window, cola = [];
+  function vozIdioma(){
+    var vs = hay ? speechSynthesis.getVoices() : [];
+    return vs.filter(function(v){ return v.lang === VOZ; })[0] || vs.filter(function(v){ return v.lang.slice(0,2) === LANG; })[0] || null;
+  }
+  function limpiar(){ document.querySelectorAll(".hablando").forEach(function(x){ x.classList.remove("hablando"); }); }
+  function decir(lineas){
+    if(!hay) return;
+    speechSynthesis.cancel(); limpiar(); cola = lineas.slice();
+    (function sig(){
+      var l = cola.shift(); limpiar(); if(!l) return;
+      var txt = l.querySelector(".txt").textContent.replace(/\([^)]*\)/g, " ");
+      var u = new SpeechSynthesisUtterance(txt); u.lang = VOZ; var v = vozIdioma(); if(v) u.voice = v; u.rate = .95;
+      l.classList.add("hablando"); u.onend = sig; u.onerror = function(){ limpiar(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  document.querySelectorAll(".oir").forEach(function(b){ b.addEventListener("click", function(){ decir([b.closest(".linea")]); }); });
+  document.querySelectorAll(".oir-esc").forEach(function(b){ b.addEventListener("click", function(){
+    var ls = [].slice.call(b.closest("details").querySelectorAll(".linea")).filter(function(l){ return getComputedStyle(l).display !== "none" && !l.classList.contains("cancion"); });
+    decir(ls);
+  }); });
+  document.querySelectorAll(".parar").forEach(function(b){ b.addEventListener("click", function(){ cola = []; if(hay) speechSynthesis.cancel(); limpiar(); }); });
+  if(!hay) document.querySelectorAll(".oir,.oir-esc,.parar").forEach(function(b){ b.hidden = true; });
+
+  var tam = 0, clases = ["", "grande", "muygrande"];
+  function poner(){ document.body.classList.remove("grande","muygrande"); if(clases[tam]) document.body.classList.add(clases[tam]); }
+  document.getElementById("menor").addEventListener("click", function(){ tam = Math.max(0, tam-1); poner(); });
+  document.getElementById("mayor").addEventListener("click", function(){ tam = Math.min(2, tam+1); poner(); });
+  document.getElementById("imprimir").addEventListener("click", function(){ window.print(); });
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      var id=a.getAttribute("href").slice(1); if(abrir(id)){ ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint", function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba", d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint", function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open = d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

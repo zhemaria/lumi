@@ -1,0 +1,384 @@
+<!doctype html>
+<!-- Inoka: El aliento de la pradera y la gente de Illinois · José M. Fernández · CC BY-NC-SA 4.0 · generado con herramientas/gen_inoka.py -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inoka: El aliento de la pradera y la gente de Illinois · Lumi</title>
+<meta name="description" content="Antes de las autopistas y las ciudades de ladrillo, en las praderas y los ríos de Illinois vivía el pueblo Inoka. Una obra para toda la escuela, de prekínder a 6.º grado, sobre la tierra, el trabajo en común, el consejo y un pueblo que sigue vivo: la tribu Peoria de Oklahoma.">
+<meta name="author" content="José M. Fernández">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="alternate" hreflang="en" href="obra-inoka-en.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{background:var(--cie);padding:1.4rem 0}
+.obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.obra-cab .sub{font-size:1.2rem;margin:.3rem 0 0}
+.obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+.obra-cab .permiso{font-size:.95rem}
+.enlaces-obra{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0;padding:0;list-style:none}
+.enlaces-obra a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font-weight:700;text-decoration:none}
+.enlaces-obra a:hover{background:var(--cie)}
+.barra{position:sticky;top:76px;z-index:5;background:#fff;border:2px solid var(--borde);border-radius:14px;padding:.6rem .8rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.barra label{font-weight:700}
+.barra select,.barra button{min-height:44px;font:inherit;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);padding:0 .9rem;font-weight:700;cursor:pointer}
+.barra .chk{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.barra .chk input{width:22px;height:22px}
+.linea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:start;padding:.6rem .8rem;margin:.35rem 0;border-left:8px solid var(--c);border-radius:10px;background:#fff}
+.linea .quien{display:inline-block;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:.05rem .65rem;font-size:.9rem;margin-right:.4rem}
+.linea .grado{font-size:.85rem;margin-right:.4rem}
+.linea p{margin:.25rem 0 0}
+.acot{font-style:italic;margin:.6rem 0;padding:.4rem .8rem;border-left:4px dashed var(--borde);color:#2d5f69}
+.mus{margin:.6rem 0;padding:.45rem .8rem;border-radius:10px;background:#F3EEFA;color:#3d2a63;font-weight:700}
+.mus small{font-weight:400}
+.lugar{margin:1rem 0 .4rem;text-align:center;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2d5f69}
+.oir{min-width:44px;min-height:44px;border-radius:50%;border:2px solid var(--pet);background:#fff;cursor:pointer;font-size:1.1rem}
+.oir:hover{background:var(--cie)}
+body.filtrando .linea{opacity:.35}
+body.filtrando .linea.mia{opacity:1;box-shadow:0 0 0 3px var(--c)}
+body.solo .linea:not(.mia){display:none}
+body.solo .acot,body.solo .mus,body.solo .lugar{display:none}
+.linea.hablando{outline:3px solid var(--ama)}
+.cancion .letra{font-size:1.1rem;line-height:1.75;margin:.3rem 0 0}
+.cancion .sentido{font-size:.95rem;font-style:italic;margin:.5rem 0 0;color:#2d5f69}
+.cancion video{display:block;width:100%;max-width:420px;border-radius:12px;margin:.6rem 0 0;background:#000}
+details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;border:0;cursor:pointer}
+details.acord > summary::-webkit-details-marker{display:none}
+details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+details.acord[open] > summary::before{content:"▾"}
+details.acord > summary h2{display:inline;font-size:1.35rem}
+details.acord > summary:hover{background:var(--cie);border-radius:14px}
+details.acord .cuerpo{padding:0 1rem 1rem}
+.acto-h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.acto-h button{min-height:44px;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;padding:0 .9rem;cursor:pointer}
+.tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+.tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.tabla th{background:var(--cie)}
+.punto{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:.4rem;vertical-align:-2px}
+.envoltura-tabla{overflow-x:auto}
+body.grande{font-size:21px}
+body.muygrande{font-size:24px}
+main .seccion{scroll-margin-top:170px}
+.barra select{max-width:100%}
+@media (max-width:760px){.barra{position:static}.barra select{width:100%}main .seccion{scroll-margin-top:130px}}
+@media print{.barra,.oir,.acto-h button,.cabecera,.anclas,.enlaces-obra{display:none!important}.linea{break-inside:avoid;border-left-width:6px}body.filtrando .linea{opacity:1}}
+</style>
+</head>
+<body data-voz="es-US">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index-es.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — página de inicio" width="560" height="240"></a>
+  <nav aria-label="Menú principal" class="menu">
+   <a href="index-es.html">Inicio</a>
+   <a href="grados-es.html">Por grado</a>
+   <a href="materias-es.html">Por materia</a>
+   <a href="teatro-es.html" aria-current="page">Teatro</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Idioma"><span aria-current="true">Español</span><a href="obra-inoka-en.html" lang="en" hreflang="en">English</a></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro-es.html">← Teatro de Lumi</a></p>
+  <h1 id="titulo">Inoka</h1>
+  <p class="sub">El aliento de la pradera y la gente de Illinois</p>
+  <p class="autor">Obra de José M. Fernández</p>
+  <p>Antes de las autopistas y las ciudades de ladrillo, en las praderas y los ríos de Illinois vivía el pueblo Inoka. Una obra para toda la escuela, de prekínder a 6.º grado, sobre la tierra, el trabajo en común, el consejo y un pueblo que sigue vivo: la tribu Peoria de Oklahoma.</p>
+  <p><a href="obra-inoka-produccion-es.html">🎬 Guía de producción: reparto, canciones, vestuario respetuoso, escenografía y carta a las familias</a></p>
+  <p><a href="obra-inoka-historia-es.html">📜 Guía histórica para el docente: quiénes eran los Inoka, mitos y hechos, y actividades por grado</a></p>
+  <p><a href="obra-inoka-programa-es.html">📄 Programa de mano</a> · <a href="obra-inoka-cartel-es.html">🖼️ Cartel de la función</a></p>
+  <p class="permiso">Esta obra habla de un pueblo que sigue vivo. Los niños no se disfrazan de indígenas ni usan objetos ceremoniales: cada personaje se reconoce por lo que hace. Más detalles en la guía de producción.</p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Ir a"><ul class="anclas"><li><a href="#reparto">Reparto</a></li><li><a href="#acto-1">Acto I</a></li><li><a href="#acto-2">Acto II</a></li><li><a href="#acto-3">Acto III</a></li><li><a href="#acto-4">Acto IV</a></li><li><a href="#acto-5">Acto V</a></li></ul></nav>
+ <div class="barra" role="group" aria-label="Mi papel:">
+  <label for="mi-papel">Mi papel:</label>
+  <select id="mi-papel"><option value="">Todos los papeles</option><option value="NAR1">Narrador 1 · 6.º</option><option value="NAR2">Narrador 2 · 6.º</option><option value="MAIZ">Niño Maíz · 1.º</option><option value="FRIJOL">Niña Frijol · 1.º</option><option value="CALAB">Niña Calabaza · 2.º</option><option value="AGRI">Agricultora · 2.º</option><option value="TEJ">Tejedora · 2.º</option><option value="CORO12">Coro · 1.º y 2.º</option><option value="MENS">Mensajero de la aldea · 3.º</option><option value="NAVEG">Navegante Peoria · 4.º</option><option value="COMER">Comerciante Kaskaskia · 4.º</option><option value="LKAS">Líder del consejo Kaskaskia · 5.º</option><option value="GUARD">Guardiana de la Memoria · 6.º</option><option value="LPEO">Líder del consejo Peoria · 6.º</option><option value="E1">Estudiante de 1.º · 1.º</option><option value="E3">Estudiante de 3.º · 3.º</option><option value="E4">Estudiante de 4.º · 4.º</option><option value="E5">Estudiante de 5.º · 5.º</option><option value="E6">Estudiante de 6.º · 6.º</option><option value="TODOS">Todos los grados · Todos</option></select>
+  <label class="chk"><input type="checkbox" id="solo"> Mostrar solo mis líneas</label>
+  <button type="button" id="menor" aria-label="Letra más pequeña">A−</button>
+  <button type="button" id="mayor" aria-label="Letra más grande">A+</button>
+  <button type="button" id="imprimir">🖨️ Imprimir</button>
+ </div>
+ <p>Las acotaciones (en cursiva) indican lo que pasa en el escenario: no se dicen en voz alta. Las canciones se cantan con la grabación de la guía de producción.</p>
+ <details class="seccion acord" id="reparto">
+  <summary><h2 id="t-reparto">Reparto</h2></summary>
+  <div class="cuerpo">
+  <p>Todos los grupos pueden crecer o achicarse sin cambiar el texto. Cuando un papel tiene un solo niño (Niño Maíz, Agricultora…), la línea también la puede decir un grupo pequeño.</p>
+  <div class="envoltura-tabla"><table class="tabla">
+   <caption class="sr">Reparto</caption>
+   <thead><tr><th scope="col">Papel</th><th scope="col">Grado</th><th scope="col">Cómo es</th><th scope="col">Líneas</th></tr></thead>
+   <tbody>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>Narrador 1</td><td>6.º</td><td>Cuenta la historia con voz clara y pausada.</td><td>5</td></tr>
+<tr><td><span class="punto" style="background:#6A3F86" aria-hidden="true"></span>Narrador 2</td><td>6.º</td><td>Cuenta la historia con voz clara y pausada.</td><td>5</td></tr>
+<tr><td><span class="punto" style="background:#4D6B12" aria-hidden="true"></span>La naturaleza (sin texto)</td><td>Prekínder y kínder</td><td>El viento, las flores de la pradera, las aves y los bisontes: se expresan con el cuerpo.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#5A5A1E" aria-hidden="true"></span>Músicos (sin texto)</td><td>1.º y 2.º</td><td>Palos de lluvia y sonajas de semillas en el acto I.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#2F6B2F" aria-hidden="true"></span>Niño Maíz</td><td>1.º</td><td>Alto y firme: el apoyo de sus hermanas.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#3C6E1E" aria-hidden="true"></span>Niña Frijol</td><td>1.º</td><td>Se enreda en el maíz y le devuelve la fuerza al suelo.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#A0461A" aria-hidden="true"></span>Niña Calabaza</td><td>2.º</td><td>Cubre la tierra con sus hojas anchas.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#7A4E12" aria-hidden="true"></span>Agricultora</td><td>2.º</td><td>Entre los Inoka, las mujeres cultivaban los huertos.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#8A3B5C" aria-hidden="true"></span>Tejedora</td><td>2.º</td><td>Teje las esteras de junco que cubren las casas.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1F5F6B" aria-hidden="true"></span>Coro</td><td>1.º y 2.º</td><td>Canta «Raíz con raíz».</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1E5AA0" aria-hidden="true"></span>Los ríos (sin texto)</td><td>3.º y 4.º</td><td>Mueven las telas azules del río Illinois y del Mississippi.</td><td>0</td></tr>
+<tr><td><span class="punto" style="background:#6B5212" aria-hidden="true"></span>Mensajero de la aldea</td><td>3.º</td><td>Anuncia la asamblea de la temporada.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#1A5276" aria-hidden="true"></span>Navegante Peoria</td><td>4.º</td><td>Llega en canoa con carne de bisonte y pieles.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#8A4B00" aria-hidden="true"></span>Comerciante Kaskaskia</td><td>4.º</td><td>Recibe a los visitantes e intercambia herramientas y cerámica.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#3F5560" aria-hidden="true"></span>Líder del consejo Kaskaskia</td><td>5.º</td><td>Habla de la verdadera fuerza de una comunidad.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#7A2E2E" aria-hidden="true"></span>Guardiana de la Memoria</td><td>6.º</td><td>Explica cómo se gobernaban las aldeas y de dónde viene el nombre «Illinois».</td><td>2</td></tr>
+<tr><td><span class="punto" style="background:#2E4D6B" aria-hidden="true"></span>Líder del consejo Peoria</td><td>6.º</td><td>Cuenta qué significaba ofrecer el calumet.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#2F6F73" aria-hidden="true"></span>Estudiante de 1.º</td><td>1.º</td><td>Una frase del cierre.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#2B6680" aria-hidden="true"></span>Estudiante de 3.º</td><td>3.º</td><td>Habla de la lengua que vuelve.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#355E8C" aria-hidden="true"></span>Estudiante de 4.º</td><td>4.º</td><td>Una frase del cierre.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#4A4E8F" aria-hidden="true"></span>Estudiante de 5.º</td><td>5.º</td><td>Presenta a la tribu Peoria de hoy.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>Estudiante de 6.º</td><td>6.º</td><td>Dice la última frase antes del coro final.</td><td>1</td></tr>
+<tr><td><span class="punto" style="background:#194F5A" aria-hidden="true"></span>Todos los grados</td><td>Todos</td><td>Todo el elenco, a la vez.</td><td>2</td></tr>
+   </tbody>
+  </table></div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+<details class="seccion acord" id="acto-1">
+ <summary><h2 id="t-acto-1">Acto I · El latido de la pradera y el río</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar el acto</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Participan prekínder y kínder: la naturaleza de Illinois.)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(El escenario empieza en penumbra. Se oye el pulso lento y constante de un tambor de mano. A los lados del escenario, alumnos de 1.º y 2.º hacen sonar palos de lluvia y sonajas de semillas. Entran despacio los alumnos de prekínder y kínder: son el viento, las flores de la pradera, las aves y los bisontes.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrador 1</span><span class="grado">6.º</span><p class="txt">Mucho antes de las autopistas de asfalto y las grandes ciudades de ladrillo, esta amplia cuenca de ríos pertenecía al cielo abierto, a los pastizales altos de la pradera y al cauce generoso del gran río Mississippi.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrador 2</span><span class="grado">6.º</span><p class="txt">Aquí la vida fluía en equilibrio. Los árboles daban cobijo a las aves, las hierbas alimentaban al bisonte y el río traía agua fresca a los bosques y a los valles. Cada ser vivo formaba parte de una red de respeto y reciprocidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrador 1</span><span class="grado">6.º</span><p class="txt">En el corazón de estas tierras vivían familias agrupadas en muchas aldeas. Los misioneros franceses anotaron que se llamaban a sí mismos «Inoka».</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrador 2</span><span class="grado">6.º</span><p class="txt">El significado de la palabra Inoka se perdió en el tiempo, pero en las historias de la pradera quedó grabada como el recuerdo de un pueblo que vivía en armonía con la tierra y con sus semejantes.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 2">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-2">
+ <summary><h2 id="t-acto-2">Acto II · Las tres hermanas y el hogar de esteras</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar el acto</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Participan 1.º y 2.º grado: el cultivo, las casas y el trabajo en común.)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Entran los alumnos de 1.º y 2.º con canastos y con los tallos del maíz, el frijol y la calabaza. Al fondo, una casa larga de arcos cubierta con esteras de junco.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrador 1</span><span class="grado">6.º</span><p class="txt">En la primavera y el verano, las mujeres de las aldeas Inoka cultivaban fértiles huertos en los valles. Su alimento principal nacía de tres plantas que crecían juntas, ayudándose unas a otras, a las que hoy muchos pueblos llaman las Tres Hermanas.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="MAIZ" style="--c:#2F6B2F">
+   <div><span class="quien">Niño Maíz</span><span class="grado">1.º</span><p class="txt">Yo soy el Maíz. Crezco alto, recto y firme hacia el sol del verano. Con mi cuerpo fuerte sirvo de columna y de apoyo para mis hermanas.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Niño Maíz">🔊</button>
+  </div>
+  <div class="linea" data-papeles="FRIJOL" style="--c:#3C6E1E">
+   <div><span class="quien">Niña Frijol</span><span class="grado">1.º</span><p class="txt">Yo soy el Frijol. Sola en la tierra no puedo alcanzar la altura; pero me enredo suavemente en el tallo del Maíz, subo hacia la luz y le devuelvo la fuerza al suelo.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Niña Frijol">🔊</button>
+  </div>
+  <div class="linea" data-papeles="CALAB" style="--c:#A0461A">
+   <div><span class="quien">Niña Calabaza</span><span class="grado">2.º</span><p class="txt">Yo soy la Calabaza. Extiendo mis hojas anchas sobre la tierra. Mantengo el suelo fresco y húmedo para que la sequía no marchite a mis hermanas.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Niña Calabaza">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AGRI" style="--c:#7A4E12">
+   <div><span class="quien">Agricultora</span><span class="grado">2.º</span><p class="txt">Nuestras abuelas comprendieron que la tierra da abundancia no por la fuerza, sino por la unión. Si sembramos juntas, la cosecha alimenta a toda la aldea.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Agricultora">🔊</button>
+  </div>
+  <div class="linea" data-papeles="TEJ" style="--c:#8A3B5C">
+   <div><span class="quien">Tejedora</span><span class="grado">2.º</span><p class="txt">Y con los juncos de los pantanos tejemos las esteras que cubren nuestras casas. Una sola caña se quiebra al doblarla, pero trenzadas todas juntas protegen a nuestras familias del viento y de la lluvia.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Tejedora">🔊</button>
+  </div>
+  <div class="linea cancion" data-papeles="CORO12" style="--c:#1F5F6B">
+   <div><span class="quien">Coro</span><span class="grado">1.º y 2.º</span>
+   <p class="txt"><strong>🎵 Canción: «Raíz con raíz»</strong></p>
+   <p class="letra" lang="es">Raíz con raíz, hojita con hoja,<br>la tierra florece cuando el pueblo trabaja.<br>Maíz, calabaza y tierno frijol<br>protegen el hogar bajo el mismo sol.</p>
+   <p style="margin:.4rem 0 0"><a href="obra-inoka-produccion-es.html#inoka-raiz-con-raiz">▶ Ver la canción con su letra</a></p></div>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-3">
+ <summary><h2 id="t-acto-3">Acto III · Las rutas del río y el comercio entre aldeas</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar el acto</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Participan 3.º y 4.º grado: la navegación, el comercio y las alianzas entre aldeas.)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Cuatro alumnos ondean las telas azules como las aguas del río Illinois. Dos navegantes avanzan dentro de las siluetas de las canoas de tronco ahuecado, con remos de madera ligera.)</p>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrador 2</span><span class="grado">6.º</span><p class="txt">Los ríos de Illinois no eran fronteras, sino anchos caminos de intercambio. Por ellos se comunicaban las aldeas de la Confederación: los Kaskaskia, los Peoria, los Tamaroa, los Cahokia y, más tarde, aliados como los Michigamea.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAVEG" style="--c:#1A5276">
+   <div><span class="quien">Navegante Peoria</span><span class="grado">4.º</span><p class="txt">¡Saludos, hermanos de la aldea vecina! Navegamos por el río en nuestra canoa, tallada en un solo tronco. Traemos carne seca de bisonte y valiosas pieles de castor.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Navegante Peoria">🔊</button>
+  </div>
+  <div class="linea" data-papeles="COMER" style="--c:#8A4B00">
+   <div><span class="quien">Comerciante Kaskaskia</span><span class="grado">4.º</span><p class="txt">¡Bienvenidos a nuestra orilla! Por los ríos y los caminos antiguos intercambiamos herramientas de pedernal, conchas de río y cuencos de barro. El comercio une a nuestras familias y fortalece la paz.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Comerciante Kaskaskia">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrador 1</span><span class="grado">6.º</span><p class="txt">Cerca de estos ríos, siglos atrás, había florecido la gran ciudad de los montículos de Cahokia, de la cultura misisipiana. Cuando los Inoka recorrían estos ríos, aquella ciudad ya estaba vacía. La relación entre aquella ciudad y los pueblos que vinieron después todavía la estudian los arqueólogos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="MENS" style="--c:#6B5212">
+   <div><span class="quien">Mensajero de la aldea</span><span class="grado">3.º</span><p class="txt">(Entra con paso firme, con un bastón de cañas trenzadas.) ¡Noticias de la asamblea! Los jefes y los ancianos de cada aldea nos llaman a la reunión de la temporada. Es hora de compartir lo que dio el verano y de escuchar los relatos de los mayores.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Mensajero de la aldea">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-4">
+ <summary><h2 id="t-acto-4">Acto IV · La asamblea de las aldeas y la sabiduría del consejo</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar el acto</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Participan 5.º y 6.º grado: las decisiones por consenso, la tradición oral y la llegada de los franceses.)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Los alumnos de 5.º y 6.º forman un círculo de consejo alrededor de un fogón simbólico. Los grupos de los otros grados se sientan en un semicírculo exterior: es la gran asamblea de la comunidad.)</p>
+  <div class="linea" data-papeles="GUARD" style="--c:#7A2E2E">
+   <div><span class="quien">Guardiana de la Memoria</span><span class="grado">6.º</span><p class="txt">En nuestras aldeas no había un rey ni un gobierno central. Cada aldea tenía sus jefes: uno para la paz y otro para la guerra, y nadie heredaba el cargo. Pero cuando había que tomar grandes decisiones, nos escuchábamos unos a otros hasta llegar a un acuerdo.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Guardiana de la Memoria">🔊</button>
+  </div>
+  <div class="linea" data-papeles="LKAS" style="--c:#3F5560">
+   <div><span class="quien">Líder del consejo Kaskaskia</span><span class="grado">5.º</span><p class="txt">La verdadera fuerza de una comunidad no se mide por sus armas, sino por su capacidad de proteger a los niños, cuidar a los mayores y pensar en los que vendrán después de nosotros.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Líder del consejo Kaskaskia">🔊</button>
+  </div>
+  <div class="linea" data-papeles="LPEO" style="--c:#2E4D6B">
+   <div><span class="quien">Líder del consejo Peoria</span><span class="grado">6.º</span><p class="txt">Cuando llegaban visitantes en son de paz, les ofrecíamos el calumet, una pipa ceremonial adornada con plumas. Era nuestra manera más solemne de decir: aquí hay paz, diálogo y hospitalidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Líder del consejo Peoria">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(El calumet se nombra, pero no aparece en escena.)</p>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrador 2</span><span class="grado">6.º</span><p class="txt">En 1673 llegaron por el río los exploradores franceses Jacques Marquette y Louis Jolliet. Ya habían oído hablar de este pueblo a otros pueblos vecinos, que lo llamaban con una palabra parecida a «ilinwe». De ella viene el nombre «Illinois». Y en una aldea Peoria, los recibieron con el calumet de la paz.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GUARD" style="--c:#7A2E2E">
+   <div><span class="quien">Guardiana de la Memoria</span><span class="grado">6.º</span><p class="txt">Marquette creyó que «Illinois» quería decir «los hombres». Hoy los estudiosos piensan que la palabra significaba «los que hablan de la manera común». Pero el nombre que ellos mismos se daban era otro: Inoka. Y ser parte de esta tierra pide madurez, valor para cuidar la paz y sabiduría para compartir el fuego.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Guardiana de la Memoria">🔊</button>
+  </div>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="acto-5">
+ <summary><h2 id="t-acto-5">Acto V · Escena final: el legado vivo de los Inoka</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar el acto</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Participa toda la escuela: del pasado al presente de la tribu Peoria de Oklahoma.)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Todo el elenco se va uniendo poco a poco y da un paso al frente, a la vez.)</p>
+  <div class="linea" data-papeles="NAR1" style="--c:#5B3F8F">
+   <div><span class="quien">Narrador 1</span><span class="grado">6.º</span><p class="txt">Pasaron los siglos. Las praderas cambiaron de manto, sobre los ríos nacieron puentes y las aldeas de esteras dieron paso a los mapas del moderno estado de Illinois.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR2" style="--c:#6A3F86">
+   <div><span class="quien">Narrador 2</span><span class="grado">6.º</span><p class="txt">Pero la historia de los Inoka no terminó en el pasado. Tuvieron que dejar Illinois: primero hacia Missouri, después a Kansas y, en 1867, a lo que hoy es Oklahoma. Y allí siguieron adelante.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narrador 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E5" style="--c:#4A4E8F">
+   <div><span class="quien">Estudiante de 5.º</span><span class="grado">5.º</span><p class="txt">Hoy sus descendientes forman la Peoria Tribe of Indians of Oklahoma, una nación reconocida por el gobierno de Estados Unidos, que conserva con orgullo su historia y su identidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Estudiante de 5.º">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E3" style="--c:#2B6680">
+   <div><span class="quien">Estudiante de 3.º</span><span class="grado">3.º</span><p class="txt">Ya no quedan hablantes nativos de su lengua, el miami-illinois. Pero niños y jóvenes de las naciones Peoria y Miami la están aprendiendo de nuevo, y así vuelven a sonar las palabras de sus abuelos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Estudiante de 3.º">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E1" style="--c:#2F6F73">
+   <div><span class="quien">Estudiante de 1.º</span><span class="grado">1.º</span><p class="txt">Nos enseñan a cuidar los ríos, las plantas y los bosques.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Estudiante de 1.º">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E4" style="--c:#355E8C">
+   <div><span class="quien">Estudiante de 4.º</span><span class="grado">4.º</span><p class="txt">Nos enseñan que los caminos sirven para tender la mano y comerciar en paz.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Estudiante de 4.º">🔊</button>
+  </div>
+  <div class="linea" data-papeles="E6" style="--c:#5B3F8F">
+   <div><span class="quien">Estudiante de 6.º</span><span class="grado">6.º</span><p class="txt">Y nos recuerdan que, para ser dignos del nombre de Illinois, debemos gobernarnos escuchando, con justicia y con respeto a la naturaleza.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Estudiante de 6.º">🔊</button>
+  </div>
+  <div class="linea" data-papeles="TODOS" style="--c:#194F5A">
+   <div><span class="quien">Todos los grados</span><span class="grado">Todos</span><p class="txt">¡Somos la memoria de la pradera!<br>¡Somos el aliento del gran río!<br>¡Somos el presente y el legado de la gente de Illinois!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los grados">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Suenan los tambores de mano y empieza la canción final. Todo el elenco canta y baila tomado de las manos.)</p>
+  <div class="linea cancion" data-papeles="TODOS" style="--c:#194F5A">
+   <div><span class="quien">Todos los grados</span><span class="grado">Todos</span>
+   <p class="txt"><strong>🎵 Canción: «Legado de la pradera»</strong></p>
+   <p class="letra" lang="es">Bajo el cielo abierto creció la hierba alta,<br>el bisonte, el viento y el agua que no falta.<br>Maíz, frijol, calabaza, juntitos bajo el sol:<br>la tierra da sus frutos cuando hay unión.<br><br>Pradera dorada, río sin final,<br>la gente de Illinois vuelve a cantar.<br>Lo que fue sembrado no se perderá:<br>¡el aliento sigue, sigue y seguirá!<br><br>Por el río bajan canoas de un tronco,<br>llevan pieles, conchas y un saludo hondo.<br>En el consejo escuchan, palabra por palabra,<br>y así nace un acuerdo que a todos ampara.<br><br>(Estribillo)<br><br>Pasaron los años, el camino fue largo;<br>dejaron su tierra, pero no su legado.<br>Hoy en Oklahoma su nación sigue en pie,<br>y vuelve su lengua: los niños la aprenden también.<br><br>(Estribillo, dos veces)<br><br>¡Somos el presente y el legado de la gente de Illinois!</p>
+   <p style="margin:.4rem 0 0"><a href="obra-inoka-produccion-es.html#inoka-legado-de-la-pradera">▶ Ver la canción con su letra</a></p></div>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Todo el elenco hace una reverencia tomados de las manos mientras se cierra el telón.)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>«Inoka: El aliento de la pradera y la gente de Illinois» · Obra de José M. Fernández · Licencia CC BY-NC-SA 4.0</p></div></footer>
+<script>
+(function(){
+  "use strict";
+  var LANG = document.documentElement.lang, VOZ = document.body.getAttribute("data-voz");
+  var sel = document.getElementById("mi-papel"), solo = document.getElementById("solo");
+  function aplicar(){
+    var p = sel.value;
+    document.querySelectorAll(".linea").forEach(function(l){
+      var ms = (l.getAttribute("data-papeles") || "").split(" ");
+      l.classList.toggle("mia", !!p && ms.indexOf(p) >= 0);
+    });
+    document.body.classList.toggle("filtrando", !!p);
+    document.body.classList.toggle("solo", !!p && solo.checked);
+    if(p && solo.checked) document.querySelectorAll("details.acord").forEach(function(d){ if(d.querySelector(".linea.mia")) d.open = true; });
+    try{ localStorage.setItem("inoka-papel", p); }catch(e){}
+  }
+  try{ var g = localStorage.getItem("inoka-papel"); if(g && sel.querySelector('option[value="'+g+'"]')) sel.value = g; }catch(e){}
+  sel.addEventListener("change", aplicar); solo.addEventListener("change", aplicar); aplicar();
+
+  var hay = "speechSynthesis" in window, cola = [];
+  function vozIdioma(){
+    var vs = hay ? speechSynthesis.getVoices() : [];
+    return vs.filter(function(v){ return v.lang === VOZ; })[0] || vs.filter(function(v){ return v.lang.slice(0,2) === LANG; })[0] || null;
+  }
+  function limpiar(){ document.querySelectorAll(".hablando").forEach(function(x){ x.classList.remove("hablando"); }); }
+  function decir(lineas){
+    if(!hay) return;
+    speechSynthesis.cancel(); limpiar(); cola = lineas.slice();
+    (function sig(){
+      var l = cola.shift(); limpiar(); if(!l) return;
+      var txt = l.querySelector(".txt").textContent.replace(/\([^)]*\)/g, " ");
+      var u = new SpeechSynthesisUtterance(txt); u.lang = VOZ; var v = vozIdioma(); if(v) u.voice = v; u.rate = .95;
+      l.classList.add("hablando"); u.onend = sig; u.onerror = function(){ limpiar(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  document.querySelectorAll(".oir").forEach(function(b){ b.addEventListener("click", function(){ decir([b.closest(".linea")]); }); });
+  document.querySelectorAll(".oir-esc").forEach(function(b){ b.addEventListener("click", function(){
+    var ls = [].slice.call(b.closest("details").querySelectorAll(".linea")).filter(function(l){ return getComputedStyle(l).display !== "none" && !l.classList.contains("cancion"); });
+    decir(ls);
+  }); });
+  document.querySelectorAll(".parar").forEach(function(b){ b.addEventListener("click", function(){ cola = []; if(hay) speechSynthesis.cancel(); limpiar(); }); });
+  if(!hay) document.querySelectorAll(".oir,.oir-esc,.parar").forEach(function(b){ b.hidden = true; });
+
+  var tam = 0, clases = ["", "grande", "muygrande"];
+  function poner(){ document.body.classList.remove("grande","muygrande"); if(clases[tam]) document.body.classList.add(clases[tam]); }
+  document.getElementById("menor").addEventListener("click", function(){ tam = Math.max(0, tam-1); poner(); });
+  document.getElementById("mayor").addEventListener("click", function(){ tam = Math.min(2, tam+1); poner(); });
+  document.getElementById("imprimir").addEventListener("click", function(){ window.print(); });
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      var id=a.getAttribute("href").slice(1); if(abrir(id)){ ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint", function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba", d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint", function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open = d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

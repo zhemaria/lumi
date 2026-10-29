@@ -1,0 +1,385 @@
+<!doctype html>
+<!-- «Inoka: El aliento de la pradera y la gente de Illinois» · Obra de José M. Fernández · Lumi · CC BY-NC-SA 4.0 · generado con herramientas/gen_inoka_materiales.py -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inoka · Production · Lumi</title>
+<meta name="description" content="Production guide for “Inoka,” a play by José M. Fernández: cultural respect, cast by grade, songs, cue sheet, costumes, sets, rehearsals and family letter.">
+<meta name="author" content="José M. Fernández">
+<meta name="dcterms.license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="alternate" hreflang="es" href="obra-inoka-produccion-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+  .obra-cab{background:var(--cie);padding:1.4rem 0}
+  .obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.5rem)}
+  .obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+  .herr{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 0}
+  .herr button,.herr a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+  .tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+  .tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+  .tabla thead th{background:var(--cie)}
+  .tabla tbody th{background:#F6FBFB;font-weight:700}
+  .envoltura-tabla{overflow-x:auto}
+  .nota{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .autor-caja{background:#F3EEFA;border-left:6px solid #5B3F8F;border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+  .tarjetas li{border:2px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+  .tarjetas h3{font-size:1.1rem;margin-bottom:.3rem}
+  .tarjetas p{margin:.3rem 0}
+  .chip{display:inline-block;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.05rem .6rem}
+  .plano{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:.6rem 0 .3rem;font-size:.92rem}
+  .plano div{background:#F6FBFB;border:1px solid var(--borde);border-radius:8px;padding:.45rem .55rem;min-height:70px}
+  .plano b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em;color:#2d5f69}
+  .publico{text-align:center;font-weight:700;border-top:3px solid var(--pet);padding-top:.2rem;margin-bottom:1rem}
+  .carta{border:2px dashed var(--pet);border-radius:14px;padding:1.2rem 1.4rem;background:#fff;margin:1rem 0}
+  .hueco{display:inline-block;min-width:9em;border-bottom:2px solid var(--pet)}
+  .talon{border-top:2px dashed var(--pet);margin-top:1rem;padding-top:.8rem}
+  .casilla{display:inline-block;width:1em;height:1em;border:2px solid var(--pet);vertical-align:-2px;margin-right:.3rem}
+  .lista-casillas{list-style:none;padding-left:0}
+  figure.info{margin:1rem 0 1.6rem}
+  figure.info img,video.guia{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde);background:#000}
+  figure.info figcaption{font-size:.95rem;margin-top:.4rem}
+  .muestra{display:inline-block;width:1.1em;height:1.1em;border-radius:4px;border:1px solid #555;vertical-align:-3px;margin-right:.35rem}
+  details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+  details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;cursor:pointer}
+  details.acord > summary::-webkit-details-marker{display:none}
+  details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+  details.acord[open] > summary::before{content:"▾"}
+  details.acord > summary h2{display:inline;font-size:1.35rem}
+  details.acord > summary:hover{background:var(--cie);border-radius:14px}
+  details.acord .cuerpo{padding:0 1rem 1rem}
+  main .seccion{scroll-margin-top:120px}
+  @media print{#cotejo{break-before:page}.cabecera,.anclas,.herr,.solo-pantalla,video{display:none!important}.carta{break-before:page;border-style:solid}.tarjetas li,.tabla tr{break-inside:avoid}}
+.autor-caja{background:#F3EEFA;border-left:6px solid #5B3F8F;border-radius:10px;padding:.8rem 1rem;margin:1rem 0} .cancion-v{border:2px solid var(--borde);border-radius:14px;padding:.8rem 1rem;margin:1rem 0;scroll-margin-top:120px} .cancion-v video{display:block;width:100%;max-width:460px;border-radius:12px;background:#000} .linea{list-style:none;padding:0;margin:.5rem 0;border-left:4px solid var(--pet)} .linea li{position:relative;padding:.35rem 0 .7rem 1.2rem} .linea li::before{content:"";position:absolute;left:-10px;top:.7rem;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--pet)} .linea b{display:block} .mito{margin:.2rem 0;font-weight:700} .hecho{margin:.2rem 0 1rem}</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-inoka-produccion-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="obra-inoka-en.html">← The script</a></p>
+  <h1 id="titulo">Inoka · Production</h1>
+  <p class="autor">A play by José M. Fernández</p>
+  <p style="margin:.3rem 0 0">Everything you need to stage it with the whole school, with respect for the people it portrays.</p>
+  <div class="herr solo-pantalla"><button type="button" onclick="window.print()">🖨️ Print or save as PDF</button><a href="#carta">✉️ Family letter</a><a href="obra-inoka-programa-en.html">📄 Program</a><a href="obra-inoka-cartel-en.html">🖼️ Poster</a><a href="obra-inoka-historia-en.html">📜 Historical guide</a></div>
+ </div>
+</section>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Parts of the guide"><ul class="anclas">
+  <li><a href="#respeto">Cultural respect</a></li>
+  <li><a href="#resumen">At a glance</a></li>
+  <li><a href="#imagenes">Pictures</a></li>
+  <li><a href="#reparto">Cast</a></li>
+  <li><a href="#trabajos">Jobs for non-actors</a></li>
+  <li><a href="#musica">Music and songs</a></li>
+  <li><a href="#entradas">Cue sheet</a></li>
+  <li><a href="#vestuario">Costumes</a></li>
+  <li><a href="#cotejo">Checklist</a></li>
+  <li><a href="#escenografia">Sets</a></li>
+  <li><a href="#plano">Stage plan</a></li>
+  <li><a href="#ensayos">Rehearsals</a></li>
+  <li><a href="#carta">Family letter</a></li>
+ </ul></nav>
+
+ <details class="seccion acord" id="respeto" name="partes">
+  <summary><h2 id="t-respeto">Cultural respect comes first</h2></summary>
+  <div class="cuerpo">
+  <div class="autor-caja"><p style="margin:0"><strong>This play is about a people who are still here today.</strong> The descendants of the Inoka are today the Peoria Tribe of Indians of Oklahoma, a nation recognized by the United States government. The play presents them with respect, without movie stereotypes.</p></div>
+  <h3>Five rules for the whole production</h3>
+  <ol>
+   <li><strong>No one dresses up as a Native person.</strong> No feathers, headdresses, fringe, imitation necklaces or face paint. Each character is recognized by what they do and what they carry (see <a href="#vestuario">costumes</a>).</li>
+   <li><strong>Sacred objects are not made or used on stage.</strong> The calumet is mentioned in Act IV, but it does not appear. No water drums or other ceremonial objects are used.</li>
+   <li><strong>No imitation of chants, war cries or ways of speaking.</strong> The children speak in their own voices. The music uses hand drums, rain sticks, rattles and flute, without copying any people's songs.</li>
+   <li><strong>Use the present tense when it applies.</strong> The Inoka did not “disappear”: Act V says so clearly, and it is worth repeating in class.</li>
+   <li><strong>Say the names correctly.</strong> Inoka, Kaskaskia, Peoria, Tamaroa, Cahokia, Michigamea, Miami-Illinois. See the <a href="obra-inoka-historia-en.html">historical guide</a>.</li>
+  </ol>
+  <div class="nota"><strong>Before a public performance</strong>, it is a good courtesy to write to the Peoria Tribe to tell them about the project and offer them the script. Their contact information is at <a href="https://peoriatribe.com/" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="resumen" name="partes">
+  <summary><h2 id="t-resumen">At a glance</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>What it's about:</strong> the prairie and rivers of Illinois, the Inoka villages and their way of life: growing corn, beans and squash, houses covered with mats, trade along the rivers, and the council that decides by agreement. It ends in the present, with the Peoria Tribe of Oklahoma and their language, which is coming back.</li>
+   <li><strong>Running time:</strong> 20 to 25 minutes, with the two songs.</li>
+   <li><strong>Cast:</strong> the whole school. Each act belongs to two grades; Act V brings everyone together.</li>
+   <li><strong>Languages:</strong> the script is in <a href="obra-inoka-es.html" lang="es">Spanish</a> and <a href="obra-inoka-en.html">English</a>, with the same lines. Both songs are sung in Spanish.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="imagenes" name="partes">
+  <summary><h2 id="t-imagenes">The play in pictures</h2></summary>
+  <div class="cuerpo">
+  <p>This infographic is in Spanish.</p>
+  <figure class="info"><img src="inoka-acto1.jpg" alt="Infographic “Setting up Act I: The Heartbeat of the Prairie.” Setting: a hand drum and rain sticks in dim light, and a backdrop of golden grasses with light cloths. Cast: 6th grade narrators; Pre-K and K children as flowers, bison, deer and the wind; and the central idea: the Inoka people, who lived in harmony with the land." loading="lazy" width="1376" height="768"><figcaption>Act I: the heartbeat of the prairie.</figcaption></figure>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="reparto" name="partes">
+  <summary><h2 id="t-reparto">Cast by grade and numbers</h2></summary>
+  <div class="cuerpo">
+  <p>The numbers are a guide. Parts with their own lines can be played by one child or a small group; groups without lines grow with the school.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Number of children per part</caption>
+   <thead><tr><th scope="col">Grade</th><th scope="col">Part</th><th scope="col">Minimum</th><th scope="col">Suggested</th><th scope="col">Maximum</th></tr></thead>
+   <tbody>
+    <tr><th scope="row">Pre-K &amp; K</th><td>Nature: wind, flowers, birds and bison (no lines)</td><td>8</td><td>20</td><td>40</td></tr>
+    <tr><th scope="row" rowspan="3">1st &amp; 2nd</th><td>Corn, Bean, Squash, Farmer, Weaver</td><td>5</td><td>5</td><td>10</td></tr>
+    <tr><td>Musicians: rain sticks and rattles (Act I)</td><td>2</td><td>4</td><td>8</td></tr>
+    <tr><td>“Raíz con raíz” chorus</td><td>6</td><td>20</td><td>the whole grade</td></tr>
+    <tr><th scope="row" rowspan="2">3rd &amp; 4th</th><td>Messenger, Peoria Paddler, Kaskaskia Trader, 3rd and 4th graders in Act V</td><td>5</td><td>5</td><td>10</td></tr>
+    <tr><td>The rivers (cloths) and canoe paddlers, no lines</td><td>4</td><td>8</td><td>16</td></tr>
+    <tr><th scope="row" rowspan="3">5th &amp; 6th</th><td>Narrators 1 and 2</td><td>2</td><td>2</td><td>4</td></tr>
+    <tr><td>Keeper of Memory, Kaskaskia and Peoria council leaders, 5th and 6th graders in Act V</td><td>5</td><td>5</td><td>10</td></tr>
+    <tr><td>Council circle (no lines) and tech crew</td><td>4</td><td>12</td><td>30</td></tr>
+    <tr><th scope="row">All</th><td>1st grader in Act V and the final chorus</td><td colspan="3">the whole school</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="trabajos" name="partes">
+  <summary><h2 id="t-trabajos">Jobs for non-actors</h2></summary>
+  <div class="cuerpo">
+  <ul class="tarjetas">
+   <li><h3>🎤 Presenters</h3><span class="chip">5th or 6th · 1 or 2</span><p>Welcome the audience, introduce the play and its author, and remind everyone that it is about a people who are still here today.</p></li>
+   <li><h3>🔊 Sound</h3><span class="chip">4th to 6th · 2</span><p>Play the two songs at the right moment, following the <a href="#entradas">cue sheet</a>.</p></li>
+   <li><h3>💡 Lights</h3><span class="chip">5th &amp; 6th · 1 or 2</span><p>Dim light at the start, warm daylight, and golden light for the ending.</p></li>
+   <li><h3>🌾 Sets</h3><span class="chip">Any grade</span><p>Paint the prairie, build the mat-covered house and the cardboard canoes.</p></li>
+   <li><h3>🧺 Props</h3><span class="chip">3rd to 6th · 2 to 4</span><p>Baskets, stalks, mats, paddles, river cloths, felt pelts, shells and bowls.</p></li>
+   <li><h3>📖 Prompter</h3><span class="chip">5th or 6th · 1 or 2</span><p>Follow the script backstage.</p></li>
+   <li><h3>🤝 Backstage buddies</h3><span class="chip">5th · 1 for every 2 or 3 little ones</span><p>Go with Pre-K and K in Act I and in the ending.</p></li>
+   <li><h3>📰 Program and poster</h3><span class="chip">3rd to 6th · 2 to 4</span><p>Fill in the <a href="obra-inoka-programa-en.html">program</a> and the <a href="obra-inoka-cartel-en.html">poster</a>.</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="musica" name="partes">
+  <summary><h2 id="t-musica">Music and songs</h2></summary>
+  <div class="cuerpo">
+  <p><strong>Instruments:</strong> hand drum, rain sticks, seed rattles and flute. Students can play them. No recordings of Native ceremonial songs are used.</p>
+  
+  <div class="cancion-v" id="inoka-raiz-con-raiz">
+   <h3>🎵 «Raíz con raíz»</h3>
+   <p style="margin:.2rem 0 .6rem">Act II · 1st and 2nd grade chorus, after the Weaver.</p>
+   <video controls preload="none" poster="inoka-raiz-portada.jpg" width="1024" height="1024" lang="es"><source src="inoka-raiz-con-raiz.mp4" type="video/mp4"><track kind="captions" src="inoka-raiz-con-raiz.vtt" srclang="es" label="Español" default>Your browser cannot play this video. <a href="inoka-raiz-con-raiz.mp4">Download the song</a>.</video>
+   <details style="margin:.6rem 0 0"><summary><strong>Lyrics (sung in Spanish)</strong></summary><p lang="es" style="font-size:1.1rem;line-height:1.7">Raíz con raíz, hojita con hoja,<br>la tierra florece cuando el pueblo trabaja.<br>Maíz, calabaza y tierno frijol<br>protegen el hogar bajo el mismo sol.</p><p style="font-style:italic;margin:.5rem 0 0">Root by root, little leaf by leaf, / the land blooms when the people work together. / Corn, squash and tender beans / protect the home under the same sun.</p></details>
+  </div>
+  
+  <div class="cancion-v" id="inoka-legado-de-la-pradera">
+   <h3>🎵 «Legado de la pradera»</h3>
+   <p style="margin:.2rem 0 .6rem">Closing song · The whole cast, after the chorus “We are the memory of the prairie!”.</p>
+   <video controls preload="none" poster="inoka-legado-portada.jpg" width="1024" height="1024" lang="es"><source src="inoka-legado-de-la-pradera.mp4" type="video/mp4"><track kind="captions" src="inoka-legado-de-la-pradera.vtt" srclang="es" label="Español" default>Your browser cannot play this video. <a href="inoka-legado-de-la-pradera.mp4">Download the song</a>.</video>
+   <details style="margin:.6rem 0 0"><summary><strong>Lyrics (sung in Spanish)</strong></summary><p lang="es" style="font-size:1.1rem;line-height:1.7">Bajo el cielo abierto creció la hierba alta,<br>el bisonte, el viento y el agua que no falta.<br>Maíz, frijol, calabaza, juntitos bajo el sol:<br>la tierra da sus frutos cuando hay unión.<br><br><strong>Estribillo:</strong><br>Pradera dorada, río sin final,<br>la gente de Illinois vuelve a cantar.<br>Lo que fue sembrado no se perderá:<br>¡el aliento sigue, sigue y seguirá!<br><br>Por el río bajan canoas de un tronco,<br>llevan pieles, conchas y un saludo hondo.<br>En el consejo escuchan, palabra por palabra,<br>y así nace un acuerdo que a todos ampara.<br><br>(Estribillo)<br><br>Pasaron los años, el camino fue largo;<br>dejaron su tierra, pero no su legado.<br>Hoy en Oklahoma su nación sigue en pie,<br>y vuelve su lengua: los niños la aprenden también.<br><br>(Estribillo, dos veces)<br><br>¡Somos el presente y el legado de la gente de Illinois!</p><p style="font-style:italic;margin:.5rem 0 0">What it means: Under the open sky the tall grass grew, the bison, the wind and the water that never runs out. Corn, beans and squash, close together under the sun: the land gives its fruit when there is unity. Chorus: Golden prairie, endless river, the people of Illinois sing again. What was planted will not be lost: the breath goes on and on! Canoes carved from a single trunk come down the river, carrying pelts, shells and a heartfelt greeting. In the council they listen, word by word, and so an agreement is born that protects everyone. The years went by, the road was long; they left their land, but not their legacy. Today their nation still stands in Oklahoma, and their language is coming back: the children are learning it too. We are the present and the legacy of the people of Illinois!</p></details>
+  </div>
+  <p>Both songs were written for this play and are sung in Spanish. Each line is sung twice, so the little ones can repeat it.</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="entradas" name="partes">
+  <summary><h2 id="t-entradas">Cue sheet (sound and lights)</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Sound and light cues</caption>
+   <thead><tr><th scope="col">No.</th><th scope="col">Act</th><th scope="col">Signal</th><th scope="col">Sound</th><th scope="col">Lights</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td>I</td><td>The curtain opens</td><td>Slow hand drum; rain sticks</td><td>Dim light</td></tr>
+    <tr><td>2</td><td>I</td><td>Nature comes in</td><td>The drum continues</td><td>Slowly up to dawn light</td></tr>
+    <tr><td>3</td><td>I</td><td>Narrator 1 speaks</td><td>The drum fades out</td><td>Daylight</td></tr>
+    <tr><td>4</td><td>II</td><td>The Weaver finishes</td><td>“Raíz con raíz”</td><td>Warm light</td></tr>
+    <tr><td>5</td><td>III</td><td>The canoes come in</td><td>Soft rattles, like water</td><td>Bluish light on the river</td></tr>
+    <tr><td>6</td><td>IV</td><td>The council circle forms</td><td>Silence</td><td>Warm light in the center</td></tr>
+    <tr><td>7</td><td>V</td><td>The whole cast steps forward</td><td>—</td><td>Full light</td></tr>
+    <tr><td>8</td><td>V</td><td>The chorus “We are the present…!” ends</td><td>“Legado de la pradera”</td><td>Golden light</td></tr>
+    <tr><td>9</td><td>V</td><td>The song ends</td><td>Hand drums</td><td>Bows; the curtain closes</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="vestuario" name="partes">
+  <summary><h2 id="t-vestuario">Respectful costumes</h2></summary>
+  <div class="cuerpo">
+  <p>The children do <strong>not</strong> dress up “as Native people.” They wear simple clothes and carry their character's props.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Costumes by part</caption>
+   <thead><tr><th scope="col">Part</th><th scope="col">Clothes from home</th><th scope="col">What makes them stand out</th></tr></thead>
+   <tbody>
+    <tr><td>Human characters (farmer, weaver, paddler, trader, messenger, council, narrators, students)</td><td>A plain T-shirt or tunic and pants in earth tones: beige, ochre, brown, olive green.</td><td>Props: a basket, a half-woven mat, a paddle, felt pelts, shells, clay bowls, a reed staff.</td></tr>
+    <tr><td>Nature (Pre-K and K)</td><td>A plain T-shirt: gold for the grass, light blue for the wind, brown for the bison, bright colors for flowers and birds.</td><td>A simple felt badge: a flower, a wing, small horns.</td></tr>
+    <tr><td>Corn, Bean and Squash</td><td>Green, light green and orange.</td><td>A felt corn cob, a paper vine, large felt leaves.</td></tr>
+    <tr><td>The rivers</td><td>Blue.</td><td>The river cloths.</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Never:</strong> feathers, headdresses, headbands, fringe, imitation necklaces, face paint, store-bought “Indian costumes.”</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="cotejo" name="partes">
+  <summary><h2 id="t-cotejo">Checklist</h2></summary>
+  <div class="cuerpo">
+  <p>Classroom: <span class="hueco">&nbsp;</span> Teacher: <span class="hueco">&nbsp;</span> Group's part: <span class="hueco">&nbsp;</span></p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Checklist by child</caption>
+   <thead><tr><th scope="col">Name</th><th scope="col">Clothes from home</th><th scope="col">Prop or badge</th><th scope="col">Labeled with name</th><th scope="col">Ready for dress rehearsal</th></tr></thead>
+   <tbody>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <h3>Props and sets</h3>
+  <ul class="lista-casillas">
+   <li><span class="casilla"></span>Painted prairie backdrop</li>
+   <li><span class="casilla"></span>Longhouse of bent poles covered with mats</li>
+   <li><span class="casilla"></span>Corn, bean and squash stalks; baskets</li>
+   <li><span class="casilla"></span>Two blue cloths, 20 to 26 feet long</li>
+   <li><span class="casilla"></span>Two cardboard canoes with straps; paddles</li>
+   <li><span class="casilla"></span>Felt pelts, shells, clay bowls, reed staff</li>
+   <li><span class="casilla"></span>Symbolic fire made of paper or cloth (no real fire)</li>
+   <li><span class="casilla"></span>Hand drums, rain sticks, rattles</li>
+   <li><span class="casilla"></span>Both songs tested on the sound system</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="escenografia" name="partes">
+  <summary><h2 id="t-escenografia">Sets and props</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>The prairie (fixed backdrop):</strong> kraft paper or canvas with tall golden grasses, wildflowers and open sky.</li>
+   <li><strong>The rivers:</strong> two light cloths, royal blue and turquoise, 20 to 26 feet long, gently waved by students.</li>
+   <li><strong>The canoes:</strong> reinforced cardboard cutouts, painted like carved and burned wood, with straps to carry them at waist height. Inoka canoes were carved from a single tree trunk.</li>
+   <li><strong>The longhouse:</strong> flexible arches (PVC pipes or poles) covered with straw, jute or reed mats. In summer the Inoka lived in longhouses shared by several families; in winter, in smaller wigwams. Both were covered with rush mats.</li>
+   <li><strong>The council fire:</strong> symbolic, made of orange paper or cloth. Never real fire.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="plano" name="partes">
+  <summary><h2 id="t-plano">Stage plan</h2></summary>
+  <div class="cuerpo">
+  <p>Seen from the audience.</p>
+  <h3>Acts I and II</h3>
+  <div class="plano" role="img" aria-label="Acts I and II: upstage, the prairie and the mat-covered longhouse; at the sides, the musicians; in the center, nature (Act I) and the Three Sisters with the farmers (Act II).">
+   <div><b>Upstage left</b>Prairie</div><div><b>Upstage center</b>Mat-covered longhouse</div><div><b>Upstage right</b>Prairie</div>
+   <div><b>Downstage left</b>Musicians (Act I)</div><div><b>Downstage center</b>Nature · the Three Sisters</div><div><b>Downstage right</b>Musicians (Act I)</div>
+  </div><p class="publico">Audience</p>
+  <h3>Act III</h3>
+  <div class="plano" role="img" aria-label="Act III: the river cloths cross the stage; the canoes move along the river; the Kaskaskia riverbank on the right.">
+   <div><b>Upstage left</b>Canoes come in</div><div><b>Upstage center</b>Prairie</div><div><b>Upstage right</b>Messenger comes in</div>
+   <div><b>Downstage left</b>River (cloths)</div><div><b>Downstage center</b>River and canoes</div><div><b>Downstage right</b>Kaskaskia riverbank</div>
+  </div><p class="publico">Audience</p>
+  <h3>Acts IV and V</h3>
+  <div class="plano" role="img" aria-label="Acts IV and V: in the center, the council circle around the fire; around it, in a half circle, the other grades. In Act V everyone steps forward.">
+   <div><b>Upstage left</b>Half circle: 1st to 4th</div><div><b>Upstage center</b>Half circle: 1st to 4th</div><div><b>Upstage right</b>Half circle: 1st to 4th</div>
+   <div><b>Downstage left</b>Pre-K and K, seated</div><div><b>Downstage center</b>Council circle (5th and 6th) and fire</div><div><b>Downstage right</b>Pre-K and K, seated</div>
+  </div><p class="publico">Audience</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="ensayos" name="partes">
+  <summary><h2 id="t-ensayos">Rehearsals</h2></summary>
+  <div class="cuerpo">
+  <h3>Weeks 1 to 3: each group in its classroom</h3>
+  <ul>
+   <li><strong>Pre-K and K (15 min):</strong> come in with the music, moving like the wind, the animals and the flowers, and “freeze” in a half circle.</li>
+   <li><strong>1st and 2nd (20 min):</strong> their lines, “Raíz con raíz,” and moving the stalks and mats; the musicians, the beat of Act I.</li>
+   <li><strong>3rd and 4th (25 min):</strong> moving the cloths and the canoes; the messenger's, paddler's and trader's lines.</li>
+   <li><strong>5th and 6th (30 min):</strong> projecting their voices, the pauses of the council, and the narration.</li>
+   <li><strong>Everyone:</strong> “Legado de la pradera.”</li>
+  </ul>
+  <h3>Weeks 4 and 5: act by act</h3>
+  <p>Each act with its music, entrances and exits from the sides. Act V, with everyone, at the end of week 5.</p>
+  <h3>Last week</h3>
+  <p>Two or three full run-throughs with props and songs.</p>
+  <div class="nota">No one has to memorize if they can't. Narrators can read from a script in a black folder. In the <a href="obra-inoka-en.html">interactive script</a>, each child can choose a part, see only their own lines and listen to them.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <details class="seccion acord" id="carta" name="partes">
+  <summary><h2 id="t-carta">Family letter</h2></summary>
+  <div class="cuerpo">
+  <p class="solo-pantalla">Ready to print. Fill in the blanks by hand.</p>
+  <div class="carta">
+   <p><strong>School play: <em>Inoka: The Breath of the Prairie and the People of Illinois</em></strong></p>
+   <p>Date: <span class="hueco">&nbsp;</span></p>
+   <p>Dear family,</p>
+   <p>This year, the whole school, from Pre-K to 6th grade, will perform <em>Inoka</em>, a play about the peoples who lived on the prairies and rivers of Illinois before the French arrived, and about their descendants today, the Peoria Tribe of Oklahoma. As they rehearse, the children will learn the history of our state, some science (how corn, beans and squash grow together) and the value of making decisions by listening to one another.</p>
+   <p><strong>Your child</strong> <span class="hueco">&nbsp;</span> <strong>will be:</strong> <span class="hueco">&nbsp;</span></p>
+   <p><strong>Clothes we ask for, if you have them at home</strong> (no need to buy anything): <span class="hueco" style="min-width:60%">&nbsp;</span></p>
+   <p><strong>Important:</strong> out of respect for Native peoples, please do <strong>not</strong> send “Indian costumes,” feathers, headdresses or face paint. The school will prepare each character's props.</p>
+   <ul>
+    <li>Bring the clothes, in a bag labeled with your child's name and grade: <span class="hueco">&nbsp;</span></li>
+    <li>Dress rehearsal: <span class="hueco">&nbsp;</span></li>
+    <li>Performance: date <span class="hueco">&nbsp;</span>, time <span class="hueco">&nbsp;</span>, place <span class="hueco">&nbsp;</span></li>
+   </ul>
+   <p><strong>How you can help at home:</strong> the script is on Lumi (www.lumi-educa.com), in English and Spanish, with a button to listen to each line. The two songs are there too.</p>
+   <p>Thank you for joining us!</p>
+   <p>Sincerely,<br><span class="hueco">&nbsp;</span></p>
+   <div class="talon">
+    <p><strong>Please sign and return this slip by</strong> <span class="hueco">&nbsp;</span></p>
+    <p>Child's name: <span class="hueco">&nbsp;</span> Grade: <span class="hueco">&nbsp;</span></p>
+    <p><span class="casilla"></span>I give permission for my child to take part in the play.</p>
+    <p><span class="casilla"></span>I give permission for the school to post photos or videos of the play that show my child.</p>
+    <p><span class="casilla"></span>I do <strong>not</strong> give permission to post photos or videos that show my child.</p>
+    <p>Signature: <span class="hueco" style="min-width:14em">&nbsp;</span> Phone: <span class="hueco">&nbsp;</span></p>
+   </div>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“Inoka: The Breath of the Prairie and the People of Illinois” · A play by José M. Fernández · Lumi · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a></p></div></footer>
+<script>
+(function(){
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(ev){
+      var id=a.getAttribute("href").slice(1);
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      if(abrir(id)) { ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(!d.open){ var v=d.querySelector("video"); if(v) v.pause(); }
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint",function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba",d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint",function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open=d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

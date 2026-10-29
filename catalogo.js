@@ -59,7 +59,11 @@ window.LUMI = {
     { id: "fenix-lago", estado: "lista",
       es_url: "obra-fenix-lago-es.html", en_url: "obra-fenix-lago-en.html", guia: "obra-fenix-lago-produccion-es.html", historia: "obra-fenix-lago-historia-es.html", guia_en: "obra-fenix-lago-produccion-en.html", historia_en: "obra-fenix-lago-historia-en.html",
       es: { titulo: "El Fénix sobre el Lago", desc: "Obra de José M. Fernández. El Gran Incendio de Chicago de 1871 y cómo la ciudad volvió a levantarse, con papeles para todos los grados, de prekínder a 6.º." },
-      en: { titulo: "The Phoenix on the Lake", desc: "A play by José M. Fernández. The Great Chicago Fire of 1871 and how the city rose again, with parts for every grade, Pre-K to 6th." } }
+      en: { titulo: "The Phoenix on the Lake", desc: "A play by José M. Fernández. The Great Chicago Fire of 1871 and how the city rose again, with parts for every grade, Pre-K to 6th." } },
+    { id: "inoka", estado: "lista",
+      es_url: "obra-inoka-es.html", en_url: "obra-inoka-en.html", guia: "obra-inoka-produccion-es.html", guia_en: "obra-inoka-produccion-en.html", historia: "obra-inoka-historia-es.html", historia_en: "obra-inoka-historia-en.html",
+      es: { titulo: "Inoka: El aliento de la pradera y la gente de Illinois", desc: "Obra de José M. Fernández. Los Inoka, el pueblo de las praderas y los ríos de Illinois, y sus descendientes de hoy, la tribu Peoria de Oklahoma. Con papeles para todos los grados, de prekínder a 6.º, y dos canciones." },
+      en: { titulo: "Inoka: The Breath of the Prairie and the People of Illinois", desc: "A play by José M. Fernández. The Inoka, the people of the prairies and rivers of Illinois, and their descendants today, the Peoria Tribe of Oklahoma. With parts for every grade, Pre-K to 6th, and two songs." } }
   ],
 
   series: [

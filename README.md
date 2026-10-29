@@ -39,6 +39,7 @@ programas de `herramientas/`:
 |---|---|---|
 | *El Fénix sobre el Lago*, de José M. Fernández | `gen_fenix.py` (guion; las páginas publicadas tienen retoques posteriores, no regenerar sin comparar) y `gen_fenix_cartel.py` (cartel) | `obra-fenix-lago-*.html` |
 | *El bosque mágico*, de Vicente Cañón Verdasco | `gen_bosque_produccion.py` (guía y cartel); el generador del guion se agregará cuando el autor apruebe la traducción al inglés | `obra-bosque-magico-*.html` |
+| *Inoka: El aliento de la pradera y la gente de Illinois*, de José M. Fernández | `gen_inoka.py` (guion) y `gen_inoka_materiales.py` (producción, guía histórica, cartel y programa); estilos comunes en `teatro_base.py` | `obra-inoka-*.html` |
 
 *El bosque mágico* es obra de **Vicente Cañón Verdasco** (© 2019, www.obrasteatro.com).
 Se publica en Lumi con su autorización escrita (octubre de 2026): guion interactivo,

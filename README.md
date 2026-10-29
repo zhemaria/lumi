@@ -37,7 +37,7 @@ programas de `herramientas/`:
 
 | Obra | Generador | Páginas |
 |---|---|---|
-| *El Fénix sobre el Lago*, de José M. Fernández | `gen_fenix.py` | `obra-fenix-lago-*.html` |
+| *El Fénix sobre el Lago*, de José M. Fernández | `gen_fenix.py` (guion; las páginas publicadas tienen retoques posteriores, no regenerar sin comparar) y `gen_fenix_cartel.py` (cartel) | `obra-fenix-lago-*.html` |
 | *El bosque mágico*, de Vicente Cañón Verdasco | `gen_bosque_produccion.py` (guía y cartel); el generador del guion se agregará cuando el autor apruebe la traducción al inglés | `obra-bosque-magico-*.html` |
 
 *El bosque mágico* es obra de **Vicente Cañón Verdasco** (© 2019, www.obrasteatro.com).

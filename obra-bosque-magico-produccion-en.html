@@ -1,0 +1,500 @@
+<!doctype html>
+<!-- «El bosque mágico» · Obra de Vicente Cañón Verdasco © 2019 (www.obrasteatro.com) · Publicada en Lumi con autorización del autor.
+     Guía de producción: Lumi (José M. Fernández) · CC BY-NC-SA 4.0 · Generado con herramientas/gen_bosque_produccion.py -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El bosque mágico (The Magical Forest) · Production · Lumi</title>
+<meta name="description" content="Production guide for “El bosque mágico” (The Magical Forest), a play by Vicente Cañón Verdasco: cast by grade from Pre-K to 6th, scene by scene, music and cue sheet, costumes, sets, stage plan, rehearsals, classroom activities and family letter.">
+<meta name="author" content="Vicente Cañón Verdasco">
+<link rel="alternate" hreflang="es" href="obra-bosque-magico-produccion-es.html">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+  .obra-cab{background:var(--cie);padding:1.4rem 0}
+  .obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.5rem)}
+  .obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+  .herr{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 0}
+  .herr button,.herr a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+  .tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+  .tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+  .tabla thead th{background:var(--cie)}
+  .tabla tbody th{background:#F6FBFB;font-weight:700}
+  .envoltura-tabla{overflow-x:auto}
+  .nota{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .autor-caja{background:#F3EEFA;border-left:6px solid #5B3F8F;border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+  .tarjetas li{border:2px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+  .tarjetas h3{font-size:1.1rem;margin-bottom:.3rem}
+  .tarjetas p{margin:.3rem 0}
+  .chip{display:inline-block;font-size:.85rem;font-weight:700;background:var(--cie);border-radius:999px;padding:.05rem .6rem}
+  .plano{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:.6rem 0 .3rem;font-size:.92rem}
+  .plano div{background:#F6FBFB;border:1px solid var(--borde);border-radius:8px;padding:.45rem .55rem;min-height:70px}
+  .plano b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em;color:#2d5f69}
+  .publico{text-align:center;font-weight:700;border-top:3px solid var(--pet);padding-top:.2rem;margin-bottom:1rem}
+  .carta{border:2px dashed var(--pet);border-radius:14px;padding:1.2rem 1.4rem;background:#fff;margin:1rem 0}
+  .hueco{display:inline-block;min-width:9em;border-bottom:2px solid var(--pet)}
+  .talon{border-top:2px dashed var(--pet);margin-top:1rem;padding-top:.8rem}
+  .casilla{display:inline-block;width:1em;height:1em;border:2px solid var(--pet);vertical-align:-2px;margin-right:.3rem}
+  .lista-casillas{list-style:none;padding-left:0}
+  figure.info{margin:1rem 0 1.6rem}
+  figure.info img,video.guia{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--borde);background:#000}
+  figure.info figcaption{font-size:.95rem;margin-top:.4rem}
+  .muestra{display:inline-block;width:1.1em;height:1.1em;border-radius:4px;border:1px solid #555;vertical-align:-3px;margin-right:.35rem}
+  details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+  details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;cursor:pointer}
+  details.acord > summary::-webkit-details-marker{display:none}
+  details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+  details.acord[open] > summary::before{content:"▾"}
+  details.acord > summary h2{display:inline;font-size:1.35rem}
+  details.acord > summary:hover{background:var(--cie);border-radius:14px}
+  details.acord .cuerpo{padding:0 1rem 1rem}
+  main .seccion{scroll-margin-top:120px}
+  @media print{#cotejo{break-before:page}.cabecera,.anclas,.herr,.solo-pantalla,video{display:none!important}.carta{break-before:page;border-style:solid}.tarjetas li,.tabla tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-bosque-magico-produccion-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="obra-bosque-magico-en.html">← The script</a></p>
+  <h1 id="titulo"><span lang="es">El bosque mágico</span> (The Magical Forest) · Production</h1>
+  <p class="autor">A play by Vicente Cañón Verdasco</p>
+  <p style="margin:.3rem 0 0">Everything you need to stage it with the whole school, from Pre-K to 6th grade: who is in it, how many, what you need and when.</p>
+  <div class="herr solo-pantalla"><button type="button" onclick="window.print()">🖨️ Print or save as PDF</button><a href="#carta">✉️ Family letter</a><a href="obra-bosque-magico-cartel-en.html">🖼️ Show poster</a></div>
+ </div>
+</section>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Parts of the guide"><ul class="anclas">
+  <li><a href="#autor">The author</a></li>
+  <li><a href="#resumen">At a glance</a></li>
+  <li><a href="#imagenes">Pictures and video</a></li>
+  <li><a href="#reparto">Cast by grade</a></li>
+  <li><a href="#escenas">Scene by scene</a></li>
+  <li><a href="#trabajos">Jobs for non-actors</a></li>
+  <li><a href="#musica">Music</a></li>
+  <li><a href="#entradas">Cue sheet</a></li>
+  <li><a href="#vestuario">Costumes</a></li>
+  <li><a href="#cotejo">Checklist</a></li>
+  <li><a href="#escenografia">Sets</a></li>
+  <li><a href="#plano">Stage plan</a></li>
+  <li><a href="#ensayos">Rehearsals</a></li>
+  <li><a href="#clase">In the classroom</a></li>
+  <li><a href="#carta">Family letter</a></li>
+ </ul></nav>
+
+ <!-- ================= AUTOR ================= -->
+ <details class="seccion acord" id="autor" name="partes">
+  <summary><h2 id="t-autor">The author and his conditions</h2></summary>
+  <div class="cuerpo">
+  <div class="autor-caja">
+   <p><strong><em lang="es">El bosque mágico</em> is a play by Vicente Cañón Verdasco</strong> (© 2019), a playwright from Tarragona, Spain. His plays for children and young people are at <a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">www.obrasteatro.com</a>.</p>
+   <p>In October 2026, the author gave Lumi permission to publish the interactive script, to translate it into English, and to add more villagers, fairies and elves so the whole school can take part, always keeping the original text.</p>
+  </div>
+  <p>The author offers the play free of charge for performance, on these conditions, which are accepted by using it:</p>
+  <ul>
+   <li><strong>His name, Vicente Cañón, must always appear as the author</strong>: before every performance and in everything that is published: posters, programs, social media, websites and videos.</li>
+   <li><strong>The title of the play must not be changed</strong>: <em lang="es">El bosque mágico</em>. In English, it is presented as <em><span lang="es">El bosque mágico</span> (The Magical Forest)</em>.</li>
+   <li>The author would be very grateful to receive <strong>photos, links to videos, press clippings or reviews</strong> of each production, at his email: <a href="mailto:tente.ca2017@gmail.com">tente.ca2017@gmail.com</a>. He would also like to receive a poster showing the title, his name, the school and the country.</li>
+  </ul>
+  <h3>Checklist for the author's conditions</h3>
+  <ul class="lista-casillas">
+   <li><span class="casilla"></span>The poster and the program say “<em lang="es">El bosque mágico</em> (The Magical Forest), by Vicente Cañón”. Use the <a href="obra-bosque-magico-cartel-en.html">Lumi poster</a>.</li>
+   <li><span class="casilla"></span>The presenters say the author's name before the show begins (see <a href="#trabajos">jobs for non-actors</a>).</li>
+   <li><span class="casilla"></span>Every post on social media, on the school website or in a video includes the title and the author's name.</li>
+   <li><span class="casilla"></span>Families have signed the photo permission (see the <a href="#carta">letter</a>).</li>
+   <li><span class="casilla"></span>After the show, photos, video links and the poster are sent to the author.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= RESUMEN ================= -->
+ <details class="seccion acord" id="resumen" name="partes">
+  <summary><h2 id="t-resumen">At a glance</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>What it's about:</strong> near a magical forest there are three happy villages: the Village of Joy, the Village of Friendship and the Village of Generosity. The envious witches and wizards cast a curse on them and take away their happiness. The wise people don't know what to do, until some fairies and elves bring a plan: at night, while the witches and wizards are asleep, everyone will dance together in a circle around them. The dance breaks the curse, and the witches and wizards ask to be everyone's friends.</li>
+   <li><strong>Values:</strong> joy, friendship and generosity, and their opposites: sadness, unfriendliness and selfishness. Problems are solved together, and someone who makes a mistake can change.</li>
+   <li><strong>Running time:</strong> 20 to 25 minutes, depending on the music and the dances. The text is short: most of the play is movement, dancing and music.</li>
+   <li><strong>Cast:</strong> the author wrote it for about 25 children aged 5 and 6, and says every group can grow. On Lumi we suggest it for the whole school, Pre-K to 6th grade, with the <a href="#reparto">cast by grade</a>.</li>
+   <li><strong>Languages:</strong> the script is in <a href="obra-bosque-magico-es.html" lang="es">Spanish</a> and in <a href="obra-bosque-magico-en.html">English</a>, with the same lines in the same order, so it can be performed in either language.</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= IMAGENES ================= -->
+ <details class="seccion acord" id="imagenes" name="partes">
+  <summary><h2 id="t-imagenes">The play in pictures</h2></summary>
+  <div class="cuerpo">
+  <p>These infographics are in Spanish.</p>
+  <figure class="info"><img src="bm-escena5.jpg" alt="Infographic for scene 5, the meeting of the wise people. On the left, the three villages, gray and sad; on the right, four wise people in white coats and glasses, in the forest, wondering how to bring happiness back and shrugging their shoulders." loading="lazy" width="1600" height="893"><figcaption>Scene 5: the wise people meet.</figcaption></figure>
+  <figure class="info"><img src="bm-magia.jpg" alt="Infographic for scenes 6 and 7, the arrival of magic. The fairies and elves arrive with music before the wise people and suggest going to the cave at night to dance in a circle; the wise people explain the plan to the villages, who walk quietly to the cave." loading="lazy" width="1600" height="893"><figcaption>Scenes 6 and 7: the plan to break the curse.</figcaption></figure>
+  <figure class="info"><img src="bm-escena8.jpg" alt="Infographic for scene 8, the dance and the reconciliation. Phase 1: fairies, elves, wise people and villagers dance in a big circle around the sleeping witches and wizards. Phase 2: the witches and wizards wake up without their powers, ask to be friends and everyone celebrates." loading="lazy" width="1600" height="893"><figcaption>Scene 8: the dance and making friends.</figcaption></figure>
+  <figure class="info"><img src="bm-escenografia.jpg" alt="Infographic on low-cost sets: cardboard bushes painted in several shades of green, with witches and wizards peeking out from behind, and a black cardboard cauldron with painted flames and stones; both have a cardboard back support folded into a triangle." loading="lazy" width="1600" height="893"><figcaption>Low-cost sets: the bushes and the cauldron.</figcaption></figure>
+  <figure class="info"><img src="bm-atrezo.jpg" alt="Infographic on sets and props: forest bushes, a spell cauldron and backdrop murals with trees and mountains; prop ice creams made of foam sheets or cardboard, and a music player." loading="lazy" width="1600" height="893"><figcaption>Sets and props.</figcaption></figure>
+  <h3>Video: a guide to the play</h3>
+  <video class="guia" controls preload="none" poster="bm-guia-portada.jpg" width="1280" height="720" lang="es"><source src="bm-guia.mp4" type="video/mp4">Your browser cannot play this video. <a href="bm-guia.mp4">Download the video</a>.</video>
+  <p style="font-size:.95rem">A video in Spanish, about 6 minutes long: the play, the cast by grade, the scenes and the costumes.</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= REPARTO ================= -->
+ <details class="seccion acord" id="reparto" name="partes">
+  <summary><h2 id="t-reparto">Cast by grade and numbers</h2></summary>
+  <div class="cuerpo">
+  <p>The author wrote the play for about 25 children and noted that <strong>almost every part can be doubled</strong>: instead of four villagers per village there can be five, six or more, and the same goes for the witches, wizards, fairies and elves. That way the whole school takes part <strong>without changing the text</strong>.</p>
+  <ul>
+   <li>When a line belongs to a group (“Witches”, “Fairies and Elves”, “All the villagers”), the whole group says it together.</li>
+   <li>When a line has a number (“Villager 1”, “Wise People 3 and 4”), it can be said by one child or by a small group.</li>
+  </ul>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Number of children per part</caption>
+   <thead><tr><th scope="col">Grade</th><th scope="col">Part</th><th scope="col">Original</th><th scope="col">Suggested</th><th scope="col">Maximum</th><th scope="col">How it grows</th></tr></thead>
+   <tbody>
+    <tr><th scope="row" rowspan="3">5th &amp; 6th</th><td>Narrator</td><td>1 to 4</td><td>4</td><td>8</td><td>One voice for every two scenes, or two voices taking turns with the verses.</td></tr>
+    <tr><td>Tech crew (see <a href="#trabajos">jobs</a>)</td><td>—</td><td>8</td><td>15</td><td>Sound, lights, curtain, bushes, props, prompter.</td></tr>
+    <tr><td>Backstage buddies</td><td>—</td><td>1 for every 3 little ones</td><td>1 for every 2</td><td>They take Pre-K and K children to their places and go on stage with them.</td></tr>
+    <tr><th scope="row" rowspan="3">3rd &amp; 4th</th><td>Witches</td><td>3</td><td>6</td><td>12</td><td>They all say their lines together and hide in groups behind the four bushes.</td></tr>
+    <tr><td>Wizards</td><td>3</td><td>6</td><td>12</td><td>Same as the witches. One witch and one wizard carry the cauldron.</td></tr>
+    <tr><td>Wise People</td><td>4</td><td>8</td><td>12</td><td>Two groups: “1 and 2” and “3 and 4”. There can be wise people from each village.</td></tr>
+    <tr><th scope="row" rowspan="2">1st &amp; 2nd</th><td>Fairies</td><td>2</td><td>10</td><td>25</td><td>They all say their lines together and lead the final dance.</td></tr>
+    <tr><td>Elves</td><td>2</td><td>10</td><td>25</td><td>Same as the fairies; they come in from the opposite side.</td></tr>
+    <tr><th scope="row" rowspan="3">Pre-K &amp; K</th><td>Village of Joy (yellow)</td><td>4</td><td>10</td><td>30</td><td>Kindergarten says the numbered lines; Pre-K says the whole-village lines (“Oh! Oh!”), and does the dances and gestures.</td></tr>
+    <tr><td>Village of Friendship (blue)</td><td>4</td><td>10</td><td>30</td><td>Same: villagers 1 to 4 can be four pairs or four small groups.</td></tr>
+    <tr><td>Village of Generosity (red)</td><td>4</td><td>10</td><td>30</td><td>Same: they all share a prop ice cream.</td></tr>
+    <tr><th scope="row">Total</th><td></td><td><strong>≈ 26</strong></td><td><strong>≈ 100</strong></td><td><strong>200 or more</strong></td><td></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Why this casting:</strong> the youngest children do what they do best, which is dancing, moving and making faces; 1st and 2nd graders have short lines said together; 3rd and 4th graders play the parts with the most acting, the witches, wizards and wise people; 5th and 6th graders narrate in verse and run the stage. It is a suggestion: each school can adapt it to its own groups.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= ESCENAS ================= -->
+ <details class="seccion acord" id="escenas" name="partes">
+  <summary><h2 id="t-escenas">Scene by scene</h2></summary>
+  <div class="cuerpo">
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Summary of the scenes</caption>
+   <thead><tr><th scope="col">Scene</th><th scope="col">What happens</th><th scope="col">Who is on stage</th><th scope="col">Music</th></tr></thead>
+   <tbody>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-1">1</a></th><td>The narrator introduces the three villages, who wave to the audience. The envious witches and wizards brew the spell in the cauldron.</td><td>Narrator, the three villages (seated), witches and wizards</td><td>Track 1</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-2">2</a></th><td>The Village of Joy dances in the forest; the curse makes them sad.</td><td>Narrator, Joy, witches and wizards</td><td>Tracks 2 and 3</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-3">3</a></th><td>The Village of Friendship plays; the curse makes them quarrel and stick their tongues out.</td><td>Narrator, Friendship, witches and wizards</td><td>Tracks 4 and 3</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-4">4</a></th><td>The Village of Generosity shares ice cream; the curse makes them selfish. The witches and wizards celebrate and go back to their cave.</td><td>Narrator, Generosity, witches and wizards</td><td>Tracks 5, 3 and 1</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-5">5</a></th><td>The wise people meet in the forest, but they cannot find a solution.</td><td>Narrator, wise people</td><td>Track 6</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-6">6</a></th><td>The fairies and elves arrive with the plan: to dance at night around the sleeping witches and wizards.</td><td>Narrator, wise people, fairies and elves</td><td>Track 7</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-7">7</a></th><td>The wise people explain the plan to the villages. At night, everyone climbs quietly up to the cave.</td><td>Narrator, wise people, the three villages, and then everyone</td><td>Track 8</td></tr>
+    <tr><th scope="row"><a href="obra-bosque-magico-en.html#escena-8">8</a></th><td>On the count of three, everyone dances in a circle and breaks the curse. The witches and wizards lose their powers, ask to be friends, and everyone celebrates.</td><td>The whole cast</td><td>Tracks 9 and 10</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= TRABAJOS ================= -->
+ <details class="seccion acord" id="trabajos" name="partes">
+  <summary><h2 id="t-trabajos">Jobs for non-actors</h2></summary>
+  <div class="cuerpo">
+  <p>Not everyone wants to or can speak on stage, and the show can't go on without these jobs. They are real parts: they appear in the program with each child's name.</p>
+  <ul class="tarjetas">
+   <li><h3>🎤 Presenters</h3><span class="chip">5th or 6th · 1 or 2 children</span><p>They welcome the audience and <strong>announce the play and its author</strong>: “We present <span lang="es">El bosque mágico</span>, The Magical Forest, by Vicente Cañón.” The author asks for his name to be said before every performance.</p></li>
+   <li><h3>🔊 Sound</h3><span class="chip">4th to 6th · 2 children</span><p>They play each track at the right moment, following the <a href="#entradas">cue sheet</a>.</p></li>
+   <li><h3>💡 Lights</h3><span class="chip">5th &amp; 6th · 1 or 2 children</span><p>Daylight for scenes 1 to 6, and blue nighttime light for the cave.</p></li>
+   <li><h3>🌳 Curtain and bushes</h3><span class="chip">5th &amp; 6th · 2 to 4 children</span><p>They open and close the curtain and check that the four bushes stand firmly.</p></li>
+   <li><h3>🧺 Props</h3><span class="chip">4th to 6th · 2 children</span><p>They set out the cauldron and the ice creams on a table backstage and put them away afterward.</p></li>
+   <li><h3>📖 Prompter</h3><span class="chip">5th or 6th · 1 or 2 children</span><p>They follow the script backstage and whisper a line to anyone who forgets it.</p></li>
+   <li><h3>🤝 Backstage buddies</h3><span class="chip">5th · 1 for every 2 or 3 little ones</span><p>They take Pre-K and K children to their places, join them in the final dance and bring them back.</p></li>
+   <li><h3>🎨 Sets</h3><span class="chip">Any grade</span><p>They paint the bushes, the cauldron and the backdrop of trees and mountains.</p></li>
+   <li><h3>👒 Costumes</h3><span class="chip">4th to 6th, with an adult</span><p>They help the little ones put on wings, flower crowns, caps and hats.</p></li>
+   <li><h3>📰 Poster and program</h3><span class="chip">3rd to 6th · 2 to 4 children</span><p>They prepare the <a href="obra-bosque-magico-cartel-en.html">poster</a> and the program, with the title, the author and the names of the whole cast.</p></li>
+   <li><h3>🎟️ Front of house</h3><span class="chip">4th to 6th · 2 to 4 children</span><p>They greet families, hand out programs and help people find a seat.</p></li>
+   <li><h3>📸 Photos and video</h3><span class="chip">6th, with an adult</span><p>They film only the children whose families gave permission. These are the photos and videos sent to the author.</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= MUSICA ================= -->
+ <details class="seccion acord" id="musica" name="partes">
+  <summary><h2 id="t-musica">Music</h2></summary>
+  <div class="cuerpo">
+  <p>The author suggests this list, which is optional. Almost all the pieces come from the <strong>YouTube Audio Library</strong> and are free to use (happy music for children). <strong>The author offers to send them as mp3 files</strong> to anyone who asks, by email: see <a href="#autor">the author</a>.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Music list</caption>
+   <thead><tr><th scope="col">Track</th><th scope="col">Piece</th><th scope="col">Mood</th><th scope="col">When it plays</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td><em>The New Order</em>, Aaron Kenny</td><td>Dark, cinematic</td><td>Witches and wizards (scenes 1 and 4)</td></tr>
+    <tr><td>2</td><td><em>Sand Castle</em>, Quincas Moreira</td><td>Children's, upbeat</td><td>Dance of the Village of Joy</td></tr>
+    <tr><td>3</td><td><em>St. Francis</em>, Josh Lippi &amp; The Overtimers</td><td>Rock, sad</td><td>Each village's sad exit</td></tr>
+    <tr><td>4</td><td><em>Rainbow Forest</em>, Quincas Moreira</td><td>Children's, happy</td><td>Dance of the Village of Friendship</td></tr>
+    <tr><td>5</td><td><em>Goat</em>, Wayne Jones</td><td>Children's, happy</td><td>Ice cream dance, Village of Generosity</td></tr>
+    <tr><td>6</td><td><em>Sleeping Sheep</em>, The Green Orbs</td><td>Children's, calm</td><td>The worried wise people</td></tr>
+    <tr><td>7</td><td>Robert Schumann, <em>Kinderszenen</em>, Op. 15, No. 1, “Of Foreign Lands and Peoples”</td><td>Piano</td><td>Fairies and elves come in and go out</td></tr>
+    <tr><td>8</td><td>Johannes Brahms, <em>Lullaby</em> (Wiegenlied)</td><td>Lullaby</td><td>Night: the witches and wizards fall asleep</td></tr>
+    <tr><td>9</td><td><em>Twirly Tops</em>, The Green Orbs</td><td>Children's, happy</td><td>The big circle dance</td></tr>
+    <tr><td>10</td><td><em>Dancing on Green Grass</em>, The Green Orbs</td><td>Children's, upbeat</td><td>Ending and bows</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Tracks 7 and 8:</strong> Schumann's and Brahms's music is in the public domain, but not every recording is. The author suggests Vladimir Horowitz's recording; if you plan to post videos of the show, use free recordings, such as those from <a href="https://musopen.org/" target="_blank" rel="noopener noreferrer">Musopen</a>, or ask the author for the tracks.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= ENTRADAS ================= -->
+ <details class="seccion acord" id="entradas" name="partes">
+  <summary><h2 id="t-entradas">Cue sheet (sound and lights)</h2></summary>
+  <div class="cuerpo">
+  <p>For the tech crew. Each “cue” is a change: it happens when the event in the “Signal” column takes place. The lights are Lumi's suggestion; the play also works with ordinary room lighting.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Sound and light cues</caption>
+   <thead><tr><th scope="col">No.</th><th scope="col">Scene</th><th scope="col">Signal</th><th scope="col">Sound</th><th scope="col">Lights</th></tr></thead>
+   <tbody>
+    <tr><td>1</td><td>1</td><td>The curtain opens</td><td>Silence</td><td>Warm daylight</td></tr>
+    <tr><td>2</td><td>1</td><td>The witches and wizards move to the front of the stage</td><td>Track 1; fades down when they speak</td><td>—</td></tr>
+    <tr><td>3</td><td>1</td><td>“Ha, ha, ha...”, after “Yes!”</td><td>Track 1 while the cauldron comes in</td><td>—</td></tr>
+    <tr><td>4</td><td>1</td><td>“Let's go spread it... now!”</td><td>Track 1 while they carry out the cauldron and form the train</td><td>—</td></tr>
+    <tr><td>5</td><td>2</td><td>The narration ends</td><td>Track 2: dance of Joy; stops when they finish</td><td>—</td></tr>
+    <tr><td>6</td><td>2</td><td>“Oh! Oh!”</td><td>Track 3: sad exit</td><td>—</td></tr>
+    <tr><td>7</td><td>3</td><td>The witches and wizards hide</td><td>Track 4: dance of Friendship</td><td>—</td></tr>
+    <tr><td>8</td><td>3</td><td>Villagers 3 and 4 stick out their tongues</td><td>Track 3: sad exit</td><td>—</td></tr>
+    <tr><td>9</td><td>4</td><td>The witches and wizards hide for the last time</td><td>Track 5: ice cream dance</td><td>—</td></tr>
+    <tr><td>10</td><td>4</td><td>All the villagers stick out their tongues</td><td>Track 3: sad exit</td><td>—</td></tr>
+    <tr><td>11</td><td>4</td><td>“We have done away with happiness!” · “Ha, ha, ha!”</td><td>Track 1: they exit stage right</td><td>—</td></tr>
+    <tr><td>12</td><td>5</td><td>The narration ends</td><td>Track 6: the wise people walk around, worried</td><td>—</td></tr>
+    <tr><td>13</td><td>6</td><td>The narration ends (“...eager to be heard”)</td><td>Track 7: the fairies and elves come in</td><td>—</td></tr>
+    <tr><td>14</td><td>6</td><td>“That's just what we'll do!”</td><td>Track 7: the fairies and elves leave</td><td>—</td></tr>
+    <tr><td>15</td><td>7</td><td>The narrator says “That night...”</td><td>Silence</td><td>Fade to soft blue night</td></tr>
+    <tr><td>16</td><td>7</td><td>The narration ends</td><td>Track 8: the lullaby, while everyone tiptoes in</td><td>Night</td></tr>
+    <tr><td>17</td><td>8</td><td>“One, two and... three!”</td><td>Track 9: the big circle dance</td><td>Night, with a light in the center</td></tr>
+    <tr><td>18</td><td>8</td><td>“Of course you can!”</td><td>—</td><td>Daylight returns</td></tr>
+    <tr><td>19</td><td>8</td><td>“...our play is all played out.”</td><td>Track 10: final dance and bows</td><td>Full light; at the end, the curtain closes</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= VESTUARIO ================= -->
+ <details class="seccion acord" id="vestuario" name="partes">
+  <summary><h2 id="t-vestuario">Costumes</h2></summary>
+  <div class="cuerpo">
+  <p>These are the costumes the author suggests. Most can be put together from clothes at home; the rest are made in class.</p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Costumes by part</caption>
+   <thead><tr><th scope="col">Part</th><th scope="col">Clothes from home</th><th scope="col">Made at school</th></tr></thead>
+   <tbody>
+    <tr><td><span class="muestra" style="background:#F2C200" aria-hidden="true"></span>Village of Joy</td><td>Jeans and a yellow T-shirt.</td><td>—</td></tr>
+    <tr><td><span class="muestra" style="background:#2F6FC0" aria-hidden="true"></span>Village of Friendship</td><td>Jeans and a blue T-shirt.</td><td>—</td></tr>
+    <tr><td><span class="muestra" style="background:#C8302B" aria-hidden="true"></span>Village of Generosity</td><td>Jeans and a red T-shirt.</td><td>Prop ice creams.</td></tr>
+    <tr><td>Fairies</td><td>Colored tights and a T-shirt.</td><td>Tulle skirt, wings and a flower crown.</td></tr>
+    <tr><td>Elves</td><td>Green T-shirt and green tights or pants.</td><td>Green cap; elf ears, if you like.</td></tr>
+    <tr><td>Witches</td><td>Black dress or black clothes.</td><td>Pointed black hat made of construction paper.</td></tr>
+    <tr><td>Wizards</td><td>Dark clothes.</td><td>Black cape and black hat.</td></tr>
+    <tr><td>Wise People</td><td>Light-colored clothes.</td><td>White coat (a large adult shirt works) and round glasses without lenses.</td></tr>
+    <tr><td>Narrators</td><td>Neat school clothes.</td><td>—</td></tr>
+    <tr><td>Tech crew</td><td>Black or dark clothes, so they don't stand out.</td><td>—</td></tr>
+   </tbody>
+  </table>
+  </div>
+  <div class="nota"><strong>Why these colors:</strong> the author asks for a different color for each village. Since the elves wear green, the Village of Generosity wears red, so every group stands out in the final dance.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= COTEJO ================= -->
+ <details class="seccion acord" id="cotejo" name="partes">
+  <summary><h2 id="t-cotejo">Costume and prop checklist</h2></summary>
+  <div class="cuerpo">
+  <p>For each group's teacher: check each box when the child is all set. Print one per classroom.</p>
+  <p>Classroom: <span class="hueco">&nbsp;</span> Teacher: <span class="hueco">&nbsp;</span> Group's part: <span class="hueco">&nbsp;</span></p>
+  <div class="envoltura-tabla">
+  <table class="tabla">
+   <caption class="sr">Checklist by child</caption>
+   <thead><tr><th scope="col">Name</th><th scope="col">Clothes from home</th><th scope="col">Piece made in class (wings, cap, hat...)</th><th scope="col">Labeled with name</th><th scope="col">Ready for dress rehearsal</th></tr></thead>
+   <tbody>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+    <tr><td>&nbsp;</td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td><td><span class="casilla"></span></td></tr>
+   </tbody>
+  </table>
+  </div>
+  <h3>Props</h3>
+  <ul class="lista-casillas">
+   <li><span class="casilla"></span>Four cardboard bushes, sturdy and with their supports</li>
+   <li><span class="casilla"></span>Big cardboard pot or cauldron</li>
+   <li><span class="casilla"></span>Prop ice creams for the Village of Generosity</li>
+   <li><span class="casilla"></span>Painted backdrop with trees and mountains</li>
+   <li><span class="casilla"></span>All ten tracks in order and tested on the sound system</li>
+   <li><span class="casilla"></span>Colored tape on the floor: yellow, blue and red for the villages</li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= ESCENOGRAFIA ================= -->
+ <details class="seccion acord" id="escenografia" name="partes">
+  <summary><h2 id="t-escenografia">Sets and props</h2></summary>
+  <div class="cuerpo">
+  <ul>
+   <li><strong>Backdrop:</strong> mountains and trees painted on paper or cardboard, set apart from the curtain.</li>
+   <li><strong>Four bushes</strong> cut out of cardboard and painted in several shades of green, with a cardboard back support folded into a triangle so they stand on their own. The witches and wizards hide behind them, so they need to be tall and wide.</li>
+   <li><strong>A big pot or cauldron</strong> made of cardboard painted black, with fire and stones painted at the base, also with a back support. One witch and one wizard carry it in and out.</li>
+   <li><strong>Prop ice creams</strong> made of foam sheets, cardboard or plastic, for the Village of Generosity.</li>
+   <li><strong>The cave</strong> (scenes 7 and 8): no set is needed. The nighttime light and the witches and wizards lying down in the center are enough.</li>
+  </ul>
+  <p>At the end of his play, the author includes photos of the bushes and the cauldron made for the original production, all of cardboard. The infographics in <a href="#imagenes">the play in pictures</a> show how to make them.</p>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= PLANO ================= -->
+ <details class="seccion acord" id="plano" name="partes">
+  <summary><h2 id="t-plano">Stage plan</h2></summary>
+  <div class="cuerpo">
+  <p>Seen from the audience. “Upstage” is farthest from the audience; “downstage” is closest. The three villages sit on the floor in front of the stage, facing the audience, and go up on stage when it's their turn.</p>
+  <h3>Scenes 1 to 4</h3>
+  <div class="plano" role="img" aria-label="Scenes 1 to 4: upstage, four bushes with the witches and wizards hiding behind them; downstage center, the narrator and, later, the village that dances; in front of the stage, the three villages sitting and facing the audience: Joy on the left, Friendship in the center, Generosity on the right.">
+   <div><b>Upstage left</b>Bushes 1 and 2 · witches and wizards</div><div><b>Upstage center</b>Backdrop of trees and mountains</div><div><b>Upstage right</b>Bushes 3 and 4 · witches and wizards</div>
+   <div><b>Downstage left</b>Narrator</div><div><b>Downstage center</b>Cauldron (scene 1) · the village that dances (scenes 2 to 4)</div><div><b>Downstage right</b>Witches and wizards exit (scene 4)</div>
+  </div>
+  <div class="plano" role="img" aria-label="In front of the stage: the three villages, seated.">
+   <div><b>In front, left</b>Village of Joy (yellow)</div><div><b>In front, center</b>Village of Friendship (blue)</div><div><b>In front, right</b>Village of Generosity (red)</div>
+  </div><p class="publico">Audience</p>
+  <h3>Scenes 5 and 6</h3>
+  <div class="plano" role="img" aria-label="Scenes 5 and 6: the wise people in the center; the fairies come in from the left and the elves from the right.">
+   <div><b>Upstage left</b>Bushes</div><div><b>Upstage center</b>—</div><div><b>Upstage right</b>Bushes</div>
+   <div><b>Downstage left</b>Fairies</div><div><b>Downstage center</b>Wise People</div><div><b>Downstage right</b>Elves</div>
+  </div><p class="publico">Audience</p>
+  <h3>Scenes 7 and 8</h3>
+  <div class="plano" role="img" aria-label="Scenes 7 and 8: the witches and wizards sleep in the center; around them, a big circle of fairies, elves, wise people and the three villages. After the dance, the circle opens into a half circle.">
+   <div><b>Upstage left</b>Circle</div><div><b>Upstage center</b>Circle</div><div><b>Upstage right</b>Circle</div>
+   <div><b>Downstage left</b>Circle</div><div><b>Downstage center</b>Witches and wizards, asleep</div><div><b>Downstage right</b>Circle</div>
+  </div><p class="publico">Audience</p>
+  <div class="nota">After the dance, the circle <strong>opens into a half circle toward the sides</strong>, so the audience can see the witches and wizards as they wake up. On a small stage, make a double circle: the little ones inside, with their buddies, and the older children outside.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= ENSAYOS ================= -->
+ <details class="seccion acord" id="ensayos" name="partes">
+  <summary><h2 id="t-ensayos">Rehearsals</h2></summary>
+  <div class="cuerpo">
+  <h3>Weeks 1 to 3: each group in its classroom</h3>
+  <ul>
+   <li><strong>Pre-K and K:</strong> 15-minute sessions. Waving to the audience when the narrator names their village, their village's dance, and the curse gestures: sad faces, sticking out tongues, not wanting to share.</li>
+   <li><strong>1st and 2nd:</strong> the entrance with music, the lines said together (“We have come to help you”, “On the count of three, we'll start to dance”) and the circle dance.</li>
+   <li><strong>3rd and 4th:</strong> the witches and wizards: the cauldron mime, the spell and the “choo-choo train”; the wise people: the worried walk and their dialogue.</li>
+   <li><strong>5th and 6th:</strong> the narrator's verses, calmly and in a clear voice, and the tech crew with the cue sheet.</li>
+  </ul>
+  <h3>Weeks 4 and 5: in blocks</h3>
+  <ul>
+   <li><strong>Block A, the curse (scenes 1 to 4):</strong> witches and wizards with one village at a time.</li>
+   <li><strong>Block B, the solution (scenes 5 and 6):</strong> wise people with fairies and elves.</li>
+   <li><strong>Block C, the night and the dance (scenes 7 and 8):</strong> all the groups, with the backstage buddies.</li>
+   <li><strong>Narrators:</strong> join each block to match their timing with the music.</li>
+  </ul>
+  <h3>Last week: dress rehearsals</h3>
+  <ol>
+   <li>Mark with colored tape on the floor where each village sits; entrances and exits with music.</li>
+   <li>The whole play with costumes, bushes, cauldron and ice creams, and the final bows.</li>
+  </ol>
+  <div class="nota">No one has to memorize if they can't. Narrators can read on stage, with the script in a black folder. The little ones say their lines together, and a buddy can whisper the line to them just before. In the <a href="obra-bosque-magico-en.html">script</a>, each child can choose a part, see only their own lines and listen to them read aloud.</div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= CLASE ================= -->
+ <details class="seccion acord" id="clase" name="partes">
+  <summary><h2 id="t-clase">In the classroom</h2></summary>
+  <div class="cuerpo">
+  <p>The author recommends that, <strong>before rehearsals begin</strong>, classes explore the play's values and their opposites: joy and sadness, friendship and unfriendliness, generosity and selfishness.</p>
+  <ul class="tarjetas">
+   <li><h3>Pre-K and K</h3><p><strong>Faces and gestures.</strong> Show “happy” and “sad”, “friends” and “cross”, “sharing” and “not sharing” with face and body. That is exactly what they will do on stage.</p><p>Share something among everyone, such as paper ice creams, and talk about how sharing feels.</p></li>
+   <li><h3>1st and 2nd</h3><p><strong>How can we help?</strong> The fairies and elves don't fight: they come up with a plan. What can we do when a classmate is sad or angry?</p><p>Practice the circle and count “one, two and three” all together.</p></li>
+   <li><h3>3rd and 4th</h3><p><strong>Envy and second chances.</strong> Why are the witches and wizards envious? At the end they ask to be friends and everyone says yes: why is forgiving important?</p><p>The wise people can't find the answer on their own: when is it good to ask for help?</p></li>
+   <li><h3>5th and 6th</h3><p><strong>Verse and rhyme.</strong> Find the rhymes in the narration (“wood” and “good”, “dance” and “chance”) and read them aloud, keeping the beat.</p><p>Compare the English with <a href="obra-bosque-magico-es.html" lang="es">the original Spanish</a>: how was “<span lang="es">colorín, colorado</span>” translated?</p></li>
+  </ul>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+ <!-- ================= CARTA ================= -->
+ <details class="seccion acord" id="carta" name="partes">
+  <summary><h2 id="t-carta">Family letter</h2></summary>
+  <div class="cuerpo">
+  <p class="solo-pantalla">Ready to print. Fill in the blanks by hand. At the end there is a slip to sign and return.</p>
+  <div class="carta">
+   <p><strong>School play: <em><span lang="es">El bosque mágico</span> (The Magical Forest)</em>, by Vicente Cañón</strong></p>
+   <p>Date: <span class="hueco">&nbsp;</span></p>
+   <p>Dear family,</p>
+   <p>This year, the whole school, from Pre-K to 6th grade, will perform <em><span lang="es">El bosque mágico</span> (The Magical Forest)</em>, a children's play by Vicente Cañón. It tells the story of three villages, the Village of Joy, the Village of Friendship and the Village of Generosity, who lose their happiness because of a curse and get it back by dancing all together. While they rehearse, the children will talk in class about joy, friendship and generosity.</p>
+   <p><strong>Your child</strong> <span class="hueco">&nbsp;</span> <strong>will be:</strong> <span class="hueco">&nbsp;</span></p>
+   <p><strong>Clothes we ask for, if you have them at home</strong> (there's no need to buy anything):</p>
+   <p><span class="hueco" style="min-width:100%">&nbsp;</span></p>
+   <p>The school will make the wings, flower crowns, caps, hats and capes in class. If you don't have an item, let us know: we will have clothes to lend.</p>
+   <p><strong>Important dates</strong></p>
+   <ul>
+    <li>Bring the clothes, in a bag labeled with your child's name and grade: <span class="hueco">&nbsp;</span></li>
+    <li>Dress rehearsal: <span class="hueco">&nbsp;</span></li>
+    <li>Performance: date <span class="hueco">&nbsp;</span>, time <span class="hueco">&nbsp;</span>, place <span class="hueco">&nbsp;</span></li>
+   </ul>
+   <p><strong>How you can help at home:</strong> if your child has lines, practice them together. The script is on Lumi (www.lumi-educa.com), in English and Spanish, with a button to listen to each line and another to show only your child's lines.</p>
+   <p><strong>About photos and videos:</strong> the author of the play asks schools to send him photos and videos of their performances. We will only send pictures of children whose families give permission on the slip below.</p>
+   <p>Thank you for joining us!</p>
+   <p>Sincerely,<br><span class="hueco">&nbsp;</span></p>
+   <div class="talon">
+    <p><strong>Please sign and return this slip by</strong> <span class="hueco">&nbsp;</span></p>
+    <p>Child's name: <span class="hueco">&nbsp;</span> Grade: <span class="hueco">&nbsp;</span></p>
+    <p><span class="casilla"></span>I give permission for my child to take part in the play.</p>
+    <p><span class="casilla"></span>I give permission for the school to post photos or videos of the play that show my child, and to send them to the author of the play.</p>
+    <p><span class="casilla"></span>I do <strong>not</strong> give permission to post or send photos or videos that show my child.</p>
+    <p><span class="casilla"></span>I can help with: <span class="casilla" style="margin-left:.4rem"></span>costumes <span class="casilla" style="margin-left:.4rem"></span>sets <span class="casilla" style="margin-left:.4rem"></span>the day of the show</p>
+    <p>Signature: <span class="hueco" style="min-width:14em">&nbsp;</span> Phone: <span class="hueco">&nbsp;</span></p>
+   </div>
+  </div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+ </details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“El bosque mágico” (The Magical Forest) · A play by Vicente Cañón Verdasco © 2019 · <a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">www.obrasteatro.com</a> · Published on Lumi with the author's permission · Production guide: Lumi (José M. Fernández), CC BY-NC-SA 4.0</p></div></footer>
+<script>
+(function(){
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(ev){
+      var id=a.getAttribute("href").slice(1);
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      if(abrir(id)) { ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(!d.open){ var v=d.querySelector("video"); if(v) v.pause(); }
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint",function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba",d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint",function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open=d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

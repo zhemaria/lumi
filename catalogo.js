@@ -52,9 +52,10 @@ window.LUMI = {
      estado: "pronto" mientras se preparan; al publicarlas se agregan es_url / en_url
      (el guion en cada idioma) y guia (la guía para el docente). */
   obras: [
-    { id: "bosque-magico", estado: "pronto",
-      es: { titulo: "El bosque mágico", desc: "Una obra escrita en español, con su traducción al inglés." },
-      en: { titulo: "The Magic Forest", desc: "A play written in Spanish, with an English translation." } },
+    { id: "bosque-magico", estado: "lista",
+      es_url: "obra-bosque-magico-es.html", guia: "obra-bosque-magico-produccion-es.html", guia_en: "obra-bosque-magico-produccion-en.html",
+      es: { titulo: "El bosque mágico", desc: "Obra de Vicente Cañón Verdasco, publicada en Lumi con su autorización. Tres pueblos pierden su alegría, su amistad y su generosidad por un maleficio, y las recuperan bailando todos juntos. Con papeles para todos los grados, de prekínder a 6.º. El guion en inglés se publicará cuando el autor apruebe la traducción." },
+      en: { titulo: "El bosque mágico (The Magical Forest)", desc: "A play by Vicente Cañón Verdasco, published on Lumi with his permission. Three villages lose their joy, friendship and generosity to a curse, and win them back by dancing all together. With parts for every grade, Pre-K to 6th. English script: coming soon, once the author approves the translation." } },
     { id: "fenix-lago", estado: "lista",
       es_url: "obra-fenix-lago-es.html", en_url: "obra-fenix-lago-en.html", guia: "obra-fenix-lago-produccion-es.html", historia: "obra-fenix-lago-historia-es.html", guia_en: "obra-fenix-lago-produccion-en.html", historia_en: "obra-fenix-lago-historia-en.html",
       es: { titulo: "El Fénix sobre el Lago", desc: "Obra de José M. Fernández. El Gran Incendio de Chicago de 1871 y cómo la ciudad volvió a levantarse, con papeles para todos los grados, de prekínder a 6.º." },

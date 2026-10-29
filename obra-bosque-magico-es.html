@@ -1,0 +1,632 @@
+<!doctype html>
+<!-- «El bosque mágico» · Obra de Vicente Cañón Verdasco © 2019 (www.obrasteatro.com) · Publicada en Lumi con autorización del autor.
+     El texto de la obra pertenece a su autor. Diseño de la página: Lumi (José M. Fernández). Generado con herramientas/gen_bosque.py -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El bosque mágico · Lumi</title>
+<meta name="description" content="Tres pueblos felices, unas brujas y unos brujos envidiosos, y unas hadas y unos duendes que saben cómo romper un maleficio: bailando todos juntos. Una obra para toda la escuela, de prekínder a 6.º grado.">
+<meta name="author" content="Vicente Cañón Verdasco">
+<link rel="alternate" hreflang="en" href="obra-bosque-magico-en.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{background:var(--cie);padding:1.4rem 0}
+.obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.obra-cab .sub{font-size:1.2rem;margin:.3rem 0 0}
+.obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+.obra-cab .permiso{font-size:.95rem}
+.enlaces-obra{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0;padding:0;list-style:none}
+.enlaces-obra a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font-weight:700;text-decoration:none}
+.enlaces-obra a:hover{background:var(--cie)}
+.barra{position:sticky;top:76px;z-index:5;background:#fff;border:2px solid var(--borde);border-radius:14px;padding:.6rem .8rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.barra label{font-weight:700}
+.barra select,.barra button{min-height:44px;font:inherit;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);padding:0 .9rem;font-weight:700;cursor:pointer}
+.barra .chk{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.barra .chk input{width:22px;height:22px}
+.linea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:start;padding:.6rem .8rem;margin:.35rem 0;border-left:8px solid var(--c);border-radius:10px;background:#fff}
+.linea .quien{display:inline-block;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:.05rem .65rem;font-size:.9rem;margin-right:.4rem}
+.linea .grado{font-size:.85rem;margin-right:.4rem}
+.linea p{margin:.25rem 0 0}
+.acot{font-style:italic;margin:.6rem 0;padding:.4rem .8rem;border-left:4px dashed var(--borde);color:#2d5f69}
+.mus{margin:.6rem 0;padding:.45rem .8rem;border-radius:10px;background:#F3EEFA;color:#3d2a63;font-weight:700}
+.mus small{font-weight:400}
+.lugar{margin:1rem 0 .4rem;text-align:center;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2d5f69}
+.oir{min-width:44px;min-height:44px;border-radius:50%;border:2px solid var(--pet);background:#fff;cursor:pointer;font-size:1.1rem}
+.oir:hover{background:var(--cie)}
+body.filtrando .linea{opacity:.35}
+body.filtrando .linea.mia{opacity:1;box-shadow:0 0 0 3px var(--c)}
+body.solo .linea:not(.mia){display:none}
+body.solo .acot,body.solo .mus,body.solo .lugar{display:none}
+.linea.hablando{outline:3px solid var(--ama)}
+details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;border:0;cursor:pointer}
+details.acord > summary::-webkit-details-marker{display:none}
+details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+details.acord[open] > summary::before{content:"▾"}
+details.acord > summary h2{display:inline;font-size:1.35rem}
+details.acord > summary:hover{background:var(--cie);border-radius:14px}
+details.acord .cuerpo{padding:0 1rem 1rem}
+.acto-h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.acto-h button{min-height:44px;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;padding:0 .9rem;cursor:pointer}
+.tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+.tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.tabla th{background:var(--cie)}
+.punto{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:.4rem;vertical-align:-2px}
+.envoltura-tabla{overflow-x:auto}
+body.grande{font-size:21px}
+body.muygrande{font-size:24px}
+main .seccion{scroll-margin-top:170px}
+.barra select{max-width:100%}
+@media (max-width:760px){.barra{position:static}.barra select{width:100%}main .seccion{scroll-margin-top:130px}}
+@media print{.barra,.oir,.acto-h button,.cabecera,.anclas,.enlaces-obra{display:none!important}.linea{break-inside:avoid;border-left-width:6px}body.filtrando .linea{opacity:1}}
+</style>
+</head>
+<body data-voz="es-ES">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index-es.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — página de inicio" width="560" height="240"></a>
+  <nav aria-label="Menú principal" class="menu">
+   <a href="index-es.html">Inicio</a>
+   <a href="grados-es.html">Por grado</a>
+   <a href="materias-es.html">Por materia</a>
+   <a href="teatro-es.html" aria-current="page">Teatro</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Idioma"><span aria-current="true">Español</span><a href="obra-bosque-magico-en.html" lang="en" hreflang="en">English</a></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro-es.html">← Teatro de Lumi</a></p>
+  <h1 id="titulo">El bosque mágico</h1>
+  <p class="sub">Teatro infantil para toda la escuela</p>
+  <p class="autor">Obra de Vicente Cañón Verdasco</p>
+  <p>Tres pueblos felices, unas brujas y unos brujos envidiosos, y unas hadas y unos duendes que saben cómo romper un maleficio: bailando todos juntos. Una obra para toda la escuela, de prekínder a 6.º grado.</p>
+  <ul class="enlaces-obra">
+   <li><a href="obra-bosque-magico-produccion-es.html">🎬 Guía de producción: reparto por grados, música, vestuario, escenografía, ensayos y carta a las familias</a></li>
+   <li><a href="obra-bosque-magico-cartel-es.html">🖼️ Cartel de la función</a></li>
+   <li><a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">Página del autor: obrasteatro.com</a></li>
+  </ul>
+  <p class="permiso">Publicada en Lumi con autorización de Vicente Cañón Verdasco (octubre de 2026). El texto de la obra pertenece a su autor.</p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Ir a"><ul class="anclas"><li><a href="#reparto">Reparto</a></li><li><a href="#escena-1">Escena 1</a></li><li><a href="#escena-2">Escena 2</a></li><li><a href="#escena-3">Escena 3</a></li><li><a href="#escena-4">Escena 4</a></li><li><a href="#escena-5">Escena 5</a></li><li><a href="#escena-6">Escena 6</a></li><li><a href="#escena-7">Escena 7</a></li><li><a href="#escena-8">Escena 8</a></li></ul></nav>
+ <div class="barra" role="group" aria-label="Mi papel:">
+  <label for="mi-papel">Mi papel:</label>
+  <select id="mi-papel"><option value="">Todos los papeles</option><option value="NAR">Narradora · 5.º y 6.º</option><option value="BRUJAS">Brujas · 3.º y 4.º</option><option value="BRUJOS">Brujos · 3.º y 4.º</option><option value="HADAS">Hadas · 1.º y 2.º</option><option value="DUENDES">Duendes · 1.º y 2.º</option><option value="SABIAS">Personas sabias · 3.º y 4.º</option><option value="ALE">Pueblo de la Alegría · Prekínder y kínder</option><option value="AMI">Pueblo de la Amistad · Prekínder y kínder</option><option value="GEN">Pueblo de la Generosidad · Prekínder y kínder</option></select>
+  <label class="chk"><input type="checkbox" id="solo"> Mostrar solo mis líneas</label>
+  <button type="button" id="menor" aria-label="Letra más pequeña">A−</button>
+  <button type="button" id="mayor" aria-label="Letra más grande">A+</button>
+  <button type="button" id="imprimir">🖨️ Imprimir</button>
+ </div>
+ <p>Las acotaciones (en cursiva) indican lo que pasa en el escenario: no se dicen en voz alta. Las tarjetas 🎵 marcan cuándo entra cada pista de música.</p>
+ <details class="seccion acord" id="reparto">
+  <summary><h2 id="t-reparto">Reparto</h2></summary>
+  <div class="cuerpo">
+  <p>Las cantidades son las del autor; todos los grupos pueden crecer para que participe toda la escuela, sin cambiar el texto. Cuando un papel tiene número (Habitante 1, Persona sabia 3…), esa línea la puede decir un niño o un pequeño grupo.</p>
+  <div class="envoltura-tabla"><table class="tabla">
+   <caption class="sr">Reparto</caption>
+   <thead><tr><th scope="col">Papel</th><th scope="col">Grado</th><th scope="col">Cómo es</th><th scope="col">Líneas</th></tr></thead>
+   <tbody>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>Narradora</td><td>5.º y 6.º</td><td>Cuenta la historia en verso, entre escena y escena. Pueden ser de una a cuatro voces, narradoras o narradores.</td><td>15</td></tr>
+<tr><td><span class="punto" style="background:#6A2C70" aria-hidden="true"></span>Brujas</td><td>3.º y 4.º</td><td>Envidiosas y cómicas: preparan el conjuro y se esconden en los matorrales.</td><td>19</td></tr>
+<tr><td><span class="punto" style="background:#3B3A6E" aria-hidden="true"></span>Brujos</td><td>3.º y 4.º</td><td>Igual de envidiosos y cómicos que las brujas; al final, piden ser amigos.</td><td>18</td></tr>
+<tr><td><span class="punto" style="background:#A02C6B" aria-hidden="true"></span>Hadas</td><td>1.º y 2.º</td><td>Llegan del bosque con música alegre y traen el plan para romper el maleficio.</td><td>9</td></tr>
+<tr><td><span class="punto" style="background:#2F6B2F" aria-hidden="true"></span>Duendes</td><td>1.º y 2.º</td><td>Compañeros de las hadas: guían el gran baile en círculo de la noche.</td><td>9</td></tr>
+<tr><td><span class="punto" style="background:#3F5560" aria-hidden="true"></span>Personas sabias</td><td>3.º y 4.º</td><td>Las personas más sabias de los pueblos: buscan una solución y se la explican a todos.</td><td>12</td></tr>
+<tr><td><span class="punto" style="background:#8A4B00" aria-hidden="true"></span>Pueblo de la Alegría</td><td>Prekínder y kínder</td><td>Bailan todo el día, hasta que el maleficio los pone tristes. Camisetas amarillas.</td><td>8</td></tr>
+<tr><td><span class="punto" style="background:#1E5AA0" aria-hidden="true"></span>Pueblo de la Amistad</td><td>Prekínder y kínder</td><td>Juegan juntos, hasta que el maleficio los hace pelear. Camisetas azules.</td><td>10</td></tr>
+<tr><td><span class="punto" style="background:#A32420" aria-hidden="true"></span>Pueblo de la Generosidad</td><td>Prekínder y kínder</td><td>Comparten sus helados, hasta que el maleficio los vuelve egoístas. Camisetas rojas.</td><td>10</td></tr>
+   </tbody>
+  </table></div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+  </div>
+ </details>
+<details class="seccion acord" id="escena-1">
+ <summary><h2 id="t-escena-1">Escena 1</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <p class="acot"><span class="sr">Acotación: </span>(Al abrirse el telón, podemos ver una escenografía compuesta por cuatro matorrales, donde ya estarán escondidos las BRUJAS y BRUJOS. Al salir a escena la NARRADORA, los HABITANTES de los pueblos estarán sentados, ante el escenario y cara al público, colocados en tres grupos, muy diferenciados, por los colores muy vistosos de sus camisetas. Cuando la NARRADORA vaya nombrando, uno por uno, a cada pueblo, estos se levantarán y saludarán, durante unos segundos al público, para volverse a sentar)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Había una vez tres pueblos que vivían, cerca de un bosque mágico, en perfecta armonía:</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">-El pueblo de la alegría, donde bailaban todo el día.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES del pueblo de la ALEGRIA, saludan al público)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">-El pueblo de la amistad, trabajando siempre en solidaridad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES del pueblo de la AMISTAD, saludan al público)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Y por último, el pueblo de la generosidad, lleno de simpatía y bondad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES del pueblo de la GENEROSIDAD, saludan al público)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Todos sus habitantes vivían alegres, felices<br> y cómo no… comían perdices.<br> Pero las brujas y brujos que vivían en el bosque,<br> hicieron una visita a los pueblos, en plena noche.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS, sacan la cabeza de su escondrijo)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Llenos de envidia, malas energías y crueldad,<br> lanzaron un maleficio, para que los pueblos vivieran sin felicidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS van hacia el proscenio y hablan, desafiantes, al público)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 1 <small>· The New Order · Aaron Kenny (cinematográfico oscuro)</small></p>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Brujas</span><span class="grado">3.º y 4.º</span><p class="txt">(Enfadadas) ¡No puede ser... estos pueblos son demasiado felices!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Enfadados) Hagamos un conjuro para que estén enfadados y tristes.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Brujas</span><span class="grado">3.º y 4.º</span><p class="txt">¡Sí!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Riendo maliciosamente) Ja, ja, ja...</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 1 <small>· The New Order · Aaron Kenny (cinematográfico oscuro)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Empiezan a preparar el conjuro. Una BRUJA y un BRUJO, entran en escena una gran olla o caldero y todos harán la mímica de ir introduciendo cosas)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">Babas de ranas, ojos de babosa y... humos de ciudad,<br> que desaparezca… la felicidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Brujos</span><span class="grado">3.º y 4.º</span><p class="txt">¡Ya está!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Brujas</span><span class="grado">3.º y 4.º</span><p class="txt">¡El hechizo, está listo! (Riendo) ja, ja, ja…</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">Vamos a esparcirlo… ¡ya!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 1 <small>· The New Order · Aaron Kenny (cinematográfico oscuro)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(La misma BRUJA y BRUJO, se encargan de sacar la olla fuera de escena. Una vez vuelven, todos harán como un “trenecito” para ir a esconderse, en varios grupos, detrás de los matorrales del bosque)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-2">
+ <summary><h2 id="t-escena-2">Escena 2</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Las brujas y los brujos esperaron que llegaran al bosque los habitantes del pueblo de la alegría y desde su escondrijo lanzarles su maleficio, ese mismo día.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="lugar">(Pueblo de la Alegría)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 2 <small>· Sand Castle · Quincas Moreira (infantil, positivo)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de la música del track 2, entran a escena los HABITANTES del pueblo de la ALEGRIA que bailarán una coreografía donde se represente la alegría)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Al acabarse la música, Las BRUJAS Y BRUJOS salen de su escondrijo y lanzan su maleficio a los HABITANTES del pueblo de la alegría)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">Tris, tras... tris, tras... ¡la alegría desaparecerá!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS, vuelven a esconderse, rápidamente, en su escondrijo)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(LOS HABITANTES del pueblo de la ALEGRÍA, muy tristes se miran entre ellos)</p>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">Habitantes 1 y 2</span><span class="grado">Prekínder y kínder</span><p class="txt">¿Qué nos ha pasado?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitantes 1 y 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">Habitantes 3 y 4</span><span class="grado">Prekínder y kínder</span><p class="txt">¡Estamos muy tristes!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitantes 3 y 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">Todos los habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">(Muy tristes) ¡Oh! ¡Oh!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los habitantes">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de una música, un poco triste, los HABITANTES del pueblo de la ALEGRIA salen de escena muy despacio, para volver a su lugar de inicio. Todos van mirando al suelo, muy tristes)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, triste)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-3">
+ <summary><h2 id="t-escena-3">Escena 3</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">El segundo pueblo en llegar al bosque, para jugar, fue el pueblo de la amistad y las brujas y los brujos, para lanzarle su conjuro... preparados están.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Saliendo de su escondrijo. Ríen con mucha malicia) ¡Ja, ja, ja! Ahora vendrá el pueblo de la amistad. Ja, ja, ja…</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y los BRUJOS harán el gesto, cómplice, de pedir silencio al público para volver a esconderse detrás de los matorrales)</p>
+  <p class="lugar">(Pueblo de la Amistad)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 4 <small>· Rainbow Forest · Quincas Moreira (infantil, feliz)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de la música del track, entran en escena, los HABITANTES del Pueblo de la AMISTAD que juegan y bailan muy contentos una coreografía que represente la amistad)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Al acabarse la música, las BRUJAS Y BRUJOS salen de su escondrijo y lanzan su maleficio al pueblo de la amistad)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">Tris, tras... tris, tras... ¡la amistad desaparecerá!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS, vuelven a esconderse rápidamente en su escondrijo)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES del PUEBLO de La AMISTAD, muy tristes se miran entre ellos)</p>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">¿Qué nos ha pasado?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitantes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Habitante 1</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 2) Ya no quiero ser tu amigo.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Habitante 2</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 1) Ni yo... tampoco.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 2">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los NIÑOS 1 y 2 enseñan sus lenguas, en señal de burla o enfado)</p>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Habitante 3</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 4) Ya no quiero ser tu amigo.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 3">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Habitante 4</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 3) Ni yo... tampoco.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES 3 y 4 enseñan sus lenguas, en señal de burla y enfado)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de una música, un poco triste, los HABITANTES del pueblo de la AMISTAD salen de escena muy despacio, para volver a su lugar de inicio. Todos van mirando al suelo, muy tristes)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, triste)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-4">
+ <summary><h2 id="t-escena-4">Escena 4</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">El último pueblo en llegar al bosque repartiendo bondad fueron los habitantes del pueblo de la generosidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Ríen con mucha malicia) ¡Ja, ja, ja! Ahora vendrá el pueblo de la generosidad.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y los BRUJOS harán el gesto, cómplice, de pedir silencio al público para esconderse, por última vez, detrás de los matorrales)</p>
+  <p class="lugar">(Pueblo de la Generosidad)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 5 <small>· Goat · Wayne Jones (infantil, feliz)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de la música del track 5, entran en escena los HABITANTES del Pueblo de la GENEROSIDAD, que comen y comparten un helado, muy contentos, al ritmo de la música representando una pequeña coreografía)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Al acabarse la música, las BRUJAS Y BRUJOS salen de su escondrijo y lanzan su maleficio al Pueblo de la Generosidad)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">Tris, tras... tris, tras... ¡la generosidad desaparecerá!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS vuelven a esconderse, rápidamente, en su escondrijo)</p>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">(Muy tristes se miran entre ellos) ¿Qué nos ha pasado?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitantes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Habitante 1</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 2) Ya no te quiero dar helado.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Habitante 2</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 1) Ni yo a ti... tampoco.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Habitante 3</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 4) Ya no te quiero dar helado.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 3">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Habitante 4</span><span class="grado">Prekínder y kínder</span><p class="txt">(Al HABITANTE 3) Ni yo a ti... tampoco.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Habitante 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Todos los HABITANTES del pueblo de la GENEROSIDAD sacan sus lenguas, en señal de burla y enfado)</p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de una música, un poco triste, salen de escena los HABITANTES del pueblo de GENEROSIDAD, muy despacio, para volver a su lugar de inicio. Todos van mirando al suelo, muy tristes)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, triste)</small></p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Las brujas y brujos, de su escondrijo salieron, y desde allí celebraron que la victoria, por fin, consiguieron.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS y BRUJOS, salen de su escondrijo y vuelven a hacer el “trenecito” de antes para colocarse en el proscenio y volver a mirar desafiantes al público, riendo muy fuerte, confiados en su victoria. Después saldrán de escena por el lado derecho)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Ríen con mucha malicia) ¡Ja, ja, ja!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Brujas</span><span class="grado">3.º y 4.º</span><p class="txt">A nuestra cueva volvamos… ¡ya!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Eufóricos) ¡Hemos acabado con la felicidad!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Ríen con mucha malicia) ¡Ja, ja, ja!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 1 <small>· The New Order · Aaron Kenny (cinematográfico oscuro)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-5">
+ <summary><h2 id="t-escena-5">Escena 5</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Los pueblos de la alegría, la amistad y la generosidad estaban tristes y desesperados porque habían perdido la felicidad que era, para ellos, su tesoro más preciado. Para buscar una solución, las personas más sabias, en el bosque se reunieron y esto que ahora veréis, fue lo que concluyeron.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 6 <small>· Sleeping Sheep · The Green Orbs (infantil, serena)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Las PERSONAS SABIAS, entran en escena y caminan preocupadas, buscando una solución para su problema; que no es fácil de encontrar. Desesperados se colocan en el centro de la escena)</p>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 1 y 2</span><span class="grado">3.º y 4.º</span><p class="txt">¿Qué nos ha pasado?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 1 y 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 3 y 4</span><span class="grado">3.º y 4.º</span><p class="txt">¿Cómo podemos recuperar la felicidad de nuestros pueblos?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 3 y 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las PERSONAS SABIAS, se encogen de hombros para dar a entender que no encuentran ninguna solución para su gran problema)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-6">
+ <summary><h2 id="t-escena-6">Escena 6</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Cuando de repente aparecieron del bosque mágico, unas hadas y unos duendes y acercándose a la gente sabia de cada pueblo, esto les dijeron, impacientes…</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 7 <small>· Kinderszenen, op. 15, n.º 1: «De países y gentes lejanos» · Robert Schumann (piano)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Acompañados de una música alegre entran, por un lado, un grupo de HADAS que rodean a las PERSONAS SABIAS y se colocan a un lado en la escena. Poco después y por el otro lado, entrarán un grupo de DUENDES que también rodean a las PERSONAS SABIAS y se sitúan al lado contrario al de las HADAS)</p>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Duendes y hadas</span><span class="grado">1.º y 2.º</span><p class="txt">Hemos venido a ayudaros.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes y hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 1 y 2</span><span class="grado">3.º y 4.º</span><p class="txt">(Con gran sorpresa) ¡Oh, unas hadas!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 1 y 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 3 y 4</span><span class="grado">3.º y 4.º</span><p class="txt">(Con gran sorpresa) ¡Oh, unos duendes!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 3 y 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Todas las personas sabias</span><span class="grado">3.º y 4.º</span><p class="txt">¡¡¡Gualaaaa!!!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todas las personas sabias">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Hadas</span><span class="grado">1.º y 2.º</span><p class="txt">Estáis bajo el hechizo de unas brujas y brujos malos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Todas las personas sabias</span><span class="grado">3.º y 4.º</span><p class="txt">¿Y qué podemos hacer?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todas las personas sabias">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Duendes</span><span class="grado">1.º y 2.º</span><p class="txt">Esta noche iremos a la cueva de las brujas y brujos...</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Hadas</span><span class="grado">1.º y 2.º</span><p class="txt">Cuando estén dormidos, juntos bailaremos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Duendes y hadas</span><span class="grado">1.º y 2.º</span><p class="txt">Y el maleficio romperemos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes y hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 1 y 2</span><span class="grado">3.º y 4.º</span><p class="txt">¡Muchas gracias!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 1 y 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 3 y 4</span><span class="grado">3.º y 4.º</span><p class="txt">¡Así lo haremos!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 3 y 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las HADAS y los DUENDES salen de escena, cada cual por dónde han entrado en escena y siempre acompañados de la misma música que se ha usado para su entrada)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 7 <small>· Kinderszenen, op. 15, n.º 1: «De países y gentes lejanos» · Robert Schumann (piano)</small></p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Las personas sabias de cada pueblo, al oír a las hadas y a los duendes, llenos de esperanza, fueron corriendo a explicarlo todo a sus vecinos, sin tardanza.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES de los pueblos se levantan, de espaldas al público, para escuchar a sus personas sabias, que se han colocado en el proscenio para hablar con ellos)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-7">
+ <summary><h2 id="t-escena-7">Escena 7</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 1 y 2</span><span class="grado">3.º y 4.º</span><p class="txt">¡Escuchad, escuchad! ¡Unas hadas y unos duendes nos vendrán a ayudar!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 1 y 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">Todos los habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">¡Fantástico!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los habitantes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Personas sabias 3 y 4</span><span class="grado">3.º y 4.º</span><p class="txt">Bailaremos, bailaremos y el maleficio romperemos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Personas sabias 3 y 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">Todos los habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">Bailaremos, bailaremos y el maleficio romperemos. ¡Viva!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los habitantes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Todas las personas sabias</span><span class="grado">3.º y 4.º</span><p class="txt">Ahora todo el mundo a esconderse. (Hacen el gesto, típico, para pedir silencio, con el dedo en la boca) ¡Spppp!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todas las personas sabias">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Los HABITANTES de los pueblos se agachan y guardan silencio. Las PERSONAS SABIAS, de cada pueblo, salen de escena y se reparten en dos grupos: el grupo primero irá junto a las HADAS y el segundo, con los DUENDES)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Aquella noche los habitantes, a la cueva subieron tranquilamente. Mientras las brujas y los brujos, dormían plácidamente. ¡Silencio! porque en el interior del bosque, impacientes, les esperaban, para romper el maleficio, las hadas y los duendes.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 8 <small>· Canción de cuna · Johannes Brahms (nana)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Entran en escena las BRUJAS Y Los BRUJOS, que se colocan en el centro de la escena a dormir. Poco después, de puntillas, lo harán las HADAS y los DUENDES, que harán una señal de aviso para que entren las PERSONAS SABIAS acompañadas de todos los HABITANTES de los tres pueblos, que han subido al escenario, también sin hacer ruido. Todos juntos formarán un gran corro alrededor de las BRUJAS y BRUJOS que siguen durmiendo)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-8">
+ <summary><h2 id="t-escena-8">Escena 8</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Escuchar la escena</button> <button type="button" class="parar">⏹ Parar</button></span></div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Duendes</span><span class="grado">1.º y 2.º</span><p class="txt">(Pidiendo silencio) ¡Spppp! No hagáis ruido.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Hadas</span><span class="grado">1.º y 2.º</span><p class="txt">A la de tres, empezaremos a bailar.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Duendes</span><span class="grado">1.º y 2.º</span><p class="txt">Y el maleficio así se romperá.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Hadas y duendes</span><span class="grado">1.º y 2.º</span><p class="txt">¿Estáis preparados?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas y duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">Pueblos</span><span class="grado">Prekínder y kínder</span><p class="txt">¡¡¡Sí!!!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Pueblos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Hadas y duendes</span><span class="grado">1.º y 2.º</span><p class="txt">A la una, a las dos y a las… ¡tres!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas y duendes">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Todos los HABITANTES de los tres pueblos, las PERSONAS SABIAS, las HADAS y los DUENDES, empezarán a dar vueltas y bailar para romper el maleficio)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 9 <small>· Twirly Tops · The Green Orbs (infantil, feliz)</small></p>
+  <p class="acot"><span class="sr">Acotación: </span>(Al acabar la música, todos los HABITANTES, las PERSONAS SABIAS, las HADAS y los DUENDES, se abrirán hacia los lados de la escena, convirtiendo el corro en un semicírculo, dejando a la vista del público a las BRUJAS y BRUJOS, que empiezan a despertar)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Despertando. Furiosos) ¿Qué hacéis aquí?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS intentan lanzar, con sus manos, un hechizo)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Lanzando su hechizo maligno) ¡¡¡Chasss!!!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Acotación: </span>(Las BRUJAS Y BRUJOS, miran sus manos y se dan cuenta de que ya no tienen poderes malignos)</p>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Brujas</span><span class="grado">3.º y 4.º</span><p class="txt">(Preocupadas) ¿Qué nos ha pasado?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Preocupados) ¿Ya no somos malos?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Duendes</span><span class="grado">1.º y 2.º</span><p class="txt">¡No! Hemos roto el maleficio.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Hadas</span><span class="grado">1.º y 2.º</span><p class="txt">A partir de ahora, seréis buenos.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Hadas">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">(Mimosos a los HABITANTES) ¿Y podremos ser vuestros amigos?</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN HADAS DUENDES" style="--c:#194F5A">
+   <div><span class="quien">Todos los habitantes, hadas y duendes</span><span class="grado">Prek. a 2.º</span><p class="txt">¡Claro que sí!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los habitantes, hadas y duendes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Brujas y brujos</span><span class="grado">3.º y 4.º</span><p class="txt">¡Viva!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Brujas y brujos">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Sabios y sabias</span><span class="grado">3.º y 4.º</span><p class="txt">¡Viva!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Sabios y sabias">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">Todos los habitantes</span><span class="grado">Prekínder y kínder</span><p class="txt">¡A bailar para celebrar nuestra felicidad!</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Todos los habitantes">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narradora</span><span class="grado">5.º y 6.º</span><p class="txt">Y así fue como, con la suma de la energía positiva, que juntos consiguieron los tres pueblos, con la ayuda de las hadas y los duendes, pudieron vencer a la negatividad y la maldad de las brujas y brujos… insolentes.<br> Y vivieron muy felices y comieron perdices.<br> Y colorín, colorado esta obra de teatro… se ha acabado.</p></div>
+   <button type="button" class="oir" aria-label="Escuchar: Narradora">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Música: Pista 10 <small>· Dancing on Green Grass · The Green Orbs (infantil, positiva)</small></p>
+  <p class="lugar">Telón</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Cerrar y volver arriba</a></p>
+ </div>
+</details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>«El bosque mágico» · Obra de Vicente Cañón Verdasco © 2019 · Publicada en Lumi con autorización del autor · Uso gratuito y sin fines de lucro</p><p><a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">www.obrasteatro.com</a></p></div></footer>
+<script>
+(function(){
+  "use strict";
+  var LANG = document.documentElement.lang, VOZ = document.body.getAttribute("data-voz");
+  var sel = document.getElementById("mi-papel"), solo = document.getElementById("solo");
+  function aplicar(){
+    var p = sel.value;
+    document.querySelectorAll(".linea").forEach(function(l){
+      var ms = (l.getAttribute("data-papeles") || "").split(" ");
+      l.classList.toggle("mia", !!p && ms.indexOf(p) >= 0);
+    });
+    document.body.classList.toggle("filtrando", !!p);
+    document.body.classList.toggle("solo", !!p && solo.checked);
+    if(p && solo.checked) document.querySelectorAll("details.acord").forEach(function(d){ if(d.querySelector(".linea.mia")) d.open = true; });
+    try{ localStorage.setItem("bosque-papel", p); }catch(e){}
+  }
+  try{ var g = localStorage.getItem("bosque-papel"); if(g && sel.querySelector('option[value="'+g+'"]')) sel.value = g; }catch(e){}
+  sel.addEventListener("change", aplicar); solo.addEventListener("change", aplicar); aplicar();
+
+  var hay = "speechSynthesis" in window, cola = [];
+  function vozIdioma(){
+    var vs = hay ? speechSynthesis.getVoices() : [];
+    return vs.filter(function(v){ return v.lang === VOZ; })[0] || vs.filter(function(v){ return v.lang.slice(0,2) === LANG; })[0] || null;
+  }
+  function limpiar(){ document.querySelectorAll(".hablando").forEach(function(x){ x.classList.remove("hablando"); }); }
+  function decir(lineas){
+    if(!hay) return;
+    speechSynthesis.cancel(); limpiar(); cola = lineas.slice();
+    (function sig(){
+      var l = cola.shift(); limpiar(); if(!l) return;
+      var txt = l.querySelector(".txt").textContent.replace(/\([^)]*\)/g, " ");
+      var u = new SpeechSynthesisUtterance(txt); u.lang = VOZ; var v = vozIdioma(); if(v) u.voice = v; u.rate = .95;
+      l.classList.add("hablando"); u.onend = sig; u.onerror = function(){ limpiar(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  document.querySelectorAll(".oir").forEach(function(b){ b.addEventListener("click", function(){ decir([b.closest(".linea")]); }); });
+  document.querySelectorAll(".oir-esc").forEach(function(b){ b.addEventListener("click", function(){
+    var ls = [].slice.call(b.closest("details").querySelectorAll(".linea")).filter(function(l){ return getComputedStyle(l).display !== "none"; });
+    decir(ls);
+  }); });
+  document.querySelectorAll(".parar").forEach(function(b){ b.addEventListener("click", function(){ cola = []; if(hay) speechSynthesis.cancel(); limpiar(); }); });
+  if(!hay) document.querySelectorAll(".oir,.oir-esc,.parar").forEach(function(b){ b.hidden = true; });
+
+  var tam = 0, clases = ["", "grande", "muygrande"];
+  function poner(){ document.body.classList.remove("grande","muygrande"); if(clases[tam]) document.body.classList.add(clases[tam]); }
+  document.getElementById("menor").addEventListener("click", function(){ tam = Math.max(0, tam-1); poner(); });
+  document.getElementById("mayor").addEventListener("click", function(){ tam = Math.min(2, tam+1); poner(); });
+  document.getElementById("imprimir").addEventListener("click", function(){ window.print(); });
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      var id=a.getAttribute("href").slice(1); if(abrir(id)){ ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint", function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba", d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint", function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open = d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

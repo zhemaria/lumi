@@ -137,13 +137,13 @@ def produccion(L):
   <div class="autor-caja"><p style="margin:0"><strong>Esta obra habla de un pueblo que sigue vivo.</strong> Los descendientes de los Inoka forman hoy la <span lang="en">Peoria Tribe of Indians of Oklahoma</span>, una nación reconocida por el gobierno de Estados Unidos. La obra los presenta con respeto, sin estereotipos de película.</p></div>
   <h3>Cinco reglas para todo el montaje</h3>
   <ol>
-   <li><strong>Nadie se disfraza de indígena.</strong> Nada de plumas, tocados, flecos, collares de imitación ni pintura en la cara. Cada personaje se reconoce por lo que hace y por lo que lleva en las manos (ver <a href="#vestuario">vestuario</a>).</li>
+   <li><strong>Nadie se disfraza de indígena.</strong> Nada de plumas, tocados, flecos, collares «de estilo indígena» ni pintura en la cara. Cada personaje se reconoce por lo que hace y por lo que lleva en las manos (ver <a href="#vestuario">vestuario</a>).</li>
    <li><strong>Los objetos sagrados no se fabrican ni se usan en escena.</strong> El calumet se nombra en el acto IV, pero no aparece. No se usan tambores de agua ni otros objetos ceremoniales.</li>
-   <li><strong>No se imitan cantos, gritos ni maneras de hablar.</strong> Los niños hablan con su voz de siempre. La música usa tambor de mano, palos de lluvia, sonajas y flauta, sin copiar cantos de ningún pueblo.</li>
+   <li><strong>No se imitan cantos, gritos ni maneras de hablar.</strong> Los niños hablan con su voz de siempre. La música usa tambor de mano, palos de lluvia, sonajas y flauta, sin copiar cantos de ningún pueblo. El tambor marca un pulso parejo, como un latido, no el ritmo de «tom-tom» de las películas; la flauta es dulce o traversa, no una «flauta nativa». En el baile final, pasos sencillos, sin imitar danzas indígenas.</li>
    <li><strong>Se habla en presente cuando toca.</strong> Los Inoka no «desaparecieron»: el acto V lo dice con claridad, y conviene repetirlo en clase.</li>
    <li><strong>Los nombres, bien dichos.</strong> Inoka, Kaskaskia, Peoria, Tamaroa, Cahokia, Michigamea, miami-illinois. Ver la <a href="obra-inoka-historia-es.html">guía histórica</a>.</li>
   </ol>
-  <div class="nota"><strong>Antes de representarla en público</strong>, es una buena cortesía escribir a la tribu Peoria para contarles el proyecto y ofrecerles el guion. Su información de contacto está en <a href="{PEORIA}" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>.</div>"""),
+  <div class="nota"><strong>Antes de representarla en público</strong>, es una buena cortesía escribir a la tribu Peoria para contarles el proyecto y ofrecerles el guion. Su información de contacto está en <a href="{PEORIA}" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>. Pregúnteles también si están de acuerdo con que los niños hablen en primera persona como líderes Peoria y Kaskaskia.</div>"""),
 ("resumen", "En breve", """
   <ul>
    <li><strong>De qué trata:</strong> la pradera y los ríos de Illinois, las aldeas Inoka y su forma de vivir: el cultivo del maíz, el frijol y la calabaza, las casas de esteras, el comercio por los ríos y el consejo que decide por acuerdo. Termina en el presente, con la tribu Peoria de Oklahoma y su lengua, que vuelve.</li>
@@ -152,7 +152,7 @@ def produccion(L):
    <li><strong>Idiomas:</strong> el guion está en <a href="obra-inoka-es.html">español</a> y en <a href="obra-inoka-en.html" lang="en">inglés</a>, con las mismas líneas. Las dos canciones se cantan en español.</li>
   </ul>"""),
 ("imagenes", "La obra en imágenes", """
-  <figure class="info"><img src="inoka-acto1.jpg" alt="Infografía «Configuración del Acto I: El latido de la pradera». Ambientación: tambor de mano y palos de lluvia en penumbra, y un fondo de pastizales dorados con telas ligeras. Elenco: narradores de sexto grado; niños de prekínder y kínder como flores, bisontes, ciervos y el viento; y el concepto central: el pueblo Inoka, que vivía en armonía con la tierra." loading="lazy" width="1376" height="768"><figcaption>Acto I: el latido de la pradera.</figcaption></figure>"""),
+  <figure class="info"><img src="inoka-acto1.jpg" alt="Infografía «Configuración del Acto I: El latido de la pradera». Ambientación: tambor de mano y palos de lluvia en penumbra, y un fondo de pastizales dorados con telas ligeras. Elenco: narradores de sexto grado; niños de prekínder y kínder como flores, bisontes, ciervos y el viento; y el concepto central: el pueblo Inoka, que vivía en armonía con la tierra." loading="lazy" width="1376" height="768"><figcaption>Acto I: el latido de la pradera. Infografía orientativa: manda el guion (en el guion tocan 1.º y 2.º, y no hay ciervos).</figcaption></figure>"""),
 ("reparto", "Reparto por grados y cantidades", """
   <p>Las cantidades son orientativas. Los papeles con texto propio pueden ser de un niño o de un grupo pequeño; los grupos sin texto crecen según la escuela.</p>
   <div class="envoltura-tabla">
@@ -161,7 +161,7 @@ def produccion(L):
    <thead><tr><th scope="col">Grado</th><th scope="col">Papel</th><th scope="col">Mínimo</th><th scope="col">Recomendado</th><th scope="col">Máximo</th></tr></thead>
    <tbody>
     <tr><th scope="row">Prekínder y kínder</th><td>La naturaleza: viento, flores, aves y bisontes (sin texto)</td><td>8</td><td>20</td><td>40</td></tr>
-    <tr><th scope="row" rowspan="3">1.º y 2.º</th><td>Niño Maíz, Niña Frijol, Niña Calabaza, Agricultora, Tejedora</td><td>5</td><td>5</td><td>10</td></tr>
+    <tr><th scope="row" rowspan="3">1.º y 2.º</th><td>Niño Maíz, Niña Frijol, Niña Calabaza, Agricultora, Tejedora, estudiante de 1.º del acto V</td><td>5</td><td>5</td><td>10</td></tr>
     <tr><td>Músicos: palos de lluvia y sonajas (acto I)</td><td>2</td><td>4</td><td>8</td></tr>
     <tr><td>Coro «Raíz con raíz»</td><td>6</td><td>20</td><td>todo el grado</td></tr>
     <tr><th scope="row" rowspan="2">3.º y 4.º</th><td>Mensajero, Navegante Peoria, Comerciante Kaskaskia, estudiantes de 3.º y 4.º del acto V</td><td>5</td><td>5</td><td>10</td></tr>
@@ -169,7 +169,7 @@ def produccion(L):
     <tr><th scope="row" rowspan="3">5.º y 6.º</th><td>Narradores 1 y 2</td><td>2</td><td>2</td><td>4</td></tr>
     <tr><td>Guardiana de la Memoria, líderes del consejo Kaskaskia y Peoria, estudiantes de 5.º y 6.º del acto V</td><td>5</td><td>5</td><td>10</td></tr>
     <tr><td>Círculo del consejo (sin texto) y equipo técnico</td><td>4</td><td>12</td><td>30</td></tr>
-    <tr><th scope="row">Todos</th><td>Estudiante de 1.º del acto V y el coro final</td><td colspan="3">toda la escuela</td></tr>
+    <tr><th scope="row">Todos</th><td>El coro final</td><td colspan="3">toda la escuela</td></tr>
    </tbody>
   </table>
   </div>"""),
@@ -323,13 +323,13 @@ def produccion(L):
   <div class="autor-caja"><p style="margin:0"><strong>This play is about a people who are still here today.</strong> The descendants of the Inoka are today the Peoria Tribe of Indians of Oklahoma, a nation recognized by the United States government. The play presents them with respect, without movie stereotypes.</p></div>
   <h3>Five rules for the whole production</h3>
   <ol>
-   <li><strong>No one dresses up as a Native person.</strong> No feathers, headdresses, fringe, imitation necklaces or face paint. Each character is recognized by what they do and what they carry (see <a href="#vestuario">costumes</a>).</li>
+   <li><strong>No one dresses up as a Native person.</strong> No feathers, headdresses, fringe, “Native-style” necklaces or face paint. Each character is recognized by what they do and what they carry (see <a href="#vestuario">costumes</a>).</li>
    <li><strong>Sacred objects are not made or used on stage.</strong> The calumet is mentioned in Act IV, but it does not appear. No water drums or other ceremonial objects are used.</li>
-   <li><strong>No imitation of chants, war cries or ways of speaking.</strong> The children speak in their own voices. The music uses hand drums, rain sticks, rattles and flute, without copying any people's songs.</li>
+   <li><strong>No imitation of chants, war cries or ways of speaking.</strong> The children speak in their own voices. The music uses hand drums, rain sticks, rattles and flute, without copying any people's songs. The drum keeps an even pulse, like a heartbeat, not the movie “tom-tom” rhythm; use a recorder or concert flute, not a “Native flute.” In the final dance, simple steps, not imitating Native dances.</li>
    <li><strong>Use the present tense when it applies.</strong> The Inoka did not “disappear”: Act V says so clearly, and it is worth repeating in class.</li>
    <li><strong>Say the names correctly.</strong> Inoka, Kaskaskia, Peoria, Tamaroa, Cahokia, Michigamea, Miami-Illinois. See the <a href="obra-inoka-historia-en.html">historical guide</a>.</li>
   </ol>
-  <div class="nota"><strong>Before a public performance</strong>, it is a good courtesy to write to the Peoria Tribe to tell them about the project and offer them the script. Their contact information is at <a href="{PEORIA}" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>.</div>"""),
+  <div class="nota"><strong>Before a public performance</strong>, it is a good courtesy to write to the Peoria Tribe to tell them about the project and offer them the script. Their contact information is at <a href="{PEORIA}" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>. Also ask whether they are comfortable with children speaking in the first person as Peoria and Kaskaskia leaders.</div>"""),
 ("resumen", "At a glance", """
   <ul>
    <li><strong>What it's about:</strong> the prairie and rivers of Illinois, the Inoka villages and their way of life: growing corn, beans and squash, houses covered with mats, trade along the rivers, and the council that decides by agreement. It ends in the present, with the Peoria Tribe of Oklahoma and their language, which is coming back.</li>
@@ -339,7 +339,7 @@ def produccion(L):
   </ul>"""),
 ("imagenes", "The play in pictures", """
   <p>This infographic is in Spanish.</p>
-  <figure class="info"><img src="inoka-acto1.jpg" alt="Infographic “Setting up Act I: The Heartbeat of the Prairie.” Setting: a hand drum and rain sticks in dim light, and a backdrop of golden grasses with light cloths. Cast: 6th grade narrators; Pre-K and K children as flowers, bison, deer and the wind; and the central idea: the Inoka people, who lived in harmony with the land." loading="lazy" width="1376" height="768"><figcaption>Act I: the heartbeat of the prairie.</figcaption></figure>"""),
+  <figure class="info"><img src="inoka-acto1.jpg" alt="Infographic “Setting up Act I: The Heartbeat of the Prairie.” Setting: a hand drum and rain sticks in dim light, and a backdrop of golden grasses with light cloths. Cast: 6th grade narrators; Pre-K and K children as flowers, bison, deer and the wind; and the central idea: the Inoka people, who lived in harmony with the land." loading="lazy" width="1376" height="768"><figcaption>Act I: the heartbeat of the prairie. The infographic is a general guide; the script comes first (in the script, 1st and 2nd graders play, and there are no deer).</figcaption></figure>"""),
 ("reparto", "Cast by grade and numbers", """
   <p>The numbers are a guide. Parts with their own lines can be played by one child or a small group; groups without lines grow with the school.</p>
   <div class="envoltura-tabla">
@@ -348,7 +348,7 @@ def produccion(L):
    <thead><tr><th scope="col">Grade</th><th scope="col">Part</th><th scope="col">Minimum</th><th scope="col">Suggested</th><th scope="col">Maximum</th></tr></thead>
    <tbody>
     <tr><th scope="row">Pre-K &amp; K</th><td>Nature: wind, flowers, birds and bison (no lines)</td><td>8</td><td>20</td><td>40</td></tr>
-    <tr><th scope="row" rowspan="3">1st &amp; 2nd</th><td>Corn, Bean, Squash, Farmer, Weaver</td><td>5</td><td>5</td><td>10</td></tr>
+    <tr><th scope="row" rowspan="3">1st &amp; 2nd</th><td>Corn, Bean, Squash, Farmer, Weaver, 1st grader in Act V</td><td>5</td><td>5</td><td>10</td></tr>
     <tr><td>Musicians: rain sticks and rattles (Act I)</td><td>2</td><td>4</td><td>8</td></tr>
     <tr><td>“Raíz con raíz” chorus</td><td>6</td><td>20</td><td>the whole grade</td></tr>
     <tr><th scope="row" rowspan="2">3rd &amp; 4th</th><td>Messenger, Peoria Paddler, Kaskaskia Trader, 3rd and 4th graders in Act V</td><td>5</td><td>5</td><td>10</td></tr>
@@ -356,7 +356,7 @@ def produccion(L):
     <tr><th scope="row" rowspan="3">5th &amp; 6th</th><td>Narrators 1 and 2</td><td>2</td><td>2</td><td>4</td></tr>
     <tr><td>Keeper of Memory, Kaskaskia and Peoria council leaders, 5th and 6th graders in Act V</td><td>5</td><td>5</td><td>10</td></tr>
     <tr><td>Council circle (no lines) and tech crew</td><td>4</td><td>12</td><td>30</td></tr>
-    <tr><th scope="row">All</th><td>1st grader in Act V and the final chorus</td><td colspan="3">the whole school</td></tr>
+    <tr><th scope="row">All</th><td>The final chorus</td><td colspan="3">the whole school</td></tr>
    </tbody>
   </table>
   </div>"""),
@@ -519,18 +519,19 @@ def historia(L):
 ("nombre", "El nombre: Inoka e Illinois", """
   <p><strong>Inoka</strong> es el nombre que el pueblo se daba a sí mismo, según anotaron los misioneros franceses. Su significado se desconoce.</p>
   <p><strong>Illinois</strong> viene de una palabra de su propia lengua, el miami-illinois, que significa más o menos «el que habla de la manera común». Los franceses la oyeron primero a otros pueblos de la región de los Grandes Lagos, que llamaban así a los Inoka, y la escribieron «Illinois».</p>
-  <p>El padre Marquette creyó que «Illinois» significaba «los hombres», y de ahí nacieron interpretaciones como «los hombres completos» o «la gente completa». Son hermosas, pero no se sostienen: en la obra aparecen como lo que fueron, interpretaciones de los franceses.</p>"""),
+  <p>El padre Marquette creyó que «Illinois» significaba «los hombres», y más tarde otros autores añadieron «los hombres completos» o «la gente completa». Son hermosas, pero no se sostienen. En la obra, «los hombres» aparece como lo que fue: una interpretación de Marquette.</p>"""),
 ("linea", "Línea de tiempo", """
   <ul class="linea">
-   <li><b>Hacia 1050–1350</b>Florece Cahokia, la gran ciudad de los montículos de la cultura misisipiana, cerca del actual San Luis. Hacia 1350 ya se estaba despoblando.</li>
-   <li><b>Siglos XVI y XVII</b>Los Inoka viven en aldeas a lo largo de los ríos Illinois y Mississippi.</li>
+   <li><b>Hacia 1050–1350</b>Florece Cahokia, la gran ciudad de los montículos de la cultura misisipiana, cerca del actual San Luis. Después de 1200 empezó a despoblarse; hacia 1350 estaba casi vacía.</li>
+   <li><b>Siglo XVII</b>Los Inoka viven en aldeas en el valle del río Illinois y a ambos lados del Mississippi.</li>
    <li><b>1673</b>Jacques Marquette y Louis Jolliet bajan por el Mississippi. En una aldea Peoria los reciben con el calumet de la paz. Al volver, pasan por la Gran Aldea de los Kaskaskia, junto a Starved Rock.</li>
    <li><b>1675</b>Marquette funda una misión en la Gran Aldea de los Kaskaskia.</li>
    <li><b>Hacia 1700</b>Parte de los Michigamea, que vivían en el noreste de Arkansas, se une a los Kaskaskia.</li>
    <li><b>Después de 1763</b>Parte del pueblo se traslada a Missouri.</li>
-   <li><b>1832</b>Un tratado cambia sus tierras de Missouri por tierras en Kansas. Allí se unen los Peoria, Kaskaskia, Piankashaw y Wea.</li>
+   <li><b>1832</b>Por un tratado, los Peoria y los Kaskaskia ceden sus últimas tierras y reciben tierras en Kansas, cerca de los Piankashaw y los Wea.</li>
+   <li><b>1854</b>Los Peoria, Kaskaskia, Piankashaw y Wea se unen formalmente en una sola tribu.</li>
    <li><b>1867</b>Se trasladan al Territorio Indio, hoy Oklahoma.</li>
-   <li><b>Años 1950</b>El gobierno federal deja de reconocer a la tribu, como hizo con muchas otras en esa época.</li>
+   <li><b>1959</b>El gobierno federal pone fin a su relación con la tribu, como hizo con muchas otras en esa época.</li>
    <li><b>1978</b>El Congreso restituye el reconocimiento federal a la tribu Peoria.</li>
    <li><b>Hoy</b>La <span lang="en">Peoria Tribe of Indians of Oklahoma</span> es una nación soberana con su propio gobierno, y trabaja para recuperar su lengua.</li>
   </ul>"""),
@@ -543,15 +544,15 @@ def historia(L):
   <h3>Los ríos y el comercio</h3>
   <p>Los ríos eran caminos. Los Inoka viajaban en <strong>canoas talladas en un solo tronco</strong> (piraguas), no en canoas de corteza, e intercambiaban pieles, carne seca, herramientas de piedra, conchas y cerámica con otras aldeas y pueblos.</p>"""),
 ("gobierno", "El gobierno y el calumet", """
-  <p>No había un rey ni un gobierno central. Cada aldea tenía sus jefes: <strong>jefes de paz</strong>, que organizaban la caza y las relaciones con otros pueblos, y <strong>jefes de guerra</strong>. Los cargos no se heredaban, y las decisiones importantes se tomaban en gran parte <strong>por consenso</strong>, escuchando a los ancianos y a los clanes.</p>
+  <p>No había un rey ni un gobierno central. Cada aldea tenía sus jefes: <strong>jefes de paz</strong>, que organizaban la caza y las relaciones con otros pueblos, y <strong>jefes de guerra</strong>. Los cargos no se heredaban sin más: dependían del respeto ganado, y los jefes guiaban con la persuasión, no con la fuerza. Las decisiones importantes se tomaban en gran parte <strong>por consenso</strong>, escuchando a los ancianos y a los clanes.</p>
   <p>El <strong>calumet</strong> era una pipa ceremonial. Ofrecerlo era una forma solemne de recibir a los visitantes y de sellar la paz; quien lo llevaba podía viajar seguro. Por ser un objeto sagrado, en la obra se nombra pero no aparece en escena.</p>"""),
-("mitos", "Mitos y hechos", """
-  <p class="mito">Mito: «Inoka significa “los hombres completos”.»</p>
-  <p class="hecho">Hecho: el significado de <em>Inoka</em> se desconoce. «Los hombres» fue una interpretación de Marquette sobre la palabra «Illinois».</p>
+("mitos", "Mitos, hechos y preguntas abiertas", """
+  <p class="mito">Mito: «Illinois (o Illiniwek) significa “los hombres completos”.»</p>
+  <p class="hecho">Hecho: fue una interpretación posterior a Marquette. La palabra significa más o menos «el que habla de la manera común». Y el nombre propio del pueblo, <em>Inoka</em>, tiene un significado desconocido.</p>
   <p class="mito">Mito: «Vivían en tipis y llevaban grandes penachos de plumas.»</p>
-  <p class="hecho">Hecho: vivían en casas largas y wigwams cubiertos de esteras de junco. Los penachos de las películas vienen de otros pueblos de las Grandes Llanuras, y en esos pueblos tienen un significado ceremonial.</p>
-  <p class="mito">Mito: «Los Illinois construyeron la ciudad de Cahokia.»</p>
-  <p class="hecho">Hecho: Cahokia es de la cultura misisipiana y floreció siglos antes. Los Cahokia del período colonial eran una tribu de la Confederación con el mismo nombre. La relación entre ambos sigue en estudio.</p>
+  <p class="hecho">Hecho: vivían en casas largas y wigwams cubiertos de esteras de junco. Los penachos de las películas vienen de algunos pueblos de las Grandes Llanuras, y en esos pueblos tienen un significado ceremonial.</p>
+  <p class="mito">Pregunta abierta: «¿Construyeron los Inoka la ciudad de Cahokia?»</p>
+  <p class="hecho">Lo que sabemos: Cahokia es de la cultura misisipiana y floreció siglos antes de 1673. El sitio tomó su nombre de los Cahokia, una tribu de la Confederación que vivía cerca en la época colonial. La tribu Peoria se considera descendiente de los pueblos que construyeron los grandes montículos; los arqueólogos siguen estudiando esa relación.</p>
   <p class="mito">Mito: «Tenían un rey o un gran jefe que mandaba sobre todos.»</p>
   <p class="hecho">Hecho: eran aldeas aliadas y autónomas, con jefes de paz y de guerra, que decidían en gran parte por consenso.</p>
   <p class="mito">Mito: «Los indígenas de Illinois desaparecieron.»</p>
@@ -592,6 +593,7 @@ def historia(L):
   </ul>"""),
 ("fuentes", "Fuentes y para saber más", f"""
   <ul>
+   <li><a href="https://peoriatribe.com/welcome/history/" target="_blank" rel="noopener noreferrer">Peoria Tribe of Indians of Oklahoma: su historia</a></li>
    <li><a href="https://museum.state.il.us/muslink/nat_amer/post/htmls/te_houses.html" target="_blank" rel="noopener noreferrer">Illinois State Museum: las casas de los Illinois</a></li>
    <li><a href="https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnrhistoric/research/documents/illinivol1n1.pdf" target="_blank" rel="noopener noreferrer">Illinois Department of Natural Resources: los Illiniwek</a></li>
    <li><a href="https://www.okhistory.org/publications/enc/entry?entry=PE013" target="_blank" rel="noopener noreferrer">Oklahoma Historical Society: Peoria</a></li>
@@ -614,19 +616,20 @@ def historia(L):
   </ul>"""),
 ("nombre", "The name: Inoka and Illinois", """
   <p><strong>Inoka</strong> is the name the people called themselves, as French missionaries wrote down. Its meaning is unknown.</p>
-  <p><strong>Illinois</strong> comes from a word in their own language, Miami-Illinois, meaning roughly “he who speaks in the ordinary way.” The French first heard it from other peoples of the Great Lakes region, who used it for the Inoka, and wrote it as “Illinois.”</p>
-  <p>Father Marquette believed “Illinois” meant “the men,” and that led to interpretations such as “the complete men” or “the complete people.” They are beautiful, but they do not hold up: in the play they appear as what they were, French interpretations.</p>"""),
+  <p><strong>Illinois</strong> comes from a word in their own language, Miami-Illinois, meaning roughly “one who speaks in the ordinary way.” The French first heard it from other peoples of the Great Lakes region, who used it for the Inoka, and wrote it as “Illinois.”</p>
+  <p>Father Marquette believed “Illinois” meant “the men,” and later writers added “the complete men” or “the complete people.” They are beautiful, but they do not hold up. In the play, “the men” appears as what it was: Marquette's interpretation.</p>"""),
 ("linea", "Timeline", """
   <ul class="linea">
-   <li><b>About 1050–1350</b>Cahokia, the great city of mounds of the Mississippian culture, flourishes near present-day St. Louis. By around 1350 it was emptying out.</li>
-   <li><b>1500s and 1600s</b>The Inoka live in villages along the Illinois and Mississippi rivers.</li>
+   <li><b>About 1050–1350</b>Cahokia, the great city of mounds of the Mississippian culture, flourishes near present-day St. Louis. It began to empty after 1200 and was nearly abandoned by about 1350.</li>
+   <li><b>1600s</b>The Inoka live in villages in the Illinois River valley and on both sides of the Mississippi.</li>
    <li><b>1673</b>Jacques Marquette and Louis Jolliet travel down the Mississippi. In a Peoria village, they are welcomed with the peace calumet. On their way back, they pass the Grand Village of the Kaskaskia, near Starved Rock.</li>
    <li><b>1675</b>Marquette founds a mission at the Grand Village of the Kaskaskia.</li>
    <li><b>Around 1700</b>Part of the Michigamea, who lived in northeastern Arkansas, join the Kaskaskia.</li>
    <li><b>After 1763</b>Part of the people move to Missouri.</li>
-   <li><b>1832</b>A treaty exchanges their Missouri lands for land in Kansas. There, the Peoria, Kaskaskia, Piankashaw and Wea come together.</li>
+   <li><b>1832</b>By treaty, the Peoria and Kaskaskia give up their last lands and receive land in Kansas, near the Piankashaw and Wea.</li>
+   <li><b>1854</b>The Peoria, Kaskaskia, Piankashaw and Wea formally unite as one tribe.</li>
    <li><b>1867</b>They move to Indian Territory, today Oklahoma.</li>
-   <li><b>1950s</b>The federal government stops recognizing the tribe, as it did with many others at that time.</li>
+   <li><b>1959</b>The federal government ends its relationship with the tribe, as it did with many others at that time.</li>
    <li><b>1978</b>Congress restores federal recognition to the Peoria Tribe.</li>
    <li><b>Today</b>The Peoria Tribe of Indians of Oklahoma is a sovereign nation with its own government, and it is working to bring its language back.</li>
   </ul>"""),
@@ -639,17 +642,17 @@ def historia(L):
   <h3>Rivers and trade</h3>
   <p>Rivers were roads. The Inoka traveled in <strong>canoes carved from a single tree trunk</strong> (dugouts), not bark canoes, and traded pelts, dried meat, stone tools, shells and pottery with other villages and peoples.</p>"""),
 ("gobierno", "Government and the calumet", """
-  <p>There was no king and no central government. Each village had its own chiefs: <strong>peace chiefs</strong>, who organized hunts and relations with other peoples, and <strong>war chiefs</strong>. These positions were not inherited, and important decisions were largely made <strong>by consensus</strong>, listening to elders and clans.</p>
+  <p>There was no king and no central government. Each village had its own chiefs: <strong>peace chiefs</strong>, who organized hunts and relations with other peoples, and <strong>war chiefs</strong>. These positions were not simply inherited: they depended on earned respect, and chiefs led by persuasion, not force. Important decisions were largely made <strong>by consensus</strong>, listening to elders and clans.</p>
   <p>The <strong>calumet</strong> was a ceremonial pipe. Offering it was a solemn way to welcome visitors and seal peace; whoever carried it could travel safely. Because it is a sacred object, the play mentions it but does not show it on stage.</p>"""),
-("mitos", "Myths and facts", """
-  <p class="mito">Myth: “Inoka means ‘the complete men.’”</p>
-  <p class="hecho">Fact: the meaning of <em>Inoka</em> is unknown. “The men” was Marquette's interpretation of the word “Illinois.”</p>
+("mitos", "Myths, facts and open questions", """
+  <p class="mito">Myth: “Illinois (or Illiniwek) means ‘the complete men.’”</p>
+  <p class="hecho">Fact: that came from later interpretations of Marquette. The word means roughly “one who speaks in the ordinary way.” The people's own name, <em>Inoka</em>, has an unknown meaning.</p>
   <p class="mito">Myth: “They lived in tipis and wore big feather headdresses.”</p>
-  <p class="hecho">Fact: they lived in longhouses and wigwams covered with rush mats. The headdresses in movies come from other peoples of the Great Plains, where they have a ceremonial meaning.</p>
-  <p class="mito">Myth: “The Illinois built the city of Cahokia.”</p>
-  <p class="hecho">Fact: Cahokia belongs to the Mississippian culture and flourished centuries earlier. The Cahokia of colonial times were a tribe of the Confederation with the same name. How the two are related is still being studied.</p>
+  <p class="hecho">Fact: they lived in longhouses and wigwams covered with rush mats. The headdresses in movies come from some peoples of the Great Plains, where they have a ceremonial meaning.</p>
+  <p class="mito">Open question: “Did the Inoka build the city of Cahokia?”</p>
+  <p class="hecho">What we know: Cahokia belongs to the Mississippian culture and flourished centuries before 1673. The site was named after the Cahokia, a tribe of the Confederation that lived nearby in colonial times. The Peoria Tribe sees itself as descended from the peoples who built the great mounds; archaeologists are still studying that connection.</p>
   <p class="mito">Myth: “They had a king or a great chief who ruled everyone.”</p>
-  <p class="hecho">Fact: they were allied, independent villages, with peace and war chiefs, that largely decided by consensus.</p>
+  <p class="hecho">Fact: they were allied, independent villages with peace and war chiefs, which largely decided by consensus.</p>
   <p class="mito">Myth: “The Native peoples of Illinois disappeared.”</p>
   <p class="hecho">Fact: their descendants are today the Peoria Tribe of Oklahoma, a federally recognized nation.</p>"""),
 ("hoy", "The Peoria Tribe today", f"""
@@ -688,6 +691,7 @@ def historia(L):
   </ul>"""),
 ("fuentes", "Sources and further reading", f"""
   <ul>
+   <li><a href="https://peoriatribe.com/welcome/history/" target="_blank" rel="noopener noreferrer">Peoria Tribe of Indians of Oklahoma: history</a></li>
    <li><a href="https://museum.state.il.us/muslink/nat_amer/post/htmls/te_houses.html" target="_blank" rel="noopener noreferrer">Illinois State Museum: Illinois houses</a></li>
    <li><a href="https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnrhistoric/research/documents/illinivol1n1.pdf" target="_blank" rel="noopener noreferrer">Illinois Department of Natural Resources: the Illiniwek</a></li>
    <li><a href="https://www.okhistory.org/publications/enc/entry?entry=PE013" target="_blank" rel="noopener noreferrer">Oklahoma Historical Society: Peoria</a></li>
@@ -711,7 +715,7 @@ CAR = {
    alt="Una planta de maíz con su mazorca en una pradera dorada; al fondo, colinas suaves, el sol del atardecer y una bandada de aves.",
    pie=f"«Inoka: El aliento de la pradera y la gente de Illinois» · Obra de {AUTOR} · Lumi, www.lumi-educa.com"),
  "en": dict(otro="obra-inoka-cartel-es.html", volver="obra-inoka-produccion-en.html", volver_txt="← Production guide", titulo_pag="Inoka · Poster",
-   instr="Type in the dotted spaces (click on them) the name of the school, the date, the time, the place and the city. Then press “Print”. It prints on one letter-size sheet, portrait.",
+   instr="Click the dotted spaces and type the school's name, date, time, place and city. Then press “Print”. It prints on one letter-size sheet, portrait.",
    imprimir="🖨️ Print the poster", escuela="School name", presenta="presents", sub="The Breath of the Prairie and the People of Illinois",
    obra=f"A play by {AUTOR}", elenco="With all our students, from Pre-K to 6th grade", lema="The land · The river · The council · A people still here today",
    lf="Date", lh="Time", ll="Place", f="Day and date", h="Time", l="Place", ciudad="City, State", entrada="Free admission",
@@ -834,7 +838,7 @@ PRO = {
           ("Acto IV · La asamblea de las aldeas y la sabiduría del consejo", "5.º y 6.º", "Las decisiones por consenso, el calumet de la paz y la llegada de los franceses en 1673."),
           ("Acto V · El legado vivo de los Inoka", "Toda la escuela", "La tribu Peoria de Oklahoma hoy y su lengua, que vuelve. Canción final: «Legado de la pradera».")],
    rep_t="Reparto", th=("Papel", "Grado", "Interpretado por"),
-   reparto=[("Narradores 1 y 2","6.º"),("La naturaleza: viento, flores, aves y bisontes","Prekínder y kínder"),("Músicos","1.º y 2.º"),("Niño Maíz · Niña Frijol · Niña Calabaza","1.º y 2.º"),("Agricultora · Tejedora","2.º"),("Coro «Raíz con raíz»","1.º y 2.º"),("Los ríos","3.º y 4.º"),("Mensajero de la aldea","3.º"),("Navegante Peoria · Comerciante Kaskaskia","4.º"),("Guardiana de la Memoria","6.º"),("Líderes del consejo Kaskaskia y Peoria","5.º y 6.º"),("Estudiantes del acto V","1.º a 6.º"),("Equipo técnico, apuntadores y guías","4.º a 6.º")],
+   reparto=[("Narradores 1 y 2","6.º"),("La naturaleza: viento, flores, aves y bisontes","Prekínder y kínder"),("Músicos","1.º y 2.º"),("Niño Maíz · Niña Frijol · Niña Calabaza","1.º y 2.º"),("Agricultora · Tejedora","2.º"),("Coro «Raíz con raíz»","1.º y 2.º"),("Los ríos","3.º y 4.º"),("Mensajero de la aldea","3.º"),("Navegante Peoria · Comerciante Kaskaskia","4.º"),("Guardiana de la Memoria","6.º"),("Líderes del consejo Kaskaskia y Peoria","5.º y 6.º"),("Estudiantes del acto V","1.º a 6.º"),("Equipo técnico, apuntadores y guías","3.º a 6.º")],
    notas_t="Para saber más",
    notas=["<strong>Inoka</strong> es el nombre que el pueblo se daba a sí mismo; su significado se desconoce. «Illinois» viene de una palabra de su lengua que significa «el que habla de la manera común».",
           "Vivían en <strong>casas largas y wigwams cubiertos de esteras de junco</strong>, no en tipis, y viajaban por los ríos en <strong>canoas talladas en un solo tronco</strong>.",
@@ -845,7 +849,7 @@ PRO = {
    agr="A la <span lang=\"en\">Peoria Tribe of Indians of Oklahoma</span>, por mantener viva la historia y la lengua de los Inoka. A las familias, los docentes y todo el personal de la escuela.",
    cred=f"«Inoka: El aliento de la pradera y la gente de Illinois» · Obra de {AUTOR} · Canciones «Raíz con raíz» y «Legado de la pradera», creadas para la obra · Lumi, www.lumi-educa.com · CC BY-NC-SA 4.0"),
  "en": dict(otro="obra-inoka-programa-es.html", volver="obra-inoka-produccion-en.html", volver_txt="← Production guide", titulo_pag="Inoka · Program",
-   instr="Type in the dotted spaces the name of the school, the date and the names of the cast. Then press “Print”. It takes two pages: it can be printed double-sided and folded.",
+   instr="Type the school's name, the date and the cast names in the dotted spaces. Then press “Print”. It takes two pages: it can be printed double-sided and folded.",
    imprimir="🖨️ Print the program", cab="Program", escuela="School name", fecha="Date and place of the performance",
    sub="The Breath of the Prairie and the People of Illinois", obra=f"A play by {AUTOR}",
    bienv_t="Welcome",
@@ -857,9 +861,9 @@ PRO = {
           ("Act IV · The Village Assembly and the Wisdom of the Council", "5th & 6th", "Decisions by consensus, the peace calumet and the arrival of the French in 1673."),
           ("Act V · The Living Legacy of the Inoka", "The whole school", "The Peoria Tribe of Oklahoma today and their language, which is coming back. Closing song: “Legado de la pradera.”")],
    rep_t="Cast", th=("Part", "Grade", "Played by"),
-   reparto=[("Narrators 1 and 2","6th"),("Nature: wind, flowers, birds and bison","Pre-K & K"),("Musicians","1st & 2nd"),("Corn · Bean · Squash","1st & 2nd"),("Farmer · Weaver","2nd"),("“Raíz con raíz” chorus","1st & 2nd"),("The rivers","3rd & 4th"),("Village Messenger","3rd"),("Peoria Paddler · Kaskaskia Trader","4th"),("Keeper of Memory","6th"),("Kaskaskia and Peoria council leaders","5th & 6th"),("Students in Act V","1st to 6th"),("Tech crew, prompters and buddies","4th to 6th")],
+   reparto=[("Narrators 1 and 2","6th"),("Nature: wind, flowers, birds and bison","Pre-K & K"),("Musicians","1st & 2nd"),("Corn · Bean · Squash","1st & 2nd"),("Farmer · Weaver","2nd"),("“Raíz con raíz” chorus","1st & 2nd"),("The rivers","3rd & 4th"),("Village Messenger","3rd"),("Peoria Paddler · Kaskaskia Trader","4th"),("Keeper of Memory","6th"),("Kaskaskia and Peoria council leaders","5th & 6th"),("Students in Act V","1st to 6th"),("Tech crew, prompters and buddies","3rd to 6th")],
    notas_t="Did you know?",
-   notas=["<strong>Inoka</strong> is the name the people called themselves; its meaning is unknown. “Illinois” comes from a word in their language meaning “he who speaks in the ordinary way.”",
+   notas=["<strong>Inoka</strong> is the name the people called themselves; its meaning is unknown. “Illinois” comes from a word in their language meaning “one who speaks in the ordinary way.”",
           "They lived in <strong>longhouses and wigwams covered with rush mats</strong>, not tipis, and traveled the rivers in <strong>canoes carved from a single trunk</strong>.",
           "The villages were independent and largely decided <strong>by consensus</strong>.",
           "Their descendants are today the <strong>Peoria Tribe of Indians of Oklahoma</strong>, a sovereign nation. Their language, Miami-Illinois, is coming back: children and young people of the Peoria and Miami nations are learning it again."],

@@ -79,16 +79,16 @@ ACTOS = [
  ("NAR1", "En la primavera y el verano, las mujeres de las aldeas Inoka cultivaban fértiles huertos en los valles. Su alimento principal nacía de tres plantas que crecían juntas, ayudándose unas a otras, a las que hoy muchos pueblos llaman las Tres Hermanas.",
           "In spring and summer, the women of the Inoka villages tended rich gardens in the valleys. Their main food came from three plants that grew together, helping one another, which many peoples today call the Three Sisters."),
  ("MAIZ", "Yo soy el Maíz. Crezco alto, recto y firme hacia el sol del verano. Con mi cuerpo fuerte sirvo de columna y de apoyo para mis hermanas.",
-          "I am Corn. I grow tall, straight and strong toward the summer sun. With my strong body, I am the pillar and the support for my sisters."),
+          "I am Corn. I grow tall, straight and steady toward the summer sun. With my strong stalk, I hold up my sisters."),
  ("FRIJOL", "Yo soy el Frijol. Sola en la tierra no puedo alcanzar la altura; pero me enredo suavemente en el tallo del Maíz, subo hacia la luz y le devuelvo la fuerza al suelo.",
             "I am Bean. Alone on the ground, I cannot reach up high; but I gently wind around Corn's stalk, climb toward the light and give strength back to the soil."),
  ("CALAB", "Yo soy la Calabaza. Extiendo mis hojas anchas sobre la tierra. Mantengo el suelo fresco y húmedo para que la sequía no marchite a mis hermanas.",
-           "I am Squash. I spread my wide leaves over the ground. I keep the soil cool and moist so the drought does not wither my sisters."),
+           "I am Squash. I spread my wide leaves over the ground. I keep the soil cool and moist so dry weather does not wilt my sisters."),
  ("AGRI", "Nuestras abuelas comprendieron que la tierra da abundancia no por la fuerza, sino por la unión. Si sembramos juntas, la cosecha alimenta a toda la aldea.",
           "Our grandmothers understood that the land gives plenty not through force, but through working together. If we plant together, the harvest feeds the whole village."),
  ("TEJ", "Y con los juncos de los pantanos tejemos las esteras que cubren nuestras casas. Una sola caña se quiebra al doblarla, pero trenzadas todas juntas protegen a nuestras familias del viento y de la lluvia.",
          "And with the rushes from the marshes we weave the mats that cover our houses. One reed alone breaks when you bend it, but woven all together they protect our families from the wind and the rain."),
- ("CANCION", "CORO12", "Raíz con raíz", LETRA_RAIZ, SENTIDO_RAIZ, "inoka-raiz-con-raiz"),
+ ("CANCION", "CORO12", ("Raíz con raíz", "Root by Root"), LETRA_RAIZ, SENTIDO_RAIZ, "inoka-raiz-con-raiz"),
 ]),
 ("acto-3", "Acto III · Las rutas del río y el comercio entre aldeas", "Act III · The River Routes and Trade Between Villages", [
  ("AC", "Participan 3.º y 4.º grado: la navegación, el comercio y las alianzas entre aldeas.", "3rd and 4th grades take part: river travel, trade and alliances between villages."),
@@ -101,7 +101,7 @@ ACTOS = [
  ("COMER", "¡Bienvenidos a nuestra orilla! Por los ríos y los caminos antiguos intercambiamos herramientas de pedernal, conchas de río y cuencos de barro. El comercio une a nuestras familias y fortalece la paz.",
            "Welcome to our riverbank! Along the rivers and the old trails we trade flint tools, river shells and clay bowls. Trade brings our families together and makes peace stronger."),
  ("NAR1", "Cerca de estos ríos, siglos atrás, había florecido la gran ciudad de los montículos de Cahokia, de la cultura misisipiana. Cuando los Inoka recorrían estos ríos, aquella ciudad ya estaba vacía. La relación entre aquella ciudad y los pueblos que vinieron después todavía la estudian los arqueólogos.",
-          "Near these rivers, centuries earlier, the great city of mounds at Cahokia, of the Mississippian culture, had flourished. By the time the Inoka traveled these rivers, that city was already empty. Archaeologists are still studying how that city was related to the peoples who came after."),
+          "Centuries earlier, near these rivers, the great mound city of Cahokia had flourished. It belonged to the Mississippian culture. By the time the Inoka traveled these rivers, that city was already empty. Archaeologists are still studying how that city was related to the peoples who came after."),
  ("MENS", "(Entra con paso firme, con un bastón de cañas trenzadas.) ¡Noticias de la asamblea! Los jefes y los ancianos de cada aldea nos llaman a la reunión de la temporada. Es hora de compartir lo que dio el verano y de escuchar los relatos de los mayores.",
           "(Enters with firm steps, holding a staff of woven reeds.) News from the assembly! The chiefs and the elders of each village are calling us to the meeting of the season. It is time to share what the summer gave us and to listen to the stories of our elders."),
 ]),
@@ -117,15 +117,15 @@ ACTOS = [
           "When visitors came in peace, we offered them the calumet, a ceremonial pipe decorated with feathers. It was our most solemn way of saying: here there is peace, dialogue and hospitality."),
  ("AC", "El calumet se nombra, pero no aparece en escena.", "The calumet is mentioned, but it does not appear on stage."),
  ("NAR2", "En 1673 llegaron por el río los exploradores franceses Jacques Marquette y Louis Jolliet. Ya habían oído hablar de este pueblo a otros pueblos vecinos, que lo llamaban con una palabra parecida a «ilinwe». De ella viene el nombre «Illinois». Y en una aldea Peoria, los recibieron con el calumet de la paz.",
-          "In 1673, the French explorers Jacques Marquette and Louis Jolliet arrived by river. They had already heard about this people from neighboring nations, who called them by a word that sounded like “ilinwe.” That is where the name “Illinois” comes from. And in a Peoria village, they were welcomed with the peace calumet."),
+          "In 1673, the French explorers Jacques Marquette and Louis Jolliet arrived by river. They had already heard about these people from other nations of the Great Lakes, who called them by a word that sounded like “ilinwe.” That is where the name “Illinois” comes from. And in a Peoria village, they were welcomed with the peace calumet."),
  ("GUARD", "Marquette creyó que «Illinois» quería decir «los hombres». Hoy los estudiosos piensan que la palabra significaba «los que hablan de la manera común». Pero el nombre que ellos mismos se daban era otro: Inoka. Y ser parte de esta tierra pide madurez, valor para cuidar la paz y sabiduría para compartir el fuego.",
            "Marquette believed that “Illinois” meant “the men.” Today, scholars think the word meant “those who speak in the ordinary way.” But the name they gave themselves was a different one: Inoka. And being part of this land calls for maturity, courage to protect the peace and wisdom to share the fire."),
 ]),
 ("acto-5", "Acto V · Escena final: el legado vivo de los Inoka", "Act V · Final Scene: The Living Legacy of the Inoka", [
- ("AC", "Participa toda la escuela: del pasado al presente de la tribu Peoria de Oklahoma.", "The whole school takes part: from the past to the present of the Peoria Tribe of Oklahoma."),
+ ("AC", "Participa toda la escuela: del pasado al presente de la tribu Peoria de Oklahoma.", "The whole school takes part: the Peoria Tribe of Oklahoma, from the past to today."),
  ("AC", "Todo el elenco se va uniendo poco a poco y da un paso al frente, a la vez.", "The whole cast gradually joins in and takes one step forward, all together."),
  ("NAR1", "Pasaron los siglos. Las praderas cambiaron de manto, sobre los ríos nacieron puentes y las aldeas de esteras dieron paso a los mapas del moderno estado de Illinois.",
-          "Centuries went by. The prairies changed their cloak, bridges rose over the rivers, and the villages of mats gave way to the maps of the modern state of Illinois."),
+          "Centuries went by. The prairies changed their colors, bridges rose over the rivers, and the villages of mats gave way to the maps of the modern state of Illinois."),
  ("NAR2", "Pero la historia de los Inoka no terminó en el pasado. Tuvieron que dejar Illinois: primero hacia Missouri, después a Kansas y, en 1867, a lo que hoy es Oklahoma. Y allí siguieron adelante.",
           "But the story of the Inoka did not end in the past. They had to leave Illinois: first for Missouri, then for Kansas and, in 1867, for what is now Oklahoma. And there, they carried on."),
  ("E5", "Hoy sus descendientes forman la Peoria Tribe of Indians of Oklahoma, una nación reconocida por el gobierno de Estados Unidos, que conserva con orgullo su historia y su identidad.",
@@ -133,13 +133,13 @@ ACTOS = [
  ("E3", "Ya no quedan hablantes nativos de su lengua, el miami-illinois. Pero niños y jóvenes de las naciones Peoria y Miami la están aprendiendo de nuevo, y así vuelven a sonar las palabras de sus abuelos.",
         "Their language, Miami-Illinois, no longer has any native speakers. But children and young people of the Peoria and Miami nations are learning it again, and so the words of their grandparents are heard once more."),
  ("E1", "Nos enseñan a cuidar los ríos, las plantas y los bosques.", "They teach us to care for the rivers, the plants and the forests."),
- ("E4", "Nos enseñan que los caminos sirven para tender la mano y comerciar en paz.", "They teach us that roads are for reaching out a hand and trading in peace."),
+ ("E4", "Nos enseñan que los caminos sirven para tender la mano y comerciar en paz.", "They teach us that paths are for helping one another and trading in peace."),
  ("E6", "Y nos recuerdan que, para ser dignos del nombre de Illinois, debemos gobernarnos escuchando, con justicia y con respeto a la naturaleza.",
         "And they remind us that, to be worthy of the name Illinois, we must govern ourselves by listening, with fairness and with respect for nature."),
  ("TODOS", "¡Somos la memoria de la pradera!\n¡Somos el aliento del gran río!\n¡Somos el presente y el legado de la gente de Illinois!",
            "We are the memory of the prairie!\nWe are the breath of the great river!\nWe are the present and the legacy of the people of Illinois!"),
- ("AC", "Suenan los tambores de mano y empieza la canción final. Todo el elenco canta y baila tomado de las manos.", "The hand drums play and the final song begins. The whole cast sings and dances, holding hands."),
- ("CANCION", "TODOS", "Legado de la pradera", LETRA_LEGADO, SENTIDO_LEGADO, "inoka-legado-de-la-pradera"),
+ ("AC", "Suenan los tambores de mano y empieza la canción final. Todo el elenco canta y baila tomado de las manos, con pasos sencillos, sin imitar danzas indígenas.", "The hand drums play and the final song begins. The whole cast sings and dances, holding hands, with simple steps, not imitating Native dances."),
+ ("CANCION", "TODOS", ("Legado de la pradera", "Legacy of the Prairie"), LETRA_LEGADO, SENTIDO_LEGADO, "inoka-legado-de-la-pradera"),
  ("AC", "Todo el elenco hace una reverencia tomados de las manos mientras se cierra el telón.", "The whole cast takes a bow, holding hands, as the curtain closes."),
 ]),
 ]
@@ -208,10 +208,11 @@ def pagina(L):
                 cuerpo.append(f'  <p class="acot"><span class="sr">{e(t["acot"])}: </span>({e(it[1 if L=="es" else 2])})</p>')
             elif it[0] == "CANCION":
                 _, p, tit, letra, sentido, vid = it
+                titulo_txt = f"«{tit[0]}»" if L == "es" else f"“{tit[0]}” (“{tit[1]}”)"
                 extra = f'<p class="sentido"><strong>{e(t["sentido"])}</strong> {e(sentido)}</p>' if L == "en" else ""
                 cuerpo.append(f'''  <div class="linea cancion" data-papeles="{p}" style="--c:{PAPELES[p][0]}">
    <div><span class="quien">{e(nombre(p,L))}</span><span class="grado">{e(grado(p,L))}</span>
-   <p class="txt"><strong>🎵 {e(t["cancion"])}: {"«" if L=="es" else "“"}{e(tit)}{"»" if L=="es" else "”"}</strong></p>
+   <p class="txt"><strong>🎵 {e(t["cancion"])}: {e(titulo_txt)}</strong></p>
    <p class="letra" lang="es"{' aria-label="'+e(t["letra"])+'"' if L=="en" else ""}>{verso(letra)}</p>{extra}
    <p style="margin:.4rem 0 0"><a href="{t["guia"]}#{vid}">▶ {e(t["ver_cancion"])}</a></p></div>
   </div>''')

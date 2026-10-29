@@ -29,6 +29,23 @@ el estudiante se queda en la misma sección.
 3. **Libros de cuentos terminados:** añadir una línea en `libros`
    dentro de `catalogo.js`.
 
+## Teatro
+
+Las obras se dan de alta en `obras`, dentro de `catalogo.js`; cada una tiene su guion
+en español y en inglés y su guía de producción. Las páginas se generan con los
+programas de `herramientas/`:
+
+| Obra | Generador | Páginas |
+|---|---|---|
+| *El Fénix sobre el Lago*, de José M. Fernández | `gen_fenix.py` | `obra-fenix-lago-*.html` |
+| *El bosque mágico*, de Vicente Cañón Verdasco | `gen_bosque.py` (guion) y `gen_bosque_produccion.py` (guía y cartel) | `obra-bosque-magico-*.html` |
+
+*El bosque mágico* es obra de **Vicente Cañón Verdasco** (© 2019, www.obrasteatro.com).
+Se publica en Lumi con su autorización escrita (octubre de 2026): guion interactivo,
+traducción al inglés y reparto ampliado, siempre con su nombre como autor y con el
+título original. El texto de la obra pertenece a su autor; la licencia CC BY-NC-SA
+de Lumi cubre solo la guía de producción, el cartel y el diseño de las páginas.
+
 ## Archivos
 
 - `catalogo.js`: la lista de series (lo único que se edita a menudo).

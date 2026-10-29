@@ -1,0 +1,633 @@
+<!doctype html>
+<!-- «El bosque mágico» · Obra de Vicente Cañón Verdasco © 2019 (www.obrasteatro.com) · Publicada en Lumi con autorización del autor.
+     El texto de la obra pertenece a su autor. Diseño de la página: Lumi (José M. Fernández). Generado con herramientas/gen_bosque.py -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El bosque mágico (The Magical Forest) · Lumi</title>
+<meta name="description" content="Three happy villages, some envious witches and wizards, and some fairies and elves who know how to break a curse: by dancing all together. A play for the whole school, from Pre-K to 6th grade.">
+<meta name="author" content="Vicente Cañón Verdasco">
+<link rel="alternate" hreflang="es" href="obra-bosque-magico-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{background:var(--cie);padding:1.4rem 0}
+.obra-cab h1{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.obra-cab .sub{font-size:1.2rem;margin:.3rem 0 0}
+.obra-cab .autor{margin:.3rem 0 0;font-weight:700;font-size:1.15rem}
+.obra-cab .permiso{font-size:.95rem}
+.enlaces-obra{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0;padding:0;list-style:none}
+.enlaces-obra a{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font-weight:700;text-decoration:none}
+.enlaces-obra a:hover{background:var(--cie)}
+.barra{position:sticky;top:76px;z-index:5;background:#fff;border:2px solid var(--borde);border-radius:14px;padding:.6rem .8rem;margin:1rem 0;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.barra label{font-weight:700}
+.barra select,.barra button{min-height:44px;font:inherit;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);padding:0 .9rem;font-weight:700;cursor:pointer}
+.barra .chk{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+.barra .chk input{width:22px;height:22px}
+.linea{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:start;padding:.6rem .8rem;margin:.35rem 0;border-left:8px solid var(--c);border-radius:10px;background:#fff}
+.linea .quien{display:inline-block;font-weight:700;color:#fff;background:var(--c);border-radius:999px;padding:.05rem .65rem;font-size:.9rem;margin-right:.4rem}
+.linea .grado{font-size:.85rem;margin-right:.4rem}
+.linea p{margin:.25rem 0 0}
+.acot{font-style:italic;margin:.6rem 0;padding:.4rem .8rem;border-left:4px dashed var(--borde);color:#2d5f69}
+.mus{margin:.6rem 0;padding:.45rem .8rem;border-radius:10px;background:#F3EEFA;color:#3d2a63;font-weight:700}
+.mus small{font-weight:400}
+.lugar{margin:1rem 0 .4rem;text-align:center;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2d5f69}
+.oir{min-width:44px;min-height:44px;border-radius:50%;border:2px solid var(--pet);background:#fff;cursor:pointer;font-size:1.1rem}
+.oir:hover{background:var(--cie)}
+body.filtrando .linea{opacity:.35}
+body.filtrando .linea.mia{opacity:1;box-shadow:0 0 0 3px var(--c)}
+body.solo .linea:not(.mia){display:none}
+body.solo .acot,body.solo .mus,body.solo .lugar{display:none}
+.linea.hablando{outline:3px solid var(--ama)}
+details.acord{border:2px solid var(--borde);border-radius:16px;margin:.8rem 0;padding:0;background:#fff}
+details.acord > summary{padding:.8rem 1rem;min-height:56px;list-style:none;border:0;cursor:pointer}
+details.acord > summary::-webkit-details-marker{display:none}
+details.acord > summary::before{content:"▸";font-size:1.4rem;margin-right:.5rem}
+details.acord[open] > summary::before{content:"▾"}
+details.acord > summary h2{display:inline;font-size:1.35rem}
+details.acord > summary:hover{background:var(--cie);border-radius:14px}
+details.acord .cuerpo{padding:0 1rem 1rem}
+.acto-h{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.acto-h button{min-height:44px;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font:inherit;font-weight:700;padding:0 .9rem;cursor:pointer}
+.tabla{width:100%;border-collapse:collapse;margin:.5rem 0 1rem}
+.tabla th,.tabla td{border:1px solid var(--borde);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.tabla th{background:var(--cie)}
+.punto{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:.4rem;vertical-align:-2px}
+.envoltura-tabla{overflow-x:auto}
+body.grande{font-size:21px}
+body.muygrande{font-size:24px}
+main .seccion{scroll-margin-top:170px}
+.barra select{max-width:100%}
+@media (max-width:760px){.barra{position:static}.barra select{width:100%}main .seccion{scroll-margin-top:130px}}
+@media print{.barra,.oir,.acto-h button,.cabecera,.anclas,.enlaces-obra{display:none!important}.linea{break-inside:avoid;border-left-width:6px}body.filtrando .linea{opacity:1}}
+</style>
+</head>
+<body data-voz="en-US">
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-bosque-magico-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro.html">← Lumi Theater</a></p>
+  <h1 id="titulo"><span lang="es">El bosque mágico</span></h1>
+  <p class="sub">The Magical Forest · A children's play for the whole school</p>
+  <p class="autor">A play by Vicente Cañón Verdasco</p>
+  <p style="margin:.2rem 0 0">English translation: José M. Fernández, with the author's permission</p>
+  <p>Three happy villages, some envious witches and wizards, and some fairies and elves who know how to break a curse: by dancing all together. A play for the whole school, from Pre-K to 6th grade.</p>
+  <ul class="enlaces-obra">
+   <li><a href="obra-bosque-magico-produccion-en.html">🎬 Production guide: cast by grade, music, costumes, sets, rehearsals and family letter</a></li>
+   <li><a href="obra-bosque-magico-cartel-en.html">🖼️ Show poster</a></li>
+   <li><a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">Author's website: obrasteatro.com</a></li>
+  </ul>
+  <p class="permiso">Published on Lumi with the permission of Vicente Cañón Verdasco (October 2026). The text of the play belongs to its author.</p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <nav aria-label="Go to"><ul class="anclas"><li><a href="#reparto">Cast</a></li><li><a href="#escena-1">Scene 1</a></li><li><a href="#escena-2">Scene 2</a></li><li><a href="#escena-3">Scene 3</a></li><li><a href="#escena-4">Scene 4</a></li><li><a href="#escena-5">Scene 5</a></li><li><a href="#escena-6">Scene 6</a></li><li><a href="#escena-7">Scene 7</a></li><li><a href="#escena-8">Scene 8</a></li></ul></nav>
+ <div class="barra" role="group" aria-label="My part:">
+  <label for="mi-papel">My part:</label>
+  <select id="mi-papel"><option value="">All parts</option><option value="NAR">Narrator · 5th &amp; 6th</option><option value="BRUJAS">Witches · 3rd &amp; 4th</option><option value="BRUJOS">Wizards · 3rd &amp; 4th</option><option value="HADAS">Fairies · 1st &amp; 2nd</option><option value="DUENDES">Elves · 1st &amp; 2nd</option><option value="SABIAS">Wise People · 3rd &amp; 4th</option><option value="ALE">Village of Joy · Pre-K &amp; K</option><option value="AMI">Village of Friendship · Pre-K &amp; K</option><option value="GEN">Village of Generosity · Pre-K &amp; K</option></select>
+  <label class="chk"><input type="checkbox" id="solo"> Show only my lines</label>
+  <button type="button" id="menor" aria-label="Smaller text">A−</button>
+  <button type="button" id="mayor" aria-label="Bigger text">A+</button>
+  <button type="button" id="imprimir">🖨️ Print</button>
+ </div>
+ <p>Stage directions (in italics) tell what happens on stage: they are not read aloud. The 🎵 cards show when each music track starts.</p>
+ <details class="seccion acord" id="reparto">
+  <summary><h2 id="t-reparto">Cast</h2></summary>
+  <div class="cuerpo">
+  <p>These are the author's numbers; every group can grow so the whole school takes part, without changing the text. When a part has a number (Villager 1, Wise Person 3...), that line can be said by one child or by a small group.</p>
+  <div class="envoltura-tabla"><table class="tabla">
+   <caption class="sr">Cast</caption>
+   <thead><tr><th scope="col">Part</th><th scope="col">Grade</th><th scope="col">What they are like</th><th scope="col">Lines</th></tr></thead>
+   <tbody>
+<tr><td><span class="punto" style="background:#5B3F8F" aria-hidden="true"></span>Narrator</td><td>5th &amp; 6th</td><td>Tells the story in verse between the scenes. The part can be shared by two to four voices.</td><td>15</td></tr>
+<tr><td><span class="punto" style="background:#6A2C70" aria-hidden="true"></span>Witches</td><td>3rd &amp; 4th</td><td>Envious and funny: they brew the spell and hide behind the bushes.</td><td>19</td></tr>
+<tr><td><span class="punto" style="background:#3B3A6E" aria-hidden="true"></span>Wizards</td><td>3rd &amp; 4th</td><td>Just as envious and funny as the witches; at the end, they ask to be friends.</td><td>18</td></tr>
+<tr><td><span class="punto" style="background:#A02C6B" aria-hidden="true"></span>Fairies</td><td>1st &amp; 2nd</td><td>They arrive from the forest to cheerful music and bring the plan to break the curse.</td><td>9</td></tr>
+<tr><td><span class="punto" style="background:#2F6B2F" aria-hidden="true"></span>Elves</td><td>1st &amp; 2nd</td><td>The fairies' partners: they lead the big nighttime circle dance.</td><td>9</td></tr>
+<tr><td><span class="punto" style="background:#3F5560" aria-hidden="true"></span>Wise People</td><td>3rd &amp; 4th</td><td>The wisest people of the villages: they look for a solution and explain it to everyone.</td><td>12</td></tr>
+<tr><td><span class="punto" style="background:#8A4B00" aria-hidden="true"></span>Village of Joy</td><td>Pre-K &amp; K</td><td>They dance all day, until the curse makes them sad. Yellow T-shirts.</td><td>8</td></tr>
+<tr><td><span class="punto" style="background:#1E5AA0" aria-hidden="true"></span>Village of Friendship</td><td>Pre-K &amp; K</td><td>They play together, until the curse makes them quarrel. Blue T-shirts.</td><td>10</td></tr>
+<tr><td><span class="punto" style="background:#A32420" aria-hidden="true"></span>Village of Generosity</td><td>Pre-K &amp; K</td><td>They share their ice cream, until the curse makes them selfish. Red T-shirts.</td><td>10</td></tr>
+   </tbody>
+  </table></div>
+  <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+  </div>
+ </details>
+<details class="seccion acord" id="escena-1">
+ <summary><h2 id="t-escena-1">Scene 1</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <p class="acot"><span class="sr">Stage direction: </span>(When the curtain opens, we see a set made up of four bushes, with the WITCHES and WIZARDS already hiding behind them. As the NARRATOR comes on stage, the VILLAGERS of the three villages are sitting in front of the stage, facing the audience, in three clearly separate groups that are easy to tell apart by the bright colors of their T-shirts. As the NARRATOR names each village, one by one, its villagers stand up and wave to the audience for a few seconds, then sit back down)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">Once upon a time, there were three villages that lived near a magical forest in perfect harmony:</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">-The Village of Joy, where they danced all day, every girl and every boy.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS of the Village of JOY wave to the audience)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">-The Village of Friendship, where they always worked hand in hand, the friendliest village in all the land.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS of the Village of FRIENDSHIP wave to the audience)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">And last of all, the Village of Generosity, full of warmth and goodness, as kind as can be.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS of the Village of GENEROSITY wave to the audience)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">Everyone who lived there was cheerful and glad,<br> and, of course... they lived the happiest life anyone had.<br> But the witches and wizards who lived in the wood<br> came to the villages at night, up to no good.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS pop their heads out from their hiding place)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">Full of envy, bad energy and spite,<br> they cast a curse so the villages would be unhappy, day and night.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS move to the front of the stage and speak defiantly to the audience)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 1 <small>· The New Order · Aaron Kenny (dark cinematic)</small></p>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Witches</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Angry) This can't be... these villages are far too happy!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Angry) Let's cast a spell to make them angry and sad.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Witches</span><span class="grado">3rd &amp; 4th</span><p class="txt">Yes!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Laughing wickedly) Ha, ha, ha...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 1 <small>· The New Order · Aaron Kenny (dark cinematic)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(They start to brew the spell. One WITCH and one WIZARD bring a big pot or cauldron on stage, and everyone mimes dropping things into it)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Frog drool, slug eyes and... city smog,<br> let happiness vanish... into the fog!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">There! It's done!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Witches</span><span class="grado">3rd &amp; 4th</span><p class="txt">The spell is ready! (Laughing) Ha, ha, ha...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Let's go spread it... now!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 1 <small>· The New Order · Aaron Kenny (dark cinematic)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The same WITCH and WIZARD carry the pot offstage. When they come back, they all form a little “choo-choo train” and go hide, in several groups, behind the bushes of the forest)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-2">
+ <summary><h2 id="t-escena-2">Scene 2</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">The witches and wizards waited, hidden away, for the Village of Joy to come to the forest, so they could cast their curse on them that very same day.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="lugar">(Village of Joy)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 2 <small>· Sand Castle · Quincas Moreira (children's, upbeat)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To the music of track 2, the VILLAGERS of the Village of JOY come on stage and dance a routine that shows joy)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(When the music ends, the WITCHES and WIZARDS come out of hiding and cast their curse on the VILLAGERS of the Village of Joy)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Zip, zap... zip, zap... joy will disappear!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS quickly hide again)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS of the Village of JOY look at one another, very sad)</p>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">Villagers 1 and 2</span><span class="grado">Pre-K &amp; K</span><p class="txt">What happened to us?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villagers 1 and 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">Villagers 3 and 4</span><span class="grado">Pre-K &amp; K</span><p class="txt">We're so sad!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villagers 3 and 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE" style="--c:#8A4B00">
+   <div><span class="quien">All the villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">(Very sad) Oh! Oh!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(To some slightly sad music, the VILLAGERS of the Village of JOY leave the stage very slowly and go back to where they started. They all walk looking down at the floor, very sad)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, sad)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-3">
+ <summary><h2 id="t-escena-3">Scene 3</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">The second village to come to the forest to play was the Village of Friendship... and the witches and wizards were ready to cast their spell on them that day.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Coming out of their hiding place. They laugh very wickedly) Ha, ha, ha! Here comes the Village of Friendship. Ha, ha, ha...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS make a sly “shh” gesture to the audience and hide behind the bushes again)</p>
+  <p class="lugar">(Village of Friendship)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 4 <small>· Rainbow Forest · Quincas Moreira (children's, happy)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To the music, the VILLAGERS of the Village of FRIENDSHIP come on stage, playing and dancing very happily to a routine that shows friendship)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(When the music ends, the WITCHES and WIZARDS come out of hiding and cast their curse on the Village of Friendship)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Zip, zap... zip, zap... friendship will disappear!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS quickly hide again)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS of the Village of FRIENDSHIP look at one another, very sad)</p>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">What happened to us?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Villager 1</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 2) I don't want to be your friend anymore.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Villager 2</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 1) Well... me neither.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 2">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(CHILDREN 1 and 2 stick their tongues out at each other, teasing or angry)</p>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Villager 3</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 4) I don't want to be your friend anymore.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 3">🔊</button>
+  </div>
+  <div class="linea" data-papeles="AMI" style="--c:#1E5AA0">
+   <div><span class="quien">Villager 4</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 3) Well... me neither.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(VILLAGERS 3 and 4 stick their tongues out at each other, teasing and angry)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To some slightly sad music, the VILLAGERS of the Village of FRIENDSHIP leave the stage very slowly and go back to where they started. They all walk looking down at the floor, very sad)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, sad)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-4">
+ <summary><h2 id="t-escena-4">Scene 4</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">The last to come to the forest, spreading kindness all around, was the Village of Generosity, the kindest village to be found.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(They laugh very wickedly) Ha, ha, ha! Here comes the Village of Generosity.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS make a sly “shh” gesture to the audience and hide behind the bushes, for the very last time)</p>
+  <p class="lugar">(Village of Generosity)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 5 <small>· Goat · Wayne Jones (children's, happy)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To the music of track 5, the VILLAGERS of the Village of GENEROSITY come on stage, very happily eating and sharing ice cream to the beat of the music, in a little dance routine)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(When the music ends, the WITCHES and WIZARDS come out of hiding and cast their curse on the Village of Generosity)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Zip, zap... zip, zap... generosity will disappear!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS quickly hide again)</p>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">(Looking at one another, very sad) What happened to us?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Villager 1</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 2) I don't want to give you any ice cream anymore.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 1">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Villager 2</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 1) Well... I won't give you any either.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Villager 3</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 4) I don't want to give you any ice cream anymore.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 3">🔊</button>
+  </div>
+  <div class="linea" data-papeles="GEN" style="--c:#A32420">
+   <div><span class="quien">Villager 4</span><span class="grado">Pre-K &amp; K</span><p class="txt">(To VILLAGER 3) Well... I won't give you any either.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Villager 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(All the VILLAGERS of the Village of GENEROSITY stick their tongues out, teasing and angry)</p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To some slightly sad music, the VILLAGERS of the Village of GENEROSITY leave the stage very slowly and go back to where they started. They all walk looking down at the floor, very sad)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 3 <small>· St. Francis · Josh Lippi &amp; The Overtimers (rock, sad)</small></p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">The witches and wizards came out from where they hid, and they cheered for the victory they had finally won... yes, they did!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS come out of hiding and form the same “choo-choo train” as before to line up at the front of the stage, where once again they look defiantly at the audience, laughing very loudly, sure of their victory. Then they leave on the right side)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(They laugh very wickedly) Ha, ha, ha!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Witches</span><span class="grado">3rd &amp; 4th</span><p class="txt">Back to our cave we go... right now!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Overjoyed) We've put an end to happiness!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(They laugh very wickedly) Ha, ha, ha!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 1 <small>· The New Order · Aaron Kenny (dark cinematic)</small></p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-5">
+ <summary><h2 id="t-escena-5">Scene 5</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">The Villages of Joy, Friendship and Generosity were sad and full of despair, because they had lost their happiness, which was, for them, their most precious treasure. To find a solution, the wisest people met in the forest that day, and now you will see what they had to say.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 6 <small>· Sleeping Sheep · The Green Orbs (children's, calm)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WISE PEOPLE come on stage and walk around, worried, looking for a solution to their problem, which is not easy to find. In despair, they gather in the center of the stage)</p>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 1 and 2</span><span class="grado">3rd &amp; 4th</span><p class="txt">What happened to us?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 1 and 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 3 and 4</span><span class="grado">3rd &amp; 4th</span><p class="txt">How can we bring happiness back to our villages?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 3 and 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WISE PEOPLE shrug their shoulders to show that they cannot find any solution to their big problem)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-6">
+ <summary><h2 id="t-escena-6">Scene 6</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">Then suddenly, from the magical forest, some fairies and elves came near; they hurried up to the wise people of each village and said, for all to hear...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 7 <small>· Kinderszenen, Op. 15, No. 1: “Of Foreign Lands and Peoples” · Robert Schumann (piano)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(To cheerful music, a group of FAIRIES comes in from one side, circles around the WISE PEOPLE and stands on one side of the stage. A little later, a group of ELVES comes in from the other side, also circles around the WISE PEOPLE and stands on the side opposite the FAIRIES)</p>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Elves and Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">We have come to help you.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves and Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 1 and 2</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Very surprised) Oh, fairies!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 1 and 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 3 and 4</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Very surprised) Oh, elves!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 3 and 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">All the Wise People</span><span class="grado">3rd &amp; 4th</span><p class="txt">Wooooow!!!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the Wise People">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">You are under the spell of some wicked witches and wizards.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">All the Wise People</span><span class="grado">3rd &amp; 4th</span><p class="txt">So what can we do?</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the Wise People">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">Tonight we will go to the cave where the witches and wizards live...</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">And while they're asleep, we'll all dance as one.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Elves and Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">And the curse will be undone!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves and Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 1 and 2</span><span class="grado">3rd &amp; 4th</span><p class="txt">Thank you so much!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 1 and 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 3 and 4</span><span class="grado">3rd &amp; 4th</span><p class="txt">That's just what we'll do!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 3 and 4">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The FAIRIES and the ELVES leave the stage, each group the way it came in, always to the same music that played when they entered)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 7 <small>· Kinderszenen, Op. 15, No. 1: “Of Foreign Lands and Peoples” · Robert Schumann (piano)</small></p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">When the wise people of each village heard the fairies and the elves, they were filled with hope, you see, and they ran to tell their neighbors everything, as fast as can be.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS stand up, with their backs to the audience, to listen to their wise people, who have moved to the front of the stage to speak to them)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-7">
+ <summary><h2 id="t-escena-7">Scene 7</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 1 and 2</span><span class="grado">3rd &amp; 4th</span><p class="txt">Listen, listen! Some fairies and elves are coming to help us!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 1 and 2">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">All the villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">Fantastic!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People 3 and 4</span><span class="grado">3rd &amp; 4th</span><p class="txt">We will dance, we will dance, and the curse won't stand a chance!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People 3 and 4">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">All the villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">We will dance, we will dance, and the curse won't stand a chance! Hooray!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">All the Wise People</span><span class="grado">3rd &amp; 4th</span><p class="txt">Now, everybody, go and hide! (They make the usual “shh” gesture, with a finger to their lips) Shhhh!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the Wise People">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The VILLAGERS crouch down and keep quiet. The WISE PEOPLE of each village leave the stage and split into two groups: the first group goes with the FAIRIES, and the second, with the ELVES)</p>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">That night the villagers climbed up to the cave, as quiet as could be, while the witches and the wizards slept so peacefully. Quiet! Because deep inside the forest, eager to break the spell, the fairies and the elves were waiting for them as well.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 8 <small>· Lullaby (Wiegenlied) · Johannes Brahms (lullaby)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS come on stage and lie down to sleep in the center. A little later, the FAIRIES and ELVES tiptoe in and give a signal for the WISE PEOPLE to come in, together with all the VILLAGERS of the three villages, who have also come up onto the stage without making a sound. Together, they all form a big circle around the WITCHES and WIZARDS, who are still asleep)</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+<details class="seccion acord" id="escena-8">
+ <summary><h2 id="t-escena-8">Scene 8</h2></summary>
+ <div class="cuerpo">
+ <div class="acto-h"><span><button type="button" class="oir-esc">🔊 Listen to the scene</button> <button type="button" class="parar">⏹ Stop</button></span></div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">(Asking for silence) Shhhh! Don't make a sound.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">On the count of three, we'll start to dance.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">And that's how the curse will break.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Fairies and Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">Are you ready?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies and Elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">All the villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">Yes!!!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS DUENDES" style="--c:#6B3A5A">
+   <div><span class="quien">Fairies and Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">One, two and... three!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies and Elves">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(All the VILLAGERS of the three villages, the WISE PEOPLE, the FAIRIES and the ELVES start to circle around and dance to break the curse)</p>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 9 <small>· Twirly Tops · The Green Orbs (children's, happy)</small></p>
+  <p class="acot"><span class="sr">Stage direction: </span>(When the music ends, all the VILLAGERS, the WISE PEOPLE, the FAIRIES and the ELVES spread out toward the sides of the stage, turning the circle into a half circle, so the audience can see the WITCHES and WIZARDS, who are starting to wake up)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Waking up. Furious) What are you doing here?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS try to cast a spell with their hands)</p>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Casting their wicked spell) Zaaap!!!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <p class="acot"><span class="sr">Stage direction: </span>(The WITCHES and WIZARDS look at their hands and realize that they have no wicked powers anymore)</p>
+  <div class="linea" data-papeles="BRUJAS" style="--c:#6A2C70">
+   <div><span class="quien">Witches</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Worried) What happened to us?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJOS" style="--c:#3B3A6E">
+   <div><span class="quien">Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Worried) So we're not bad anymore?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="DUENDES" style="--c:#2F6B2F">
+   <div><span class="quien">Elves</span><span class="grado">1st &amp; 2nd</span><p class="txt">No! We have broken the curse.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="HADAS" style="--c:#A02C6B">
+   <div><span class="quien">Fairies</span><span class="grado">1st &amp; 2nd</span><p class="txt">From now on, you will be good.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Fairies">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">(Sweetly, to the VILLAGERS) And can we be your friends?</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN HADAS DUENDES" style="--c:#194F5A">
+   <div><span class="quien">All the villagers, fairies and elves</span><span class="grado">Pre-K to 2nd</span><p class="txt">Of course you can!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers, fairies and elves">🔊</button>
+  </div>
+  <div class="linea" data-papeles="BRUJAS BRUJOS" style="--c:#4E2A5E">
+   <div><span class="quien">Witches and Wizards</span><span class="grado">3rd &amp; 4th</span><p class="txt">Hooray!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Witches and Wizards">🔊</button>
+  </div>
+  <div class="linea" data-papeles="SABIAS" style="--c:#3F5560">
+   <div><span class="quien">Wise People</span><span class="grado">3rd &amp; 4th</span><p class="txt">Hooray!</p></div>
+   <button type="button" class="oir" aria-label="Listen: Wise People">🔊</button>
+  </div>
+  <div class="linea" data-papeles="ALE AMI GEN" style="--c:#194F5A">
+   <div><span class="quien">All the villagers</span><span class="grado">Pre-K &amp; K</span><p class="txt">Let's dance to celebrate our happiness!</p></div>
+   <button type="button" class="oir" aria-label="Listen: All the villagers">🔊</button>
+  </div>
+  <div class="linea" data-papeles="NAR" style="--c:#5B3F8F">
+   <div><span class="quien">Narrator</span><span class="grado">5th &amp; 6th</span><p class="txt">And that is how, with all the positive energy the three villages gathered together, and with the help of the fairies and the elves, they defeated the negativity and the wickedness of those rude, boastful witches and wizards.<br> And they all lived happily ever after.<br> And snip, snap, snout... our play is all played out.</p></div>
+   <button type="button" class="oir" aria-label="Listen: Narrator">🔊</button>
+  </div>
+  <p class="mus"><span aria-hidden="true">🎵 </span>Music: Track 10 <small>· Dancing on Green Grass · The Green Orbs (children's, upbeat)</small></p>
+  <p class="lugar">Curtain</p>
+ <p class="arriba"><a href="#contenido" class="cerrar">↑ Close and back to top</a></p>
+ </div>
+</details>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“El bosque mágico” (The Magical Forest) · A play by Vicente Cañón Verdasco © 2019 · English translation published on Lumi with the author's permission · Free, non-commercial use</p><p><a href="https://www.obrasteatro.com/" target="_blank" rel="noopener noreferrer">www.obrasteatro.com</a></p></div></footer>
+<script>
+(function(){
+  "use strict";
+  var LANG = document.documentElement.lang, VOZ = document.body.getAttribute("data-voz");
+  var sel = document.getElementById("mi-papel"), solo = document.getElementById("solo");
+  function aplicar(){
+    var p = sel.value;
+    document.querySelectorAll(".linea").forEach(function(l){
+      var ms = (l.getAttribute("data-papeles") || "").split(" ");
+      l.classList.toggle("mia", !!p && ms.indexOf(p) >= 0);
+    });
+    document.body.classList.toggle("filtrando", !!p);
+    document.body.classList.toggle("solo", !!p && solo.checked);
+    if(p && solo.checked) document.querySelectorAll("details.acord").forEach(function(d){ if(d.querySelector(".linea.mia")) d.open = true; });
+    try{ localStorage.setItem("bosque-papel", p); }catch(e){}
+  }
+  try{ var g = localStorage.getItem("bosque-papel"); if(g && sel.querySelector('option[value="'+g+'"]')) sel.value = g; }catch(e){}
+  sel.addEventListener("change", aplicar); solo.addEventListener("change", aplicar); aplicar();
+
+  var hay = "speechSynthesis" in window, cola = [];
+  function vozIdioma(){
+    var vs = hay ? speechSynthesis.getVoices() : [];
+    return vs.filter(function(v){ return v.lang === VOZ; })[0] || vs.filter(function(v){ return v.lang.slice(0,2) === LANG; })[0] || null;
+  }
+  function limpiar(){ document.querySelectorAll(".hablando").forEach(function(x){ x.classList.remove("hablando"); }); }
+  function decir(lineas){
+    if(!hay) return;
+    speechSynthesis.cancel(); limpiar(); cola = lineas.slice();
+    (function sig(){
+      var l = cola.shift(); limpiar(); if(!l) return;
+      var txt = l.querySelector(".txt").textContent.replace(/\([^)]*\)/g, " ");
+      var u = new SpeechSynthesisUtterance(txt); u.lang = VOZ; var v = vozIdioma(); if(v) u.voice = v; u.rate = .95;
+      l.classList.add("hablando"); u.onend = sig; u.onerror = function(){ limpiar(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  document.querySelectorAll(".oir").forEach(function(b){ b.addEventListener("click", function(){ decir([b.closest(".linea")]); }); });
+  document.querySelectorAll(".oir-esc").forEach(function(b){ b.addEventListener("click", function(){
+    var ls = [].slice.call(b.closest("details").querySelectorAll(".linea")).filter(function(l){ return getComputedStyle(l).display !== "none"; });
+    decir(ls);
+  }); });
+  document.querySelectorAll(".parar").forEach(function(b){ b.addEventListener("click", function(){ cola = []; if(hay) speechSynthesis.cancel(); limpiar(); }); });
+  if(!hay) document.querySelectorAll(".oir,.oir-esc,.parar").forEach(function(b){ b.hidden = true; });
+
+  var tam = 0, clases = ["", "grande", "muygrande"];
+  function poner(){ document.body.classList.remove("grande","muygrande"); if(clases[tam]) document.body.classList.add(clases[tam]); }
+  document.getElementById("menor").addEventListener("click", function(){ tam = Math.max(0, tam-1); poner(); });
+  document.getElementById("mayor").addEventListener("click", function(){ tam = Math.min(2, tam+1); poner(); });
+  document.getElementById("imprimir").addEventListener("click", function(){ window.print(); });
+  function abrir(id){ var d=document.getElementById(id); if(d && d.tagName==="DETAILS"){ d.open=true; setTimeout(function(){ d.scrollIntoView({block:"start"}); },30); return true; } return false; }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      if(a.classList.contains("cerrar")){ var d=a.closest("details"); if(d) d.open=false; return; }
+      var id=a.getAttribute("href").slice(1); if(abrir(id)){ ev.preventDefault(); history.replaceState(null,"","#"+id); }
+    });
+  });
+  if(location.hash) abrir(location.hash.slice(1));
+  document.querySelectorAll("details.acord").forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(d.open && !window.__imprimiendo) setTimeout(function(){ var c=document.querySelector(".cabecera"); var h=(c && getComputedStyle(c).position==="sticky") ? c.getBoundingClientRect().height : 0; window.scrollTo({top: window.scrollY + d.getBoundingClientRect().top - h - 10, behavior: "instant"}); }, 60);
+    });
+  });
+  window.addEventListener("beforeprint", function(){ window.__imprimiendo=true; document.querySelectorAll("details.acord").forEach(function(d){ d.setAttribute("data-estaba", d.open?"1":""); d.open=true; }); });
+  window.addEventListener("afterprint", function(){ setTimeout(function(){ window.__imprimiendo=false; },500); document.querySelectorAll("details.acord").forEach(function(d){ d.open = d.getAttribute("data-estaba")==="1"; }); });
+})();
+</script>
+</body>
+</html>

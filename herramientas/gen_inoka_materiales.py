@@ -144,7 +144,7 @@ def produccion(L):
    <li><strong>Los nombres, bien dichos.</strong> Inoka, Kaskaskia, Peoria, Tamaroa, Cahokia, Michigamea, miami-illinois. Ver la <a href="obra-inoka-historia-es.html">guía histórica</a>.</li>
   </ol>
   <div class="nota"><strong>Antes de representarla en público</strong>, es una buena cortesía escribir a la tribu Peoria para contarles el proyecto y ofrecerles el guion. Su información de contacto está en <a href="{PEORIA}" target="_blank" rel="noopener noreferrer">peoriatribe.com</a>. Pregúnteles también si están de acuerdo con que los niños hablen en primera persona como líderes Peoria y Kaskaskia.</div>"""),
-("resumen", "En breve", """
+("resumen", "De un vistazo", """
   <ul>
    <li><strong>De qué trata:</strong> la pradera y los ríos de Illinois, las aldeas Inoka y su forma de vivir: el cultivo del maíz, el frijol y la calabaza, las casas de esteras, el comercio por los ríos y el consejo que decide por acuerdo. Termina en el presente, con la tribu Peoria de Oklahoma y su lengua, que vuelve.</li>
    <li><strong>Duración:</strong> de 20 a 25 minutos, con las dos canciones.</li>
@@ -312,7 +312,7 @@ def produccion(L):
    </div>
   </div>"""),
         ]
-        nav = [("respeto","Respeto cultural"),("resumen","En breve"),("imagenes","Imágenes"),("reparto","Reparto"),("trabajos","Trabajos para no actores"),("musica","Música y canciones"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano"),("ensayos","Ensayos"),("carta","Carta a las familias")]
+        nav = [("respeto","Respeto cultural"),("resumen","De un vistazo"),("imagenes","Imágenes"),("reparto","Reparto"),("trabajos","Trabajos para no actores"),("musica","Música y canciones"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano"),("ensayos","Ensayos"),("carta","Carta a las familias")]
         herr = '<button type="button" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button><a href="#carta">✉️ Carta a las familias</a><a href="obra-inoka-programa-es.html">📄 Programa de mano</a><a href="obra-inoka-cartel-es.html">🖼️ Cartel</a><a href="obra-inoka-historia-es.html">📜 Guía histórica</a>'
         return guia(L, "obra-inoka-produccion-es.html", "obra-inoka-produccion-en.html", "Inoka · Producción", "Inoka · Producción",
                     "Todo lo que hace falta para montarla con toda la escuela, con respeto por el pueblo que representa.", herr, nav, sec,
@@ -509,7 +509,7 @@ def produccion(L):
 def historia(L):
     if L == "es":
         sec = [
-("breve", "En breve", """
+("breve", "De un vistazo", """
   <ul>
    <li><strong>Quiénes:</strong> los Inoka, que los franceses llamaron «Illinois». Eran una confederación de unas doce tribus o aldeas aliadas, entre ellas los Kaskaskia, los Peoria, los Cahokia, los Tamaroa y, desde hacia 1700, parte de los Michigamea.</li>
    <li><strong>Dónde:</strong> las praderas y los valles de los ríos Illinois y Mississippi, en lo que hoy es Illinois y en zonas vecinas.</li>
@@ -601,7 +601,7 @@ def historia(L):
    <li><a href="https://wikiwand.com/en/articles/Illinois_Confederacy" target="_blank" rel="noopener noreferrer">Illinois Confederation (resumen enciclopédico)</a></li>
   </ul>"""),
         ]
-        nav = [("breve","En breve"),("nombre","El nombre"),("linea","Línea de tiempo"),("vida","La vida en las aldeas"),("gobierno","Gobierno y calumet"),("mitos","Mitos y hechos"),("hoy","La tribu Peoria hoy"),("vocabulario","Vocabulario"),("actividades","Actividades por grado"),("respeto","Hablar con respeto"),("fuentes","Fuentes")]
+        nav = [("breve","De un vistazo"),("nombre","El nombre"),("linea","Línea de tiempo"),("vida","La vida en las aldeas"),("gobierno","Gobierno y calumet"),("mitos","Mitos y hechos"),("hoy","La tribu Peoria hoy"),("vocabulario","Vocabulario"),("actividades","Actividades por grado"),("respeto","Hablar con respeto"),("fuentes","Fuentes")]
         herr = '<button type="button" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button><a href="obra-inoka-produccion-es.html">🎬 Guía de producción</a>'
         return guia(L, "obra-inoka-historia-es.html", "obra-inoka-historia-en.html", "Inoka · Guía histórica", "Inoka · Guía histórica para el docente",
                     "Quiénes eran los Inoka, cómo vivían, qué pasó después y quiénes son hoy, con mitos y hechos y actividades por grado.", herr, nav, sec,

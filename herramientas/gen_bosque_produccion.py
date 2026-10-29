@@ -120,7 +120,7 @@ ES = dict(
    <li><span class="casilla"></span>Las familias firmaron el permiso para las fotos (ver la <a href="#carta">carta</a>).</li>
    <li><span class="casilla"></span>Después de la función, se envían al autor fotos, enlaces a los videos y el cartel.</li>
   </ul>"""),
-("resumen", "En breve", """
+("resumen", "De un vistazo", """
   <ul>
    <li><strong>De qué trata:</strong> cerca de un bosque mágico viven tres pueblos felices: el de la Alegría, el de la Amistad y el de la Generosidad. Las brujas y los brujos, envidiosos, les lanzan un maleficio y les quitan la felicidad. Las personas sabias no saben qué hacer, hasta que unas hadas y unos duendes traen un plan: de noche, mientras las brujas y los brujos duermen, todos bailarán juntos en círculo a su alrededor. El baile rompe el maleficio, y las brujas y los brujos piden ser amigos de todos.</li>
    <li><strong>Valores:</strong> la alegría, la amistad y la generosidad, y sus contrarios: la tristeza, la enemistad y el egoísmo. Que los problemas se resuelven juntos, y que quien se equivoca puede cambiar.</li>
@@ -387,7 +387,7 @@ ES = dict(
   </div>"""),
  ],
 )
-ES_NAV = [("autor","El autor"),("resumen","En breve"),("imagenes","Imágenes y video"),("reparto","Reparto por grados"),("escenas","Escena por escena"),("trabajos","Trabajos para no actores"),("musica","Música y canción"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano del escenario"),("ensayos","Ensayos"),("clase","En clase"),("carta","Carta a las familias")]
+ES_NAV = [("autor","El autor"),("resumen","De un vistazo"),("imagenes","Imágenes y video"),("reparto","Reparto por grados"),("escenas","Escena por escena"),("trabajos","Trabajos para no actores"),("musica","Música y canción"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano del escenario"),("ensayos","Ensayos"),("clase","En clase"),("carta","Carta a las familias")]
 
 # ======================================================================= ENGLISH
 EN = dict(

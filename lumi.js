@@ -36,7 +36,7 @@
       cuentosIndice: "index.html",
       errorCuentos: "No se pudieron cargar los cuentos en este momento.",
       cifras: ["actividades", "grados con material", "materias"],
-      teatro: { pronto: "En preparación", listo: "Lista", idiomas: "En español y en inglés",
+      teatro: { cartel: "Ver el cartel de la obra: ", pronto: "En preparación", listo: "Lista", idiomas: "En español y en inglés",
                 guionEs: "Guion en español", guionEn: "Guion en inglés", guia: "Guía de producción", historia: "Guía histórica para el docente", soloEs: "",
                 traera: "Lo que traerá: guion, tarjetas de personajes, vestuario, escenarios y guía para el docente." }
     },
@@ -58,7 +58,7 @@
       cuentosIndice: "index-en.html",
       errorCuentos: "The stories could not be loaded right now.",
       cifras: ["activities", "grades with materials", "subjects"],
-      teatro: { pronto: "In preparation", listo: "Ready", idiomas: "In English and Spanish",
+      teatro: { cartel: "See the poster for the play: ", pronto: "In preparation", listo: "Ready", idiomas: "In English and Spanish",
                 guionEs: "Script in Spanish", guionEn: "Script in English", guia: "Production guide", historia: "Historical guide for teachers", soloEs: " (in Spanish)",
                 traera: "Coming: script, character cards, costumes, sets and a teacher guide." }
     }
@@ -263,7 +263,13 @@
     var t = T.teatro;
     cont.innerHTML = (DATOS.obras || []).map(function (o) {
       var v = o[L] || o[OTRO], lista = o.estado !== "pronto";
-      var html = '<article class="serie obra" id="obra-' + esc(o.id) + '">' +
+      var html = '<article class="serie obra" id="obra-' + esc(o.id) + '">';
+      if (o.img) {
+        var foto = '<img src="' + esc(o.img) + '" alt="' + esc(t.cartel + v.titulo) + '" width="640" height="480" loading="lazy">';
+        html += o.cartel ? '<a class="miniatura" href="' + esc(o.cartel + "-" + L + ".html") + '">' + foto + "</a>"
+                         : '<span class="miniatura">' + foto.replace(/alt="[^"]*"/, 'alt=""') + "</span>";
+      }
+      html +=
         '<span class="tipo">' + esc(lista ? t.listo : t.pronto) + "</span>" +
         "<h3" + (o[L] ? "" : ' lang="' + OTRO + '"') + ">" + esc(v.titulo) + "</h3>" +
         '<p class="otro-titulo" lang="' + OTRO + '">' + esc(o[OTRO].titulo) + "</p>" +

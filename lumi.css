@@ -133,6 +133,11 @@ details li{margin:.25rem 0}
 /* ---------- teatro ---------- */
 .portada .figura.actor img{width:60%}
 .obras{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.obra .miniatura{display:block;margin:-1rem -1.1rem .3rem;border-radius:14px 14px 0 0;overflow:hidden;line-height:0}
+.obra .miniatura img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .3s}
+.obra a.miniatura:hover img{transform:scale(1.04)}
+.obra a.miniatura:focus-visible{outline:4px solid var(--pet);outline-offset:-4px}
+@media (prefers-reduced-motion:reduce){.obra .miniatura img{transition:none}.obra a.miniatura:hover img{transform:none}}
 .obra h3{font-size:1.3rem}
 .obra .otro-titulo{margin:-.3rem 0 0;font-style:italic}
 .obra p{margin:0}

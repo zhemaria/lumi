@@ -707,10 +707,72 @@ def traduccion():
 </html>
 '''
 
+# Mientras el autor revisa la traducción, obra-bosque-magico-en.html es un aviso
+# de «próximamente». Cuando la apruebe, cambiar a True y volver a generar.
+EN_PUBLICADO = False
+
+def aviso_en():
+    return f'''<!doctype html>
+<!-- «El bosque mágico» · Obra de {AUTOR} © 2019 · El guion en inglés se publicará cuando el autor apruebe la traducción. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El bosque mágico (The Magical Forest) · Lumi</title>
+<meta name="author" content="{AUTOR}">
+<link rel="alternate" hreflang="es" href="obra-bosque-magico-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lumi.css?v=6">
+<style>
+.obra-cab{{background:var(--cie);padding:1.4rem 0}}
+.obra-cab h1{{font-size:clamp(1.8rem,4.5vw,2.6rem)}}
+.aviso-en{{background:#FFF6DF;border-left:6px solid var(--ama);border-radius:10px;padding:1rem 1.2rem;margin:1.2rem 0}}
+.enlaces-obra{{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 0;padding:0;list-style:none}}
+.enlaces-obra a{{display:inline-flex;align-items:center;min-height:44px;padding:.3rem 1rem;border-radius:999px;border:2px solid var(--pet);background:#fff;color:var(--pet);font-weight:700;text-decoration:none}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html" aria-current="page">Theater</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><a href="obra-bosque-magico-es.html" lang="es" hreflang="es">Español</a><span aria-current="true">English</span></div>
+ </div>
+</header>
+<section class="obra-cab" aria-labelledby="titulo">
+ <div class="envoltura">
+  <p style="margin:0"><a href="teatro.html">← Lumi Theater</a></p>
+  <h1 id="titulo"><span lang="es">El bosque mágico</span> (The Magical Forest)</h1>
+  <p style="font-weight:700;font-size:1.15rem;margin:.3rem 0 0">A play by {AUTOR}</p>
+ </div>
+</section>
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <div class="aviso-en">
+  <p style="margin:0"><strong>English script: coming soon.</strong> The English translation is being reviewed by the author, {AUTOR}. It will be published here as soon as he approves it.</p>
+ </div>
+ <p>Meanwhile, you can already use:</p>
+ <ul class="enlaces-obra">
+  <li><a href="obra-bosque-magico-es.html" lang="es" hreflang="es">Script in Spanish</a></li>
+  <li><a href="obra-bosque-magico-produccion-en.html">🎬 Production guide</a></li>
+  <li><a href="obra-bosque-magico-cartel-en.html">🖼️ Show poster</a></li>
+  <li><a href="{WEB_AUTOR}" target="_blank" rel="noopener noreferrer">Author's website: obrasteatro.com</a></li>
+ </ul>
+</div></main>
+<footer class="pie"><div class="envoltura"><p>“El bosque mágico” (The Magical Forest) · A play by {AUTOR} © 2019 · Published on Lumi with the author's permission</p><p><a href="{WEB_AUTOR}" target="_blank" rel="noopener noreferrer">www.obrasteatro.com</a></p></div></footer>
+</body>
+</html>
+'''
+
 if __name__ == "__main__":
     for L in ("es", "en"):
         with open(os.path.join(AQUI, f"obra-bosque-magico-{L}.html"), "w", encoding="utf-8") as f:
-            f.write(pagina(L))
+            f.write(pagina(L) if (L == "es" or EN_PUBLICADO or "--completo" in sys.argv) else aviso_en())
     if "--traduccion" in sys.argv:
         destino = sys.argv[sys.argv.index("--traduccion") + 1] if len(sys.argv) > sys.argv.index("--traduccion") + 1 else AQUI
         with open(os.path.join(destino, "El-bosque-magico-traduccion-ingles.html"), "w", encoding="utf-8") as f:

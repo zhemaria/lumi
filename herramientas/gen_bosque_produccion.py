@@ -197,7 +197,7 @@ ES = dict(
    <li><h3>🎟️ Recepción</h3><span class="chip">4.º a 6.º · 2 a 4 niños</span><p>Reciben a las familias, reparten programas y ayudan a encontrar asiento.</p></li>
    <li><h3>📸 Fotografía y video</h3><span class="chip">6.º, con un adulto</span><p>Graban solo a los niños cuyas familias dieron permiso. Esas fotos y videos son los que se envían al autor.</p></li>
   </ul>"""),
-("musica", "Música", """
+("musica", "Música y canción final", """
   <p>El autor propone esta lista, que es opcional. Casi todas las piezas son de la <strong>Biblioteca de audio de YouTube</strong>, de uso libre (música infantil y alegre). <strong>El autor ofrece enviarlas en mp3</strong> a quien se lo pida, por correo: ver <a href="#autor">el autor</a>.</p>
   <div class="envoltura-tabla">
   <table class="tabla">
@@ -217,7 +217,11 @@ ES = dict(
    </tbody>
   </table>
   </div>
-  <div class="nota"><strong>Pistas 7 y 8:</strong> Schumann y Brahms son de dominio público, pero no todas las grabaciones lo son. El autor sugiere la versión de Vladimir Horowitz; para publicar videos de la función, conviene usar grabaciones libres, como las de <a href="https://musopen.org/" target="_blank" rel="noopener noreferrer">Musopen</a>, o pedirle las pistas al autor.</div>"""),
+  <div class="nota"><strong>Pistas 7 y 8:</strong> Schumann y Brahms son de dominio público, pero no todas las grabaciones lo son. El autor sugiere la versión de Vladimir Horowitz; para publicar videos de la función, conviene usar grabaciones libres, como las de <a href="https://musopen.org/" target="_blank" rel="noopener noreferrer">Musopen</a>, o pedirle las pistas al autor.</div>
+  <h3>Canción final: «A bailar en el bosque»</h3>
+  <p>Una canción de Lumi para cerrar la obra, compuesta a partir de sus ideas: la alegría, la amistad, la generosidad, el helado compartido y el hechizo roto. <strong>No forma parte del texto del autor</strong>; Vicente Cañón la conoce y le pareció «una genial idea para darle un colofón final a la obra». Va después de la última narración, con todo el elenco en corro. Cada verso se canta dos veces, para que los más pequeños lo repitan.</p>
+  <video class="guia" controls preload="none" poster="bm-cancion-portada.jpg" width="1024" height="1024" style="max-width:520px"><source src="bm-cancion.mp4" type="video/mp4"><track kind="captions" src="bm-cancion-es.vtt" srclang="es" label="Español" default>Su navegador no puede mostrar el video. <a href="bm-cancion.mp4">Descargar la canción</a>.</video>
+  <details style="margin:.6rem 0"><summary><strong>Letra</strong></summary><p style="font-size:1.1rem;line-height:1.7">En el bosque de la magia,<br>todos juntos a bailar.<br>La tristeza se marchó,<br>¡la alegría ya llegó!<br><br>Compartimos el helado,<br>damos saltos de ilusión;<br>si jugamos como amigos,<br>se ilumina el corazón.<br><br>En el bosque de la magia,<br>hadas, duendes y los sabios<br>el hechizo rompen ya;<br>brujas y brujos sonrientes<br>¡cantan con nosotros hoy!<br><br>¿Quién comparte su bondad?<br>¡Generosidad!<br>¿Quién nos une de verdad?<br>¡La amistad!<br>¿Y qué canta el bosque entero?<br>¡Felicidad!<br>¡Uno, dos y tres: a sonreír!</p></details>"""),
 ("entradas", "Hoja de entradas (sonido y luces)", """
   <p>Para el equipo técnico. Cada «entrada» es un cambio: se hace cuando ocurre lo que dice la columna «Señal». Las luces son una sugerencia de Lumi; la obra se puede hacer con la luz del salón.</p>
   <div class="envoltura-tabla">
@@ -243,7 +247,8 @@ ES = dict(
     <tr><td>16</td><td>7</td><td>Termina la narración</td><td>Pista 8: la nana, mientras todos entran de puntillas</td><td>Noche</td></tr>
     <tr><td>17</td><td>8</td><td>«A la una, a las dos y a las… ¡tres!»</td><td>Pista 9: el gran baile en círculo</td><td>Noche, con luz en el centro</td></tr>
     <tr><td>18</td><td>8</td><td>«¡Claro que sí!»</td><td>—</td><td>Vuelve la luz de día</td></tr>
-    <tr><td>19</td><td>8</td><td>«…esta obra de teatro se ha acabado»</td><td>Pista 10: baile final y reverencia</td><td>Luz general; al final, se cierra el telón</td></tr>
+    <tr><td>19</td><td>8</td><td>«…esta obra de teatro se ha acabado»</td><td>Pista 10: baile final y reverencia</td><td>Luz general</td></tr>
+    <tr><td>20</td><td>Final</td><td>Termina la reverencia; todos en corro</td><td>Canción «A bailar en el bosque»: todos cantan y bailan</td><td>Luz general; al final, se cierra el telón</td></tr>
    </tbody>
   </table>
   </div>"""),
@@ -326,6 +331,7 @@ ES = dict(
    <li><strong>1.º y 2.º:</strong> la entrada con música, las frases en coro («Hemos venido a ayudaros», «A la de tres, empezaremos a bailar») y el baile en corro.</li>
    <li><strong>3.º y 4.º:</strong> las brujas y los brujos, la mímica del caldero, el conjuro y el «trenecito»; las personas sabias, la caminata preocupada y su diálogo.</li>
    <li><strong>5.º y 6.º:</strong> los versos de la narración, con calma y voz clara, y el equipo técnico con la hoja de entradas.</li>
+   <li><strong>Todos:</strong> la canción final, «A bailar en el bosque», en corro.</li>
   </ul>
   <h3>Semanas 4 y 5: por bloques</h3>
   <ul>
@@ -381,7 +387,7 @@ ES = dict(
   </div>"""),
  ],
 )
-ES_NAV = [("autor","El autor"),("resumen","En breve"),("imagenes","Imágenes y video"),("reparto","Reparto por grados"),("escenas","Escena por escena"),("trabajos","Trabajos para no actores"),("musica","Música"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano del escenario"),("ensayos","Ensayos"),("clase","En clase"),("carta","Carta a las familias")]
+ES_NAV = [("autor","El autor"),("resumen","En breve"),("imagenes","Imágenes y video"),("reparto","Reparto por grados"),("escenas","Escena por escena"),("trabajos","Trabajos para no actores"),("musica","Música y canción"),("entradas","Hoja de entradas"),("vestuario","Vestuario"),("cotejo","Lista de cotejo"),("escenografia","Escenografía"),("plano","Plano del escenario"),("ensayos","Ensayos"),("clase","En clase"),("carta","Carta a las familias")]
 
 # ======================================================================= ENGLISH
 EN = dict(
@@ -495,7 +501,7 @@ EN = dict(
    <li><h3>🎟️ Front of house</h3><span class="chip">4th to 6th · 2 to 4 children</span><p>They greet families, hand out programs and help people find a seat.</p></li>
    <li><h3>📸 Photos and video</h3><span class="chip">6th, with an adult</span><p>They film only the children whose families gave permission. These are the photos and videos sent to the author.</p></li>
   </ul>"""),
-("musica", "Music", """
+("musica", "Music and closing song", """
   <p>The author suggests this list, which is optional. Almost all the pieces come from the <strong>YouTube Audio Library</strong> and are free to use (happy music for children). <strong>The author offers to send them as mp3 files</strong> to anyone who asks, by email: see <a href="#autor">the author</a>.</p>
   <div class="envoltura-tabla">
   <table class="tabla">
@@ -515,7 +521,11 @@ EN = dict(
    </tbody>
   </table>
   </div>
-  <div class="nota"><strong>Tracks 7 and 8:</strong> Schumann's and Brahms's music is in the public domain, but not every recording is. The author suggests Vladimir Horowitz's recording; if you plan to post videos of the show, use free recordings, such as those from <a href="https://musopen.org/" target="_blank" rel="noopener noreferrer">Musopen</a>, or ask the author for the tracks.</div>"""),
+  <div class="nota"><strong>Tracks 7 and 8:</strong> Schumann's and Brahms's music is in the public domain, but not every recording is. The author suggests Vladimir Horowitz's recording; if you plan to post videos of the show, use free recordings, such as those from <a href="https://musopen.org/" target="_blank" rel="noopener noreferrer">Musopen</a>, or ask the author for the tracks.</div>
+  <h3>Closing song: “A bailar en el bosque” (Let's Dance in the Forest)</h3>
+  <p>A Lumi song to close the play, written from its ideas: joy, friendship, generosity, the shared ice cream and the broken spell. <strong>It is not part of the author's text</strong>; Vicente Cañón has heard it and called it “a great idea to give the play a final flourish”. It comes after the last narration, with the whole cast in a circle. Each line is sung twice, so the little ones can repeat it. The song is in Spanish.</p>
+  <video class="guia" controls preload="none" poster="bm-cancion-portada.jpg" width="1024" height="1024" style="max-width:520px" lang="es"><source src="bm-cancion.mp4" type="video/mp4"><track kind="captions" src="bm-cancion-es.vtt" srclang="es" label="Español" default>Your browser cannot play this video. <a href="bm-cancion.mp4">Download the song</a>.</video>
+  <details style="margin:.6rem 0"><summary><strong>Lyrics (in Spanish)</strong></summary><p lang="es" style="font-size:1.1rem;line-height:1.7">En el bosque de la magia,<br>todos juntos a bailar.<br>La tristeza se marchó,<br>¡la alegría ya llegó!<br><br>Compartimos el helado,<br>damos saltos de ilusión;<br>si jugamos como amigos,<br>se ilumina el corazón.<br><br>En el bosque de la magia,<br>hadas, duendes y los sabios<br>el hechizo rompen ya;<br>brujas y brujos sonrientes<br>¡cantan con nosotros hoy!<br><br>¿Quién comparte su bondad?<br>¡Generosidad!<br>¿Quién nos une de verdad?<br>¡La amistad!<br>¿Y qué canta el bosque entero?<br>¡Felicidad!<br>¡Uno, dos y tres: a sonreír!</p></details>"""),
 ("entradas", "Cue sheet (sound and lights)", """
   <p>For the tech crew. Each “cue” is a change: it happens when the event in the “Signal” column takes place. The lights are Lumi's suggestion; the play also works with ordinary room lighting.</p>
   <div class="envoltura-tabla">
@@ -541,7 +551,8 @@ EN = dict(
     <tr><td>16</td><td>7</td><td>The narration ends</td><td>Track 8: the lullaby, while everyone tiptoes in</td><td>Night</td></tr>
     <tr><td>17</td><td>8</td><td>“One, two and... three!”</td><td>Track 9: the big circle dance</td><td>Night, with a light in the center</td></tr>
     <tr><td>18</td><td>8</td><td>“Of course you can!”</td><td>—</td><td>Daylight returns</td></tr>
-    <tr><td>19</td><td>8</td><td>“...our play is all played out.”</td><td>Track 10: final dance and bows</td><td>Full light; at the end, the curtain closes</td></tr>
+    <tr><td>19</td><td>8</td><td>“...our play is all played out.”</td><td>Track 10: final dance and bows</td><td>Full light</td></tr>
+    <tr><td>20</td><td>End</td><td>The bows end; everyone in a circle</td><td>Song “A bailar en el bosque”: everyone sings and dances</td><td>Full light; at the end, the curtain closes</td></tr>
    </tbody>
   </table>
   </div>"""),
@@ -624,6 +635,7 @@ EN = dict(
    <li><strong>1st and 2nd:</strong> the entrance with music, the lines said together (“We have come to help you”, “On the count of three, we'll start to dance”) and the circle dance.</li>
    <li><strong>3rd and 4th:</strong> the witches and wizards: the cauldron mime, the spell and the “choo-choo train”; the wise people: the worried walk and their dialogue.</li>
    <li><strong>5th and 6th:</strong> the narrator's verses, calmly and in a clear voice, and the tech crew with the cue sheet.</li>
+   <li><strong>Everyone:</strong> the closing song, “A bailar en el bosque”, in a circle.</li>
   </ul>
   <h3>Weeks 4 and 5: in blocks</h3>
   <ul>
@@ -679,7 +691,7 @@ EN = dict(
   </div>"""),
  ],
 )
-EN_NAV = [("autor","The author"),("resumen","At a glance"),("imagenes","Pictures and video"),("reparto","Cast by grade"),("escenas","Scene by scene"),("trabajos","Jobs for non-actors"),("musica","Music"),("entradas","Cue sheet"),("vestuario","Costumes"),("cotejo","Checklist"),("escenografia","Sets"),("plano","Stage plan"),("ensayos","Rehearsals"),("clase","In the classroom"),("carta","Family letter")]
+EN_NAV = [("autor","The author"),("resumen","At a glance"),("imagenes","Pictures and video"),("reparto","Cast by grade"),("escenas","Scene by scene"),("trabajos","Jobs for non-actors"),("musica","Music and song"),("entradas","Cue sheet"),("vestuario","Costumes"),("cotejo","Checklist"),("escenografia","Sets"),("plano","Stage plan"),("ensayos","Rehearsals"),("clase","In the classroom"),("carta","Family letter")]
 
 
 def guia(D, NAV):

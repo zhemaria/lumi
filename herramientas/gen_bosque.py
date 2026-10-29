@@ -508,7 +508,8 @@ def pagina(L):
     filas = "\n".join(
         f'<tr><td><span class="punto" style="background:{PAPELES[p][0]}" aria-hidden="true"></span>{e(nombre(p,L))}</td><td>{e(grado(p,L))}</td><td>{e(PAPELES[p][5 if L=="es" else 6])}</td><td>{c[p]}</td></tr>'
         for p in BASE)
-    opciones = "".join(f'<option value="{p}">{e(nombre(p,L))} · {e(grado(p,L))}</option>' for p in BASE)
+    corto = lambda g: g.replace("Prekínder y kínder", "Prek. y kínder")
+    opciones = "".join(f'<option value="{p}">{e(nombre(p,L))} · {e(corto(grado(p,L)))}</option>' for p in BASE)
     escenas = []
     for eid, tes, ten, items in ESCENAS:
         cuerpo = []
@@ -580,11 +581,9 @@ def pagina(L):
   <p class="sub">{e(t["sub"])}</p>
   <p class="autor">{e(t["autor"])}</p>{trad}
   <p>{e(t["intro"])}</p>
-  <ul class="enlaces-obra">
-   <li><a href="{t["guia"]}">{e(t["prod"])}</a></li>
-   <li><a href="{t["cartel_url"]}">{e(t["cartel"])}</a></li>
-   <li><a href="{WEB_AUTOR}" target="_blank" rel="noopener noreferrer">{e(t["web"])}: obrasteatro.com</a></li>
-  </ul>
+  <p><a href="{t["guia"]}">{e(t["prod"])}</a></p>
+  <p><a href="{t["cartel_url"]}">{e(t["cartel"])}</a></p>
+  <p><a href="{WEB_AUTOR}" target="_blank" rel="noopener noreferrer">🌐 {e(t["web"])}: www.obrasteatro.com</a></p>
   <p class="permiso">{e(t["permiso"])}</p>
  </div>
 </section>

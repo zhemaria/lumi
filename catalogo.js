@@ -53,7 +53,7 @@ window.LUMI = {
      (el guion en cada idioma) y guia (la guía para el docente). */
   obras: [
     { id: "bosque-magico", estado: "lista", img: "bm-miniatura.jpg", cartel: "obra-bosque-magico-cartel",
-      es_url: "obra-bosque-magico-es.html", guia: "obra-bosque-magico-produccion-es.html", guia_en: "obra-bosque-magico-produccion-en.html",
+      es_url: "obra-bosque-magico-es.html", guia: "obra-bosque-magico-produccion-es.html", guia_en: "obra-bosque-magico-produccion-en.html", historia: "obra-bosque-magico-historia-es.html", historia_en: "obra-bosque-magico-historia-en.html",
       es: { titulo: "El bosque mágico", desc: "Obra de Vicente Cañón Verdasco, publicada con su autorización. Tres pueblos pierden su alegría, su amistad y su generosidad por un maleficio, y las recuperan bailando juntos. Con papeles para todos los grados, de prekínder a 6.º, y una canción.", nota: "Guion en inglés: cuando el autor apruebe la traducción" },
       en: { titulo: "The Magical Forest", desc: "A play by Vicente Cañón Verdasco, shared with his permission. Three villages lose their joy, friendship and generosity to a curse, and win them back by dancing together. With parts for every grade, Pre-K to 6th, and a song.", nota: "English script: once the author approves the translation" } },
     { id: "fenix-lago", estado: "lista", img: "fenix-miniatura.jpg", cartel: "obra-fenix-lago-cartel",

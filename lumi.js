@@ -274,7 +274,7 @@
         "<h3" + (o[L] ? "" : ' lang="' + OTRO + '"') + ">" + esc(v.titulo) + "</h3>" +
         '<p class="otro-titulo" lang="' + OTRO + '">' + esc(o[OTRO].titulo) + "</p>" +
         "<p>" + esc(v.desc) + "</p>" +
-        '<p class="aviso">' + esc(t.idiomas) + "</p>";
+        '<p class="aviso">' + esc(v.nota || t.idiomas) + "</p>";
       if (lista) {
         var enl = [];
         if (o.es_url) enl.push('<li><a href="' + esc(o.es_url) + '" lang="es">' + esc(t.guionEs) + "</a></li>");

@@ -141,6 +141,8 @@ details li{margin:.25rem 0}
 .obra h3{font-size:1.3rem}
 .obra .otro-titulo{margin:-.3rem 0 0;font-style:italic}
 .obra p{margin:0}
+.obra .aviso{margin-top:auto}  /* aviso y enlaces abajo: alineados en las tres tarjetas */
+.obra ul{margin:0}
 .obra .nota-obra{font-size:.95rem;border-top:1px solid var(--borde);padding-top:.5rem}
 .pasos{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;list-style:none;margin:0;padding:0}
 .pasos li{background:var(--cie);border-radius:16px;padding:1rem 1.1rem}

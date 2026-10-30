@@ -54,16 +54,16 @@ window.LUMI = {
   obras: [
     { id: "bosque-magico", estado: "lista", img: "bm-miniatura.jpg", cartel: "obra-bosque-magico-cartel",
       es_url: "obra-bosque-magico-es.html", guia: "obra-bosque-magico-produccion-es.html", guia_en: "obra-bosque-magico-produccion-en.html",
-      es: { titulo: "El bosque mágico", desc: "Obra de Vicente Cañón Verdasco, publicada en Lumi con su autorización. Tres pueblos pierden su alegría, su amistad y su generosidad por un maleficio, y las recuperan bailando todos juntos. Con papeles para todos los grados, de prekínder a 6.º. El guion en inglés se publicará cuando el autor apruebe la traducción." },
-      en: { titulo: "El bosque mágico (The Magical Forest)", desc: "A play by Vicente Cañón Verdasco, published on Lumi with his permission. Three villages lose their joy, friendship and generosity to a curse, and win them back by dancing all together. With parts for every grade, Pre-K to 6th. English script: coming soon, once the author approves the translation." } },
+      es: { titulo: "El bosque mágico", desc: "Obra de Vicente Cañón Verdasco, publicada con su autorización. Tres pueblos pierden su alegría, su amistad y su generosidad por un maleficio, y las recuperan bailando juntos. Con papeles para todos los grados, de prekínder a 6.º, y una canción.", nota: "Guion en inglés: cuando el autor apruebe la traducción" },
+      en: { titulo: "The Magical Forest", desc: "A play by Vicente Cañón Verdasco, shared with his permission. Three villages lose their joy, friendship and generosity to a curse, and win them back by dancing together. With parts for every grade, Pre-K to 6th, and a song.", nota: "English script: once the author approves the translation" } },
     { id: "fenix-lago", estado: "lista", img: "fenix-miniatura.jpg", cartel: "obra-fenix-lago-cartel",
       es_url: "obra-fenix-lago-es.html", en_url: "obra-fenix-lago-en.html", guia: "obra-fenix-lago-produccion-es.html", historia: "obra-fenix-lago-historia-es.html", guia_en: "obra-fenix-lago-produccion-en.html", historia_en: "obra-fenix-lago-historia-en.html",
-      es: { titulo: "El Fénix sobre el Lago", desc: "Obra de José M. Fernández. El Gran Incendio de Chicago de 1871 y cómo la ciudad volvió a levantarse, con papeles para todos los grados, de prekínder a 6.º." },
-      en: { titulo: "The Phoenix on the Lake", desc: "A play by José M. Fernández. The Great Chicago Fire of 1871 and how the city rose again, with parts for every grade, Pre-K to 6th." } },
+      es: { titulo: "El Fénix sobre el Lago", desc: "Obra de José M. Fernández. El Gran Incendio de Chicago de 1871 y cómo la ciudad renació de sus cenizas, con la valentía de sus vecinos. Con papeles para todos los grados, de prekínder a 6.º, y canciones." },
+      en: { titulo: "The Phoenix on the Lake", desc: "A play by José M. Fernández. The Great Chicago Fire of 1871 and how the city rose from its ashes, thanks to the courage of its people. With parts for every grade, Pre-K to 6th, and songs." } },
     { id: "inoka", estado: "lista", img: "inoka-miniatura.jpg", cartel: "obra-inoka-cartel",
       es_url: "obra-inoka-es.html", en_url: "obra-inoka-en.html", guia: "obra-inoka-produccion-es.html", guia_en: "obra-inoka-produccion-en.html", historia: "obra-inoka-historia-es.html", historia_en: "obra-inoka-historia-en.html",
-      es: { titulo: "Inoka: El aliento de la pradera y la gente de Illinois", desc: "Obra de José M. Fernández. Los Inoka, el pueblo de las praderas y los ríos de Illinois, y sus descendientes de hoy, la tribu Peoria de Oklahoma. Con papeles para todos los grados, de prekínder a 6.º, y dos canciones." },
-      en: { titulo: "Inoka: The Breath of the Prairie and the People of Illinois", desc: "A play by José M. Fernández. The Inoka, the people of the prairies and rivers of Illinois, and their descendants today, the Peoria Tribe of Oklahoma. With parts for every grade, Pre-K to 6th, and two songs." } }
+      es: { titulo: "Inoka: El aliento de la pradera y la gente de Illinois", desc: "Obra de José M. Fernández. Los Inoka, pueblo de las praderas y los ríos de Illinois, y sus descendientes de hoy, la tribu Peoria de Oklahoma. Con papeles para todos los grados, de prekínder a 6.º, y dos canciones." },
+      en: { titulo: "Inoka: The Breath of the Prairie and the People of Illinois", desc: "A play by José M. Fernández. The Inoka, people of the prairies and rivers of Illinois, and their descendants today, the Peoria Tribe of Oklahoma. With parts for every grade, Pre-K to 6th, and two songs." } }
   ],
 
   series: [

@@ -33,6 +33,7 @@ window.LUMI = {
   /* Libros de cuentos ya terminados: grado + área → archivos */
   libros: [
     { grado: "prek", area: "ciencias", es: "libro-prek-ciencias.html", en: "book-prek-science.html" },
+    { grado: "prek", area: "sociales", es: "libro-prek-sociales.html", en: "book-prek-social-studies.html" },
     { grado: "k", area: "ciencias", es: "libro-kinder-ciencias.html", en: "book-kindergarten-science.html" },
     { grado: "k", area: "sociales", es: "libro-kinder-sociales.html", en: "book-kindergarten-social-studies.html" },
     { grado: "1", area: "ciencias", es: "libro-1ro-ciencias.html",   en: "book-grade1-science.html" },

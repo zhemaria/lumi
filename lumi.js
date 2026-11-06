@@ -32,6 +32,8 @@
       pronto: "Próximamente también en: ",
       arriba: "↑ Volver arriba",
       abrirLibro: "Abrir el libro completo",
+      guiaTit: "Para el docente",
+      guia: "Guía para el docente de los cuentos (en inglés, con ayuda en español): consejos de uso y actividades de Ciencias y de Estudios Sociales",
       libroTit: { ciencias: "Cuentos de ciencias", sociales: "Cuentos de estudios sociales" },
       cuentosIndice: "index.html",
       errorCuentos: "No se pudieron cargar los cuentos en este momento.",
@@ -54,6 +56,8 @@
       pronto: "Coming soon for: ",
       arriba: "↑ Back to top",
       abrirLibro: "Open the whole book",
+      guiaTit: "For teachers",
+      guia: "Teacher guide for the stories: tips for using them, and activities for Science and Social Studies",
       libroTit: { ciencias: "Science stories", sociales: "Social studies stories" },
       cuentosIndice: "index-en.html",
       errorCuentos: "The stories could not be loaded right now.",
@@ -138,7 +142,11 @@
   }
 
   function normalizar() {
-    var todas = DATOS.series.map(function (s) {
+    /* En la versión en inglés no se muestran las series que son solo en español
+       (la lectura en español); en la versión en español se muestran todas */
+    var todas = DATOS.series.filter(function (s) {
+      return !(s.solo === "es" && L === "en");
+    }).map(function (s) {
       var v = s[L], lang = L, aviso = "";
       if (!v) { v = s[OTRO]; lang = OTRO; aviso = T.soloOtro; }
       if (s.solo === "es" && L === "en") aviso = T.soloEsEnEn;
@@ -232,6 +240,10 @@
           if (!s.length) return;
           html += '<div class="sub"><h3>' + icono(m.id) + esc(nombre(m)) + '</h3><div class="series">' +
                   s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div></div>";
+        });
+        (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }).forEach(function (x) {
+          html += '<div class="sub guia-grado"><h3>' + esc(T.guiaTit) + '</h3><p><a href="' + esc(x.url) + '" hreflang="en">' +
+                  '<span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p></div>";
         });
       }
       html += '<p class="arriba"><a href="#contenido">' + esc(T.arriba) + "</a></p></section>";

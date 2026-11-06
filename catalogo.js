@@ -48,6 +48,13 @@ window.LUMI = {
     { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" }
   ],
 
+  /* Guías para el docente que valen para todo un grado (se muestran
+     en la sección del grado, en la página «Por grado») */
+  guias: [
+    { grado: "5", url: C + "guide-grade5.html" },
+    { grado: "6", url: C + "guide-grade6.html" }
+  ],
+
   /* Obras de teatro (página teatro.html / teatro-es.html).
      estado: "pronto" mientras se preparan; al publicarlas se agregan es_url / en_url
      (el guion en cada idioma) y guia (la guía para el docente). */
@@ -393,13 +400,13 @@ window.LUMI = {
       en: { titulo: "Sudoku for Kids",   url: P + "sudoku-for-kids.html" }
     },
     {
-      grado: "2", materia: "lectura", tipo: "juego",
-      es: null,
+      grado: "2", materia: "lectura", tipo: "juego", solo: "en",
+      es: { titulo: "Grow a Sentence (oraciones en inglés)", url: P + "grow-a-sentence/?lang=es" },
       en: { titulo: "Grow a Sentence", url: P + "grow-a-sentence/" }
     },
     {
       grado: "2", materia: "ciencias", tipo: "juego",
-      es: null,
+      es: { titulo: "Aventura en el ecosistema", url: P + "ecosystem-adventure/?lang=es" },
       en: { titulo: "Ecosystem Adventure", url: P + "ecosystem-adventure/" }
     }
   ]

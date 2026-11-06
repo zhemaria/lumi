@@ -260,9 +260,15 @@
       var faltan = [];
       GRADOS.forEach(function (g) {
         var s = deMateria.filter(function (x) { return x.grado === g.id; });
-        if (!s.length) { faltan.push(nombre(g)); return; }
+        /* Prekínder no tiene ciencias ni estudios sociales: no es algo que falte */
+        if (!s.length) { if (!(g.id === "prek" && (m.id === "ciencias" || m.id === "sociales"))) faltan.push(nombre(g)); return; }
+        var guiaM = (m.id === "ciencias" || m.id === "sociales") ?
+          (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }) : [];
         html += '<div class="sub" id="' + m.id + "-" + g.ancla + '"><h3>' + esc(nombre(g)) + '</h3><div class="series">' +
-                s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div></div>";
+                s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div>" +
+                guiaM.map(function (x) {
+                  return '<p class="guia-grado"><a href="' + esc(x.url) + '" hreflang="en"><span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p>";
+                }).join("") + "</div>";
       });
       if (faltan.length) html += '<p class="vacio">' + esc(T.pronto + faltan.join(", ")) + ".</p>";
       html += '<p class="arriba"><a href="#contenido">' + esc(T.arriba) + "</a></p></section>";

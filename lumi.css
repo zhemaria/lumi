@@ -148,3 +148,40 @@ details li{margin:.25rem 0}
 .pasos li{background:var(--cie);border-radius:16px;padding:1rem 1.1rem}
 .pasos h3{font-size:1.1rem;margin-bottom:.3rem}
 .pasos p{margin:0}
+
+/* ---------- Acordeón de «Por grado» y «Por materia» ----------
+   Una tarjeta por grado o materia, cerrada al entrar, con su Lumi en un
+   círculo (como en la portada y en Teatro). Una sola abierta a la vez. */
+#catalogo{display:flex;flex-direction:column;gap:.9rem}
+details.acordeon{margin:0;padding:0;border:2px solid var(--borde);border-radius:22px;background:#fff;scroll-margin-top:96px;
+  transition:border-color .2s, box-shadow .2s}
+details.acordeon[open]{border-color:var(--pet);box-shadow:0 6px 0 rgba(25,79,90,.12)}
+details.acordeon > summary{display:flex;align-items:center;gap:1rem;min-height:104px;padding:.7rem 1.1rem;border-radius:20px;
+  background:var(--cie);cursor:pointer}
+details.acordeon > summary::before{content:none}
+details.acordeon > summary:hover{background:#d9eff1}
+details.acordeon[open] > summary{border-radius:20px 20px 0 0;border-bottom:2px solid var(--borde)}
+.lumi-anillo{flex:0 0 auto;width:88px;height:88px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;
+  border:3px solid #fff;box-shadow:0 0 0 4px var(--anillo, var(--men))}
+.lumi-mini{display:block;position:relative;width:100%;height:100%}
+.lumi-mini img{position:absolute;inset:6%;width:88%;height:88%;max-width:none;object-fit:contain;display:block;transition:transform .25s}
+details.acordeon > summary:hover .lumi-mini img{transform:translateY(-3px) rotate(-3deg)}
+details.acordeon[open] .lumi-mini img{transform:scale(1.06)}
+.acordeon-texto{display:flex;flex-direction:column;gap:.15rem;flex:1;min-width:0}
+.acordeon-texto h2{font-size:clamp(1.35rem,3.5vw,1.75rem);border:0;padding:0}
+.acordeon-texto small{font-size:1rem;font-weight:400}
+.acordeon-flecha{flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid var(--pet);display:grid;place-items:center}
+.acordeon-flecha::before{content:"";width:12px;height:12px;border-right:3px solid var(--pet);border-bottom:3px solid var(--pet);
+  transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+details.acordeon[open] .acordeon-flecha::before{transform:translateY(3px) rotate(-135deg)}
+.acordeon-cuerpo{padding:.4rem 1.1rem 1.1rem}
+.acordeon-cuerpo > .sub:first-child{margin-top:.8rem}
+@media (max-width:760px){
+  details.acordeon > summary{min-height:88px;gap:.7rem;padding:.6rem .8rem}
+  .lumi-anillo{width:70px;height:70px}
+  .acordeon-flecha{width:38px;height:38px}
+  .acordeon-cuerpo{padding:.3rem .8rem .9rem}
+  details.acordeon{scroll-margin-top:130px}
+}
+@media (prefers-reduced-motion:reduce){ .lumi-mini img,.acordeon-flecha::before{transition:none} }
+@media print{ details.acordeon > .acordeon-cuerpo{display:block} .acordeon-flecha{display:none} }

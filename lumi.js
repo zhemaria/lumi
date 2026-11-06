@@ -31,6 +31,7 @@
       proximamente: "Próximamente",
       pronto: "Próximamente también en: ",
       arriba: "↑ Volver arriba",
+      cerrar: "↑ Cerrar y volver a la lista",
       abrirLibro: "Abrir el libro completo",
       guiaTit: "Para el docente",
       guia: "Guía para el docente de los cuentos (en inglés, con ayuda en español): consejos de uso y actividades de Ciencias y de Estudios Sociales",
@@ -55,6 +56,7 @@
       proximamente: "Coming soon",
       pronto: "Coming soon for: ",
       arriba: "↑ Back to top",
+      cerrar: "↑ Close and go back to the list",
       abrirLibro: "Open the whole book",
       guiaTit: "For teachers",
       guia: "Teacher guide for the stories: tips for using them, and activities for Science and Social Studies",
@@ -223,57 +225,114 @@
       "</ul></nav>";
   }
 
+  /* ---------- Acordeón de «Por grado» y «Por materia» ----------
+     Cada grado (o materia) es una tarjeta cerrada con su Lumi. Al abrir una,
+     se cierra la que estaba abierta: la página nunca se hace larga.
+     Lumi de cada tarjeta: lumi-grado-<id>.png o lumi-materia-<id>.png; si
+     todavía no existe, se usa el Lumi de siempre (lápiz hasta 2.º, libreta
+     de 3.º a 6.º). */
+  function lumiDe(tipo, id) {
+    var respaldo = (tipo === "grado" && /^[3-6]$/.test(id)) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
+    return '<span class="lumi-mini" aria-hidden="true"><img src="lumi-' + tipo + "-" + id + '.png" alt="" ' +
+           'onerror="this.onerror=null;this.src=\'' + respaldo + '\'"></span>';
+  }
+  function tarjetaAcordeon(id, tipo, idLumi, titulo, detalle, color, cuerpo) {
+    return '<details class="seccion acordeon" id="' + id + '" name="' + tipo + 's" style="--anillo:' + color + '">' +
+      '<summary><span class="lumi-anillo">' + lumiDe(tipo, idLumi) + '</span>' +
+      '<span class="acordeon-texto"><h2 id="t-' + id + '">' + esc(titulo) + '</h2>' +
+      (detalle ? '<small>' + esc(detalle) + '</small>' : "") + '</span>' +
+      '<span class="acordeon-flecha" aria-hidden="true"></span></summary>' +
+      '<div class="acordeon-cuerpo">' + cuerpo +
+      '<p class="arriba"><a href="#' + id + '" class="cerrar-acordeon">' + esc(T.cerrar) + "</a></p></div></details>";
+  }
+  var COLORES = ["var(--men)", "var(--ama)", "var(--cor)", "var(--tur)"];
+
   function paginaGrados(todas, cont) {
-    var html = anclas(GRADOS.map(function (g) { return { ancla: g.ancla, texto: nombre(g) }; }));
-    GRADOS.forEach(function (g) {
+    var html = "";
+    GRADOS.forEach(function (g, k) {
       var delGrado = todas.filter(function (s) { return s.grado === g.id; });
-      html += '<section class="seccion" id="' + g.ancla + '" aria-labelledby="t-' + g.ancla + '">' +
-              '<h2 id="t-' + g.ancla + '">' + esc(nombre(g)) +
-              (g[L + "2"] ? ' <small style="font-weight:400;font-size:1rem">· ' + esc(g[L + "2"]) + "</small>" : "") + "</h2>";
+      var n = cuenta(delGrado);
+      var detalle = [g[L + "2"], n ? T.lecciones(n) : T.proximamente].filter(Boolean).join(" · ");
+      var cuerpo = "";
       if (!delGrado.length) {
-        /* Lumi crece con el niño: lápiz hasta 2.º, libreta de 3.º a 6.º */
         var foto = /^[3-6]$/.test(g.id) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
-        html += '<p class="vacio"><img src="' + foto + '" alt="">' + esc(T.vacio) + "</p>";
+        cuerpo += '<p class="vacio"><img src="' + foto + '" alt="">' + esc(T.vacio) + "</p>";
       } else {
         MATERIAS.forEach(function (m) {
           var s = delGrado.filter(function (x) { return x.materia === m.id; });
           if (!s.length) return;
-          html += '<div class="sub"><h3>' + icono(m.id) + esc(nombre(m)) + '</h3><div class="series">' +
-                  s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div></div>";
+          cuerpo += '<div class="sub"><h3>' + icono(m.id) + esc(nombre(m)) + '</h3><div class="series">' +
+                    s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div></div>";
         });
         (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }).forEach(function (x) {
-          html += '<div class="sub guia-grado"><h3>' + esc(T.guiaTit) + '</h3><p><a href="' + esc(x.url) + '" hreflang="en">' +
-                  '<span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p></div>";
+          cuerpo += '<div class="sub guia-grado"><h3>' + esc(T.guiaTit) + '</h3><p><a href="' + esc(x.url) + '" hreflang="en">' +
+                    '<span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p></div>";
         });
       }
-      html += '<p class="arriba"><a href="#contenido">' + esc(T.arriba) + "</a></p></section>";
+      html += tarjetaAcordeon(g.ancla, "grado", g.id, nombre(g), detalle, COLORES[k % 4], cuerpo);
     });
     cont.innerHTML = html;
   }
 
   function paginaMaterias(todas, cont) {
-    var html = anclas(MATERIAS.map(function (m) { return { ancla: m.id, texto: nombre(m) }; }));
-    MATERIAS.forEach(function (m) {
+    var html = "";
+    MATERIAS.forEach(function (m, k) {
       var deMateria = todas.filter(function (s) { return s.materia === m.id; });
-      html += '<section class="seccion" id="' + m.id + '" aria-labelledby="t-' + m.id + '">' +
-              '<h2 id="t-' + m.id + '">' + icono(m.id) + esc(nombre(m)) + "</h2>";
-      var faltan = [];
+      var cuerpo = "", faltan = [];
       GRADOS.forEach(function (g) {
         var s = deMateria.filter(function (x) { return x.grado === g.id; });
         /* Prekínder no tiene ciencias ni estudios sociales: no es algo que falte */
         if (!s.length) { if (!(g.id === "prek" && (m.id === "ciencias" || m.id === "sociales"))) faltan.push(nombre(g)); return; }
         var guiaM = (m.id === "ciencias" || m.id === "sociales") ?
           (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }) : [];
-        html += '<div class="sub" id="' + m.id + "-" + g.ancla + '"><h3>' + esc(nombre(g)) + '</h3><div class="series">' +
-                s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div>" +
-                guiaM.map(function (x) {
-                  return '<p class="guia-grado"><a href="' + esc(x.url) + '" hreflang="en"><span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p>";
-                }).join("") + "</div>";
+        cuerpo += '<div class="sub" id="' + m.id + "-" + g.ancla + '"><h3>' + esc(nombre(g)) + '</h3><div class="series">' +
+                  s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div>" +
+                  guiaM.map(function (x) {
+                    return '<p class="guia-grado"><a href="' + esc(x.url) + '" hreflang="en"><span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p>";
+                  }).join("") + "</div>";
       });
-      if (faltan.length) html += '<p class="vacio">' + esc(T.pronto + faltan.join(", ")) + ".</p>";
-      html += '<p class="arriba"><a href="#contenido">' + esc(T.arriba) + "</a></p></section>";
+      if (faltan.length) cuerpo += '<p class="vacio">' + esc(T.pronto + faltan.join(", ")) + ".</p>";
+      var detalle = m[L + "2"] + " · " + T.lecciones(cuenta(deMateria));
+      html += tarjetaAcordeon(m.id, "materia", m.id, nombre(m), detalle, COLORES[(k + 1) % 4], cuerpo);
     });
     cont.innerHTML = html;
+  }
+
+  /* Abrir la tarjeta que pide el # (#g3, #ciencias, #ciencias-g5…) y llevar al niño a ella */
+  function abrirPorAncla() {
+    if (!location.hash) return;
+    var dest = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!dest) return;
+    var det = dest.matches && dest.matches("details.acordeon") ? dest : (dest.closest && dest.closest("details.acordeon"));
+    if (det) det.open = true;
+    setTimeout(function () { dest.scrollIntoView({ block: "start" }); }, 30);
+  }
+  function activarAcordeon(cont) {
+    var tarjetas = Array.prototype.slice.call(cont.querySelectorAll("details.acordeon"));
+    tarjetas.forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (!d.open) return;
+        /* una sola abierta (por si el navegador no admite name="") */
+        tarjetas.forEach(function (o) { if (o !== d && o.open) o.open = false; });
+        /* que se vea el título de la tarjeta que se abrió */
+        requestAnimationFrame(function () {
+          var r = d.getBoundingClientRect(), cab = document.querySelector(".cabecera");
+          var tope = cab ? cab.getBoundingClientRect().bottom : 0;
+          if (r.top < tope || r.top > window.innerHeight * 0.7) d.scrollIntoView({ block: "start" });
+        });
+        if (history.replaceState) history.replaceState(null, "", "#" + d.id);
+      });
+    });
+    cont.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest(".cerrar-acordeon");
+      if (!a) return;
+      e.preventDefault();
+      var d = a.closest("details.acordeon");
+      d.open = false;
+      d.scrollIntoView({ block: "start" });
+      d.querySelector("summary").focus({ preventScroll: true });
+    });
+    window.addEventListener("hashchange", abrirPorAncla);
   }
 
   /* Teatro: tarjetas de las obras (catalogo.js → obras) */
@@ -317,8 +376,10 @@
   function seccionVisible() {
     var cab = document.querySelector(".cabecera");
     var limite = (cab ? cab.getBoundingClientRect().bottom : 0) + 40;
+    var abierta = document.querySelector("details.acordeon[open]");
+    if (abierta) return abierta.id;
     var actual = "";
-    document.querySelectorAll(".seccion").forEach(function (s) {
+    document.querySelectorAll(".seccion:not(.acordeon)").forEach(function (s) {
       if (s.getBoundingClientRect().top <= limite) actual = s.id;
     });
     return actual;
@@ -333,6 +394,7 @@
     }
     poner();
     window.addEventListener("hashchange", poner);
+    document.addEventListener("toggle", poner, true);
     window.addEventListener("scroll", poner, { passive: true });
     a.addEventListener("focus", poner);
   }
@@ -349,7 +411,8 @@
       cont.insertAdjacentHTML("afterbegin", '<p class="vacio" role="status">' + esc(T.errorCuentos) + "</p>");
     }
     /* Si se llegó con #ancla, ir a ella ya armada la página */
-    if (location.hash) {
+    if (cont && (pag === "grados" || pag === "materias")) { activarAcordeon(cont); abrirPorAncla(); }
+    else if (location.hash) {
       var dest = document.getElementById(location.hash.slice(1));
       if (dest) dest.scrollIntoView();
     }

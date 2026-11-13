@@ -121,7 +121,7 @@ details li{margin:.25rem 0}
   .marca img{width:120px}
   .cabecera .envoltura{padding-top:.4rem;padding-bottom:.3rem;gap:.2rem .5rem;min-height:0}
   .cabecera .menu{order:3;width:100%;justify-content:space-between;gap:0}
-  .menu a{padding:0 .5rem;font-size:.95rem}
+  .menu a{padding:0 .3rem;font-size:.88rem}
   .idioma a,.idioma span{min-height:36px;padding:0 .6rem;font-size:.95rem}
   .seccion,.sub,#contenido{scroll-margin-top:130px}
 }
@@ -185,3 +185,16 @@ details.acordeon[open] .acordeon-flecha::before{transform:translateY(3px) rotate
 }
 @media (prefers-reduced-motion:reduce){ .lumi-mini img,.acordeon-flecha::before{transition:none} }
 @media print{ details.acordeon > .acordeon-cuerpo{display:block} .acordeon-flecha{display:none} }
+
+/* ---------- Cuentos ---------- */
+.cuento-lumi .miniatura img{aspect-ratio:4/5;object-position:center 20%}
+.cuento-lumi .tema{font-size:.95rem;font-style:italic}
+.nivel{margin:.2rem 0 0;display:grid;gap:.4rem}
+.nivel div{background:var(--cie);border-radius:12px;padding:.4rem .7rem}
+.nivel dt{font-weight:700}
+.nivel dd{margin:0}
+.cuento-lumi.pronto{border-style:dashed}
+.momentos{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+.momentos > div{background:var(--cie);border-radius:16px;padding:1rem 1.1rem}
+.momentos h3{font-size:1.1rem;margin-bottom:.3rem}
+.momentos ul{margin:0;padding-left:1.2rem}

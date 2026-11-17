@@ -198,3 +198,9 @@ details.acordeon[open] .acordeon-flecha::before{transform:translateY(3px) rotate
 .momentos > div{background:var(--cie);border-radius:16px;padding:1rem 1.1rem}
 .momentos h3{font-size:1.1rem;margin-bottom:.3rem}
 .momentos ul{margin:0;padding-left:1.2rem}
+
+/* Botón de la portada que lleva al video de presentación */
+.ver-video{display:inline-flex;align-items:center;gap:.5em;margin-top:1.1rem;padding:.7em 1.4em;border-radius:999px;background:#194F5A;color:#fff;font-weight:700;font-size:1.05rem;text-decoration:none;border:3px solid #194F5A;box-shadow:0 3px 10px rgba(25,79,90,.18)}
+.ver-video:hover{background:#fff;color:#194F5A}
+.ver-video:focus-visible{outline:4px solid #F8C85F;outline-offset:3px}
+.ver-video .icono{display:inline-grid;place-items:center;flex:0 0 1.6em;width:1.6em;height:1.6em;aspect-ratio:1;padding:0;line-height:1;border-radius:50%;background:#F8C85F;color:#194F5A;font-size:.85em}

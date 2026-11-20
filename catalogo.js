@@ -114,7 +114,9 @@ window.LUMI = {
         { es: "La cortina de Lumi", en: "Lumi's Curtain",
           es_url: P + "mentes-curiosas/cortina.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/cortina.html?grado=prek" },
         { es: "¿Para qué más sirve?", en: "What else could it be?",
-          es_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek" }
+          es_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek" },
+        { es: "La máquina musical", en: "The music machine",
+          es_url: P + "mentes-curiosas/maquina-musical.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/maquina-musical.html?grado=prek" }
       ]
     },
     /* ---------------- KINDERGARTEN ---------------- */
@@ -167,7 +169,9 @@ window.LUMI = {
         { es: "La cortina de Lumi", en: "Lumi's Curtain",
           es_url: P + "mentes-curiosas/cortina.html?grado=k&lang=es", en_url: P + "mentes-curiosas/cortina.html?grado=k" },
         { es: "¿Para qué más sirve?", en: "What else could it be?",
-          es_url: P + "mentes-curiosas/para-que-sirve.html?grado=k&lang=es", en_url: P + "mentes-curiosas/para-que-sirve.html?grado=k" }
+          es_url: P + "mentes-curiosas/para-que-sirve.html?grado=k&lang=es", en_url: P + "mentes-curiosas/para-que-sirve.html?grado=k" },
+        { es: "La máquina musical", en: "The music machine",
+          es_url: P + "mentes-curiosas/maquina-musical.html?grado=k&lang=es", en_url: P + "mentes-curiosas/maquina-musical.html?grado=k" }
       ]
     },
     /* ---------------- PRIMER GRADO ---------------- */

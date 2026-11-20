@@ -6,7 +6,8 @@
    sus lecciones.
 
    Grados:   "prek", "k", "1", "2", "3", "4", "5", "6"
-   Materias: "matematicas", "lectura", "ciencias", "sociales"
+   Materias: "matematicas", "lectura", "ciencias", "sociales",
+             "mentes" (Mentes curiosas: solo prekínder y kínder)
 
    Para cada idioma ("es", "en") se da el título y la dirección.
    Si una serie existe en un solo idioma, se deja el otro vacío
@@ -105,6 +106,15 @@ window.LUMI = {
       ]
     },
 
+    {
+      grado: "prek", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · prekínder", url: P + "mentes-curiosas/?grado=prek&lang=es" },
+      en: { titulo: "Curious Minds · Pre-K",   url: P + "mentes-curiosas/?grado=prek" },
+      lecciones: [
+        { es: "La cortina de Lumi", en: "Lumi's Curtain",
+          es_url: P + "mentes-curiosas/cortina.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/cortina.html?grado=prek" }
+      ]
+    },
     /* ---------------- KINDERGARTEN ---------------- */
     {
       grado: "k", materia: "matematicas", tipo: "interactivo",
@@ -147,6 +157,15 @@ window.LUMI = {
       ]
     },
 
+    {
+      grado: "k", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · kínder", url: P + "mentes-curiosas/?grado=k&lang=es" },
+      en: { titulo: "Curious Minds · Kindergarten",   url: P + "mentes-curiosas/?grado=k" },
+      lecciones: [
+        { es: "La cortina de Lumi", en: "Lumi's Curtain",
+          es_url: P + "mentes-curiosas/cortina.html?grado=k&lang=es", en_url: P + "mentes-curiosas/cortina.html?grado=k" }
+      ]
+    },
     /* ---------------- PRIMER GRADO ---------------- */
     {
       grado: "1", materia: "matematicas", tipo: "interactivo",

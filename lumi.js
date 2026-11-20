@@ -88,7 +88,10 @@
     { id: "ciencias",    es: "Ciencias",           en: "Science",
       es2: "Explorar el mundo natural",    en2: "Exploring the natural world" },
     { id: "sociales",    es: "Estudios sociales",  en: "Social studies",
-      es2: "Comunidad, historia y lugares", en2: "Community, history and places" }
+      es2: "Comunidad, historia y lugares", en2: "Community, history and places" },
+    { id: "mentes",      es: "Mentes curiosas",    en: "Curious Minds",
+      es2: "Curiosidad, ideas nuevas y pensar juntos", en2: "Curiosity, new ideas and thinking together",
+      grados: ["prek", "k"] }
   ];
 
   /* Íconos decorativos: el texto de al lado ya dice la materia */
@@ -96,6 +99,7 @@
     matematicas: '<circle cx="26" cy="26" r="25" fill="#F8C85F"/><path d="M14 17h10M19 12v10M30 14l8 8M38 14l-8 8M13 35h11M30 32h9M30 38h9" stroke="#194F5A" stroke-width="3.2" stroke-linecap="round" fill="none"/>',
     lectura: '<circle cx="26" cy="26" r="25" fill="#EF9275"/><path d="M26 17c-4-3-9-3-14-2v20c5-1 10-1 14 2 4-3 9-3 14-2V15c-5-1-10-1-14 2zM26 17v20" stroke="#194F5A" stroke-width="3" stroke-linejoin="round" fill="#fff"/>',
     ciencias: '<circle cx="26" cy="26" r="25" fill="#6DCEC5"/><path d="M21 12h10M23 12v10l-8 14a3 3 0 0 0 3 4h16a3 3 0 0 0 3-4l-8-14V12" stroke="#194F5A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="#fff"/><circle cx="24" cy="33" r="2.4" fill="#45A6AD"/><circle cx="30" cy="30" r="1.8" fill="#45A6AD"/>',
+    mentes: '<circle cx="26" cy="26" r="25" fill="#C9B8F0"/><circle cx="23" cy="22" r="10" fill="#fff" stroke="#194F5A" stroke-width="3"/><path d="M30 29l9 9" stroke="#194F5A" stroke-width="4" stroke-linecap="round"/><path d="M20 19.5a3.3 3.3 0 1 1 4.6 3c-1 .5-1.6 1.2-1.6 2.3M23 28.4v.1" stroke="#194F5A" stroke-width="2.4" stroke-linecap="round" fill="none"/>',
     sociales: '<circle cx="26" cy="26" r="25" fill="#A9D3D6"/><path d="M12 25 26 14l14 11M16 22v16h20V22" stroke="#194F5A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="#fff"/><path d="M23 38v-8h6v8" stroke="#194F5A" stroke-width="3" fill="#F8C85F"/>'
   };
   function icono(m) {
@@ -282,7 +286,9 @@
       GRADOS.forEach(function (g) {
         var s = deMateria.filter(function (x) { return x.grado === g.id; });
         /* Prekínder no tiene ciencias ni estudios sociales: no es algo que falte */
-        if (!s.length) { if (!(g.id === "prek" && (m.id === "ciencias" || m.id === "sociales"))) faltan.push(nombre(g)); return; }
+        /* Mentes curiosas es solo para prekínder y kínder: los otros grados no «faltan» */
+        if (!s.length) { if (!(g.id === "prek" && (m.id === "ciencias" || m.id === "sociales")) &&
+                             !(m.grados && m.grados.indexOf(g.id) < 0)) faltan.push(nombre(g)); return; }
         var guiaM = (m.id === "ciencias" || m.id === "sociales") ?
           (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }) : [];
         cuerpo += '<div class="sub" id="' + m.id + "-" + g.ancla + '"><h3>' + esc(nombre(g)) + '</h3><div class="series">' +

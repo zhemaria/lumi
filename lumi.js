@@ -34,6 +34,8 @@
       cerrar: "↑ Cerrar y volver a la lista",
       abrirLibro: "Abrir el libro completo",
       guiaTit: "Para el docente",
+      observacion: "observacion-es.html",
+      observacionTxt: "Hoja de observación para imprimir: anote a mano cómo va cada niño (no guarda nada)",
       guia: "Guía para el docente de los cuentos (en inglés, con ayuda en español): consejos de uso y actividades de Ciencias y de Estudios Sociales",
       libroTit: { ciencias: "Cuentos de ciencias", sociales: "Cuentos de estudios sociales" },
       cuentosIndice: "index.html",
@@ -59,6 +61,8 @@
       cerrar: "↑ Close and go back to the list",
       abrirLibro: "Open the whole book",
       guiaTit: "For teachers",
+      observacion: "observacion.html",
+      observacionTxt: "Printable observation sheet: note by hand how each child is doing (nothing is saved)",
       guia: "Teacher guide for the stories: tips for using them, and activities for Science and Social Studies",
       libroTit: { ciencias: "Science stories", sociales: "Social studies stories" },
       cuentosIndice: "index-en.html",
@@ -268,10 +272,12 @@
           cuerpo += '<div class="sub"><h3>' + icono(m.id) + esc(nombre(m)) + '</h3><div class="series">' +
                     s.map(function (x) { return tarjeta(x, 4); }).join("") + "</div></div>";
         });
-        (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }).forEach(function (x) {
-          cuerpo += '<div class="sub guia-grado"><h3>' + esc(T.guiaTit) + '</h3><p><a href="' + esc(x.url) + '" hreflang="en">' +
-                    '<span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p></div>";
+        /* Para el docente: guías del grado y hoja de observación (en todos los grados) */
+        var docente = (DATOS.guias || []).filter(function (x) { return x.grado === g.id; }).map(function (x) {
+          return '<p><a href="' + esc(x.url) + '" hreflang="en"><span aria-hidden="true">🍎 </span>' + esc(T.guia) + "</a></p>";
         });
+        docente.push('<p><a href="' + T.observacion + "?grado=" + g.id + '"><span aria-hidden="true">📋 </span>' + esc(T.observacionTxt) + "</a></p>");
+        cuerpo += '<div class="sub guia-grado"><h3>' + esc(T.guiaTit) + "</h3>" + docente.join("") + "</div>";
       }
       html += tarjetaAcordeon(g.ancla, "grado", g.id, nombre(g), detalle, COLORES[k % 4], cuerpo);
     });

@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Lumi · Teacher observation sheet · José M. Fernández · Licencia CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/) -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teacher observation sheet · Lumi</title>
+<meta name="description" content="A sheet to print and fill in by hand to note how each child works on Lumi's activities. Nothing is saved.">
+<meta name="author" content="José M. Fernández">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="alternate" hreflang="es" href="observacion-es.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="lumi.css?v=12">
+<link rel="stylesheet" href="observacion.css?v=1">
+<style id="obs-pagina">@page{size:landscape;margin:12mm}</style>
+</head>
+<body data-pagina="observacion">
+<a class="saltar" href="#contenido">Skip to content</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — home page" width="560" height="240"></a>
+  <nav aria-label="Main menu" class="menu">
+   <a href="index.html">Home</a>
+   <a href="grados.html">By grade</a>
+   <a href="materias.html">By subject</a>
+   <a href="teatro.html">Theater</a>
+   <a href="cuentos.html">Stories</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Language"><span aria-current="true">English</span><a href="observacion-es.html" lang="es" hreflang="es">Español</a></div>
+ </div>
+</header>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <div class="vacio banner obs-solo-pantalla" style="margin:1rem 0 1.5rem"><span class="circulo"><img src="lumi-explora.jpg" alt=""></span>
+  <div><h1 style="font-size:2rem">Teacher observation sheet</h1><p style="margin:.3rem 0 0">Lumi asks for no accounts and keeps no grades. Use this sheet to note by hand, while the children work, how each one is doing. Choose the grade, set it up and print it.</p></div></div>
+
+ <div class="obs-guia">
+  <section aria-labelledby="t-leyenda" class="obs-leyenda">
+   <h2 id="t-leyenda">Symbols to use</h2>
+   <ul><li><span class="sim" aria-hidden="true">★</span> Does it without help</li><li><span class="sim" aria-hidden="true">✓</span> Does it with a hint</li><li><span class="sim" aria-hidden="true">○</span> Not yet: will try again</li></ul>
+  </section>
+  <section aria-labelledby="t-como" class="obs-como obs-solo-pantalla">
+   <h2 id="t-como">How to use it</h2>
+   <ul><li>Watch while the child works and mark with a symbol what you saw most often.</li><li>The hint a child needed tells you a lot: it shows what to review with that child.</li><li>“Not yet” is not a bad mark: in Lumi there is always another try.</li><li>Share it with families in a positive way: what the child can already do and the next step.</li></ul>
+   <p class="obs-mentes"><strong>Curious Minds</strong> is left off the sheet on purpose: those are games to awaken curiosity, creativity and thinking together. They are not tests, so they are not recorded.</p>
+  </section>
+ </div>
+
+ <section aria-labelledby="t-prep" class="obs-controles obs-solo-pantalla">
+  <h2 id="t-prep">Set up the sheet</h2>
+  <noscript><p>To set up the sheet, please turn on JavaScript in your browser.</p></noscript>
+  <div class="obs-fila">
+   <p><label for="obs-grado">Grade</label><select id="obs-grado"></select></p>
+   <fieldset><legend>Format</legend>
+    <p class="opcion"><input type="radio" name="obs-formato" id="obs-grupo" checked> <label for="obs-grupo">For the class (one set of activities)</label></p>
+    <p class="opcion"><input type="radio" name="obs-formato" id="obs-individual"> <label for="obs-individual">For one student (all activities in the grade)</label></p>
+   </fieldset>
+  </div>
+  <div class="obs-fila">
+   <p id="obs-serie-caja"><label for="obs-serie">Set of activities</label><select id="obs-serie"></select></p>
+   <p id="obs-filas-caja"><label for="obs-filas">Rows for students</label><input type="number" id="obs-filas" min="1" max="40" value="20"></p>
+  </div>
+  <p><label for="obs-nombres">Names (optional, one per line)</label><textarea id="obs-nombres" rows="4" aria-describedby="obs-privado" autocomplete="off" spellcheck="false"></textarea></p>
+  <p id="obs-privado" class="obs-privado"><span aria-hidden="true">🔒 </span>Names are not saved or sent anywhere: they are erased when you close the page.</p>
+  <p><button type="button" class="obs-boton" id="obs-imprimir"><span aria-hidden="true">🖨 </span>Print the sheet</button></p>
+  <p id="obs-aviso" role="status" class="aviso"></p>
+ </section>
+
+ <h2 class="obs-solo-pantalla obs-vista">Preview</h2>
+ <div id="obs-hoja" aria-live="polite"></div>
+</div></main>
+<footer class="pie">
+ <div class="envoltura">
+  <p><strong>Lumi</strong> · Little lights, big ideas.</p>
+  <p>Free learning · Pre-K to Grade 6</p>
+  <p>Materials by José M. Fernández · License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener">CC BY-NC-SA 4.0</a></p>
+ </div>
+</footer>
+<script src="catalogo.js?v=15"></script>
+<script src="observacion.js?v=1"></script>
+</body>
+</html>

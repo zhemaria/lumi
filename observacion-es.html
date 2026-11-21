@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Lumi · Hoja de observación para el docente · José M. Fernández · Licencia CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/) -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoja de observación para el docente · Lumi</title>
+<meta name="description" content="Hoja para imprimir y anotar a mano cómo trabaja cada niño en las actividades de Lumi. No guarda nada.">
+<meta name="author" content="José M. Fernández">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<link rel="alternate" hreflang="en" href="observacion.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="lumi.css?v=12">
+<link rel="stylesheet" href="observacion.css?v=1">
+<style id="obs-pagina">@page{size:landscape;margin:12mm}</style>
+</head>
+<body data-pagina="observacion">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+ <div class="envoltura">
+  <a class="marca" href="index-es.html"><img src="lumi-logo-horizontal.svg" alt="Lumi — página de inicio" width="560" height="240"></a>
+  <nav aria-label="Menú principal" class="menu">
+   <a href="index-es.html">Inicio</a>
+   <a href="grados-es.html">Por grado</a>
+   <a href="materias-es.html">Por materia</a>
+   <a href="teatro-es.html">Teatro</a>
+   <a href="cuentos-es.html">Cuentos</a>
+  </nav>
+  <div class="idioma" role="group" aria-label="Idioma"><a href="observacion.html" lang="en" hreflang="en">English</a><span aria-current="true">Español</span></div>
+ </div>
+</header>
+
+<main id="contenido" tabindex="-1"><div class="envoltura">
+ <div class="vacio banner obs-solo-pantalla" style="margin:1rem 0 1.5rem"><span class="circulo"><img src="lumi-explora.jpg" alt=""></span>
+  <div><h1 style="font-size:2rem">Hoja de observación para el docente</h1><p style="margin:.3rem 0 0">Lumi no pide cuentas ni guarda calificaciones. Esta hoja le sirve para anotar a mano, mientras los niños trabajan, cómo va cada uno. Elija el grado, prepárela e imprímala.</p></div></div>
+
+ <div class="obs-guia">
+  <section aria-labelledby="t-leyenda" class="obs-leyenda">
+   <h2 id="t-leyenda">Símbolos para anotar</h2>
+   <ul><li><span class="sim" aria-hidden="true">★</span> Lo logra sin ayuda</li><li><span class="sim" aria-hidden="true">✓</span> Lo logra con una pista</li><li><span class="sim" aria-hidden="true">○</span> Todavía no: lo intentará otra vez</li></ul>
+  </section>
+  <section aria-labelledby="t-como" class="obs-como obs-solo-pantalla">
+   <h2 id="t-como">Cómo usarla</h2>
+   <ul><li>Observe mientras el niño trabaja y anote con un símbolo lo que vio más veces.</li><li>La pista que necesitó dice mucho: le indica qué conviene repasar con ese niño.</li><li>«Todavía no» no es una nota mala: en Lumi siempre hay otro intento.</li><li>Compártala con las familias en positivo: qué ya logra y cuál es el próximo paso.</li></ul>
+   <p class="obs-mentes"><strong>Mentes curiosas</strong> no aparece en la hoja a propósito: son juegos para despertar la curiosidad, la creatividad y el pensar juntos. No son pruebas, así que no se registran.</p>
+  </section>
+ </div>
+
+ <section aria-labelledby="t-prep" class="obs-controles obs-solo-pantalla">
+  <h2 id="t-prep">Preparar la hoja</h2>
+  <noscript><p>Para preparar la hoja, active JavaScript en su navegador.</p></noscript>
+  <div class="obs-fila">
+   <p><label for="obs-grado">Grado</label><select id="obs-grado"></select></p>
+   <fieldset><legend>Formato</legend>
+    <p class="opcion"><input type="radio" name="obs-formato" id="obs-grupo" checked> <label for="obs-grupo">Para el grupo (una serie de actividades)</label></p>
+    <p class="opcion"><input type="radio" name="obs-formato" id="obs-individual"> <label for="obs-individual">Para un estudiante (todas las actividades del grado)</label></p>
+   </fieldset>
+  </div>
+  <div class="obs-fila">
+   <p id="obs-serie-caja"><label for="obs-serie">Serie de actividades</label><select id="obs-serie"></select></p>
+   <p id="obs-filas-caja"><label for="obs-filas">Filas para estudiantes</label><input type="number" id="obs-filas" min="1" max="40" value="20"></p>
+  </div>
+  <p><label for="obs-nombres">Nombres (opcional, uno por línea)</label><textarea id="obs-nombres" rows="4" aria-describedby="obs-privado" autocomplete="off" spellcheck="false"></textarea></p>
+  <p id="obs-privado" class="obs-privado"><span aria-hidden="true">🔒 </span>Los nombres no se guardan ni se envían a ninguna parte: se borran al cerrar la página.</p>
+  <p><button type="button" class="obs-boton" id="obs-imprimir"><span aria-hidden="true">🖨 </span>Imprimir la hoja</button></p>
+  <p id="obs-aviso" role="status" class="aviso"></p>
+ </section>
+
+ <h2 class="obs-solo-pantalla obs-vista">Vista previa</h2>
+ <div id="obs-hoja" aria-live="polite"></div>
+</div></main>
+<footer class="pie">
+ <div class="envoltura">
+  <p><strong>Lumi</strong> · Pequeñas luces, grandes ideas.</p>
+  <p>Aprendizaje gratuito · Prekínder a 6.º grado</p>
+  <p>Materiales de José M. Fernández · Licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener">CC BY-NC-SA 4.0</a></p>
+ </div>
+</footer>
+<script src="catalogo.js?v=15"></script>
+<script src="observacion.js?v=1"></script>
+</body>
+</html>

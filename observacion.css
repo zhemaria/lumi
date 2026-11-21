@@ -1,0 +1,74 @@
+/* ==================================================================
+   Lumi · Hoja de observación para el docente (pantalla e impresión)
+   Mismos colores del portal: texto siempre azul petróleo (#194F5A).
+   Licencia CC BY-NC-SA 4.0 · José M. Fernández
+   ================================================================== */
+.obs-guia{display:grid;grid-template-columns:1fr 1.6fr;gap:1rem;margin:0 0 1.2rem}
+@media (max-width:760px){.obs-guia{grid-template-columns:1fr}}
+.obs-guia section,.obs-controles{border:3px solid var(--borde);border-radius:16px;padding:.9rem 1.1rem;background:#fff}
+.obs-guia h2,.obs-controles h2,.obs-vista{font-size:1.3rem;margin:0 0 .5rem}
+.obs-guia ul{margin:0;padding-left:1.2rem}
+.obs-guia li{margin:.3rem 0}
+.obs-leyenda ul{list-style:none;padding:0}
+.obs-leyenda .sim{display:inline-block;width:1.6em;font-size:1.3em;text-align:center}
+.obs-mentes{background:var(--cie);border-radius:12px;padding:.6rem .9rem;margin:.8rem 0 0}
+
+.obs-controles{margin-bottom:1.4rem}
+.obs-controles label,.obs-controles legend{font-weight:700;display:block;margin-bottom:.25rem}
+.obs-controles .opcion label{display:inline;font-weight:400}
+.obs-controles .opcion{margin:.3rem 0;display:flex;gap:.5rem;align-items:center}
+.obs-controles input[type=radio]{width:22px;height:22px;margin:0;accent-color:var(--pet)}
+.obs-controles fieldset{border:0;padding:0;margin:0}
+.obs-fila{display:flex;flex-wrap:wrap;gap:.6rem 2rem;align-items:flex-start}
+.obs-fila > *{flex:1 1 260px}
+.obs-controles select,.obs-controles input[type=number],.obs-controles textarea{font:inherit;color:var(--pet);
+  border:2px solid var(--pet);border-radius:10px;padding:.45rem .6rem;min-height:44px;width:100%;max-width:520px;background:#fff}
+.obs-controles input[type=number]{max-width:120px}
+.obs-controles select:focus-visible,.obs-controles input:focus-visible,.obs-controles textarea:focus-visible{outline:3px solid var(--pet);outline-offset:2px}
+.obs-privado{font-size:.95rem;margin-top:-.3rem}
+.obs-boton{font:inherit;font-weight:700;background:var(--pet);color:#fff;border:0;border-radius:999px;padding:.6rem 1.4rem;min-height:48px;cursor:pointer}
+.obs-boton:hover{background:#0F3840}
+.aviso:empty{display:none}
+[hidden]{display:none!important}
+
+/* ---------- la hoja ---------- */
+#obs-hoja{overflow-x:auto;margin-bottom:2rem}
+.hoja-datos{display:flex;flex-wrap:wrap;gap:.4rem 2.5rem;margin:.4rem 0 .6rem;font-weight:700}
+.raya{display:inline-block;width:14em;border-bottom:1.5px solid var(--pet);height:1em;vertical-align:baseline}
+.raya.larga{width:22em}
+.hoja-nombre{font-size:1.1rem;margin:.2rem 0}
+.hoja{border-collapse:collapse;width:100%;font-size:.9rem;background:#fff}
+.hoja caption{text-align:left;font-family:"Trebuchet MS",system-ui,sans-serif;font-weight:700;font-size:1.1rem;padding:.3rem 0 .5rem}
+.hoja th,.hoja td{border:1.5px solid var(--pet);padding:.35rem .45rem;vertical-align:bottom}
+.hoja thead th{background:var(--cie);font-weight:700;line-height:1.25}
+.hoja .num{font-weight:400}
+.hoja-grupo tbody th{min-width:11em;height:2.1em;text-align:left;font-weight:400}
+.hoja-grupo td{min-width:3.2em}
+.hoja-grupo .col-notas{min-width:9em}
+.hoja-individual tbody th[scope=row]{text-align:left;font-weight:400;width:30%}
+.hoja-individual td{height:2.2em}
+.hoja-individual .col-fecha{width:9%}
+.hoja-individual .col-logro{width:12%}
+.hoja-individual .simbolos{text-align:center;font-size:1.25em;white-space:nowrap;letter-spacing:.1em}
+.hoja-individual .fila-serie th{background:var(--cie);text-align:left;font-weight:700}
+.hoja-alumno + .hoja-alumno{margin-top:2rem}
+
+/* ---------- impresión: solo la leyenda y la hoja ---------- */
+@media print{
+  .cabecera,.pie,.saltar,.obs-solo-pantalla{display:none!important}
+  body{font-size:11pt;background:#fff}
+  .envoltura{max-width:none;padding:0}
+  .obs-guia{display:block;margin:0 0 4mm}
+  .obs-guia .obs-leyenda{border:0;padding:0;background:none}
+  .obs-leyenda h2{display:inline;font-size:11pt;margin-right:.6em}
+  .obs-leyenda ul,.obs-leyenda li{display:inline;margin:0 1.2em 0 0}
+  #obs-hoja{overflow:visible}
+  .hoja{font-size:9.5pt}
+  .hoja-grupo tbody th{height:6mm;padding:0 .45rem}
+  .hoja thead{display:table-header-group}
+  .hoja caption{font-size:11pt;padding:0 0 2mm}
+  .hoja-datos{margin:0 0 2mm}
+  .hoja tr{break-inside:avoid}
+  .hoja-alumno{break-after:page}
+  .hoja-alumno:last-child{break-after:auto}
+}

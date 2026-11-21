@@ -128,7 +128,9 @@ window.LUMI = {
         { es: "Pregúntale a Lumi", en: "Ask Lumi",
           es_url: P + "mentes-curiosas/pregunta.html?grado=1&lang=es", en_url: P + "mentes-curiosas/pregunta.html?grado=1" },
         { es: "Ideas nuevas", en: "New Ideas",
-          es_url: P + "mentes-curiosas/ideas.html?grado=1&lang=es", en_url: P + "mentes-curiosas/ideas.html?grado=1" }
+          es_url: P + "mentes-curiosas/ideas.html?grado=1&lang=es", en_url: P + "mentes-curiosas/ideas.html?grado=1" },
+        { es: "La balanza de Lumi", en: "Lumi's Balance",
+          es_url: P + "mentes-curiosas/balanza.html?grado=1&lang=es", en_url: P + "mentes-curiosas/balanza.html?grado=1" }
       ]
     },
     {
@@ -139,7 +141,9 @@ window.LUMI = {
         { es: "Pregúntale a Lumi", en: "Ask Lumi",
           es_url: P + "mentes-curiosas/pregunta.html?grado=2&lang=es", en_url: P + "mentes-curiosas/pregunta.html?grado=2" },
         { es: "Ideas nuevas", en: "New Ideas",
-          es_url: P + "mentes-curiosas/ideas.html?grado=2&lang=es", en_url: P + "mentes-curiosas/ideas.html?grado=2" }
+          es_url: P + "mentes-curiosas/ideas.html?grado=2&lang=es", en_url: P + "mentes-curiosas/ideas.html?grado=2" },
+        { es: "La balanza de Lumi", en: "Lumi's Balance",
+          es_url: P + "mentes-curiosas/balanza.html?grado=2&lang=es", en_url: P + "mentes-curiosas/balanza.html?grado=2" }
       ]
     },
     /* ---------------- KINDERGARTEN ---------------- */

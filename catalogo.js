@@ -7,7 +7,7 @@
 
    Grados:   "prek", "k", "1", "2", "3", "4", "5", "6"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
-             "mentes" (Mentes curiosas: de prekínder a 4.º; irá creciendo)
+             "mentes" (Mentes curiosas: de prekínder a 6.º)
 
    Para cada idioma ("es", "en") se da el título y la dirección.
    Si una serie existe en un solo idioma, se deja el otro vacío
@@ -171,6 +171,33 @@ window.LUMI = {
           es_url: P + "mentes-curiosas/inventos.html?grado=4&lang=es", en_url: P + "mentes-curiosas/inventos.html?grado=4" },
         { es: "El misterio de Lumi", en: "Lumi's Mystery",
           es_url: P + "mentes-curiosas/misterio.html?grado=4&lang=es", en_url: P + "mentes-curiosas/misterio.html?grado=4" }
+      ]
+    },
+        /* ---------------- MENTES CURIOSAS · 5.º y 6.º (en inglés, con ayuda en español) ---------------- */
+    {
+      grado: "5", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 5.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=5&lang=es" },
+      en: { titulo: "Curious Minds · Grade 5",   url: P + "mentes-curiosas/?grado=5" },
+      lecciones: [
+        { es: "The Fair Test Lab (el laboratorio de la prueba justa)", en: "The Fair Test Lab",
+          es_url: P + "mentes-curiosas/laboratorio.html?grado=5&ayuda=es", en_url: P + "mentes-curiosas/laboratorio.html?grado=5" },
+        { es: "What If? Worlds (mundos de «¿y si…?»)", en: "What If? Worlds",
+          es_url: P + "mentes-curiosas/mundos.html?grado=5&ayuda=es", en_url: P + "mentes-curiosas/mundos.html?grado=5" },
+        { es: "Evidence Detectives (detectives de la evidencia)", en: "Evidence Detectives",
+          es_url: P + "mentes-curiosas/evidencia.html?grado=5&ayuda=es", en_url: P + "mentes-curiosas/evidencia.html?grado=5" }
+      ]
+    },
+    {
+      grado: "6", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 6.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=6&lang=es" },
+      en: { titulo: "Curious Minds · Grade 6",   url: P + "mentes-curiosas/?grado=6" },
+      lecciones: [
+        { es: "The Fair Test Lab (el laboratorio de la prueba justa)", en: "The Fair Test Lab",
+          es_url: P + "mentes-curiosas/laboratorio.html?grado=6&ayuda=es", en_url: P + "mentes-curiosas/laboratorio.html?grado=6" },
+        { es: "What If? Worlds (mundos de «¿y si…?»)", en: "What If? Worlds",
+          es_url: P + "mentes-curiosas/mundos.html?grado=6&ayuda=es", en_url: P + "mentes-curiosas/mundos.html?grado=6" },
+        { es: "Evidence Detectives (detectives de la evidencia)", en: "Evidence Detectives",
+          es_url: P + "mentes-curiosas/evidencia.html?grado=6&ayuda=es", en_url: P + "mentes-curiosas/evidencia.html?grado=6" }
       ]
     },
         /* ---------------- KINDERGARTEN ---------------- */

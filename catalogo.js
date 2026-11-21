@@ -7,7 +7,7 @@
 
    Grados:   "prek", "k", "1", "2", "3", "4", "5", "6"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
-             "mentes" (Mentes curiosas: solo prekínder y kínder)
+             "mentes" (Mentes curiosas: de prekínder a 2.º; irá creciendo)
 
    Para cada idioma ("es", "en") se da el título y la dirección.
    Si una serie existe en un solo idioma, se deja el otro vacío
@@ -117,6 +117,25 @@ window.LUMI = {
           es_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/para-que-sirve.html?grado=prek" },
         { es: "La máquina musical", en: "The music machine",
           es_url: P + "mentes-curiosas/maquina-musical.html?grado=prek&lang=es", en_url: P + "mentes-curiosas/maquina-musical.html?grado=prek" }
+      ]
+    },
+        /* ---------------- MENTES CURIOSAS · 1.º y 2.º ---------------- */
+    {
+      grado: "1", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 1.er grado", url: P + "mentes-curiosas/?grado=1&lang=es" },
+      en: { titulo: "Curious Minds · Grade 1",   url: P + "mentes-curiosas/?grado=1" },
+      lecciones: [
+        { es: "Pregúntale a Lumi", en: "Ask Lumi",
+          es_url: P + "mentes-curiosas/pregunta.html?grado=1&lang=es", en_url: P + "mentes-curiosas/pregunta.html?grado=1" }
+      ]
+    },
+    {
+      grado: "2", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 2.º grado", url: P + "mentes-curiosas/?grado=2&lang=es" },
+      en: { titulo: "Curious Minds · Grade 2",   url: P + "mentes-curiosas/?grado=2" },
+      lecciones: [
+        { es: "Pregúntale a Lumi", en: "Ask Lumi",
+          es_url: P + "mentes-curiosas/pregunta.html?grado=2&lang=es", en_url: P + "mentes-curiosas/pregunta.html?grado=2" }
       ]
     },
     /* ---------------- KINDERGARTEN ---------------- */

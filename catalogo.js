@@ -7,7 +7,7 @@
 
    Grados:   "prek", "k", "1", "2", "3", "4", "5", "6"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
-             "mentes" (Mentes curiosas: de prekínder a 2.º; irá creciendo)
+             "mentes" (Mentes curiosas: de prekínder a 4.º; irá creciendo)
 
    Para cada idioma ("es", "en") se da el título y la dirección.
    Si una serie existe en un solo idioma, se deja el otro vacío
@@ -146,7 +146,34 @@ window.LUMI = {
           es_url: P + "mentes-curiosas/balanza.html?grado=2&lang=es", en_url: P + "mentes-curiosas/balanza.html?grado=2" }
       ]
     },
-    /* ---------------- KINDERGARTEN ---------------- */
+    /* ---------------- MENTES CURIOSAS · 3.º y 4.º ---------------- */
+    {
+      grado: "3", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 3.er grado", url: P + "mentes-curiosas/?grado=3&lang=es" },
+      en: { titulo: "Curious Minds · Grade 3",   url: P + "mentes-curiosas/?grado=3" },
+      lecciones: [
+        { es: "La regla secreta", en: "The Secret Rule",
+          es_url: P + "mentes-curiosas/regla.html?grado=3&lang=es", en_url: P + "mentes-curiosas/regla.html?grado=3" },
+        { es: "El taller de inventos", en: "The Invention Workshop",
+          es_url: P + "mentes-curiosas/inventos.html?grado=3&lang=es", en_url: P + "mentes-curiosas/inventos.html?grado=3" },
+        { es: "El misterio de Lumi", en: "Lumi's Mystery",
+          es_url: P + "mentes-curiosas/misterio.html?grado=3&lang=es", en_url: P + "mentes-curiosas/misterio.html?grado=3" }
+      ]
+    },
+    {
+      grado: "4", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 4.º grado", url: P + "mentes-curiosas/?grado=4&lang=es" },
+      en: { titulo: "Curious Minds · Grade 4",   url: P + "mentes-curiosas/?grado=4" },
+      lecciones: [
+        { es: "La regla secreta", en: "The Secret Rule",
+          es_url: P + "mentes-curiosas/regla.html?grado=4&lang=es", en_url: P + "mentes-curiosas/regla.html?grado=4" },
+        { es: "El taller de inventos", en: "The Invention Workshop",
+          es_url: P + "mentes-curiosas/inventos.html?grado=4&lang=es", en_url: P + "mentes-curiosas/inventos.html?grado=4" },
+        { es: "El misterio de Lumi", en: "Lumi's Mystery",
+          es_url: P + "mentes-curiosas/misterio.html?grado=4&lang=es", en_url: P + "mentes-curiosas/misterio.html?grado=4" }
+      ]
+    },
+        /* ---------------- KINDERGARTEN ---------------- */
     {
       grado: "k", materia: "matematicas", tipo: "interactivo",
       es: { titulo: "Matemáticas de kindergarten", url: P + "kindergarten/?lang=es" },

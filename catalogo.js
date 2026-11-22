@@ -5,7 +5,7 @@
    de inicio). Cada serie tiene un grado, una materia y, dentro,
    sus lecciones.
 
-   Grados:   "prek", "k", "1", "2", "3", "4", "5", "6"
+   Grados:   "prek", "k", "1", "2", "3", "4", "5", "6", "7"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
              "mentes" (Mentes curiosas: de prekínder a 6.º)
 
@@ -48,7 +48,9 @@ window.LUMI = {
     { grado: "5", area: "ciencias", es: "book-grade5-science.html",  en: "book-grade5-science.html" },
     { grado: "5", area: "sociales", es: "book-grade5-social-studies.html", en: "book-grade5-social-studies.html" },
     { grado: "6", area: "ciencias", es: "book-grade6-science.html",  en: "book-grade6-science.html" },
-    { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" }
+    { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" },
+    { grado: "7", area: "ciencias", es: "book-grade7-science.html",  en: "book-grade7-science.html" },
+    { grado: "7", area: "sociales", es: "book-grade7-social-studies.html", en: "book-grade7-social-studies.html" }
   ],
 
   /* Guías para el docente que valen para todo un grado (se muestran
@@ -302,6 +304,35 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- SÉPTIMO GRADO ----------------
+       Como en 5.º y 6.º: en inglés, con ayuda opcional en español (?ayuda=es).
+       Cada tema abre con una historia real; aquí acompaña Nova, una nueva amistad de Lumi. */
+    {
+      grado: "7", materia: "matematicas", tipo: "interactivo", solo: "en",
+      aviso: { es: "En inglés, con ayuda en español: ya viene activada desde aquí.", en: "" },
+      es: { titulo: "Matemáticas de 7.º grado", url: P + "7mo_grado/?ayuda=es" },
+      en: { titulo: "Grade 7 math",            url: P + "7mo_grado/" },
+      lecciones: [
+        { es: "Relaciones proporcionales", en: "Proportional relationships", es_url: P + "7mo_grado/g7-01-proportional-relationships.html?ayuda=es", en_url: P + "7mo_grado/g7-01-proportional-relationships.html" },
+        { es: "Números racionales", en: "Rational numbers", es_url: P + "7mo_grado/g7-02-rational-numbers.html?ayuda=es", en_url: P + "7mo_grado/g7-02-rational-numbers.html" },
+        { es: "Expresiones y ecuaciones", en: "Expressions and equations", es_url: P + "7mo_grado/g7-03-expressions-equations.html?ayuda=es", en_url: P + "7mo_grado/g7-03-expressions-equations.html" },
+        { es: "Geometría", en: "Geometry", es_url: P + "7mo_grado/g7-04-geometry.html?ayuda=es", en_url: P + "7mo_grado/g7-04-geometry.html" },
+        { es: "Probabilidad y estadística", en: "Probability and statistics", es_url: P + "7mo_grado/g7-05-probability-statistics.html?ayuda=es", en_url: P + "7mo_grado/g7-05-probability-statistics.html" }
+      ]
+    },
+    {
+      grado: "7", materia: "lectura", tipo: "interactivo", solo: "en",
+      aviso: { es: "Esta serie enseña a leer en inglés. La ayuda en español traduce solo las instrucciones y las preguntas.", en: "" },
+      es: { titulo: "Lectura en inglés", url: P + "7mo_grado/reading.html?ayuda=es" },
+      en: { titulo: "Grade 7 reading",   url: P + "7mo_grado/reading.html" },
+      lecciones: [
+        { es: "Artículos de historia", en: "Articles from history", es_url: P + "7mo_grado/g7-reading-01-history-articles.html?ayuda=es", en_url: P + "7mo_grado/g7-reading-01-history-articles.html" },
+        { es: "Argumentos y puntos de vista", en: "Arguments and points of view", es_url: P + "7mo_grado/g7-reading-02-arguments.html?ayuda=es", en_url: P + "7mo_grado/g7-reading-02-arguments.html" },
+        { es: "Cuentos, poemas y teatro de la historia", en: "Stories, poems and plays from history", es_url: P + "7mo_grado/g7-reading-03-historical-fiction.html?ayuda=es", en_url: P + "7mo_grado/g7-reading-03-historical-fiction.html" },
+        { es: "Griego y latín: las palabras de las matemáticas y las ciencias", en: "Greek and Latin: the words of math and science", es_url: P + "7mo_grado/g7-reading-04-greek-latin-roots.html?ayuda=es", en_url: P + "7mo_grado/g7-reading-04-greek-latin-roots.html" }
       ]
     },
 

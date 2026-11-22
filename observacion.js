@@ -22,7 +22,7 @@
 
   var T = {
     es: {
-      grados: { prek: "Prekínder", k: "Kindergarten", 1: "1.er grado", 2: "2.º grado", 3: "3.er grado", 4: "4.º grado", 5: "5.º grado", 6: "6.º grado" },
+      grados: { prek: "Prekínder", k: "Kindergarten", 1: "1.er grado", 2: "2.º grado", 3: "3.er grado", 4: "4.º grado", 5: "5.º grado", 6: "6.º grado", 7: "7.º grado" },
       materias: { matematicas: "Matemáticas", lectura: "Lectura y escritura", ciencias: "Ciencias", sociales: "Estudios sociales" },
       libroTit: { ciencias: "Cuentos de ciencias", sociales: "Cuentos de estudios sociales" },
       soloEs: " (en español)", soloEn: " (en inglés)",
@@ -36,7 +36,7 @@
       unJuego: "(juego)"
     },
     en: {
-      grados: { prek: "Pre-K", k: "Kindergarten", 1: "Grade 1", 2: "Grade 2", 3: "Grade 3", 4: "Grade 4", 5: "Grade 5", 6: "Grade 6" },
+      grados: { prek: "Pre-K", k: "Kindergarten", 1: "Grade 1", 2: "Grade 2", 3: "Grade 3", 4: "Grade 4", 5: "Grade 5", 6: "Grade 6", 7: "Grade 7" },
       materias: { matematicas: "Math", lectura: "Reading & writing", ciencias: "Science", sociales: "Social studies" },
       libroTit: { ciencias: "Science stories", sociales: "Social studies stories" },
       soloEs: " (in Spanish)", soloEn: " (in English)",
@@ -51,7 +51,7 @@
     }
   }[L];
 
-  var ORDEN_GRADOS = ["prek", "k", "1", "2", "3", "4", "5", "6"];
+  var ORDEN_GRADOS = ["prek", "k", "1", "2", "3", "4", "5", "6", "7"];
   var ORDEN_MATERIAS = ["matematicas", "lectura", "ciencias", "sociales"];
 
   function esc(s) {

@@ -82,7 +82,8 @@
     { id: "3",    ancla: "g3",   es: "3.er grado",   en: "Grade 3" },
     { id: "4",    ancla: "g4",   es: "4.º grado",    en: "Grade 4" },
     { id: "5",    ancla: "g5",   es: "5.º grado",    en: "Grade 5" },
-    { id: "6",    ancla: "g6",   es: "6.º grado",    en: "Grade 6" }
+    { id: "6",    ancla: "g6",   es: "6.º grado",    en: "Grade 6" },
+    { id: "7",    ancla: "g7",   es: "7.º grado",    en: "Grade 7" }
   ];
   var MATERIAS = [
     { id: "matematicas", es: "Matemáticas",        en: "Math",
@@ -240,7 +241,7 @@
      todavía no existe, se usa el Lumi de siempre (lápiz hasta 2.º, libreta
      de 3.º a 6.º). */
   function lumiDe(tipo, id) {
-    var respaldo = (tipo === "grado" && /^[3-6]$/.test(id)) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
+    var respaldo = (tipo === "grado" && /^[3-7]$/.test(id)) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
     return '<span class="lumi-mini" aria-hidden="true"><img src="lumi-' + tipo + "-" + id + '.png" alt="" ' +
            'onerror="this.onerror=null;this.src=\'' + respaldo + '\'"></span>';
   }
@@ -263,7 +264,7 @@
       var detalle = [g[L + "2"], n ? T.lecciones(n) : T.proximamente].filter(Boolean).join(" · ");
       var cuerpo = "";
       if (!delGrado.length) {
-        var foto = /^[3-6]$/.test(g.id) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
+        var foto = /^[3-7]$/.test(g.id) ? "lumi-explora.jpg" : "lumi-saluda.jpg";
         cuerpo += '<p class="vacio"><img src="' + foto + '" alt="">' + esc(T.vacio) + "</p>";
       } else {
         MATERIAS.forEach(function (m) {

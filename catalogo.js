@@ -57,7 +57,8 @@ window.LUMI = {
      en la sección del grado, en la página «Por grado») */
   guias: [
     { grado: "5", url: C + "guide-grade5.html" },
-    { grado: "6", url: C + "guide-grade6.html" }
+    { grado: "6", url: C + "guide-grade6.html" },
+    { grado: "7", url: C + "guide-grade7.html" }
   ],
 
   /* Obras de teatro (página teatro.html / teatro-es.html).

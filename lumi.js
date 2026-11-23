@@ -97,7 +97,7 @@
       es2: "Comunidad, historia y lugares", en2: "Community, history and places" },
     { id: "mentes",      es: "Mentes curiosas",    en: "Curious Minds",
       es2: "Curiosidad, ideas nuevas y pensar juntos", en2: "Curiosity, new ideas and thinking together",
-      grados: ["prek", "k", "1", "2", "3", "4", "5", "6"] }
+      grados: ["prek", "k", "1", "2", "3", "4", "5", "6", "7", "8"] }
   ];
 
   /* Íconos decorativos: el texto de al lado ya dice la materia */
@@ -294,7 +294,7 @@
       GRADOS.forEach(function (g) {
         var s = deMateria.filter(function (x) { return x.grado === g.id; });
         /* Prekínder no tiene ciencias ni estudios sociales: no es algo que falte */
-        /* Mentes curiosas abarca de prekínder a 6.º */
+        /* Mentes curiosas abarca de prekínder a 8.º */
         if (!s.length) { if (!(g.id === "prek" && (m.id === "ciencias" || m.id === "sociales")) &&
                              !(m.grados && m.grados.indexOf(g.id) < 0)) faltan.push(nombre(g)); return; }
         var guiaM = (m.id === "ciencias" || m.id === "sociales") ?

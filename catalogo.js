@@ -7,7 +7,7 @@
 
    Grados:   "prek", "k", "1", "2", "3", "4", "5", "6", "7", "8"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
-             "mentes" (Mentes curiosas: de prekínder a 6.º)
+             "mentes" (Mentes curiosas: de prekínder a 8.º)
 
    Para cada idioma ("es", "en") se da el título y la dirección.
    Si una serie existe en un solo idioma, se deja el otro vacío
@@ -191,6 +191,24 @@ window.LUMI = {
           es_url: P + "mentes-curiosas/mundos.html?grado=5&ayuda=es", en_url: P + "mentes-curiosas/mundos.html?grado=5" },
         { es: "Evidence Detectives (detectives de la evidencia)", en: "Evidence Detectives",
           es_url: P + "mentes-curiosas/evidencia.html?grado=5&ayuda=es", en_url: P + "mentes-curiosas/evidencia.html?grado=5" }
+      ]
+    },
+    {
+      grado: "8", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 8.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=8&lang=es" },
+      en: { titulo: "Curious Minds · Grade 8",   url: P + "mentes-curiosas/?grado=8" },
+      lecciones: [
+        { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
+          es_url: P + "mentes-curiosas/loop.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=8" }
+      ]
+    },
+    {
+      grado: "7", materia: "mentes", tipo: "interactivo",
+      es: { titulo: "Mentes curiosas · 7.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=7&lang=es" },
+      en: { titulo: "Curious Minds · Grade 7",   url: P + "mentes-curiosas/?grado=7" },
+      lecciones: [
+        { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
+          es_url: P + "mentes-curiosas/loop.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=7" }
       ]
     },
     {

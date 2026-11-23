@@ -5,7 +5,7 @@
    de inicio). Cada serie tiene un grado, una materia y, dentro,
    sus lecciones.
 
-   Grados:   "prek", "k", "1", "2", "3", "4", "5", "6", "7"
+   Grados:   "prek", "k", "1", "2", "3", "4", "5", "6", "7", "8"
    Materias: "matematicas", "lectura", "ciencias", "sociales",
              "mentes" (Mentes curiosas: de prekínder a 6.º)
 
@@ -50,7 +50,9 @@ window.LUMI = {
     { grado: "6", area: "ciencias", es: "book-grade6-science.html",  en: "book-grade6-science.html" },
     { grado: "6", area: "sociales", es: "book-grade6-social-studies.html", en: "book-grade6-social-studies.html" },
     { grado: "7", area: "ciencias", es: "book-grade7-science.html",  en: "book-grade7-science.html" },
-    { grado: "7", area: "sociales", es: "book-grade7-social-studies.html", en: "book-grade7-social-studies.html" }
+    { grado: "7", area: "sociales", es: "book-grade7-social-studies.html", en: "book-grade7-social-studies.html" },
+    { grado: "8", area: "ciencias", es: "book-grade8-science.html",  en: "book-grade8-science.html" },
+    { grado: "8", area: "sociales", es: "book-grade8-social-studies.html", en: "book-grade8-social-studies.html" }
   ],
 
   /* Guías para el docente que valen para todo un grado (se muestran
@@ -58,7 +60,8 @@ window.LUMI = {
   guias: [
     { grado: "5", url: C + "guide-grade5.html" },
     { grado: "6", url: C + "guide-grade6.html" },
-    { grado: "7", url: C + "guide-grade7.html" }
+    { grado: "7", url: C + "guide-grade7.html" },
+    { grado: "8", url: C + "guide-grade8.html" }
   ],
 
   /* Obras de teatro (página teatro.html / teatro-es.html).
@@ -305,6 +308,36 @@ window.LUMI = {
           es_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html?lang=es", en_url: P + "1er_grado/g1-reading-05-vowel-teams-endings.html" },
         { es: "Palabras frecuentes y lecturas cortas", en: "Sight words and short stories",
           es_url: P + "1er_grado/g1-reading-06-sight-words-stories.html?lang=es", en_url: P + "1er_grado/g1-reading-06-sight-words-stories.html" }
+      ]
+    },
+
+    /* ---------------- OCTAVO GRADO ----------------
+       Como en 5.º a 7.º: en inglés, con ayuda opcional en español (?ayuda=es). */
+    {
+      grado: "8", materia: "matematicas", tipo: "interactivo", solo: "en",
+      aviso: { es: "En inglés, con ayuda en español: ya viene activada desde aquí.", en: "" },
+      es: { titulo: "Matemáticas de 8.º grado", url: P + "8vo_grado/?ayuda=es" },
+      en: { titulo: "Grade 8 math",            url: P + "8vo_grado/" },
+      lecciones: [
+        { es: "Números reales y exponentes", en: "Real numbers and exponents", es_url: P + "8vo_grado/g8-01-real-numbers-exponents.html?ayuda=es", en_url: P + "8vo_grado/g8-01-real-numbers-exponents.html" },
+        { es: "Ecuaciones lineales y pendiente", en: "Linear equations and slope", es_url: P + "8vo_grado/g8-02-linear-equations-slope.html?ayuda=es", en_url: P + "8vo_grado/g8-02-linear-equations-slope.html" },
+        { es: "Funciones", en: "Functions", es_url: P + "8vo_grado/g8-03-functions.html?ayuda=es", en_url: P + "8vo_grado/g8-03-functions.html" },
+        { es: "Transformaciones y semejanza", en: "Transformations and similarity", es_url: P + "8vo_grado/g8-04-transformations-similarity.html?ayuda=es", en_url: P + "8vo_grado/g8-04-transformations-similarity.html" },
+        { es: "El teorema de Pitágoras", en: "The Pythagorean theorem", es_url: P + "8vo_grado/g8-05-pythagorean-theorem.html?ayuda=es", en_url: P + "8vo_grado/g8-05-pythagorean-theorem.html" },
+        { es: "Volumen", en: "Volume", es_url: P + "8vo_grado/g8-06-volume.html?ayuda=es", en_url: P + "8vo_grado/g8-06-volume.html" },
+        { es: "Datos con dos variables", en: "Data in two variables", es_url: P + "8vo_grado/g8-07-data-two-variables.html?ayuda=es", en_url: P + "8vo_grado/g8-07-data-two-variables.html" }
+      ]
+    },
+    {
+      grado: "8", materia: "lectura", tipo: "interactivo", solo: "en",
+      aviso: { es: "Esta serie enseña a leer en inglés. La ayuda en español traduce solo las instrucciones y las preguntas.", en: "" },
+      es: { titulo: "Lectura en inglés", url: P + "8vo_grado/reading.html?ayuda=es" },
+      en: { titulo: "Grade 8 reading",   url: P + "8vo_grado/reading.html" },
+      lecciones: [
+        { es: "Artículos de historia", en: "Articles from history", es_url: P + "8vo_grado/g8-reading-01-history-articles.html?ayuda=es", en_url: P + "8vo_grado/g8-reading-01-history-articles.html" },
+        { es: "Argumentos y evidencia que no coincide", en: "Arguments and conflicting evidence", es_url: P + "8vo_grado/g8-reading-02-arguments.html?ayuda=es", en_url: P + "8vo_grado/g8-reading-02-arguments.html" },
+        { es: "Cuentos, poemas y obras de teatro", en: "Stories, poems and plays", es_url: P + "8vo_grado/g8-reading-03-stories-poems-plays.html?ayuda=es", en_url: P + "8vo_grado/g8-reading-03-stories-poems-plays.html" },
+        { es: "Palabras con poder", en: "Words with power", es_url: P + "8vo_grado/g8-reading-04-words-with-power.html?ayuda=es", en_url: P + "8vo_grado/g8-reading-04-words-with-power.html" }
       ]
     },
 

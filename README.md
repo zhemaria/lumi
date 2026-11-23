@@ -1,6 +1,6 @@
 # Lumi · Pequeñas luces, grandes ideas
 
-Portal educativo gratuito, de prekínder a 6.º grado, en español y en inglés.
+Portal educativo gratuito, de prekínder a 8.º grado, en español y en inglés.
 Se publica en **www.lumi-educa.com** (también responde lumi-educa.com y la dirección anterior, zhemaria.github.io/lumi, que redirige).
 
 Este repositorio contiene solo el "cascarón" del portal. Las actividades
@@ -14,7 +14,7 @@ viven en sus propios repositorios:
 | Español | English | Qué muestra |
 |---|---|---|
 | index-es.html | index.html (portada por defecto) | Bienvenida, grados y materias |
-| grados-es.html | grados.html | Todo, ordenado por grado (anclas `#prek`, `#k`, `#g1` … `#g6`) |
+| grados-es.html | grados.html | Todo, ordenado por grado (anclas `#prek`, `#k`, `#g1` … `#g8`) |
 | materias-es.html | materias.html | Todo, ordenado por materia (anclas `#matematicas`, `#lectura`, `#ciencias`, `#sociales`) |
 
 Las anclas son iguales en los dos idiomas, así que al cambiar de idioma

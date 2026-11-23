@@ -83,7 +83,8 @@
     { id: "4",    ancla: "g4",   es: "4.º grado",    en: "Grade 4" },
     { id: "5",    ancla: "g5",   es: "5.º grado",    en: "Grade 5" },
     { id: "6",    ancla: "g6",   es: "6.º grado",    en: "Grade 6" },
-    { id: "7",    ancla: "g7",   es: "7.º grado",    en: "Grade 7" }
+    { id: "7",    ancla: "g7",   es: "7.º grado",    en: "Grade 7" },
+    { id: "8",    ancla: "g8",   es: "8.º grado",    en: "Grade 8" }
   ];
   var MATERIAS = [
     { id: "matematicas", es: "Matemáticas",        en: "Math",

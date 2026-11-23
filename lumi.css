@@ -208,6 +208,15 @@ details.acordeon[open] .acordeon-flecha::before{transform:translateY(3px) rotate
 @media (min-width:960px){
   #catalogo{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
+/* Dentro de la tarjeta abierta, cada grado (o materia) es una columna, en vez de un bloque por fila.
+   Si un grado tiene dos o más series, ocupa dos columnas. */
+@media (min-width:700px){
+  #catalogo .acordeon-cuerpo{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 1.2rem;align-items:start}
+  #catalogo .acordeon-cuerpo > :not(.sub){grid-column:1 / -1}
+  #catalogo .acordeon-cuerpo > .sub{margin:.9rem 0 .3rem}
+  #catalogo .acordeon-cuerpo > .sub .series{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  #catalogo .acordeon-cuerpo > .sub:has(.serie + .serie){grid-column:span 2}
+}
 @media (prefers-reduced-motion:reduce){ .lumi-mini img,.acordeon-flecha::before{transition:none} }
 @media print{ details.acordeon > .acordeon-cuerpo{display:block} .acordeon-flecha{display:none} }
 

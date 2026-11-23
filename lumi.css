@@ -6,6 +6,7 @@
    ================================================================== */
 :root{
   --pet:#194F5A; --tur:#45A6AD; --men:#6DCEC5; --ama:#F8C85F;
+  --nov:#9B7FD1;  /* morado de Nova, la amiga de Lumi */
   --cor:#EF9275; --cie:#E8F5F6; --bla:#FFFFFF; --borde:#A9D3D6;
 }
 *{box-sizing:border-box}
@@ -61,6 +62,16 @@ main{display:block;padding:1.5rem 0 3rem}
 .chips a:hover{background:var(--cie)}
 .chips small{font-weight:400;font-size:.85rem;margin-top:.15rem}
 .chips span{border-style:dashed;border-color:#7FA9AE;font-weight:400}
+/* Grados en dos filas parejas: prekínder a 4.º arriba (6) y 5.º a 8.º abajo (4, centrados).
+   Cuadrícula de 12 columnas: cada grado ocupa 2. */
+#lista-grados{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:.6rem}
+#lista-grados li{grid-column:span 2;display:flex}
+#lista-grados li > a,#lista-grados li > span{flex:1;min-width:0}
+#lista-grados li:nth-child(7){grid-column:3 / span 2}
+@media (max-width:760px){
+  #lista-grados{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #lista-grados li,#lista-grados li:nth-child(7){grid-column:auto}
+}
 
 /* tarjetas de materias */
 .materias{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;list-style:none;margin:0;padding:0}
@@ -182,6 +193,20 @@ details.acordeon[open] .acordeon-flecha::before{transform:translateY(3px) rotate
   .acordeon-flecha{width:38px;height:38px}
   .acordeon-cuerpo{padding:.3rem .8rem .9rem}
   details.acordeon{scroll-margin-top:130px}
+}
+/* Tarjetas en cuadrícula (tres por fila; dos en pantallas medianas) para acortar la página.
+   La tarjeta abierta ocupa toda la fila, sin cambiar el orden de las demás. */
+@media (min-width:600px){
+  #catalogo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;align-items:start}
+  #catalogo > details.acordeon[open]{grid-column:1 / -1}
+  #catalogo > details.acordeon:not([open]) > summary{min-height:118px;gap:.8rem;padding:.6rem .8rem}
+  #catalogo > details.acordeon:not([open]) .lumi-anillo{width:96px;height:96px}
+  #catalogo > details.acordeon:not([open]) .acordeon-flecha{width:38px;height:38px}
+  #catalogo > details.acordeon:not([open]) .acordeon-texto h2{font-size:1.35rem}
+  #catalogo > details.acordeon:not([open]) .acordeon-texto small{font-size:.92rem}
+}
+@media (min-width:960px){
+  #catalogo{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media (prefers-reduced-motion:reduce){ .lumi-mini img,.acordeon-flecha::before{transition:none} }
 @media print{ details.acordeon > .acordeon-cuerpo{display:block} .acordeon-flecha{display:none} }

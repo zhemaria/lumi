@@ -255,7 +255,7 @@
       '<div class="acordeon-cuerpo">' + cuerpo +
       '<p class="arriba"><a href="#' + id + '" class="cerrar-acordeon">' + esc(T.cerrar) + "</a></p></div></details>";
   }
-  var COLORES = ["var(--men)", "var(--ama)", "var(--cor)", "var(--tur)"];
+  var COLORES = ["var(--men)", "var(--ama)", "var(--cor)", "var(--nov)"];   /* el cuarto, morado de Nova: no se confunde con el turquesa */
 
   function paginaGrados(todas, cont) {
     var html = "";

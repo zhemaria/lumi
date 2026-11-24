@@ -198,6 +198,8 @@ window.LUMI = {
       es: { titulo: "Mentes curiosas · 8.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=8&lang=es" },
       en: { titulo: "Curious Minds · Grade 8",   url: P + "mentes-curiosas/?grado=8" },
       lecciones: [
+        { es: "Data That Doesn't Fit (datos que no encajan)", en: "Data That Doesn't Fit",
+          es_url: P + "mentes-curiosas/rareza.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/rareza.html?grado=8" },
         { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
           es_url: P + "mentes-curiosas/loop.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=8" }
       ]
@@ -207,6 +209,8 @@ window.LUMI = {
       es: { titulo: "Mentes curiosas · 7.º grado (en inglés, con ayuda en español)", url: P + "mentes-curiosas/?grado=7&lang=es" },
       en: { titulo: "Curious Minds · Grade 7",   url: P + "mentes-curiosas/?grado=7" },
       lecciones: [
+        { es: "Data That Doesn't Fit (datos que no encajan)", en: "Data That Doesn't Fit",
+          es_url: P + "mentes-curiosas/rareza.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/rareza.html?grado=7" },
         { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
           es_url: P + "mentes-curiosas/loop.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=7" }
       ]

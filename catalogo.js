@@ -200,6 +200,8 @@ window.LUMI = {
       lecciones: [
         { es: "Data That Doesn't Fit (datos que no encajan)", en: "Data That Doesn't Fit",
           es_url: P + "mentes-curiosas/rareza.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/rareza.html?grado=8" },
+        { es: "Plan the Dig at Cahokia (planea la excavación en Cahokia)", en: "Plan the Dig at Cahokia",
+          es_url: P + "mentes-curiosas/cahokia.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/cahokia.html?grado=8" },
         { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
           es_url: P + "mentes-curiosas/loop.html?grado=8&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=8" }
       ]
@@ -211,6 +213,8 @@ window.LUMI = {
       lecciones: [
         { es: "Data That Doesn't Fit (datos que no encajan)", en: "Data That Doesn't Fit",
           es_url: P + "mentes-curiosas/rareza.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/rareza.html?grado=7" },
+        { es: "Plan the Dig at Cahokia (planea la excavación en Cahokia)", en: "Plan the Dig at Cahokia",
+          es_url: P + "mentes-curiosas/cahokia.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/cahokia.html?grado=7" },
         { es: "Meet Me in the Loop (encuéntrame en el Loop)", en: "Meet Me in the Loop",
           es_url: P + "mentes-curiosas/loop.html?grado=7&ayuda=es", en_url: P + "mentes-curiosas/loop.html?grado=7" }
       ]
